@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
   entries:
-    m_keys: 000000000400000001000000
+    m_keys: 0000000001000000020000000a0000000b0000001400000015000000
     m_values:
-    - entryText: 
+    - entryText: Hello
       end: 0
-    - entryText: 
+    - entryText: yes
       end: 0
-    - entryText: 
+    - entryText: no
       end: 0
+    - entryText: How rude!
+      end: 0
+    - entryText: Bye!
+      end: 1
+    - entryText: Oh...
+      end: 0
+    - entryText: Yes, very
+      end: 1
