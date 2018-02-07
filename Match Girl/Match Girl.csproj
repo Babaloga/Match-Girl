@@ -291,13 +291,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Camera\BuildingCamPass.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueReader.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Entry.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\TextFloat.cs" />
-    <Compile Include="Assets\Scripts\WordFloat.cs" />
-    <Compile Include="Assets\Scripts\WordSource.cs" />
+    <Compile Include="Assets\Scripts\Effects\TextFloat.cs" />
+    <Compile Include="Assets\Scripts\Effects\WordFloat.cs" />
+    <Compile Include="Assets\Scripts\Effects\WordSource.cs" />
+    <Compile Include="Assets\Scripts\NPCs\MoveTo.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\SerializableDictionary\Example\SerializableDictionaryExample.cs" />
     <Compile Include="Assets\SerializableDictionary\Example\UserSerializableDictionaries.cs" />
     <Compile Include="Assets\SerializableDictionary\SerializableDictionary.cs" />

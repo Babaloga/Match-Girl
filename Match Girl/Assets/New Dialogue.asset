@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
   entries:
-    m_keys: 0000000001000000020000000a0000000b0000001400000015000000
+    m_keys: 0000000001000000020000000a0000000b000000140000006f0000006e000000
     m_values:
-    - entryText: Hello
+    - entryText: very much so
       end: 0
     - entryText: yes
       end: 0
@@ -23,8 +23,10 @@ MonoBehaviour:
     - entryText: How rude!
       end: 0
     - entryText: Bye!
-      end: 1
+      end: 0
     - entryText: Oh...
       end: 0
     - entryText: Yes, very
       end: 1
+    - entryText: Yes, very
+      end: 0
