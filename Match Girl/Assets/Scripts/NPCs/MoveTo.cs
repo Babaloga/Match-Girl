@@ -20,6 +20,9 @@ public class MoveTo : MonoBehaviour
 
     public LayerMask mask;
 
+    public AnimationCurve xAxis;
+    public AnimationCurve zAxis;
+
     float pauseTime;
     float timeUntilNextPause;
     float timeMarker;
@@ -87,7 +90,8 @@ public class MoveTo : MonoBehaviour
 
     private void PickNewGoal()
     {
-        Vector3 randomPosition = Random.insideUnitSphere * maxRadius;
+        //Vector2 rand2D = Random.insideUnitCircle * maxRadius;
+        Vector3 randomPosition = new Vector3(xAxis.Evaluate(Random.Range(-100, 100)), 0, zAxis.Evaluate(Random.Range(-100, 100)));
 
         NavMeshHit hit;
 
