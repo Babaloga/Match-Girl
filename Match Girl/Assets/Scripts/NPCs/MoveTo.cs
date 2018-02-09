@@ -8,6 +8,8 @@ public class MoveTo : MonoBehaviour
     Transform goal;
     NavMeshAgent agent;
 
+    CrowdPoint[] points;
+
     public float maxRadius = 100;
 
     public float maxPauseTime = 10;
@@ -36,6 +38,8 @@ public class MoveTo : MonoBehaviour
         goal = new GameObject(transform.name + " goal").transform;
 
         StartCoroutine(StartDelay());
+
+        points = FindObjectsOfType<CrowdPoint>();
     }
 
     private IEnumerator StartDelay()
@@ -91,15 +95,44 @@ public class MoveTo : MonoBehaviour
     private void PickNewGoal()
     {
         //Vector2 rand2D = Random.insideUnitCircle * maxRadius;
-        Vector3 randomPosition = new Vector3(xAxis.Evaluate(Random.Range(-100, 100)), 0, zAxis.Evaluate(Random.Range(-100, 100)));
+        //Vector3 randomPosition = new Vector3(xAxis.Evaluate(Random.Range(-100, 100)), 0, zAxis.Evaluate(Random.Range(-100, 100)));
 
-        NavMeshHit hit;
+        Transform startPoint = points[Random.Range(0, points.Length)].transform;
 
-        NavMesh.SamplePosition(randomPosition, out hit, maxRadius, 24);
+        bool validPoint = false;
+        Vector3 goalPos = Vector3.zero;
+
+        int i = 0;
+
+        while (!validPoint)
+        {
+            if(i > 100) {
+                Debug.LogWarning("Couldn't find viable ground.", transform);
+                break;
+            }
+
+            Vector3 randomDirection = Random.insideUnitSphere;
+            randomDirection.y = Random.Range(-1, -0.5f);
+
+            RaycastHit hit;
+
+            if(Physics.Raycast(startPoint.position, randomDirection, out hit) && hit.collider.gameObject.layer == 12)
+            {
+                validPoint = true;
+                goalPos = hit.point;
+            }
+
+            i++;
+        }
+        //NavMeshHit hit;
+
+        //NavMesh.SamplePosition(randomPosition, out hit, maxRadius, 24);
 
         //print(transform.name + " " + hit.mask);
 
-        goal.position = hit.position;
+        Debug.DrawLine(startPoint.position, goalPos, Color.red, 2f);
+
+        goal.position = goalPos;
     }
 
     private void DestinationReached()
