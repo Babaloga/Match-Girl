@@ -36,11 +36,11 @@ public class CameraFollow : MonoBehaviour {
 
         if (triggering)
         {
-            print("triggering");
+            //print("triggering");
             if (toDest.x == 0 || triggerDirection / toDest.x > 0)
             {
                 //destination.x = buildingX - ((triggerDirection / Mathf.Abs(triggerDirection)) * coll.bounds.extents.x);
-                print(collisionPointX);
+                //print(collisionPointX);
 
                 destination.x = buildingX - collisionPointX;
                 toDest = destination - transform.position;

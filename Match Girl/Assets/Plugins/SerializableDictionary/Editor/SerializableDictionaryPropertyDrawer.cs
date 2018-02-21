@@ -114,14 +114,15 @@ public class SerializableDictionaryPropertyDrawer : PropertyDrawer
 				float keyPropertyHeight = EditorGUI.GetPropertyHeight(keyProperty);
 				var keyPosition = linePosition;
 				keyPosition.height = keyPropertyHeight;
-				keyPosition.width = labelWidth - IndentWidth;
+				keyPosition.width = (labelWidth - IndentWidth) / 5;
 				EditorGUIUtility.labelWidth = keyPosition.width * labelWidthRelative;
 				EditorGUI.PropertyField(keyPosition, keyProperty, GUIContent.none, true);
 
 				float valuePropertyHeight = EditorGUI.GetPropertyHeight(valueProperty);
 				var valuePosition = linePosition;
 				valuePosition.height = valuePropertyHeight;
-				valuePosition.xMin += labelWidth;
+				valuePosition.xMin += keyPosition.width;
+                valuePosition.width = linePosition.width - keyPosition.width;
 				EditorGUIUtility.labelWidth = valuePosition.width * labelWidthRelative;
 				EditorGUI.indentLevel--;
 				EditorGUI.PropertyField(valuePosition, valueProperty, GUIContent.none, true);

@@ -108,11 +108,49 @@ public class DialogueReader : MonoBehaviour {
 
         for (int i = 0; i < valueOptions.Count; i++)
         {
-            optionObjects[i].GetComponentInChildren<Text>().text = dialogue.entries[valueOptions[i]].entryText;
+            Entry entry = dialogue.entries[valueOptions[i]];
+
+            string displayString = TextWithModifiers(entry);
+
+            optionObjects[i].GetComponentInChildren<Text>().text = displayString;
             optionObjects[i].SetActive(true);
         }
 
         displayHolder.alpha = 1;
         displayHolder.interactable = true;
+    }
+
+    //Showing stat modifiers in the dialogue
+
+    private string TextWithModifiers(Entry _entry)
+    {
+        string text = _entry.entryText + " ";
+
+        if (_entry.modifyTemperature != 0)
+        {
+            text = text + "[Warmth " + _entry.modifyTemperature.ToString("+0;-#") + "]";
+        }
+
+        if (_entry.modifyHunger != 0)
+        {
+            text = text + "[Food " + _entry.modifyHunger.ToString("+0;-#") + "]";
+        }
+
+        if (_entry.modifyTime != 0)
+        {
+            text = text + "[Time " + _entry.modifyTime.ToString("+0;-#") + "]";
+        }
+
+        if (_entry.modifyMatches != 0)
+        {
+            text = text + "[Matches " + _entry.modifyMatches.ToString("+0;-#") + "]";
+        }
+
+        if (_entry.modifyMoney != 0)
+        {
+            text = text + "[Money " + _entry.modifyMoney.ToString("+0;-#") + "]";
+        }
+
+        return text;
     }
 }

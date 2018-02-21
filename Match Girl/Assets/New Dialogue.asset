@@ -16,17 +16,57 @@ MonoBehaviour:
     m_values:
     - entryText: very much so
       end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
     - entryText: yes
       end: 0
+      modifyTemperature: 0
+      modifyHunger: 12
+      modifyTime: 0
+      modifyMatches: -3
+      modifyMoney: 0
     - entryText: no
       end: 0
+      modifyTemperature: 1
+      modifyHunger: 1
+      modifyTime: 1
+      modifyMatches: 1
+      modifyMoney: 1
     - entryText: How rude!
       end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
     - entryText: Bye!
       end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
     - entryText: Oh...
       end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
     - entryText: Yes, very
       end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
     - entryText: Yes, very
       end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0

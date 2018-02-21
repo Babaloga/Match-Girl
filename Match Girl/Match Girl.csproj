@@ -253,6 +253,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
@@ -288,6 +291,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Match Girl.Plugins.csproj">
+      <Project>{2BB0925E-0B30-B602-6E60-6CFEFC422E14}</Project>
+      <Name>Match Girl.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\Camera\BuildingCamPass.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraEffects.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
@@ -309,6 +318,7 @@
     <Compile Include="Assets\Scripts\NPCs\CrowdPoint.cs" />
     <Compile Include="Assets\Scripts\NPCs\MoveTo.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerStatsManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerTemperature.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -358,9 +368,6 @@
     <Compile Include="Assets\Scripts\Utility\ShowOnlyAttribute.cs" />
     <Compile Include="Assets\Scripts\World\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\World\WarmthSource.cs" />
-    <Compile Include="Assets\SerializableDictionary\Example\SerializableDictionaryExample.cs" />
-    <Compile Include="Assets\SerializableDictionary\Example\UserSerializableDictionaries.cs" />
-    <Compile Include="Assets\SerializableDictionary\SerializableDictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />

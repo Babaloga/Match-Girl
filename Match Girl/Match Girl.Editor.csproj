@@ -253,6 +253,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
@@ -291,6 +294,14 @@
     <ProjectReference Include="Match Girl.csproj">
       <Project>{4BB0B048-46CA-1364-8C60-7959E91360CB}</Project>
       <Name>Match Girl</Name>
+    </ProjectReference>
+    <ProjectReference Include="Match Girl.Plugins.csproj">
+      <Project>{2BB0925E-0B30-B602-6E60-6CFEFC422E14}</Project>
+      <Name>Match Girl.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="Match Girl.Editor.Plugins.csproj">
+      <Project>{AFF5D81D-774B-9341-646A-76729FBF7425}</Project>
+      <Name>Match Girl.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -331,8 +342,6 @@
     <Compile Include="Assets\Scripts\PostProcessing\Editor\Utils\EditorResources.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Editor\Utils\FxStyles.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
-    <Compile Include="Assets\SerializableDictionary\Editor\SerializableDictionaryPropertyDrawer.cs" />
-    <Compile Include="Assets\SerializableDictionary\Example\Editor\UserSerializableDictionaryPropertyDrawers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />

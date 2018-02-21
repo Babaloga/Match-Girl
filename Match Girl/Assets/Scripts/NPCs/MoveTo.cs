@@ -40,6 +40,9 @@ public class MoveTo : MonoBehaviour
         StartCoroutine(StartDelay());
 
         points = FindObjectsOfType<CrowdPoint>();
+
+        NavMesh.avoidancePredictionTime = 0.2f;
+        NavMesh.pathfindingIterationsPerFrame = 500;
     }
 
     private IEnumerator StartDelay()
