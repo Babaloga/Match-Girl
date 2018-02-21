@@ -20,10 +20,10 @@ public class MoveTo : MonoBehaviour
 
     public float goalBuffer = 1;
 
-    public LayerMask mask;
-
     public AnimationCurve xAxis;
     public AnimationCurve zAxis;
+
+    public LayerMask rayMask;
 
     float pauseTime;
     float timeUntilNextPause;
@@ -35,7 +35,7 @@ public class MoveTo : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         
-        goal = new GameObject(transform.name + " goal").transform;
+        goal = new GameObject(gameObject.name + " goal").transform;
 
         StartCoroutine(StartDelay());
 
@@ -94,9 +94,7 @@ public class MoveTo : MonoBehaviour
 
     private void PickNewGoal()
     {
-        //Vector2 rand2D = Random.insideUnitCircle * maxRadius;
-        //Vector3 randomPosition = new Vector3(xAxis.Evaluate(Random.Range(-100, 100)), 0, zAxis.Evaluate(Random.Range(-100, 100)));
-
+        //Randomly picks a point to raycast from. All points are equally weighted.
         Transform startPoint = points[Random.Range(0, points.Length)].transform;
 
         bool validPoint = false;
@@ -106,17 +104,21 @@ public class MoveTo : MonoBehaviour
 
         while (!validPoint)
         {
+            //Break while look if more than 100 iterations occur to prevent freezing.
             if(i > 100) {
                 Debug.LogWarning("Couldn't find viable ground.", transform);
                 break;
             }
 
+            //Generate random Vector3
             Vector3 randomDirection = Random.insideUnitSphere;
+            //Set random Vector3 y axis to a new random value between -0.5 and -1
             randomDirection.y = Random.Range(-1, -0.5f);
 
             RaycastHit hit;
 
-            if(Physics.Raycast(startPoint.position, randomDirection, out hit) && hit.collider.gameObject.layer == 12)
+            //Raycast and check for a walkable surface
+            if(Physics.Raycast(startPoint.position, randomDirection, out hit, Mathf.Infinity, rayMask, QueryTriggerInteraction.Ignore) && hit.collider.gameObject.layer == 12)
             {
                 validPoint = true;
                 goalPos = hit.point;
@@ -124,11 +126,6 @@ public class MoveTo : MonoBehaviour
 
             i++;
         }
-        //NavMeshHit hit;
-
-        //NavMesh.SamplePosition(randomPosition, out hit, maxRadius, 24);
-
-        //print(transform.name + " " + hit.mask);
 
         Debug.DrawLine(startPoint.position, goalPos, Color.red, 2f);
 

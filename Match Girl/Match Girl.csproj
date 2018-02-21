@@ -253,9 +253,6 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
@@ -300,6 +297,15 @@
     <Compile Include="Assets\Scripts\Effects\TextFloat.cs" />
     <Compile Include="Assets\Scripts\Effects\WordFloat.cs" />
     <Compile Include="Assets\Scripts\Effects\WordSource.cs" />
+    <Compile Include="Assets\Scripts\Game\CityDay.cs" />
+    <Compile Include="Assets\Scripts\Game\CitySceneManager.cs" />
+    <Compile Include="Assets\Scripts\Game\DayNightCycle.cs" />
+    <Compile Include="Assets\Scripts\Misc_\Fade.cs" />
+    <Compile Include="Assets\Scripts\Misc_\FindMissingScripts.cs" />
+    <Compile Include="Assets\Scripts\Misc_\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Misc_\MusicManager.cs" />
+    <Compile Include="Assets\Scripts\Misc_\OptionsController.cs" />
+    <Compile Include="Assets\Scripts\Misc_\PlayerPrefsManager.cs" />
     <Compile Include="Assets\Scripts\NPCs\CrowdPoint.cs" />
     <Compile Include="Assets\Scripts\NPCs\MoveTo.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
