@@ -66,7 +66,11 @@ public class DialogueReader : MonoBehaviour {
 
     public void Select(int selection)
     {
-        if (dialogue.entries[currentValue + selection].end)
+        Entry selectedEntry = dialogue.entries[currentValue + selection];
+
+        ApplyModifiers(selectedEntry);
+
+        if (selectedEntry.end)
             EndDialogue();
         else
         {
@@ -152,5 +156,33 @@ public class DialogueReader : MonoBehaviour {
         }
 
         return text;
+    }
+
+    private void ApplyModifiers(Entry _entry)
+    {
+        if (_entry.modifyTemperature != 0)
+        {
+            PlayerStatsManager.SetTemperature(PlayerStatsManager.Warmth + _entry.modifyTemperature);
+        }
+
+        if (_entry.modifyHunger != 0)
+        {
+            PlayerStatsManager.hunger += _entry.modifyHunger;
+        }
+
+        if (_entry.modifyTime != 0)
+        {
+            DayNightCycle.SetTime(DayNightCycle.currentTime + _entry.modifyTime);
+        }
+
+        if (_entry.modifyMatches != 0)
+        {
+            PlayerStatsManager.matches += _entry.modifyMatches;
+        }
+
+        if (_entry.modifyMoney != 0)
+        {
+            PlayerStatsManager.money += _entry.modifyMoney;
+        }
     }
 }

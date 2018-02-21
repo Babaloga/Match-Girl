@@ -18,26 +18,23 @@ public class DayNightCycle : MonoBehaviour {
     public AnimationCurve dayTemperatureCurve;
     public AnimationCurve nightTemperatureCurve;
 
-    private static float l_currentTime;
-
-    public static float currentTime
-    {
-        get
-        {
-            return l_currentTime;
-        }
-        protected set
-        {
-            l_currentTime = value;
-        }
-    }
+    public static float currentTime;
 
     private float cycleStartMarker;
+
+    private static DayNightCycle instance;
 
     private void Start()
     {
         cycleStartMarker = Time.time - cycleStart;
         temperatureDifference = cycleHighTemperature - cycleLowTemperature;
+
+        instance = this;
+    }
+
+    public static void SetTime(float _time)
+    {
+        instance.cycleStartMarker = Time.time - _time;
     }
 
     private void Update()

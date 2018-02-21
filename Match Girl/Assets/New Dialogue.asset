@@ -23,9 +23,9 @@ MonoBehaviour:
       modifyMoney: 0
     - entryText: yes
       end: 0
-      modifyTemperature: 0
-      modifyHunger: 12
-      modifyTime: 0
+      modifyTemperature: -20
+      modifyHunger: 0
+      modifyTime: 60
       modifyMatches: -3
       modifyMoney: 0
     - entryText: no
