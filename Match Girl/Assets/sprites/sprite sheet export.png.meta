@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 14a52227095f4674c9039b741b3011fb
+timeCreated: 1519372776
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: right_upperarm
+    21300002: right_forearm
+    21300004: right_thigh
+    21300006: right_hand
+    21300008: left_hand
+    21300010: right_shin
+    21300012: right_foot
+    21300014: left_foot
+    21300016: left_shin
+    21300018: left_thigh
+    21300020: left_forearm
+    21300022: left_upper_arm
+    21300024: hat
+    21300026: head
+    21300028: coat_decoration
+    21300030: torso
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: right_upperarm
+      rect:
+        serializedVersion: 2
+        x: 6.675042
+        y: 370.92184
+        width: 68.40307
+        height: 140.5719
+      alignment: 9
+      pivot: {x: 0.5006929, y: 0.76881546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: right_forearm
+      rect:
+        serializedVersion: 2
+        x: 46.883694
+        y: 254.65112
+        width: 60.674465
+        height: 117.34888
+      alignment: 9
+      pivot: {x: 0.514449, y: 0.76588804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: right_thigh
+      rect:
+        serializedVersion: 2
+        x: 119.85926
+        y: 232.20294
+        width: 91.79705
+        height: 152.07855
+      alignment: 9
+      pivot: {x: 0.5163389, y: 0.7031533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: right_hand
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166.72603
+        width: 74.51611
+        height: 92.14491
+      alignment: 9
+      pivot: {x: 0.53008676, y: 0.6865513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: left_hand
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72.2666
+        width: 86.20292
+        height: 109.77985
+      alignment: 9
+      pivot: {x: 0.6137768, y: 0.6721413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: right_shin
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 113.7058
+        width: 60.794113
+        height: 110.2942
+      alignment: 9
+      pivot: {x: 0.48524463, y: 0.7458648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: right_foot
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4.3829336
+        width: 95.702484
+        height: 68.93663
+      alignment: 9
+      pivot: {x: 0.71837014, y: 0.6631125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: left_foot
+      rect:
+        serializedVersion: 2
+        x: 84.398056
+        y: 1.8164158
+        width: 81.78554
+        height: 85.877335
+      alignment: 9
+      pivot: {x: 0.59681535, y: 0.6599918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: left_shin
+      rect:
+        serializedVersion: 2
+        x: 161.38292
+        y: 1.0633769
+        width: 126.55373
+        height: 73.72451
+      alignment: 9
+      pivot: {x: 0.24648747, y: 0.48898003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: left_thigh
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 228
+        width: 91
+        height: 151
+      alignment: 9
+      pivot: {x: 0.50133306, y: 0.7047594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: left_forearm
+      rect:
+        serializedVersion: 2
+        x: 141.51593
+        y: 92.11008
+        width: 73.0464
+        height: 136.45227
+      alignment: 9
+      pivot: {x: 0.5164723, y: 0.7532674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: left_upper_arm
+      rect:
+        serializedVersion: 2
+        x: 211.06335
+        y: 79.531685
+        width: 81.534454
+        height: 147.70248
+      alignment: 9
+      pivot: {x: 0.52574146, y: 0.7435489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hat
+      rect:
+        serializedVersion: 2
+        x: 66.111626
+        y: 381.25964
+        width: 149.56476
+        height: 124.43674
+      alignment: 9
+      pivot: {x: 0.48545498, y: 0.36774892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: head
+      rect:
+        serializedVersion: 2
+        x: 189.31274
+        y: 381.2531
+        width: 145.30762
+        height: 130.74689
+      alignment: 9
+      pivot: {x: 0.62070006, y: 0.28591368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: coat_decoration
+      rect:
+        serializedVersion: 2
+        x: 339.09192
+        y: 346.83923
+        width: 121.60153
+        height: 152.50748
+      alignment: 9
+      pivot: {x: 0.55330026, y: 0.7409899}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: torso
+      rect:
+        serializedVersion: 2
+        x: 293.09518
+        y: 9.155536
+        width: 186.90482
+        height: 296.0111
+      alignment: 9
+      pivot: {x: 0.3876194, y: 0.36349213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 99573604937630
+  assetBundleName: 
+  assetBundleVariant: 
