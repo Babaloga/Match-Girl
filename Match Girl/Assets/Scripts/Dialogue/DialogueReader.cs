@@ -116,6 +116,15 @@ public class DialogueReader : MonoBehaviour {
 
             string displayString = TextWithModifiers(entry);
 
+            if(PlayerStatsManager.matches + entry.modifyMatches < 0 || PlayerStatsManager.money + entry.modifyMoney < 0)
+            {
+                optionObjects[i].GetComponent<Button>().interactable = false;
+            }
+            else
+            {
+                optionObjects[i].GetComponent<Button>().interactable = true;
+            }
+
             optionObjects[i].GetComponentInChildren<Text>().text = displayString;
             optionObjects[i].SetActive(true);
         }
@@ -147,12 +156,26 @@ public class DialogueReader : MonoBehaviour {
 
         if (_entry.modifyMatches != 0)
         {
-            text = text + "[Matches " + _entry.modifyMatches.ToString("+0;-#") + "]";
+            if(PlayerStatsManager.matches + _entry.modifyMatches < 0)
+            {
+                text = text + "<color=#dd0000ff>[Matches " + _entry.modifyMatches.ToString("+0;-#") + "]</color>";
+            }
+            else
+            {
+                text = text + "[Matches " + _entry.modifyMatches.ToString("+0;-#") + "]";
+            }
         }
 
         if (_entry.modifyMoney != 0)
         {
-            text = text + "[Money " + _entry.modifyMoney.ToString("+0;-#") + "]";
+            if (PlayerStatsManager.money + _entry.modifyMoney < 0)
+            {
+                text = text + "<color=#dd0000ff>[Money " + _entry.modifyMoney.ToString("+0;-#") + "]</color>";
+            }
+            else
+            {
+                text = text + "[Money " + _entry.modifyMoney.ToString("+0;-#") + "]";
+            }
         }
 
         return text;

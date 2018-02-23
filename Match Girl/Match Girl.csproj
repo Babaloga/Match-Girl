@@ -317,6 +317,8 @@
     <Compile Include="Assets\Scripts\Misc_\PlayerPrefsManager.cs" />
     <Compile Include="Assets\Scripts\NPCs\CrowdPoint.cs" />
     <Compile Include="Assets\Scripts\NPCs\MoveTo.cs" />
+    <Compile Include="Assets\Scripts\NPCs\NPCInteraction.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerCallout.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStatsManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerTemperature.cs" />
@@ -365,7 +367,9 @@
     <Compile Include="Assets\Scripts\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts\Utility\GlobalSpriteDepth.cs" />
     <Compile Include="Assets\Scripts\Utility\ShowOnlyAttribute.cs" />
+    <Compile Include="Assets\Scripts\Utility\SpriteDepthRenderer.cs" />
     <Compile Include="Assets\Scripts\World\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\World\WarmthSource.cs" />
   </ItemGroup>

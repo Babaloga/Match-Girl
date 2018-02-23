@@ -305,6 +305,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Editor\CustomEditors\SpriteDepthRendererEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\PropertyDrawers\DictionaryPropertyDrawers.cs" />
     <Compile Include="Assets\Scripts\Editor\PropertyDrawers\EntryEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\PropertyDrawers\ShowOnlyDrawer.cs" />

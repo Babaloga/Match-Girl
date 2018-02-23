@@ -9,11 +9,14 @@ public class PlayerMovement : MonoBehaviour {
     Vector3 movement = Vector3.zero;
 
     WordSource source;
+    PlayerCallout callout;
+
     public float speakCooldown = 3;
     float speakTime = -5;
 
 	void Start () {
         source = GetComponent<WordSource>();
+        callout = FindObjectOfType<PlayerCallout>();
 	}
 	
 	void FixedUpdate () {
@@ -24,6 +27,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space) && (Time.time - speakTime) > speakCooldown)
         {
             source.Speak();
+            callout.Callout();
             speakTime = Time.time;
         }
     }
