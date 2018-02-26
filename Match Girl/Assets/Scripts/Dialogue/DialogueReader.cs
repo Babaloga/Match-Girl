@@ -21,10 +21,13 @@ public class DialogueReader : MonoBehaviour {
 
     public GameObject[] optionObjects;
 
+    public static DialogueReader reader;
+
     //Default Unity Functions
 
     private void Start()
     {
+        reader = this;
         displayText = dialogueObject.GetComponent<Text>();
 
         optionObjects = new GameObject[9];
@@ -97,12 +100,14 @@ public class DialogueReader : MonoBehaviour {
     {
         displayHolder.alpha = 0;
         displayHolder.interactable = false;
+        showingDialogue = false;
     }
 
     //Dialogue Display
 
     private void ShowDialogue()
     {
+        showingDialogue = true;
         displayText.text = dialogue.entries[currentValue].entryText;
 
         foreach(GameObject o in optionObjects)

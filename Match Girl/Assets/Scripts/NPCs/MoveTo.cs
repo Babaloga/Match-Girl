@@ -29,7 +29,9 @@ public class MoveTo : MonoBehaviour
     float timeUntilNextPause;
     float timeMarker;
 
-    bool paused;
+    public bool paused;
+
+    public bool overriden = false;
 
     void Start()
     {
@@ -58,32 +60,35 @@ public class MoveTo : MonoBehaviour
 
     private void Update()
     {
-        if (paused)
+        if (!overriden)
         {
-            agent.isStopped = true;
-
-            if(Time.time - timeMarker > pauseTime)
+            if (paused)
             {
-                Resume();
-            }
-        }
-        else
-        {
-            agent.isStopped = false;
+                agent.isStopped = true;
 
-            if (Time.time - timeMarker > timeUntilNextPause)
+                if (Time.time - timeMarker > pauseTime)
+                {
+                    Resume();
+                }
+            }
+            else
             {
-                Pause();
+                agent.isStopped = false;
+
+                if (Time.time - timeMarker > timeUntilNextPause)
+                {
+                    Pause();
+                }
             }
-        }
 
-        Vector3 offset = transform.position - goal.position;
+            Vector3 offset = transform.position - goal.position;
 
-        offset.y = 0;
+            offset.y = 0;
 
-        if (offset.magnitude <= goalBuffer)
-        {
-            DestinationReached();
+            if (offset.magnitude <= goalBuffer)
+            {
+                DestinationReached();
+            }
         }
     }
 
@@ -91,7 +96,7 @@ public class MoveTo : MonoBehaviour
     {
         if (goal)
         {
-            Gizmos.DrawSphere(goal.position, 3);
+            Gizmos.DrawSphere(goal.position, 1);
         }
     }
 
@@ -135,21 +140,21 @@ public class MoveTo : MonoBehaviour
         goal.position = goalPos;
     }
 
-    private void DestinationReached()
+    public void DestinationReached()
     {
         Pause();
         PickNewGoal();
         agent.destination = goal.position;
     }
 
-    private void Pause()
+    public void Pause()
     {
         pauseTime = Random.Range(minPauseTime, maxPauseTime);
         timeMarker = Time.time;
         paused = true;
     }
 
-    private void Resume()
+    public void Resume()
     {
         timeUntilNextPause = Random.Range(minTimeBetween, maxTimeBetween);
         timeMarker = Time.time;

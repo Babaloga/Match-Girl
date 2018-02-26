@@ -14,9 +14,12 @@ public class PlayerMovement : MonoBehaviour {
     public float speakCooldown = 3;
     float speakTime = -5;
 
+    public static GameObject player;
+
 	void Start () {
         source = GetComponent<WordSource>();
         callout = FindObjectOfType<PlayerCallout>();
+        player = gameObject;
 	}
 	
 	void FixedUpdate () {
