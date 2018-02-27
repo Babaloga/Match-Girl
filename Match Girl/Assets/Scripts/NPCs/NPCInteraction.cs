@@ -9,6 +9,7 @@ public class NPCInteraction : MonoBehaviour {
     WordSource source;
     public float cooldown = 5f;
     float triggerTime =-5f;
+    Vector3 playerPosMemory;
 
     bool wantsMatches;
     bool listening = true;
@@ -83,7 +84,15 @@ public class NPCInteraction : MonoBehaviour {
                 listening = false;
                 GetComponent<MoveTo>().overriden = true;
 
-                if ((transform.position - PlayerMovement.player.transform.position).magnitude <= 3f)
+                Vector3 playerPos = PlayerMovement.player.transform.position;
+
+                if ((playerPos - playerPosMemory).magnitude > 1.5f)
+                {
+                    playerPosMemory = playerPos;
+                    agent.SetDestination(playerPos);
+                }
+
+                if ((transform.position - PlayerMovement.player.transform.position).magnitude <= 2f)
                 {
                     agent.isStopped = true;
                     //agent.SetDestination(transform.position);
@@ -144,7 +153,9 @@ public class NPCInteraction : MonoBehaviour {
 
     private void GoToPlayer()
     {
-        agent.SetDestination(PlayerMovement.player.transform.position);
+        GetComponent<MoveTo>().overriden = true;
+        playerPosMemory = PlayerMovement.player.transform.position;
+        agent.SetDestination(playerPosMemory);
         agent.isStopped = false;
         currentState = NPCState.GoingToPlayer;
     }

@@ -310,6 +310,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &7302915
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -545,6 +546,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &7979585
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -793,6 +795,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &8711113
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1041,6 +1044,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &17991814
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1289,6 +1293,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &29317161
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1537,6 +1542,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &29782091
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1785,6 +1791,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &30140709
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5636,6 +5643,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &38176015
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5871,6 +5879,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &41242051
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6132,6 +6141,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &41472147
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6367,6 +6377,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &45207310
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6628,6 +6639,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &47484253
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10308,6 +10320,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &57250244
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10569,6 +10582,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &64068044
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10804,6 +10818,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &68560157
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11171,6 +11186,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &88988335
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11493,6 +11509,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &95216786
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11741,6 +11758,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &95261910
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12248,6 +12266,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &102531778
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12483,6 +12502,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &105334875
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12744,6 +12764,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &109817467
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12979,6 +13000,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &111164952
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13227,6 +13249,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &114589966
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13488,6 +13511,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &117069130
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13723,6 +13747,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &122816985
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13984,6 +14009,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &126302658
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14219,6 +14245,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &126477254
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17925,6 +17952,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &131970890
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18160,6 +18188,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &133243807
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18482,6 +18511,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &139531357
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18743,6 +18773,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &141587063
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18978,6 +19009,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &143256726
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19239,6 +19271,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &147389466
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19474,6 +19507,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &171780754
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19735,6 +19769,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &177030646
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19970,6 +20005,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &177264653
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20396,6 +20432,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &194035172
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20644,6 +20681,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &207190468
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20892,6 +20930,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &216742703
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21153,6 +21192,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &217963667
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21474,6 +21514,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &220815681
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21850,6 +21891,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &232723442
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22352,6 +22394,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &239236607
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22613,6 +22656,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &248079073
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22861,6 +22905,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &248925075
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23109,6 +23154,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &257127984
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23357,6 +23403,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &259328450
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23605,6 +23652,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &265069618
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23853,6 +23901,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &269950086
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24101,6 +24150,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &271289047
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24376,6 +24426,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &275724445
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24624,6 +24675,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &280785632
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24872,6 +24924,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &294488319
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25120,6 +25173,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &295512165
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25368,6 +25422,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &295832355
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25616,6 +25671,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &306304018
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25864,6 +25920,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &306375040
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29557,6 +29614,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &325881902
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29805,6 +29863,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &331397875
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30139,6 +30198,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &346135870
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30387,6 +30447,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &348730161
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30648,6 +30709,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &351404666
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30883,6 +30945,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &368629612
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31144,6 +31207,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &368790112
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31379,6 +31443,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &369578576
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31640,6 +31705,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &377604390
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32033,6 +32099,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &386014688
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32342,6 +32409,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &388743475
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32590,6 +32658,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &396569709
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32838,6 +32907,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &398368067
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36617,6 +36687,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &408746628
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36878,6 +36949,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &415946388
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37113,6 +37185,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &424627609
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37361,6 +37434,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &429971481
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37622,6 +37696,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &433015118
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37857,6 +37932,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &435253752
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38236,6 +38312,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &435629311
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38484,6 +38561,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &437265164
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38732,6 +38810,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &438572113
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39053,6 +39132,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &451506242
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39385,6 +39465,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &458876825
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39633,6 +39714,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &459421524
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40028,6 +40110,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &484574963
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40320,6 +40403,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &494241174
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40581,6 +40665,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &498211734
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40816,6 +40901,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &503585690
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -41077,6 +41163,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &509431558
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -41325,6 +41412,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &520356924
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -41503,6 +41591,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &526700967
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -41993,6 +42082,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &536154282
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -42228,6 +42318,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &536296814
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -42489,6 +42580,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &549179788
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -42737,6 +42829,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &551930351
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -42985,6 +43078,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &558365586
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -43220,6 +43314,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &596415949
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -43481,6 +43576,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &596734588
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -43766,6 +43862,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &604699491
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44014,6 +44111,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &610613543
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44249,6 +44347,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &612632656
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44510,6 +44609,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &618223930
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44782,6 +44882,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &640113869
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45043,6 +45144,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &640405373
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45278,6 +45380,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &643409368
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45539,6 +45642,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &647159555
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45774,6 +45878,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &647613993
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46022,6 +46127,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &656103281
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46270,6 +46376,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &657911952
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46531,6 +46638,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &662938475
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46766,6 +46874,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &663755472
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47027,6 +47136,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &668210410
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47508,6 +47618,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &680116314
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47769,6 +47880,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &683485517
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48017,6 +48129,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &683870234
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48265,6 +48378,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &692424696
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48500,6 +48614,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &717283717
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48761,6 +48876,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &721307076
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48996,6 +49112,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &723941471
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -49244,6 +49361,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &730123878
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -49505,6 +49623,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &738163845
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -49740,6 +49859,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &738639824
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -49988,6 +50108,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &739231736
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -50346,6 +50467,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &748595871
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -50581,6 +50703,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &748761287
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -50842,6 +50965,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &769441923
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -51142,6 +51266,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &773809202
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -51390,6 +51515,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &774049762
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -51638,6 +51764,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &796407404
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -55415,6 +55542,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &810657180
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -55650,6 +55778,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &812073995
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -55911,6 +56040,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &821735368
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -56233,6 +56363,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &825396038
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -59926,6 +60057,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &837680337
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -60174,6 +60306,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &843352166
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -60422,6 +60555,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &844100862
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -60657,6 +60791,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &864504073
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -60905,6 +61040,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &866098161
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -61153,6 +61289,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &870527946
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -61401,6 +61538,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &871608653
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -61649,6 +61787,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &882845117
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -61910,6 +62049,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &887964402
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -62158,6 +62298,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &894853973
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -62538,6 +62679,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &905437795
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -62799,6 +62941,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &906874080
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -63034,6 +63177,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &907255279
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -63353,6 +63497,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &919627074
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -63601,6 +63746,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &919880930
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -63849,6 +63995,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &921882434
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -64110,6 +64257,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &922206556
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -64345,6 +64493,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &922909553
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -64593,6 +64742,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &927360391
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -64854,6 +65004,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &928146572
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -65089,6 +65240,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &928483851
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -65411,6 +65563,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &945783452
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -65659,6 +65812,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &949325999
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -65993,6 +66147,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &973994002
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -66241,6 +66396,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &978875512
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -66502,6 +66658,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &980541349
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -66737,6 +66894,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &984304830
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -70443,6 +70601,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1012188970
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -70691,6 +70850,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1017501686
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -70926,6 +71086,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1034810791
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -71174,6 +71335,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1040471467
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -71422,6 +71584,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1045027290
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -71670,6 +71833,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1047607829
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -71918,6 +72082,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1050082355
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -72179,6 +72344,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1056593595
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -72427,6 +72593,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1062858154
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -72675,6 +72842,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1068353575
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -73172,6 +73340,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1108827209
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -73433,6 +73602,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1109610383
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -73767,6 +73937,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1115762535
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -73830,7 +74001,7 @@ GameObject:
   - component: {fileID: 1118438268}
   - component: {fileID: 1118438267}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73863,7 +74034,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -73904,6 +74075,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 76355317}
+  - {fileID: 1839173471}
+  - {fileID: 1734462400}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74096,6 +74269,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1118995815
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -74344,6 +74518,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1120174041
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -74605,6 +74780,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1121652054
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -81730,6 +81906,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1138065604
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -81978,6 +82155,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1140728386
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -82239,6 +82417,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1149570487
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -82474,6 +82653,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1150274746
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -82735,6 +82915,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1154908381
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -82983,6 +83164,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1159588665
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -83218,6 +83400,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1163999523
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -83519,6 +83702,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1166414172
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -83754,6 +83938,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1171091922
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -84002,6 +84187,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1175481561
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -84263,6 +84449,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1176077245
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -84498,6 +84685,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1191848114
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -84746,6 +84934,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1192368595
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -85125,6 +85314,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1205653684
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -85373,6 +85563,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1205840446
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -85621,6 +85812,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1221781168
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -85885,6 +86077,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1224123910
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -86146,6 +86339,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1224695664
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -86381,6 +86575,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1233724904
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -86695,6 +86890,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1252183355
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -86943,6 +87139,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1254596797
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -87191,6 +87388,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1258303604
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -87439,6 +87637,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1260370062
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -87674,6 +87873,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1264453767
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -87922,6 +88122,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1264517551
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -88183,6 +88384,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1274204551
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -88418,6 +88620,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1285469677
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -88765,6 +88968,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1287060501
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -89000,6 +89204,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1287217251
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -89436,6 +89641,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1292357747
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -93187,6 +93393,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1301783254
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -93521,6 +93728,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1302733686
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -93769,6 +93977,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1312567237
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -94017,6 +94226,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1313098250
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -94278,6 +94488,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1320532490
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -94644,6 +94855,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1327360395
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -94879,6 +95091,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1331068328
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -95198,6 +95411,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1339673685
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -95459,6 +95673,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1340432977
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -95694,6 +95909,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1344781049
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -95942,6 +96158,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1355257201
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -96203,6 +96420,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1357590233
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -96438,6 +96656,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1370566485
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -96838,6 +97057,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1372996877
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -97231,6 +97451,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1392225400
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -97479,6 +97700,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1392693717
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -97714,6 +97936,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1397127766
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -104923,6 +105146,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1416172782
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -105184,6 +105408,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1418486448
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -105419,6 +105644,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1430416091
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -112656,6 +112882,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1443579174
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -112962,6 +113189,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1450471948
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -113210,6 +113438,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1454264770
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -113471,6 +113700,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1457895742
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -113719,6 +113949,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1462566500
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -113954,6 +114185,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1466986133
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -114215,6 +114447,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1468582243
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -114549,6 +114782,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1474863582
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -118242,6 +118476,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1478279713
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -118477,6 +118712,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1487690094
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -118738,6 +118974,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1492765820
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -118973,6 +119210,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1494265653
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -119393,6 +119631,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1517101622
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -119728,6 +119967,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1530012008
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -119976,6 +120216,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1547118020
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -120224,6 +120465,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1548441576
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -120472,6 +120714,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1551778267
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -120720,6 +120963,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1555718711
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -120968,6 +121212,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1561670852
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -121348,6 +121593,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1565283086
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -121609,6 +121855,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1566789410
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -121857,6 +122104,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1577989374
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -122145,6 +122393,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1579938064
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -122393,6 +122642,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1585503145
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -122628,6 +122878,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1588255040
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -122889,6 +123140,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1593291019
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -123137,6 +123389,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1594352931
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -123385,6 +123638,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1599609590
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -123633,6 +123887,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1603145617
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -123954,6 +124209,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1617671866
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -124145,6 +124401,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1625402983
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -124463,6 +124720,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1634504005
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -124698,6 +124956,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1639221097
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -124959,6 +125218,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1642305284
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -125207,6 +125467,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1648158926
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -125442,6 +125703,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1654716511
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -125703,6 +125965,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1655335560
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -125951,6 +126214,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1658459565
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -126186,6 +126450,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1662420666
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -126434,6 +126699,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1670301701
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -126682,6 +126948,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1676200552
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -126930,6 +127197,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1676202185
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -127178,6 +127446,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1687321316
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -127530,6 +127799,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1703946902
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -127765,6 +128035,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1714757422
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -128026,6 +128297,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1715770545
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -128261,6 +128533,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1717717551
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -128769,6 +129042,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1730034196
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -128820,6 +129094,93 @@ MonoBehaviour:
   yesReaction: {fileID: 1720288130890404, guid: dbd953447aa700e4c810787b1eb1cffe,
     type: 2}
   dialogueShown: 0
+--- !u!1 &1734462399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1734462400}
+  - component: {fileID: 1734462403}
+  - component: {fileID: 1734462402}
+  - component: {fileID: 1734462401}
+  m_Layer: 5
+  m_Name: Money Count
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1734462400
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734462399}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1118438270}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10, y: -25}
+  m_SizeDelta: {x: 120, y: 30}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1734462401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734462399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341651553e4f7134690508867e2b6c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisElementType: 0
+--- !u!114 &1734462402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734462399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.51724136, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 10 Pence
+--- !u!222 &1734462403
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734462399}
 --- !u!1 &1737422061
 GameObject:
   m_ObjectHideFlags: 0
@@ -129017,6 +129378,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1737422066
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -129252,6 +129614,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1746213322
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -129500,6 +129863,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1749413015
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -129748,6 +130112,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1750726110
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -129996,6 +130361,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1752628333
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -130257,6 +130623,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1764412276
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -130492,6 +130859,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1775370373
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -130740,6 +131108,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1779400030
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -130988,6 +131357,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1779415127
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -131236,6 +131606,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1784939897
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -131484,6 +131855,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1785202433
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -131732,6 +132104,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1785703386
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -131993,6 +132366,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1790068750
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -132241,6 +132615,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1790465929
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -132489,6 +132864,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1792004679
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -132737,6 +133113,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1799251345
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -132972,6 +133349,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1800751506
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -133220,6 +133598,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1801063842
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -133468,6 +133847,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1804960712
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -133716,6 +134096,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1810284102
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -133964,6 +134345,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1810946979
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -134212,6 +134594,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1811197125
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -134473,6 +134856,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1812295798
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -134754,6 +135138,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1822748176
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -135015,6 +135400,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1825653439
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -135066,6 +135452,93 @@ MonoBehaviour:
   yesReaction: {fileID: 1720288130890404, guid: dbd953447aa700e4c810787b1eb1cffe,
     type: 2}
   dialogueShown: 0
+--- !u!1 &1839173470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1839173471}
+  - component: {fileID: 1839173474}
+  - component: {fileID: 1839173473}
+  - component: {fileID: 1839173472}
+  m_Layer: 5
+  m_Name: Match Count
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1839173471
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839173470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1118438270}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10, y: -5}
+  m_SizeDelta: {x: 120, y: 30}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1839173472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839173470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341651553e4f7134690508867e2b6c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisElementType: 1
+--- !u!114 &1839173473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839173470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.51724136, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 1 Matches
+--- !u!222 &1839173474
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839173470}
 --- !u!1 &1841332451
 GameObject:
   m_ObjectHideFlags: 0
@@ -135263,6 +135736,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1841332456
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -135511,6 +135985,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1842001818
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -135746,6 +136221,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1846736063
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -135994,6 +136470,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1854287659
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -136242,6 +136719,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1856429593
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -136530,6 +137008,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1857255440
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -136791,6 +137270,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1864262109
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -137039,6 +137519,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1864833564
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -137287,6 +137768,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1866191139
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -137608,6 +138090,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1869238310
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -137856,6 +138339,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1869359703
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -138276,6 +138760,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1874069263
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -138537,6 +139022,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1882106383
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -138785,6 +139271,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1883624656
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -139020,6 +139507,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1883770487
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -139383,6 +139871,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1886733871
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -139631,6 +140120,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1888778396
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -139911,6 +140401,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1907247428
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -140304,6 +140795,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1921153255
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -140552,6 +141044,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1925997708
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -140800,6 +141293,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1928208710
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -141048,6 +141542,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1930618180
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -141309,6 +141804,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1936191938
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -141557,6 +142053,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1947841964
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -141853,6 +142350,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1956299978
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -142158,6 +142656,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1957631288
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -142419,6 +142918,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1974134122
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -142667,6 +143167,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1976207832
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -142902,6 +143403,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1977133270
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -143163,6 +143665,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1977196244
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -143805,6 +144308,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1989239892
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -144123,6 +144627,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &1994172514
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -144371,6 +144876,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2002306855
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -144751,6 +145257,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2012488641
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -145130,6 +145637,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2023237543
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -145365,6 +145873,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2028069055
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -145807,6 +146316,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2039713990
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -146068,6 +146578,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2045827873
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -146303,6 +146814,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2050048425
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -146551,6 +147063,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2053142021
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -146930,6 +147443,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2064151811
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -147178,6 +147692,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2068031065
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -147426,6 +147941,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2068974333
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -147661,6 +148177,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2081843701
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -147909,6 +148426,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2086959964
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -148170,6 +148688,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2090034753
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -148418,6 +148937,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2092514422
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -148811,6 +149331,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2095105114
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -149046,6 +149567,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2096952884
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -149294,6 +149816,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2105742812
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -149542,6 +150065,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2107363850
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -149803,6 +150327,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2111015458
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -150254,6 +150779,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   paused: 0
   overriden: 0
+  agentStopped: 0
 --- !u!195 &2132745452
 NavMeshAgent:
   m_ObjectHideFlags: 0

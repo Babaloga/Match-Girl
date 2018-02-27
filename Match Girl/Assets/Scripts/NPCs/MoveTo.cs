@@ -29,9 +29,14 @@ public class MoveTo : MonoBehaviour
     float timeUntilNextPause;
     float timeMarker;
 
+    int lastGoal = -1;
+
     public bool paused;
 
     public bool overriden = false;
+
+    [ShowOnly]
+    public bool agentStopped = false;
 
     void Start()
     {
@@ -60,6 +65,7 @@ public class MoveTo : MonoBehaviour
 
     private void Update()
     {
+        agentStopped = agent.isStopped;
         if (!overriden)
         {
             if (paused)
@@ -102,8 +108,24 @@ public class MoveTo : MonoBehaviour
 
     private void PickNewGoal()
     {
-        //Randomly picks a point to raycast from. All points are equally weighted.
-        Transform startPoint = points[Random.Range(0, points.Length)].transform;
+        Transform startPoint;
+
+        //Randomly picks a point to raycast from. For the first cast all points are equally weighted. For all subsequent casts the NPC is more likely to stay under the same point.
+        if (lastGoal == -1) {
+            int rand = Random.Range(0, points.Length);
+            startPoint = points[rand].transform;
+            lastGoal = rand;
+        }
+        else
+        {
+            int rand = Random.Range(-points.Length, points.Length);
+
+            if (rand < 0)
+            {
+                rand = lastGoal;
+            }
+            startPoint = points[rand].transform;
+        }
 
         bool validPoint = false;
         Vector3 goalPos = Vector3.zero;

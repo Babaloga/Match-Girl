@@ -253,8 +253,17 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
@@ -313,12 +322,10 @@
     <Compile Include="Assets\Scripts\Effects\TextFloat.cs" />
     <Compile Include="Assets\Scripts\Effects\WordFloat.cs" />
     <Compile Include="Assets\Scripts\Effects\WordSource.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Scripts\Game\CityDay.cs" />
     <Compile Include="Assets\Scripts\Game\CitySceneManager.cs" />
     <Compile Include="Assets\Scripts\Game\DayNightCycle.cs" />
->>>>>>> 839d9b76a69c03acef1b0d4d8f12d9c0ebaa3e8d
+    <Compile Include="Assets\Scripts\Game\PlayerStatsUI.cs" />
     <Compile Include="Assets\Scripts\Misc_\Fade.cs" />
     <Compile Include="Assets\Scripts\Misc_\FindMissingScripts.cs" />
     <Compile Include="Assets\Scripts\Misc_\LevelManager.cs" />
@@ -330,11 +337,7 @@
     <Compile Include="Assets\Scripts\NPCs\NPCInteraction.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCallout.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
-=======
     <Compile Include="Assets\Scripts\Player\PlayerStatsManager.cs" />
->>>>>>> 839d9b76a69c03acef1b0d4d8f12d9c0ebaa3e8d
     <Compile Include="Assets\Scripts\Player\PlayerTemperature.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
