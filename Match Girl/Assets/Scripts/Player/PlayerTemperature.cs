@@ -7,12 +7,13 @@ public class PlayerTemperature : MonoBehaviour {
     [Range(0, 100)]
     public float temperature = 75;
     public float conductivity = 1;
-    public float baselineTemp = 0;
     [ShowOnly] public float heatflow;
 
     [ShowOnly] public float outsideTemp;
 
     List<WarmthSource> heatZones;
+
+    public static float worldTemperature;
 
     private void Start()
     {
@@ -21,23 +22,25 @@ public class PlayerTemperature : MonoBehaviour {
 
     private void Update()
     {
-        outsideTemp = baselineTemp;
+        outsideTemp = worldTemperature;
 
+        //heatZones is populated and de-populated in OnTriggerEnter and OnTriggerExit
         foreach(WarmthSource w in heatZones)
         {
+            //Distance of player from heat source as a fraction of the total trigger radius
             float distance = (transform.position - w.warmthArea.bounds.center).magnitude / w.warmthArea.bounds.extents.x;
-            print(distance);
+
+            //Heat from this source = (source temperature) * e ^ -5(distance)
             outsideTemp += (w.temperature * Mathf.Exp(-5f * distance));
         }
 
-        heatflow = conductivity * (outsideTemp - temperature);
+        //Flow of heat to or from player
+        heatflow = ((conductivity/100) * (outsideTemp - temperature)) * Time.deltaTime;
 
-        //print(gameObject.name + " " + heatflow);
-
-        //GetComponent<SpriteRenderer>().color = new Color(((heatflow + (100 * conductivity))/ (100 * conductivity)) - 0.5f, 0, 1.5f - ((heatflow + (100 * conductivity)) / (100 * conductivity)));
-
+        //Modifying temperature
         temperature += heatflow;
 
+        //Debug: setting sprite color based on temperature
         GetComponent<SpriteRenderer>().color = new Color(temperature / 100, 0, 1 - (temperature / 100));
     }
 

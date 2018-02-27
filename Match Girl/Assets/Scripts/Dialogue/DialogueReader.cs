@@ -21,10 +21,13 @@ public class DialogueReader : MonoBehaviour {
 
     public GameObject[] optionObjects;
 
+    public static DialogueReader reader;
+
     //Default Unity Functions
 
     private void Start()
     {
+        reader = this;
         displayText = dialogueObject.GetComponent<Text>();
 
         optionObjects = new GameObject[9];
@@ -66,7 +69,11 @@ public class DialogueReader : MonoBehaviour {
 
     public void Select(int selection)
     {
-        if (dialogue.entries[currentValue + selection].end)
+        Entry selectedEntry = dialogue.entries[currentValue + selection];
+
+        ApplyModifiers(selectedEntry);
+
+        if (selectedEntry.end)
             EndDialogue();
         else
         {
@@ -93,12 +100,14 @@ public class DialogueReader : MonoBehaviour {
     {
         displayHolder.alpha = 0;
         displayHolder.interactable = false;
+        showingDialogue = false;
     }
 
     //Dialogue Display
 
     private void ShowDialogue()
     {
+        showingDialogue = true;
         displayText.text = dialogue.entries[currentValue].entryText;
 
         foreach(GameObject o in optionObjects)
@@ -108,11 +117,100 @@ public class DialogueReader : MonoBehaviour {
 
         for (int i = 0; i < valueOptions.Count; i++)
         {
-            optionObjects[i].GetComponentInChildren<Text>().text = dialogue.entries[valueOptions[i]].entryText;
+            Entry entry = dialogue.entries[valueOptions[i]];
+
+            string displayString = TextWithModifiers(entry);
+
+            if(PlayerStatsManager.matches + entry.modifyMatches < 0 || PlayerStatsManager.money + entry.modifyMoney < 0)
+            {
+                optionObjects[i].GetComponent<Button>().interactable = false;
+            }
+            else
+            {
+                optionObjects[i].GetComponent<Button>().interactable = true;
+            }
+
+            optionObjects[i].GetComponentInChildren<Text>().text = displayString;
             optionObjects[i].SetActive(true);
         }
 
         displayHolder.alpha = 1;
         displayHolder.interactable = true;
+    }
+
+    //Showing stat modifiers in the dialogue
+
+    private string TextWithModifiers(Entry _entry)
+    {
+        string text = _entry.entryText + " ";
+
+        if (_entry.modifyTemperature != 0)
+        {
+            text = text + "[Warmth " + _entry.modifyTemperature.ToString("+0;-#") + "]";
+        }
+
+        if (_entry.modifyHunger != 0)
+        {
+            text = text + "[Food " + _entry.modifyHunger.ToString("+0;-#") + "]";
+        }
+
+        if (_entry.modifyTime != 0)
+        {
+            text = text + "[Time " + _entry.modifyTime.ToString("+0;-#") + "]";
+        }
+
+        if (_entry.modifyMatches != 0)
+        {
+            if(PlayerStatsManager.matches + _entry.modifyMatches < 0)
+            {
+                text = text + "<color=#dd0000ff>[Matches " + _entry.modifyMatches.ToString("+0;-#") + "]</color>";
+            }
+            else
+            {
+                text = text + "[Matches " + _entry.modifyMatches.ToString("+0;-#") + "]";
+            }
+        }
+
+        if (_entry.modifyMoney != 0)
+        {
+            if (PlayerStatsManager.money + _entry.modifyMoney < 0)
+            {
+                text = text + "<color=#dd0000ff>[Money " + _entry.modifyMoney.ToString("+0;-#") + "]</color>";
+            }
+            else
+            {
+                text = text + "[Money " + _entry.modifyMoney.ToString("+0;-#") + "]";
+            }
+        }
+
+        return text;
+    }
+
+    private void ApplyModifiers(Entry _entry)
+    {
+        if (_entry.modifyTemperature != 0)
+        {
+            PlayerStatsManager.SetTemperature(PlayerStatsManager.Warmth + _entry.modifyTemperature);
+        }
+
+        if (_entry.modifyHunger != 0)
+        {
+            PlayerStatsManager.hunger += _entry.modifyHunger;
+        }
+
+        if (_entry.modifyTime != 0)
+        {
+            DayNightCycle.SetTime(DayNightCycle.currentTime + _entry.modifyTime);
+        }
+
+        if (_entry.modifyMatches != 0)
+        {
+            PlayerStatsManager.matches += _entry.modifyMatches;
+        }
+
+        if (_entry.modifyMoney != 0)
+        {
+            PlayerStatsManager.money += _entry.modifyMoney;
+        }
     }
 }

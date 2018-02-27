@@ -14,6 +14,7 @@ public class BuildingCamPass : MonoBehaviour {
 
     public float fadeRate = 1.5f;
 
+    public Material opaqueMaterial;
     Material instanceMaterial;
 
     float time1 = 0;
@@ -68,12 +69,14 @@ public class BuildingCamPass : MonoBehaviour {
         if(behind && bubbleOverlaps)
         {
             time1 = Time.time;
+            rend.material = instanceMaterial;
             rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, Mathf.Lerp(1, 0, (Time.time - time2) / fadeRate));
         }
         else
         {
             time2 = Time.time;
             rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, Mathf.Lerp(0, 1, (Time.time - time1) / fadeRate));
+            if(rend.material.color.a >= 1) rend.material = opaqueMaterial;
         }
     }
 }
