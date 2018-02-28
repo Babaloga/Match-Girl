@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Doctor Ralph
+  m_EditorClassIdentifier: 
+  entries:
+    m_keys: 0000000001000000020000000a0000000b0000000c00000014000000150000006e0000006f00000078000000790000007a000000c4040000c5040000ba040000bb0400004e2f00004f2f0000bc040000
+    m_values:
+    - entryText: I've got arsenic for the complexion, amphetamines for fatigue! Cocaine
+        for a headache! Lancings at a discount price!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Sorry sir, I haven't got the money!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: I've got matches for a shilling!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Oh dear child, you gave me a fright! That damned constable has me
+        at my wits end!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Sorry for the bother, sir
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: What's the constable done?
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Nothing for me. If you'll excuse me, I'm trying to sell my remedies.
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Good day
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: No harm done. Good day.
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Good day
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: That man's been a thorn in my side...doesn't trust an honest man
+        and his honest medicines...
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Anything I can do?
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Perhaps the constable might be more interested in my wares...
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Oh goodness, no...wouldn't want him sniffing around here. Here, take
+        a shilling and get you gone!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 1
+    - entryText: Thank you for your business, sir!
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: I'm sure that shrill voice of yours could bring me some clientele...or
+        perhaps you might get that wretch of an officer to poke his nose elsewhere!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: AMPHETAMINES!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Dear God! Heads are already turning. Take a shilling and be gone.
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 1
+    - entryText: Good day sir!
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: I think I'll keep my distance from the officer. Good day!
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Lover
+  m_EditorClassIdentifier: 
+  entries:
+    m_keys: 00000000010000000a0000000b000000020000001400000015000000
+    m_values:
+    - entryText: Oh, my sweet Emma! Light in my life! Before you I am nothing! A snowdrift
+        in your path. No! Less! The shadow of a snowdrift! Not fit to... to melt in
+        her presence! Not fit... not... not... Oh! Hello there!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: A matchbox for a shilling!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Hm, a match? An apt metaphor for her fickle nature. The... the burn
+        of her touch! Her... her... Yes, I daresay I'll take a box. Good day, good
+        day
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: -1
+      modifyMoney: 1
+    - entryText: Good day! And good luck!
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: She sounds lovely, sir!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: A yes, fair as a flame... and twice as deadly! Those deep brown eyes-
+        no... Green? But that gentle gaze! And hair... so soft... cruelly so...
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: (The lonely man wanders off, caught up in his own words)
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0

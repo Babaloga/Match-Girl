@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: smoking woman
+  m_EditorClassIdentifier: 
+  entries:
+    m_keys: 000000000100000002000000140000001500000016000000dc000000dd000000de0000000a0000000b0000000c000000
+    m_values:
+    - entryText: Hey girl! over here!
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Can I help you?
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Would you like to purchase some matches, ma'am?
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Exactly what I need! Need a quick smoke for the sake of my nerves,
+        but I haven't got a light.
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Give one matchbox
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: -1
+      modifyMoney: 1
+    - entryText: 'Sorry, I''m all out. '
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: Wha- Are you sick in the head dear?  Why come over here shoutin'
+        "matches, matches, matches!" When you haven't got any?
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: I'm sorry..
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: I thought I had some!
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: yeah, need some matches. can't smoke without a light.
+      end: 0
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+    - entryText: give one matchbox
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: -1
+      modifyMoney: 1
+    - entryText: oops, I'm all out of those
+      end: 1
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
