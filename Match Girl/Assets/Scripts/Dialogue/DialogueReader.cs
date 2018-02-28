@@ -69,6 +69,12 @@ public class DialogueReader : MonoBehaviour {
 
     public void Select(int selection)
     {
+        if (!dialogue.entries.ContainsKey(currentValue + selection))
+        {
+            EndDialogue();
+            return;
+        }
+
         Entry selectedEntry = dialogue.entries[currentValue + selection];
 
         ApplyModifiers(selectedEntry);
@@ -115,6 +121,8 @@ public class DialogueReader : MonoBehaviour {
             o.SetActive(false);
         }
 
+        bool wayOut = false;
+
         for (int i = 0; i < valueOptions.Count; i++)
         {
             Entry entry = dialogue.entries[valueOptions[i]];
@@ -128,10 +136,17 @@ public class DialogueReader : MonoBehaviour {
             else
             {
                 optionObjects[i].GetComponent<Button>().interactable = true;
+                wayOut = true;
             }
 
             optionObjects[i].GetComponentInChildren<Text>().text = displayString;
             optionObjects[i].SetActive(true);
+        }
+
+        if (!wayOut)
+        {
+            optionObjects[valueOptions.Count].GetComponentInChildren<Text>().text = "Walk Away";
+            optionObjects[valueOptions.Count].SetActive(true);
         }
 
         displayHolder.alpha = 1;
