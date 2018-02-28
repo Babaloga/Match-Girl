@@ -98,7 +98,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 1.86
+    agentRadius: 0.4
     agentHeight: 2
     agentSlope: 10.7
     agentClimb: 0.4
@@ -106,7 +106,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 0
     manualCellSize: 0
-    cellSize: 0.62
+    cellSize: 0.13333334
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -319,7 +319,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 7302910}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -555,7 +555,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 7979581}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -804,7 +804,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 8711109}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -1053,7 +1053,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 17991810}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -1302,7 +1302,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 29317157}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -1551,7 +1551,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 29782087}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -1800,7 +1800,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 30140705}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -5652,7 +5652,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 38176010}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -5888,7 +5888,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 41242047}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -6150,7 +6150,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 41472142}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -6386,7 +6386,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 45207306}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -6648,7 +6648,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 47484248}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -10329,7 +10329,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 57250240}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -10591,7 +10591,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 64068039}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -10827,7 +10827,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 68560153}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -11195,7 +11195,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 88988331}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -11518,7 +11518,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 95216782}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -11767,7 +11767,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 95261906}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -12275,7 +12275,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 102531773}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -12511,7 +12511,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 105334871}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -12773,7 +12773,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 109817462}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -13009,7 +13009,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 111164948}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -13258,7 +13258,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 114589962}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -13520,7 +13520,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 117069125}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -13756,7 +13756,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 122816981}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -14018,7 +14018,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 126302653}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -14254,7 +14254,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 126477250}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -17961,7 +17961,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 131970885}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -18197,7 +18197,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 133243803}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -18520,7 +18520,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 139531353}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -18782,7 +18782,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 141587058}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -19018,7 +19018,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 143256722}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -19280,7 +19280,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 147389461}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -19516,7 +19516,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 171780750}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -19778,7 +19778,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 177030641}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -20014,7 +20014,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 177264649}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -20441,7 +20441,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 194035168}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -20690,7 +20690,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 207190464}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -20939,7 +20939,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 216742699}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -21201,7 +21201,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 217963662}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -21523,7 +21523,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 220815677}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -21900,7 +21900,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 232723438}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -22403,7 +22403,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 239236603}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -22665,7 +22665,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 248079068}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -22914,7 +22914,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 248925070}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -23163,7 +23163,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 257127979}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -23412,7 +23412,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 259328445}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -23661,7 +23661,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 265069613}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -23910,7 +23910,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 269950081}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -24159,7 +24159,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 271289042}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -24435,7 +24435,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 275724441}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -24684,7 +24684,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 280785628}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -24933,7 +24933,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 294488315}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -25182,7 +25182,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 295512161}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -25431,7 +25431,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 295832351}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -25680,7 +25680,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 306304014}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -25929,7 +25929,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 306375036}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -29623,7 +29623,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 325881898}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -29872,7 +29872,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 331397871}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -30207,7 +30207,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 346135866}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -30456,7 +30456,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 348730157}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -30718,7 +30718,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 351404661}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -30954,7 +30954,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 368629608}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -31216,7 +31216,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 368790107}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -31452,7 +31452,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 369578572}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -31714,7 +31714,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 377604385}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -32108,7 +32108,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 386014683}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -32418,7 +32418,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 388743471}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -32667,7 +32667,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 396569705}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -32916,7 +32916,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 398368063}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -36696,7 +36696,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 408746624}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -36958,7 +36958,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 415946383}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -37194,7 +37194,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 424627605}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -37443,7 +37443,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 429971477}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -37705,7 +37705,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 433015113}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -37941,7 +37941,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 435253748}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -38321,7 +38321,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 435629306}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -38570,7 +38570,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 437265159}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -38819,7 +38819,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 438572108}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -39141,7 +39141,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 451506238}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -39474,7 +39474,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 458876820}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -39723,7 +39723,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 459421519}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -40119,7 +40119,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 484574959}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -40412,7 +40412,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 494241170}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -40674,7 +40674,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 498211729}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -40910,7 +40910,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 503585686}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -41172,7 +41172,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 509431553}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -41421,7 +41421,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 520356919}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -41600,7 +41600,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 526700965}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -42091,7 +42091,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 536154277}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -42327,7 +42327,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 536296810}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -42589,7 +42589,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 549179783}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -42838,7 +42838,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 551930346}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -43087,7 +43087,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 558365581}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -43323,7 +43323,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 596415945}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -43585,7 +43585,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 596734583}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -43871,7 +43871,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 604699486}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -44120,7 +44120,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 610613538}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -44356,7 +44356,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 612632652}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -44618,7 +44618,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 618223925}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -44891,7 +44891,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 640113865}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -45153,7 +45153,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 640405368}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -45389,7 +45389,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 643409364}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -45651,7 +45651,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 647159550}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -45887,7 +45887,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 647613989}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -46136,7 +46136,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 656103277}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -46385,7 +46385,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 657911948}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -46647,7 +46647,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 662938470}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -46883,7 +46883,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 663755468}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -47145,7 +47145,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 668210405}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -47627,7 +47627,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 680116310}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -47889,7 +47889,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 683485512}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -48138,7 +48138,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 683870229}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -48387,7 +48387,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 692424691}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -48623,7 +48623,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 717283713}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -48885,7 +48885,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 721307071}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -49121,7 +49121,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 723941467}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -49370,7 +49370,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 730123874}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -49632,7 +49632,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 738163840}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -49868,7 +49868,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 738639820}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -50117,7 +50117,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 739231732}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -50476,7 +50476,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 748595866}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -50712,7 +50712,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 748761283}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -50974,7 +50974,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 769441918}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -51275,7 +51275,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 773809198}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -51524,7 +51524,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 774049758}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -51773,7 +51773,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 796407400}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -55551,7 +55551,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 810657175}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -55787,7 +55787,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 812073991}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -56049,7 +56049,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 821735363}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -56372,7 +56372,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 825396033}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -60066,7 +60066,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 837680332}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -60315,7 +60315,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 843352161}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -60564,7 +60564,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 844100857}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -60800,7 +60800,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 864504069}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -61049,7 +61049,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 866098157}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -61298,7 +61298,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 870527942}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -61547,7 +61547,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 871608649}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -61796,7 +61796,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 882845113}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -62058,7 +62058,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 887964397}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -62307,7 +62307,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 894853968}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -62688,7 +62688,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 905437791}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -62950,7 +62950,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 906874075}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -63186,7 +63186,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 907255275}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -63506,7 +63506,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 919627070}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -63755,7 +63755,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 919880926}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -64004,7 +64004,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 921882430}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -64266,7 +64266,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 922206551}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -64502,7 +64502,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 922909549}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -64751,7 +64751,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 927360387}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -65013,7 +65013,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 928146567}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -65249,7 +65249,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 928483847}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -65572,7 +65572,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 945783448}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -65821,7 +65821,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 949325995}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -66156,7 +66156,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 973993998}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -66405,7 +66405,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 978875508}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -66667,7 +66667,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 980541344}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -66903,7 +66903,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 984304826}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -70610,7 +70610,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1012188965}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -70859,7 +70859,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1017501681}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -71095,7 +71095,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1034810787}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -71344,7 +71344,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1040471463}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -71593,7 +71593,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1045027286}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -71842,7 +71842,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1047607825}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -72091,7 +72091,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1050082351}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -72353,7 +72353,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1056593590}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -72602,7 +72602,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1062858149}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -72851,7 +72851,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1068353570}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -72917,7 +72917,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1101165296}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.4, y: 72.4, z: -32}
+  m_LocalPosition: {x: 30.4, y: 88.4, z: -32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1892141515}
@@ -73349,7 +73349,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1108827205}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -73611,7 +73611,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1109610378}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -73946,7 +73946,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1115762530}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -74278,7 +74278,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1118995811}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -74527,7 +74527,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1120174037}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -74789,7 +74789,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1121652049}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -81915,7 +81915,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1138065600}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -82164,7 +82164,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1140728382}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -82426,7 +82426,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1149570482}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -82662,7 +82662,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1150274742}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -82924,7 +82924,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1154908376}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -83173,7 +83173,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1159588660}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -83409,7 +83409,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1163999519}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -83711,7 +83711,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1166414167}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -83947,7 +83947,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1171091918}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -84196,7 +84196,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1175481557}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -84458,7 +84458,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1176077240}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -84694,7 +84694,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1191848110}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -84943,7 +84943,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1192368591}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -85323,7 +85323,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1205653679}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -85572,7 +85572,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1205840441}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -85821,7 +85821,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1221781163}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -86086,7 +86086,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1224123906}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -86348,7 +86348,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1224695659}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -86584,7 +86584,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1233724900}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -86899,7 +86899,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1252183350}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -87148,7 +87148,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1254596792}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -87397,7 +87397,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1258303599}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -87646,7 +87646,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1260370057}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -87882,7 +87882,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1264453763}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -88131,7 +88131,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1264517547}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -88393,7 +88393,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1274204546}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -88629,7 +88629,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1285469673}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -88977,7 +88977,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1287060496}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -89213,7 +89213,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1287217247}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -89650,7 +89650,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1292357742}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -93402,7 +93402,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1301783250}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -93737,7 +93737,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1302733682}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -93986,7 +93986,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1312567233}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -94235,7 +94235,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1313098246}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -94497,7 +94497,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1320532485}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -94864,7 +94864,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1327360390}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -95100,7 +95100,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1331068324}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -95420,7 +95420,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1339673681}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -95682,7 +95682,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1340432972}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -95918,7 +95918,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1344781045}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -96167,7 +96167,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1355257197}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -96429,7 +96429,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1357590228}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -96665,7 +96665,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1370566481}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -97066,7 +97066,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1372996872}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -97460,7 +97460,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1392225395}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -97709,7 +97709,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1392693712}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -97945,7 +97945,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1397127762}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -105155,7 +105155,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1416172778}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -105417,7 +105417,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1418486443}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -105653,7 +105653,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1430416087}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -112891,7 +112891,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1443579169}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -113198,7 +113198,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1450471944}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -113447,7 +113447,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1454264766}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -113709,7 +113709,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1457895737}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -113958,7 +113958,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1462566495}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -114194,7 +114194,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1466986129}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -114456,7 +114456,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1468582238}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -114791,7 +114791,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1474863577}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -118485,7 +118485,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1478279708}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -118721,7 +118721,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1487690090}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -118983,7 +118983,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1492765815}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -119219,7 +119219,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1494265649}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -119640,7 +119640,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1517101618}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -119976,7 +119976,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1530012003}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -120225,7 +120225,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1547118015}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -120474,7 +120474,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1548441571}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -120723,7 +120723,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1551778262}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -120972,7 +120972,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1555718706}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -121221,7 +121221,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1561670847}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -121409,6 +121409,52 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!1001 &1563669932
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e5ae02a9696a1b5499b1f33b1aacd86f, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1565283082
 GameObject:
   m_ObjectHideFlags: 0
@@ -121602,7 +121648,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1565283082}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -121864,7 +121910,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1566789405}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -122113,7 +122159,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1577989369}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -122402,7 +122448,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1579938059}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -122651,7 +122697,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1585503140}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -122887,7 +122933,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1588255036}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -123149,7 +123195,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1593291014}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -123398,7 +123444,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1594352926}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -123647,7 +123693,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1599609585}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -123896,7 +123942,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1603145612}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -124218,7 +124264,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1617671862}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -124410,7 +124456,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1625402981}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -124729,7 +124775,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1634504000}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -124965,7 +125011,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1639221093}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -125227,7 +125273,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1642305279}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -125476,7 +125522,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1648158921}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -125712,7 +125758,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1654716507}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -125974,7 +126020,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1655335555}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -126223,7 +126269,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1658459560}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -126459,7 +126505,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1662420662}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -126708,7 +126754,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1670301697}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -126957,7 +127003,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1676200548}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -127206,7 +127252,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1676202181}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -127455,7 +127501,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1687321312}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -127808,7 +127854,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1703946897}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -128044,7 +128090,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1714757418}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -128306,7 +128352,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1715770540}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -128542,7 +128588,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1717717547}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -128759,6 +128805,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15d38f54fbba1e4f99bf6614e24e791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingMatches: 0
+  startingMoney: 0
+  startingHunger: 100
 --- !u!1 &1729150499
 GameObject:
   m_ObjectHideFlags: 0
@@ -129051,7 +129100,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1730034191}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -129387,7 +129436,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1737422061}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -129623,7 +129672,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1746213318}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -129872,7 +129921,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1749413011}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -130121,7 +130170,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1750726106}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -130370,7 +130419,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1752628329}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -130632,7 +130681,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1764412271}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -130868,7 +130917,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1775370369}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -131117,7 +131166,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1779400026}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -131366,7 +131415,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1779415123}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -131615,7 +131664,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1784939893}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -131864,7 +131913,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1785202429}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -132113,7 +132162,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1785703382}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -132375,7 +132424,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1790068745}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -132624,7 +132673,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1790465924}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -132873,7 +132922,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1792004674}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -133122,7 +133171,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1799251340}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -133358,7 +133407,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1800751502}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -133607,7 +133656,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1801063838}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -133856,7 +133905,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1804960708}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -134105,7 +134154,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1810284098}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -134354,7 +134403,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1810946975}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -134603,7 +134652,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1811197121}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -134865,7 +134914,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1812295793}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -135147,7 +135196,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1822748172}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -135409,7 +135458,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1825653434}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -135745,7 +135794,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1841332451}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -135994,7 +136043,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1842001813}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -136230,7 +136279,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1846736059}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -136479,7 +136528,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1854287655}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -136728,7 +136777,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1856429589}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -137017,7 +137066,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1857255436}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -137279,7 +137328,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1864262104}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -137528,7 +137577,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1864833559}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -137777,7 +137826,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1866191134}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -138099,7 +138148,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1869238306}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -138348,7 +138397,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1869359699}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -138769,7 +138818,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1874069259}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -139031,7 +139080,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1882106378}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -139280,7 +139329,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1883624651}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -139516,7 +139565,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1883770483}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -139880,7 +139929,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1886733867}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -140129,7 +140178,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1888778392}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -140410,7 +140459,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1907247424}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -140804,7 +140853,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1921153251}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -141053,7 +141102,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1925997704}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -141302,7 +141351,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1928208706}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -141551,7 +141600,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1930618176}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -141813,7 +141862,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1936191933}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -142062,7 +142111,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1947841959}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -142359,7 +142408,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1956299976}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -142665,7 +142714,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1957631284}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -142927,7 +142976,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1974134117}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -143176,7 +143225,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1976207827}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -143412,7 +143461,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1977133266}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -143674,7 +143723,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1977196239}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -144317,7 +144366,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1989239890}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -144636,7 +144685,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1994172509}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -144885,7 +144934,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2002306850}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -145266,7 +145315,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2012488637}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -145646,7 +145695,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2023237538}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -145882,7 +145931,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2028069051}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -146325,7 +146374,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2039713986}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -146587,7 +146636,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2045827868}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -146823,7 +146872,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2050048421}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -147072,7 +147121,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2053142017}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -147452,7 +147501,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2064151806}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -147701,7 +147750,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2068031060}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -147950,7 +147999,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2068974328}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -148186,7 +148235,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2081843697}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -148435,7 +148484,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2086959960}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -148697,7 +148746,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2090034748}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -148946,7 +148995,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2092514417}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -149340,7 +149389,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2095105109}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -149576,7 +149625,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2096952880}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -149825,7 +149874,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2105742808}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -150074,7 +150123,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2107363846}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -150336,7 +150385,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2111015453}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
@@ -150788,7 +150837,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2132745448}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.1
+  m_Radius: 0.06
   m_Speed: 13.53
   m_Acceleration: 250.97
   avoidancePriority: 50
