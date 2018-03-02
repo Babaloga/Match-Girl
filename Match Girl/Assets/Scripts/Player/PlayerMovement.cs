@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public float speed = 5;
+    public float baseSpeed = 5;
+
+    private float speed;
 
     Vector3 movement = Vector3.zero;
 
@@ -14,6 +16,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Start () {
         player = gameObject;
+        speed = baseSpeed;
 	}
 	
 	void FixedUpdate () {
@@ -28,13 +31,23 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Update()
     {
-        if (DialogueReader.reader.showingDialogue || Input.GetKey(KeyCode.Space))
+        if (DialogueReader.reader.showingDialogue)
         {
             frozen = true;
         }
         else
         {
             frozen = false;
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            speed = (1f / 2f) * baseSpeed;
+            print("Speed: "+speed);
+        }
+        else
+        {
+            speed = baseSpeed;
         }
     }
 }

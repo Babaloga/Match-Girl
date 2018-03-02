@@ -28,7 +28,7 @@ public class TextFloat : MonoBehaviour {
     Text text; //replace with whatever type of renderer we end up using
     Rigidbody2D rb;
 
-    float random;
+    float phase;
 
     Vector3 startScale;
 
@@ -38,7 +38,7 @@ public class TextFloat : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         startTime = Time.time;
 
-        random = Random.Range(-10, 10);
+        phase = Random.Range(0, Mathf.PI);
         startScale = transform.localScale;
     }
 
@@ -49,7 +49,7 @@ public class TextFloat : MonoBehaviour {
         Color currentColor = text.color;
 
         text.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaCurve.Evaluate(timeElapsed / duration) * alphaMultiplier);
-        rb.velocity = new Vector2(Mathf.Sin((timeElapsed * (shimmyFreqCurve.Evaluate(timeElapsed / duration) * shimmyFreqMultiplier))) * shimmyCurve.Evaluate(timeElapsed / duration) * shimmyMultiplier, velocityCurve.Evaluate(timeElapsed / duration) * speedMultiplier);
+        rb.velocity = new Vector2(Mathf.Sin((timeElapsed * (shimmyFreqCurve.Evaluate(timeElapsed / duration) * shimmyFreqMultiplier)) + phase) * shimmyCurve.Evaluate(timeElapsed / duration) * shimmyMultiplier, velocityCurve.Evaluate(timeElapsed / duration) * speedMultiplier);
         transform.localScale = startScale * scaleCurve.Evaluate(timeElapsed / duration) * scaleMultiplier;
 
         if (text.color.a <= 0 || timeElapsed / duration >= 1) Destroy(gameObject);

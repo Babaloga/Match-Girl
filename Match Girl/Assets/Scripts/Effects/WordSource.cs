@@ -9,6 +9,8 @@ public class WordSource : MonoBehaviour {
     GameObject speakInstance;
     public bool parentToSource = false;
 
+    public Renderer layerSource;
+
     public void Speak()
     {
         if (parentToSource)
@@ -27,6 +29,8 @@ public class WordSource : MonoBehaviour {
             speakInstance.transform.position = transform.position;
 
         }
+
+        if (layerSource) speakInstance.GetComponent<Canvas>().sortingOrder = layerSource.sortingOrder;
     }
 
     public void Speak(string _content)
@@ -48,6 +52,7 @@ public class WordSource : MonoBehaviour {
             speakInstance.transform.position = transform.position;
 
         }
+        if(layerSource) speakInstance.GetComponent<Canvas>().sortingOrder = layerSource.sortingOrder;
     }
 
     public void Speak(float duration, float shimmy, float shimmyFreq, float scaleMultiplier, float speedMultiplier, float alpha)
@@ -70,6 +75,7 @@ public class WordSource : MonoBehaviour {
         }
 
         TextFloat tFloat = speakInstance.GetComponent<TextFloat>();
+        if (layerSource) speakInstance.GetComponent<Canvas>().sortingOrder = layerSource.sortingOrder;
 
         tFloat.duration = duration;
         tFloat.shimmyMultiplier = shimmy;
