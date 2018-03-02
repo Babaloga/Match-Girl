@@ -253,6 +253,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
@@ -332,6 +335,7 @@
     <Compile Include="Assets\Scripts\NPCs\CrowdPoint.cs" />
     <Compile Include="Assets\Scripts\NPCs\MoveTo.cs" />
     <Compile Include="Assets\Scripts\NPCs\NPCInteraction.cs" />
+    <Compile Include="Assets\Scripts\NPCs\NPCInteractionBasic.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCallout.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStatsManager.cs" />

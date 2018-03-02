@@ -9,9 +9,10 @@ public class PlayerStatsManager : MonoBehaviour {
     public static float hunger = 100;
     private static float _warmth;
 
-    public int startingMatches = 0;
-    public int startingMoney = 0;
-    public float startingHunger = 100;
+    public int l_matches = 0;
+    public int l_money = 0;
+    public float l_hunger = 100;
+    public float l_warmth;
 
     public static float Warmth
     {
@@ -31,13 +32,23 @@ public class PlayerStatsManager : MonoBehaviour {
     void Start () {
         temperatureClass = FindObjectOfType<PlayerTemperature>();
 
-        matches = startingMatches;
-        money = startingMoney;
-        hunger = startingHunger;
+        matches = l_matches;
+        money = l_money;
+        hunger = l_hunger;
 	}
 
     private void Update()
     {
         _warmth = temperatureClass.temperature;
+
+#if UNITY_EDITOR
+
+        l_matches = matches;
+        l_money = money;
+        l_hunger = hunger;
+        l_warmth = _warmth;
+
+#endif
+
     }
 }

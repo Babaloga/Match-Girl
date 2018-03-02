@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class PlayerStatsUI : MonoBehaviour {
 
     Text text;
+    int previousValue;
 
     public enum StatType
     {
@@ -29,12 +30,24 @@ public class PlayerStatsUI : MonoBehaviour {
 
                 text.text = PlayerStatsManager.matches + " Matches";
 
+                if(previousValue != PlayerStatsManager.matches)
+                {
+                    GetComponent<WordSource>().Speak((PlayerStatsManager.matches - previousValue).ToString("+0;-#"));
+                }
+
+                previousValue = PlayerStatsManager.matches;
                 break;
 
             case StatType.Money:
 
                 text.text = PlayerStatsManager.money + " Pence";
 
+                if (previousValue != PlayerStatsManager.money)
+                {
+                    GetComponent<WordSource>().Speak((PlayerStatsManager.money - previousValue).ToString("+0;-#"));
+                }
+
+                previousValue = PlayerStatsManager.money;
                 break;
         }
     }

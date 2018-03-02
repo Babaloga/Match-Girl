@@ -176,6 +176,13 @@ public class MoveTo : MonoBehaviour
         paused = true;
     }
 
+    public void Pause(float _time)
+    {
+        pauseTime = _time;
+        timeMarker = Time.time;
+        paused = true;
+    }
+
     public void Resume()
     {
         timeUntilNextPause = Random.Range(minTimeBetween, maxTimeBetween);
