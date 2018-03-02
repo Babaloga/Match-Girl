@@ -63,10 +63,89 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 5
-  shimmy: 0.1
-  shimmyFreq: 1
-  fullAlpha: 1
+  shimmyMultiplier: 1
+  shimmyCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0004494493
+      value: 1.0012276
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.0007324
+      value: 0.74909973
+      inSlope: -0.59726745
+      outSlope: -0.59726745
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  shimmyFreqMultiplier: 5
+  shimmyFreqCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.0007362366
+      value: 1
+      inSlope: -3.6889653
+      outSlope: -3.6889653
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0.0012664795
+      inSlope: -0.19755167
+      outSlope: -0.19755167
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  alphaMultiplier: 1
+  alphaCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.6582032
+      value: 0.84933484
+      inSlope: -0.3563425
+      outSlope: -0.3563425
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0.0012664795
+      inSlope: -3.5891378
+      outSlope: -3.5891378
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   scaleMultiplier: 5
+  scaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.00009293575
+      value: 0.10081306
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1.000885
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  speedMultiplier: 1
   velocityCurve:
     serializedVersion: 2
     m_Curve:

@@ -12542,8 +12542,9 @@ GameObject:
   - component: {fileID: 235849763}
   - component: {fileID: 235849762}
   - component: {fileID: 235849764}
+  - component: {fileID: 235849765}
   m_Layer: 13
-  m_Name: GameObject
+  m_Name: CalloutObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12573,8 +12574,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd871f11d74e54443a577fee5ce62076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  callRadius: 15
-  callSpeed: 20
+  callDuration: 1
+  powerMin: 0.1
+  timeMax: 3
+  throatHealth: 1
+  speakCooldown: 0
+  powerCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 3.115736
+      outSlope: 3.115736
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.000015
+      value: 0.9998355
+      inSlope: 0.11481643
+      outSlope: 0.11481643
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!135 &235849763
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12602,6 +12624,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &235849765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235849760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72842084fbf4904f882b2eac62ea6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speakPrefab: {fileID: 1696544103803728, guid: 412dbb945feac4a4e9c362d4cb12f798,
+    type: 2}
+  parentToSource: 0
 --- !u!4 &245204334 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4017879431088888, guid: c3b5492fb315eb34f8684256e4cd9cb7,
@@ -42694,7 +42730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1221807551
 Transform:
   m_ObjectHideFlags: 0
@@ -66496,7 +66532,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1725239749}
   - component: {fileID: 1725239748}
-  - component: {fileID: 1725239750}
   - component: {fileID: 1725239751}
   - component: {fileID: 1725239753}
   - component: {fileID: 1725239752}
@@ -66569,20 +66604,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1725239750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1725239747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c72842084fbf4904f882b2eac62ea6a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speakPrefab: {fileID: 1696544103803728, guid: 412dbb945feac4a4e9c362d4cb12f798,
-    type: 2}
-  parentToSource: 0
 --- !u!114 &1725239751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66595,7 +66616,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  speakCooldown: 1
 --- !u!65 &1725239752
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68312,7 +68332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1988653427
 Transform:
   m_ObjectHideFlags: 0

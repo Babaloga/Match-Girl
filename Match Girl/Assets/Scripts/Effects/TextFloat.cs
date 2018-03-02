@@ -7,11 +7,20 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody2D))]
 public class TextFloat : MonoBehaviour {
     public float duration = 5;
-    public float shimmy = 1;
-    public float shimmyFreq = 5;
-    public float fullAlpha = 1;
-    public float scaleMultiplier = 2;
 
+    public float shimmyMultiplier = 1;
+    public AnimationCurve shimmyCurve;
+
+    public float shimmyFreqMultiplier = 5;
+    public AnimationCurve shimmyFreqCurve;
+
+    public float alphaMultiplier = 1;
+    public AnimationCurve alphaCurve;
+
+    public float scaleMultiplier = 2;
+    public AnimationCurve scaleCurve;
+
+    public float speedMultiplier = 1;
     public AnimationCurve velocityCurve;
 
     float startTime;
@@ -39,11 +48,11 @@ public class TextFloat : MonoBehaviour {
 
         Color currentColor = text.color;
 
-        text.color = new Color(currentColor.r, currentColor.g, currentColor.b, Mathf.Lerp(fullAlpha, 0, timeElapsed / duration));
-        rb.velocity = new Vector2(Mathf.Sin((timeElapsed * 3) + random) * shimmy, velocityCurve.Evaluate(timeElapsed / duration));
-        transform.localScale = startScale * Mathf.Lerp(1, scaleMultiplier, timeElapsed / duration);
+        text.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaCurve.Evaluate(timeElapsed / duration) * alphaMultiplier);
+        rb.velocity = new Vector2(Mathf.Sin((timeElapsed * (shimmyFreqCurve.Evaluate(timeElapsed / duration) * shimmyFreqMultiplier))) * shimmyCurve.Evaluate(timeElapsed / duration) * shimmyMultiplier, velocityCurve.Evaluate(timeElapsed / duration) * speedMultiplier);
+        transform.localScale = startScale * scaleCurve.Evaluate(timeElapsed / duration) * scaleMultiplier;
 
-        if (text.color.a <= 0) Destroy(gameObject);
+        if (text.color.a <= 0 || timeElapsed / duration >= 1) Destroy(gameObject);
     }
 
 }
