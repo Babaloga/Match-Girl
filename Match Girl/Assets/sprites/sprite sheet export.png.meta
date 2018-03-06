@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 14a52227095f4674c9039b741b3011fb
-timeCreated: 1519372776
+timeCreated: 1520194774
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -184,11 +184,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4.3829336
+        y: 4.98534
         width: 95.702484
-        height: 68.93663
+        height: 68.33423
       alignment: 9
-      pivot: {x: 0.71837014, y: 0.6631125}
+      pivot: {x: 0.71837014, y: 0.6601426}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,11 +198,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 84.398056
-        y: 1.8164158
-        width: 81.78554
-        height: 85.877335
+        y: 1.8218288
+        width: 81.29399
+        height: 85.87192
       alignment: 9
-      pivot: {x: 0.59681535, y: 0.6599918}
+      pivot: {x: 0.60042405, y: 0.65997046}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: coat_decoration
       rect:
         serializedVersion: 2
-        x: 339.09192
-        y: 346.83923
-        width: 121.60153
-        height: 152.50748
+        x: 338.69537
+        y: 343.04852
+        width: 123.00305
+        height: 156.29819
       alignment: 9
-      pivot: {x: 0.55330026, y: 0.7409899}
+      pivot: {x: 0.5502198, y: 0.7472717}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -309,12 +309,12 @@ TextureImporter:
       name: torso
       rect:
         serializedVersion: 2
-        x: 293.09518
+        x: 292.87854
         y: 9.155536
-        width: 186.90482
+        width: 187.12146
         height: 296.0111
       alignment: 9
-      pivot: {x: 0.3876194, y: 0.36349213}
+      pivot: {x: 0.38832843, y: 0.36349213}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,6 +322,6 @@ TextureImporter:
     outline: []
     physicsShape: []
   spritePackingTag: 
-  userData: 99573604937630
+  userData: 99627482857898
   assetBundleName: 
   assetBundleVariant: 
