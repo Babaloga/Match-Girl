@@ -20,8 +20,13 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootView: {fileID: 7}
   m_MinSize: {x: 950, y: 392}
+=======
+  m_RootView: {fileID: 5}
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> parent of acb65bf... Minor Changes
 =======
   m_RootView: {fileID: 5}
   m_MinSize: {x: 950, y: 300}
@@ -36,6 +41,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Name: 
   m_EditorClassIdentifier: 
@@ -55,6 +61,8 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &3
 =======
+=======
+>>>>>>> parent of acb65bf... Minor Changes
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
@@ -144,6 +152,9 @@ MonoBehaviour:
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &6
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,6 +172,7 @@ MonoBehaviour:
     x: 989
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 234
     height: 877
   m_MinSize: {x: 234, y: 271}
@@ -172,12 +184,17 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &4
 =======
+=======
+>>>>>>> parent of acb65bf... Minor Changes
     width: 2560
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
 --- !u!114 &7
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,6 +214,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 30
     width: 1500
     height: 877
@@ -206,12 +224,17 @@ MonoBehaviour:
   controlID: 159
 --- !u!114 &5
 =======
+=======
+>>>>>>> parent of acb65bf... Minor Changes
     y: 1337
     width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 --- !u!114 &8
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -255,6 +278,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 39
 --- !u!114 &9
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,6 +323,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 40
 --- !u!114 &10
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,9 +339,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 8}
   - {fileID: 4}
   - {fileID: 9}
+=======
+  - {fileID: 11}
+  - {fileID: 12}
+>>>>>>> parent of acb65bf... Minor Changes
 =======
   - {fileID: 11}
   - {fileID: 12}
@@ -322,12 +356,15 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1500
     height: 927
   m_MinSize: {x: 950, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
 =======
+=======
+>>>>>>> parent of acb65bf... Minor Changes
     width: 2049
     height: 459
   m_MinSize: {x: 406, y: 221}
@@ -335,6 +372,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 41
 --- !u!114 &11
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -352,6 +392,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1500
     height: 30
   m_MinSize: {x: 0, y: 0}
@@ -359,6 +400,8 @@ MonoBehaviour:
   m_LastLoadedLayoutName: 
 --- !u!114 &9
 =======
+=======
+>>>>>>> parent of acb65bf... Minor Changes
     width: 1845
     height: 459
   m_MinSize: {x: 200, y: 200}
@@ -369,6 +412,9 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &12
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -383,6 +429,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
     y: 907
@@ -416,6 +463,8 @@ MonoBehaviour:
   controlID: 206
 --- !u!114 &11
 =======
+=======
+>>>>>>> parent of acb65bf... Minor Changes
     x: 1845
     y: 0
     width: 204
@@ -428,6 +477,9 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &13
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -445,6 +497,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 989
@@ -455,6 +508,8 @@ MonoBehaviour:
   controlID: 207
 --- !u!114 &12
 =======
+=======
+>>>>>>> parent of acb65bf... Minor Changes
     x: 2049
     y: 0
     width: 234
@@ -467,6 +522,9 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &14
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -481,6 +539,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
     y: 0
@@ -497,6 +556,8 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &13
 =======
+=======
+>>>>>>> parent of acb65bf... Minor Changes
     x: 2283
     y: 0
     width: 277
@@ -510,6 +571,9 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &15
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -745,12 +809,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 468
     y: 181
     width: 973
     height: 501
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &14
+=======
+    x: 1605
+    y: 551
+    width: 442
+    height: 827
+  m_PersistentViewDataDictionary: {fileID: 0}
+--- !u!114 &19
+>>>>>>> parent of acb65bf... Minor Changes
 =======
     x: 1605
     y: 551
@@ -816,6 +889,9 @@ MonoBehaviour:
     m_SelectedIDs: e6320000
     m_LastClickedID: 13030
     m_ExpandedIDs: 00000000c82900002c2a0000902a0000b22a0000d22a0000b42b00001a2c0000842c0000
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -845,7 +921,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000fa2c0000f82d0000ac2e0000d82e0000
+=======
+    m_ExpandedIDs: 00000000c82900002c2a0000902a0000b22a0000d22a0000b42b00001a2c0000842c0000
+>>>>>>> parent of acb65bf... Minor Changes
 =======
     m_ExpandedIDs: 00000000c82900002c2a0000902a0000b22a0000d22a0000b42b00001a2c0000842c0000
 >>>>>>> parent of acb65bf... Minor Changes
@@ -865,7 +945,11 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 13}
+>>>>>>> parent of acb65bf... Minor Changes
 =======
       m_ClientGUIView: {fileID: 13}
 >>>>>>> parent of acb65bf... Minor Changes
@@ -912,6 +996,9 @@ MonoBehaviour:
 =======
   m_DirectoriesAreaWidth: 194
 --- !u!114 &20
+<<<<<<< HEAD
+>>>>>>> parent of acb65bf... Minor Changes
+=======
 >>>>>>> parent of acb65bf... Minor Changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -942,6 +1029,7 @@ MonoBehaviour:
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_CachedPref: 160
     m_ControlHash: -371814159
@@ -1156,6 +1244,13 @@ MonoBehaviour:
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
 --- !u!114 &19
+=======
+    m_CachedPref: 318
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &21
+>>>>>>> parent of acb65bf... Minor Changes
 =======
     m_CachedPref: 318
     m_ControlHash: -371814159
