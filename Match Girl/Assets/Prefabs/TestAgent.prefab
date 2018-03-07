@@ -58,8 +58,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakPrefab: {fileID: 1176669192584378, guid: 047068dcec5a670468c402eb49bec0e2,
     type: 2}
-  parentToSource: 0
-  layerSource: {fileID: 0}
 --- !u!114 &114124900978760350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 5
-  yesProbabilityOutOf100: 10
+  yesProbabilityOutOf100: 70
   noReaction: {fileID: 1176669192584378, guid: 047068dcec5a670468c402eb49bec0e2, type: 2}
   yesReaction: {fileID: 1720288130890404, guid: dbd953447aa700e4c810787b1eb1cffe,
     type: 2}

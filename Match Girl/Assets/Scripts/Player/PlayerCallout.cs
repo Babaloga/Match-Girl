@@ -185,7 +185,7 @@ public class PlayerCallout : MonoBehaviour {
             (-throatHealth + 1) * 10,
             (-throatHealth + 1) * 50,
             (_power) * 5,      
-            ((-1 * _power) + 2) * (0.5f + (0.5f * throatHealth)),
+            (-1 * _power) + 2,
             (0.75f * throatHealth) + 0.25f //Mathf.Clamp((throatHealth/100) + 0.25f, 0.01f, 1)
             );
     }
