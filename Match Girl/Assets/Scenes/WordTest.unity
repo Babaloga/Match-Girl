@@ -66682,9 +66682,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   l_matches: 25
-  l_money: 0
+  l_money: 450
   l_hunger: 100
   l_warmth: 0
+  formattedMoney: 
 --- !u!1 &1729150499
 GameObject:
   m_ObjectHideFlags: 0

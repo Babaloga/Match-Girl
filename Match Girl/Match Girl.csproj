@@ -385,6 +385,7 @@
     <Compile Include="Assets\Scripts\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts\Utility\Currency.cs" />
     <Compile Include="Assets\Scripts\Utility\GlobalSpriteDepth.cs" />
     <Compile Include="Assets\Scripts\Utility\ShowOnlyAttribute.cs" />
     <Compile Include="Assets\Scripts\Utility\SpriteDepthRenderer.cs" />
