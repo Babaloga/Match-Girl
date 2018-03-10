@@ -14,9 +14,6 @@ public class PlayerStatsManager : MonoBehaviour {
     public float l_hunger = 100;
     public float l_warmth;
 
-    [ShowOnly]
-    public string formattedMoney = "";
-
     public static float Warmth
     {
         get
@@ -50,8 +47,6 @@ public class PlayerStatsManager : MonoBehaviour {
         l_money = money;
         l_hunger = hunger;
         l_warmth = _warmth;
-
-        formattedMoney = Currency.FormatPounds(money);
 
 #endif
 

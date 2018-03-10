@@ -45,14 +45,14 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: -0.66302145
-    e01: -0.74860096
+  - e00: -0.5702297
+    e01: -0.8214856
     e02: 0
-    e03: -0.0073054
-    e10: 0.74860096
-    e11: -0.66302145
+    e03: -0.023745442
+    e10: 0.8214856
+    e11: -0.5702297
     e12: 0
-    e13: -0.002454752
+    e13: -0.0013513871
     e20: 0
     e21: 0
     e22: 1
@@ -61,14 +61,14 @@ Mesh:
     e31: 0
     e32: 0
     e33: 1
-  - e00: -0.9995076
-    e01: -0.031392902
+  - e00: -0.9996841
+    e01: 0.0251427
     e02: 0
-    e03: -0.22449867
-    e10: 0.031392902
-    e11: -0.9995076
+    e03: -0.18907553
+    e10: -0.0251427
+    e11: -0.9996841
     e12: 0
-    e13: -0.24156263
+    e13: -0.2900202
     e20: 0
     e21: 0
     e22: 1
@@ -110,16 +110,16 @@ Mesh:
     boneIndex[1]: 0
     boneIndex[2]: 0
     boneIndex[3]: 0
-  - weight[0]: 0.82
-    weight[1]: 0.18
+  - weight[0]: 1
+    weight[1]: 0
     weight[2]: 0
     weight[3]: 0
     boneIndex[0]: 1
     boneIndex[1]: 0
     boneIndex[2]: 0
     boneIndex[3]: 0
-  - weight[0]: 0.86
-    weight[1]: 0.13999999
+  - weight[0]: 0.66896534
+    weight[1]: 0.33103466
     weight[2]: 0
     weight[3]: 0
     boneIndex[0]: 1
@@ -158,8 +158,8 @@ Mesh:
     boneIndex[1]: 0
     boneIndex[2]: 0
     boneIndex[3]: 0
-  - weight[0]: 0.51938117
-    weight[1]: 0.48061883
+  - weight[0]: 0.56281203
+    weight[1]: 0.43718797
     weight[2]: 0
     weight[3]: 0
     boneIndex[0]: 1
@@ -174,12 +174,12 @@ Mesh:
     boneIndex[1]: 0
     boneIndex[2]: 0
     boneIndex[3]: 0
-  - weight[0]: 0.9908358
-    weight[1]: 0.009164258
+  - weight[0]: 0.8067815
+    weight[1]: 0.1932185
     weight[2]: 0
     weight[3]: 0
-    boneIndex[0]: 0
-    boneIndex[1]: 1
+    boneIndex[0]: 1
+    boneIndex[1]: 0
     boneIndex[2]: 0
     boneIndex[3]: 0
   - weight[0]: 1
@@ -190,8 +190,8 @@ Mesh:
     boneIndex[1]: 0
     boneIndex[2]: 0
     boneIndex[3]: 0
-  - weight[0]: 0.98692083
-    weight[1]: 0.013079145
+  - weight[0]: 0.86871946
+    weight[1]: 0.13128056
     weight[2]: 0
     weight[3]: 0
     boneIndex[0]: 0
@@ -347,22 +347,6 @@ MonoBehaviour:
     boneIndex1: -1
     boneIndex2: -1
     boneIndex3: -1
-  - weight0: 0.82
-    weight1: 0.18
-    weight2: 0
-    weight3: 0
-    boneIndex0: 1
-    boneIndex1: 0
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0.86
-    weight1: 0.13999999
-    weight2: 0
-    weight3: 0
-    boneIndex0: 1
-    boneIndex1: 0
-    boneIndex2: -1
-    boneIndex3: -1
   - weight0: 1
     weight1: 0
     weight2: 0
@@ -371,32 +355,8 @@ MonoBehaviour:
     boneIndex1: -1
     boneIndex2: -1
     boneIndex3: -1
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0.51938117
-    weight1: 0.48061883
+  - weight0: 0.66896534
+    weight1: 0.33103466
     weight2: 0
     weight3: 0
     boneIndex0: 1
@@ -411,12 +371,12 @@ MonoBehaviour:
     boneIndex1: -1
     boneIndex2: -1
     boneIndex3: -1
-  - weight0: 0.9908358
-    weight1: 0.009164258
+  - weight0: 1
+    weight1: 0
     weight2: 0
     weight3: 0
-    boneIndex0: 0
-    boneIndex1: 1
+    boneIndex0: 1
+    boneIndex1: -1
     boneIndex2: -1
     boneIndex3: -1
   - weight0: 1
@@ -427,8 +387,48 @@ MonoBehaviour:
     boneIndex1: -1
     boneIndex2: -1
     boneIndex3: -1
-  - weight0: 0.98692083
-    weight1: 0.013079145
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.56281203
+    weight1: 0.43718797
+    weight2: 0
+    weight3: 0
+    boneIndex0: 1
+    boneIndex1: 0
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 1
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.8067815
+    weight1: 0.1932185
+    weight2: 0
+    weight3: 0
+    boneIndex0: 1
+    boneIndex1: 0
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.86871946
+    weight1: 0.13128056
     weight2: 0
     weight3: 0
     boneIndex0: 0
@@ -458,14 +458,14 @@ MonoBehaviour:
   m_Indices: 03000000060000000a0000000b000000030000000a000000040000000a0000000500000006000000050000000a0000000800000009000000040000000a0000000400000009000000090000000b0000000a000000090000000c0000000b000000080000000c00000009000000010000000b0000000c00000002000000010000000c000000070000000c00000008000000070000000d000000000000000000000002000000070000000c000000070000000200000007000000080000000d000000040000000d00000008000000
   m_BindPoses:
   - bindPose:
-      e00: -0.66302145
-      e01: -0.74860096
+      e00: -0.5702297
+      e01: -0.8214856
       e02: 0
-      e03: -0.0073054
-      e10: 0.74860096
-      e11: -0.66302145
+      e03: -0.023745442
+      e10: 0.8214856
+      e11: -0.5702297
       e12: 0
-      e13: -0.002454752
+      e13: -0.0013513871
       e20: 0
       e21: 0
       e22: 1
@@ -474,20 +474,20 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.32246244
-    path: R_hip_posJNT (1)/R_hip_rotJNT /R_kneeJNT/R_ankleJNT
-    name: R_ankleJNT
+    boneLength: 0.32246208
+    path: R_hip_posJNT (1)/R_hip_rotJNT /R_kneeJNT/R_ankleJNT/R_ankleDSPJNT
+    name: R_ankleDSPJNT
     color: {r: 1, g: 0, b: 0, a: 1}
     zOrder: 0
   - bindPose:
-      e00: -0.9995076
-      e01: -0.031392902
+      e00: -0.9996841
+      e01: 0.0251427
       e02: 0
-      e03: -0.22449867
-      e10: 0.031392902
-      e11: -0.9995076
+      e03: -0.18907553
+      e10: -0.0251427
+      e11: -0.9996841
       e12: 0
-      e13: -0.24156263
+      e13: -0.2900202
       e20: 0
       e21: 0
       e22: 1
@@ -497,8 +497,8 @@ MonoBehaviour:
       e32: 0
       e33: 1
     boneLength: 0.29
-    path: R_hip_posJNT (1)/R_hip_rotJNT /R_kneeJNT/R_ankleJNT/R_footJNT
-    name: R_footJNT
+    path: R_hip_posJNT (1)/R_hip_rotJNT /R_kneeJNT/R_ankleJNT/R_footJNT/R_footDSPJNT
+    name: R_footDSPJNT
     color: {r: 1, g: 0.75, b: 0, a: 1}
     zOrder: 0
   m_Blendshapes: []

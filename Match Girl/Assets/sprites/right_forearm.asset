@@ -45,14 +45,14 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: -0.053514715
-    e01: -0.9985671
+  - e00: -0.059261452
+    e01: -0.9982426
     e02: 0
-    e03: 0.0076165223
-    e10: 0.9985671
-    e11: -0.053514715
+    e03: 0.0130538745
+    e10: 0.9982426
+    e11: -0.059261452
     e12: 0
-    e13: -0.008568032
+    e13: -0.009693744
     e20: 0
     e21: 0
     e22: 1
@@ -300,25 +300,25 @@ MonoBehaviour:
   m_Indices: 030000000200000004000000050000000400000000000000020000000000000004000000010000000500000000000000
   m_BindPoses:
   - bindPose:
-      e00: -0.053514715
-      e01: -0.9985671
+      e00: -0.059261452
+      e01: -0.9982426
       e02: 0
-      e03: 0.0076165223
-      e10: 0.9985671
-      e11: -0.053514715
+      e03: 0.0130538745
+      e10: 0.9982426
+      e11: -0.059261452
       e12: 0
-      e13: -0.008568032
+      e13: -0.009693744
       e20: 0
       e21: 0
       e22: 1
-      e23: 0
+      e23: -1.6527624e-10
       e30: 0
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.6695044
-    path: spine2JNT/spine3JNT/collarJNT/R_shoulder_posJNT/R_shoulder_rotJNT /R_elbowJNT
-    name: R_elbowJNT
+    boneLength: 0.6695049
+    path: spine2JNT/spine3JNT/collarJNT/R_shoulder_posJNT/R_shoulder_rotJNT /R_elbowJNT/R_elbowDSPJNT
+    name: R_elbowDSPJNT
     color: {r: 1, g: 0, b: 0, a: 1}
     zOrder: 0
   m_Blendshapes: []

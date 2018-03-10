@@ -45,14 +45,14 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: 0.004989922
-    e01: -0.9999876
+  - e00: 0.077940084
+    e01: -0.9969584
     e02: 0
-    e03: -0.002665145
-    e10: 0.9999876
-    e11: 0.004989922
+    e03: 0.0028848164
+    e10: 0.9969584
+    e11: 0.077940084
     e12: 0
-    e13: -0.0054638595
+    e13: -0.0043540094
     e20: 0
     e21: 0
     e22: 1
@@ -338,25 +338,25 @@ MonoBehaviour:
   m_Indices: 050000000700000006000000050000000400000000000000010000000700000005000000050000000200000001000000020000000500000000000000010000000300000007000000
   m_BindPoses:
   - bindPose:
-      e00: 0.004989922
-      e01: -0.9999876
+      e00: 0.077940084
+      e01: -0.9969584
       e02: 0
-      e03: -0.002665145
-      e10: 0.9999876
-      e11: 0.004989922
+      e03: 0.0028848164
+      e10: 0.9969584
+      e11: 0.077940084
       e12: 0
-      e13: -0.0054638595
+      e13: -0.0043540094
       e20: 0
       e21: 0
       e22: 1
-      e23: 0
+      e23: 0.0000000012503341
       e30: 0
       e31: 0
       e32: 0
       e33: 1
     boneLength: 0.39
-    path: spine2JNT/spine3JNT/collarJNT/R_shoulder_posJNT/R_shoulder_rotJNT /R_elbowJNT/R_wristJNT
-    name: R_wristJNT
+    path: spine2JNT/spine3JNT/collarJNT/R_shoulder_posJNT/R_shoulder_rotJNT /R_elbowJNT/R_wristJNT/R_wristDSPJNT
+    name: R_wristDSPJNT
     color: {r: 1, g: 0, b: 0, a: 1}
     zOrder: 0
   m_Blendshapes: []
