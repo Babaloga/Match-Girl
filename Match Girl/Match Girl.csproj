@@ -325,6 +325,7 @@
     <Compile Include="Assets\Scripts\Game\CityDay.cs" />
     <Compile Include="Assets\Scripts\Game\CitySceneManager.cs" />
     <Compile Include="Assets\Scripts\Game\DayNightCycle.cs" />
+    <Compile Include="Assets\Scripts\Game\GameStateManager.cs" />
     <Compile Include="Assets\Scripts\Game\PlayerStatsUI.cs" />
     <Compile Include="Assets\Scripts\Misc_\Fade.cs" />
     <Compile Include="Assets\Scripts\Misc_\FindMissingScripts.cs" />
