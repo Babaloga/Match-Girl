@@ -40,7 +40,7 @@ public class PlayerStatsUI : MonoBehaviour {
 
             case StatType.Money:
 
-                text.text = Currency.FormatPounds(PlayerStatsManager.money);
+                text.text = PlayerStatsManager.money + " Pence";
 
                 if (previousValue != PlayerStatsManager.money)
                 {
