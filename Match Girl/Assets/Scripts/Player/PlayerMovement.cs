@@ -12,24 +12,20 @@ public class PlayerMovement : MonoBehaviour {
 
     public static GameObject player;
 
-    public LayerMask groundMask;
-
     private bool frozen = false;
-
-    private Vector3 normal = Vector3.up;
 
 	void Start () {
         player = gameObject;
         speed = baseSpeed;
 	}
+	
+	void FixedUpdate () {
 
-    private void FixedUpdate()
-    {
         if (!frozen)
         {
-            movement = Quaternion.FromToRotation(Vector3.up, normal) * Vector3.Normalize(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")));
+            movement = Vector3.Normalize(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")));
 
-            transform.Translate(movement * (speed * Time.deltaTime));
+            transform.Translate(movement * (speed * Time.fixedDeltaTime));
         }
     }
 
@@ -47,20 +43,11 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey(KeyCode.Space))
         {
             speed = (1f / 2f) * baseSpeed;
+            print("Speed: "+speed);
         }
         else
         {
             speed = baseSpeed;
-        }
-
-        Collider coll = GetComponent<Collider>();
-
-        RaycastHit hit = new RaycastHit();
-        if (Physics.Raycast(new Ray(transform.position, Vector3.down), out hit, Mathf.Infinity, groundMask))
-        {
-            normal = hit.normal;
-
-            Debug.DrawLine(transform.position, hit.point);
         }
     }
 }
