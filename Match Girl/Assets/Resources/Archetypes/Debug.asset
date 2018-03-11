@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259e5e3b232c2054bbfae6dee991f3d6, type: 3}
+  m_Name: Debug
+  m_EditorClassIdentifier: 
+  hats:
+  - {fileID: 11400000, guid: d8997990a4c177641a9a043c38fefb05, type: 2}
+  heads:
+  - {fileID: 11400000, guid: baaa698513b839145a8d71aabb86b167, type: 2}
+  bodies:
+  - {fileID: 11400000, guid: 51460070ecd5cdd4db7d8ebfab70efb8, type: 2}
+  legs:
+  - {fileID: 11400000, guid: 68998557cf93b424ba58864f918f7f8f, type: 2}
+  feet:
+  - {fileID: 11400000, guid: c6acdbc12a9da7c4e885309221911b8d, type: 2}
