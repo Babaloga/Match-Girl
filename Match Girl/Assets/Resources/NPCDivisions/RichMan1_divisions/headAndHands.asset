@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbd89fd88b07ba40ab2603d4870bf48, type: 3}
+  m_Name: headAndHands
+  m_EditorClassIdentifier: 
+  modelType: 2
+  divisionType: 1
+  parts:
+  - spriteMesh: {fileID: 11400000, guid: b980bd0ebcb11794281147ee171e41c7, type: 2}
+  - spriteMesh: {fileID: 11400000, guid: 6182d58bcbd6c894ea2d3e19cddcd867, type: 2}
+  - spriteMesh: {fileID: 11400000, guid: 937ad6f2e776e214e921dd061dfa089d, type: 2}

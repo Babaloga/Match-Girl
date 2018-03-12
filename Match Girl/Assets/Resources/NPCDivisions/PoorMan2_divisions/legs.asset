@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbd89fd88b07ba40ab2603d4870bf48, type: 3}
+  m_Name: legs
+  m_EditorClassIdentifier: 
+  modelType: 1
+  divisionType: 3
+  parts:
+  - spriteMesh: {fileID: 11400000, guid: 92113ffdcae0e154382b711c143376e7, type: 2}
+  - spriteMesh: {fileID: 11400000, guid: ebbdf30c63e274842817a0bb675c94bb, type: 2}
+  - spriteMesh: {fileID: 11400000, guid: b6755dc2b7e37c54eadd01de5985182d, type: 2}
+  - spriteMesh: {fileID: 11400000, guid: 4b8cc5baed193494cb5c19db8b74bec5, type: 2}

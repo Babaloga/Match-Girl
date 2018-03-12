@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259e5e3b232c2054bbfae6dee991f3d6, type: 3}
+  m_Name: PoorMan
+  m_EditorClassIdentifier: 
+  hats:
+  - {fileID: 11400000, guid: 4d847f2e61de80d49b28d44363977a86, type: 2}
+  - {fileID: 11400000, guid: bc0ba03d3f6642849b6bf0434207c8e3, type: 2}
+  heads:
+  - {fileID: 11400000, guid: 620cd9e7ddbe5544188519be2a67f5cb, type: 2}
+  - {fileID: 11400000, guid: 050c96a6e540012458c4414cd4c55e59, type: 2}
+  bodies:
+  - {fileID: 11400000, guid: d78b3766e2c99bd40a1a321713c0e22f, type: 2}
+  - {fileID: 11400000, guid: e3d44b30628bee941a60bf49fc527df7, type: 2}
+  legs:
+  - {fileID: 11400000, guid: 50e49736d29d6224eb4b21440fbc98ac, type: 2}
+  - {fileID: 11400000, guid: 96dda0762c19a3d4f813943da218bd7e, type: 2}
+  feet:
+  - {fileID: 11400000, guid: 66876c3d5e7b4a547ba0c2495548af63, type: 2}
+  - {fileID: 11400000, guid: 6e92db13c4fe8054d8cd47d88b492344, type: 2}
