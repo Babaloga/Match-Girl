@@ -336,6 +336,7 @@
     <Compile Include="Assets\Scripts\NPCs\Generation\Generator.cs" />
     <Compile Include="Assets\Scripts\NPCs\Generation\Model.cs" />
     <Compile Include="Assets\Scripts\NPCs\MoveTo.cs" />
+    <Compile Include="Assets\Scripts\NPCs\NPCAnimation.cs" />
     <Compile Include="Assets\Scripts\NPCs\NPCInteraction.cs" />
     <Compile Include="Assets\Scripts\NPCs\NPCInteractionBasic.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCallout.cs" />
@@ -389,6 +390,7 @@
     <Compile Include="Assets\Scripts\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\Utility\Currency.cs" />
     <Compile Include="Assets\Scripts\Utility\GlobalSpriteDepth.cs" />
+    <Compile Include="Assets\Scripts\Utility\RotationLock.cs" />
     <Compile Include="Assets\Scripts\Utility\ShowOnlyAttribute.cs" />
     <Compile Include="Assets\Scripts\Utility\SpriteDepthRenderer.cs" />
     <Compile Include="Assets\Scripts\World\LightFlicker.cs" />
