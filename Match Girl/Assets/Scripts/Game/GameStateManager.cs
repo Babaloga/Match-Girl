@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour {
 
-    public static GameState state = GameState.playing;
+    public static GameState state;
 
     public PlayerMovement playerMovement;
 
     private void Start()
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
+        state = GameState.playing;
     }
 
     private void Update()
     {
+        print(state);
+
         switch (state)
         {
             case GameState.playing:

@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 222182383776024988}
   - component: {fileID: 114316272543935026}
   - component: {fileID: 114838136162945954}
+  - component: {fileID: 114958575588392816}
   m_Layer: 5
   m_Name: Quit to Menu
   m_TagString: Untagged
@@ -615,6 +616,7 @@ GameObject:
   - component: {fileID: 222440803562713920}
   - component: {fileID: 114536743380245078}
   - component: {fileID: 114042853324456402}
+  - component: {fileID: 114533680463318618}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -700,7 +702,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114536743380245078}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114533680463318618}
+        m_MethodName: LoadLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Street
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114044758990366412
@@ -1536,7 +1549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fader: {fileID: 0}
   fadeOnAwake: 0
-  fadeDuration: 3
+  fadeDuration: 1
 --- !u!114 &114412685212198746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1654,6 +1667,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Button
+--- !u!114 &114533680463318618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1883919275498078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 789e66c262f2e084fb52c331cef8a448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invokeNextLevel: 0
 --- !u!114 &114536743380245078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2307,7 +2332,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114316272543935026}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114958575588392816}
+        m_MethodName: LoadLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Start Menu
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114863821644090094
@@ -2476,6 +2512,18 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &114958575588392816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174245596694368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 789e66c262f2e084fb52c331cef8a448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invokeNextLevel: 0
 --- !u!114 &114960338707277274
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -47,8 +47,6 @@ public class BuildingCamPass : MonoBehaviour {
             }
         }
 
-        print(gameObject.name + " " + target.position.z + " " + building.transform.position.z + " " + building.bounds.extents.z);
-
         if(target.position.z > building.transform.position.z + building.bounds.extents.z)
         {
             gameObject.layer = passLayer;
