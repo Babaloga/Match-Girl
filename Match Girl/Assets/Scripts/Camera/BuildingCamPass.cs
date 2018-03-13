@@ -23,12 +23,12 @@ public class BuildingCamPass : MonoBehaviour {
     bool behind = false;
     bool bubbleOverlaps = false;
 
-    MeshRenderer rend;
+    public MeshRenderer rend;
 
     private void Start()
     {
         building = GetComponent<Collider>();
-        rend = GetComponent<MeshRenderer>();
+        if(!rend) rend = GetComponent<MeshRenderer>();
         instanceMaterial = new Material(rend.material);
         rend.material = instanceMaterial;
     }
