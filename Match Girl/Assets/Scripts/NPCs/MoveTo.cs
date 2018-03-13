@@ -65,25 +65,27 @@ public class MoveTo : MonoBehaviour
 
     private void Update()
     {
-        agentStopped = agent.isStopped;
+        if (agent.isOnNavMesh) agentStopped = agent.isStopped;
+
         if (!overriden)
         {
             if (paused)
             {
-                agent.isStopped = true;
+                if(agent.isOnNavMesh)
+                    agent.isStopped = true;
 
                 if (Time.time - timeMarker > pauseTime)
                 {
-                    Resume();
+                    if (agent.isOnNavMesh) Resume();
                 }
             }
             else
             {
-                agent.isStopped = false;
+                if (agent.isOnNavMesh) agent.isStopped = false;
 
                 if (Time.time - timeMarker > timeUntilNextPause)
                 {
-                    Pause();
+                    if (agent.isOnNavMesh) Pause();
                 }
             }
 
@@ -136,7 +138,7 @@ public class MoveTo : MonoBehaviour
         {
             //Break while look if more than 100 iterations occur to prevent freezing.
             if(i > 100) {
-                Debug.LogWarning("Couldn't find viable ground.", transform);
+                Debug.LogWarning("Couldn't find viable ground under " + startPoint.name, transform);
                 break;
             }
 

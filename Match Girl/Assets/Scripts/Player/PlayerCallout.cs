@@ -35,7 +35,7 @@ public class PlayerCallout : MonoBehaviour {
 
     private float power;
 
-    public SpecialInteraction[] interactions;
+    public static List<SpecialInteraction> interactions;
 
 	void Start () {
         npcQueue = new Queue<NPCInteraction>();
@@ -46,20 +46,19 @@ public class PlayerCallout : MonoBehaviour {
         cast.enabled = false;
         gameObject.layer = 13;
         transform.localScale = new Vector3(1 / transform.parent.localScale.x, 1 / transform.parent.localScale.y, 1 / transform.parent.localScale.z);
+        interactions = new List<SpecialInteraction>();
 	}
 
     private void Update()
     {
         //Checking for nearby special interactions
-        interactions = FindObjectsOfType<SpecialInteraction>();
-
         SpecialInteraction nearest = null;
         float nearestDistance = Mathf.Infinity;
 
         foreach(SpecialInteraction spec in interactions)
         {
             Vector3 relative = spec.transform.position - transform.position;
-            if (relative.magnitude <= spec.radius && relative.magnitude < nearestDistance)
+            if (relative.magnitude < nearestDistance)
             {
                 nearest = spec;
                 nearestDistance = relative.magnitude;
@@ -238,8 +237,13 @@ public class PlayerCallout : MonoBehaviour {
         cast.enabled = false;
     }
 
-    //private void OnDrawGizmos()
-    //{
-    //    if(Input.GetKey(KeyCode.Space)) Gizmos.DrawSphere(transform.position, Mathf.Clamp(powerCurve.Evaluate((Time.time - spaceDown) / timeMax) * timePowerMultiplier, powerMin, (timePowerMultiplier) - (100/throatHealth) * 5));
-    //}
+    public static void WithinRange(SpecialInteraction _spec)
+    {
+        interactions.Add(_spec);
+    }
+
+    public static void OutofRange(SpecialInteraction _spec)
+    {
+        interactions.Remove(_spec);
+    }
 }

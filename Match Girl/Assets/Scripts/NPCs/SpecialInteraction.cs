@@ -16,4 +16,20 @@ public class SpecialInteraction : MonoBehaviour {
 	void Start () {
         if(!tooltip) tooltip = GetComponentInChildren<Canvas>();
 	}
+
+    private void Update()
+    {
+        Vector3 relative = PlayerMovement.player.transform.position - transform.position;
+
+        bool near = PlayerCallout.interactions.Contains(this);
+
+        if(relative.magnitude <= radius && !near)
+        {
+            PlayerCallout.WithinRange(this);
+        }
+        else if (relative.magnitude > radius && near)
+        {
+            PlayerCallout.OutofRange(this);
+        }
+    }
 }

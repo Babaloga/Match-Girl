@@ -7,9 +7,9 @@ public class EndScreenLoader : MonoBehaviour {
 
     public string endScreenName;
 
-    float time;
-    float money;
-    float matches;
+    public float time;
+    public float money;
+    public float matches;
 
     public static EndScreenLoader instance;
 

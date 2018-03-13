@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Splash.unity
-    guid: 75c16315099e821498bcd65f055a8d7a
-  - enabled: 1
     path: Assets/Scenes/Start Menu.unity
     guid: 0add0789246c4644887caf0256b6613f
   - enabled: 1
@@ -26,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WordTest.unity
     guid: f449209d28c6dc146ae3e0b6bc10cf22
+  - enabled: 1
+    path: Assets/Scenes/Street.unity
+    guid: a8f68da8c2ed816458950e287cca39df
   - enabled: 1
     path: Assets/Scenes/ResourceScreen.unity
     guid: ebb69e8f5f3de214686bff951016fea6

@@ -183,10 +183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f015c0fa6d5347e4bb88cb14b565d796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cycleDuration: 60
-  daylightDuration: 30
+  cycleDuration: 180
+  daylightDuration: 90
   cycleStart: 0
-  cycleHighTemperature: 75
+  cycleHighTemperature: 50
   cycleLowTemperature: 0
   sunObject: {fileID: 4427818834990626}
   sun: {fileID: 108010827738418868}
@@ -245,7 +245,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   endDayAutomatically: 1
-  endDayTime: 30
+  endDayTime: 90
   gettingLate: {fileID: 0}
   goHome: {fileID: 0}
   screenFader: {fileID: 0}
