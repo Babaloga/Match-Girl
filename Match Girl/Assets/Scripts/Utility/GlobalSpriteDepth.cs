@@ -14,12 +14,14 @@ public class GlobalSpriteDepth : MonoBehaviour {
 
         foreach(SpriteRenderer s in sceneRenderers)
         {
-            if(!s.GetComponent<SpriteDepthRenderer>()) s.gameObject.AddComponent<SpriteDepthRenderer>();
+            if(!s.GetComponent<SpriteDepthRenderer>())
+                s.gameObject.AddComponent<SpriteDepthRenderer>();
         }
 
         foreach(SpriteMeshInstance s in sceneInstances)
         {
-            if (!s.GetComponent<SpriteDepthRenderer>()) s.gameObject.AddComponent<SpriteDepthRenderer>();
+            if (!s.GetComponent<SpriteDepthRenderer>())
+                s.gameObject.AddComponent<SpriteDepthRenderer>();
         }
 	}
 }
