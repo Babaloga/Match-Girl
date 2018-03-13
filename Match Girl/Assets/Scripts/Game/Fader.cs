@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CanvasGroup))]
 public class Fader : MonoBehaviour {
 
     public CanvasGroup fader;
@@ -27,11 +28,11 @@ public class Fader : MonoBehaviour {
     {
         if (fadingOut && fader.alpha > 0)
         {
-            fader.alpha -= (1f / fadeDuration) * Time.deltaTime;
+            fader.alpha -= (1f / fadeDuration) * Time.unscaledDeltaTime;
         }
         else if (fadingIn && fader.alpha < 1)
         {
-            fader.alpha += (1f / fadeDuration) * Time.deltaTime;
+            fader.alpha += (1f / fadeDuration) * Time.unscaledDeltaTime;
         }
     }
 
@@ -39,12 +40,16 @@ public class Fader : MonoBehaviour {
     {
         fadingIn = true;
         fadingOut = false;
+
+        fader.interactable = true;
     }
 
     public void FadeOut()
     {
         fadingIn = false;
         fadingOut = true;
+
+        fader.interactable = false;
     }
 
 }

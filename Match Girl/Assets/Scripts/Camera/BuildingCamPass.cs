@@ -47,6 +47,8 @@ public class BuildingCamPass : MonoBehaviour {
             }
         }
 
+        print(gameObject.name + " " + target.position.z + " " + building.transform.position.z + " " + building.bounds.extents.z);
+
         if(target.position.z > building.transform.position.z + building.bounds.extents.z)
         {
             gameObject.layer = passLayer;
@@ -66,6 +68,8 @@ public class BuildingCamPass : MonoBehaviour {
             behind = false;
         }
 
+        //print(gameObject.name + " " + behind + " " + bubbleOverlaps);
+
         if(behind && bubbleOverlaps)
         {
             time1 = Time.time;
@@ -79,4 +83,9 @@ public class BuildingCamPass : MonoBehaviour {
             if(rend.material.color.a >= 1) rend.material = opaqueMaterial;
         }
     }
+
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawCube(building.bounds.center, building.bounds.size);
+    //}
 }

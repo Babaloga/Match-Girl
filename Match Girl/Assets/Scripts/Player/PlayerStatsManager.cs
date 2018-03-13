@@ -14,6 +14,8 @@ public class PlayerStatsManager : MonoBehaviour {
     public float l_hunger = 100;
     public float l_warmth;
 
+    public float min_warmth = 0;
+
     public static float Warmth
     {
         get
@@ -42,13 +44,16 @@ public class PlayerStatsManager : MonoBehaviour {
         _warmth = temperatureClass.temperature;
 
 #if UNITY_EDITOR
-
         l_matches = matches;
         l_money = money;
         l_hunger = hunger;
         l_warmth = _warmth;
-
 #endif
+
+        if(_warmth < min_warmth)
+        {
+            GameStateManager.state = GameState.dead;
+        }
 
     }
 }

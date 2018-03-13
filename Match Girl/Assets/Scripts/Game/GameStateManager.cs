@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour {
 
-	public enum GameState
-    {
-        playing,
-        dialogue,
-        menu,
-        scripted
-    }
+    public static GameState state = GameState.playing;
 
-    public static GameState state;
+    public PlayerMovement playerMovement;
+
+    private void Start()
+    {
+        playerMovement = FindObjectOfType<PlayerMovement>();
+    }
 
     private void Update()
     {
@@ -23,12 +22,18 @@ public class GameStateManager : MonoBehaviour {
                 //Normal HUD UI
                 //Player has control
 
+                playerMovement.enabled = true;
+                Time.timeScale = 1;
+
                 break;
 
             case GameState.dialogue:
 
                 //Dialogue UI
                 //Player is frozen
+
+                playerMovement.enabled = false;
+                Time.timeScale = 1;
 
                 break;
 
@@ -38,6 +43,9 @@ public class GameStateManager : MonoBehaviour {
                 //Player is frozen
                 //Game is frozen
 
+                playerMovement.enabled = false;
+                Time.timeScale = 0.001f;
+
                 break;
 
             case GameState.scripted:
@@ -45,7 +53,31 @@ public class GameStateManager : MonoBehaviour {
                 //No UI
                 //Objects controlled by script
 
+                playerMovement.enabled = false;
+                Time.timeScale = 1;
+
+                break;
+
+            case GameState.dead:
+
+                //Game is frozen
+                //Game over UI
+
+                playerMovement.enabled = false;
+                Time.timeScale = 0.001f;
+
+                DeathUI.ShowDeathUI();
+
                 break;
         }
     }
+}
+
+public enum GameState
+{
+    playing,
+    dialogue,
+    menu,
+    scripted,
+    dead
 }
