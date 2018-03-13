@@ -16,8 +16,6 @@ public class GameStateManager : MonoBehaviour {
 
     private void Update()
     {
-        print(state);
-
         switch (state)
         {
             case GameState.playing:
