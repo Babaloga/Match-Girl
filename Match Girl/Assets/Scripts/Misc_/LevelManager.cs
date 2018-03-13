@@ -9,23 +9,20 @@ public class LevelManager : MonoBehaviour {
 
     public void Start()
     {
-        if (invokeNextLevel == 0)
-        {
-
-        }
-        else
+        if (invokeNextLevel != 0)
         {
             Invoke("nextLevel", invokeNextLevel);
         }
     }
     public void LoadLevel(string name)
     {
-        SceneManager.LoadScene(name);
+        SceneManager.LoadScene(name, LoadSceneMode.Single);
     }
 
-    public void quitGame()
+    public void ReloadCurrent()
     {
-        Application.Quit();
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
     public void nextLevel()

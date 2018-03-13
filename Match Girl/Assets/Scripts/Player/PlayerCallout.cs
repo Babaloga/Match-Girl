@@ -35,6 +35,8 @@ public class PlayerCallout : MonoBehaviour {
 
     private float power;
 
+    public SpecialInteraction[] interactions;
+
 	void Start () {
         npcQueue = new Queue<NPCInteraction>();
         source = GetComponent<WordSource>();
@@ -48,6 +50,28 @@ public class PlayerCallout : MonoBehaviour {
 
     private void Update()
     {
+        //Checking for nearby special interactions
+        interactions = FindObjectsOfType<SpecialInteraction>();
+
+        SpecialInteraction nearest = null;
+        float nearestDistance = Mathf.Infinity;
+
+        foreach(SpecialInteraction spec in interactions)
+        {
+            Vector3 relative = spec.transform.position - transform.position;
+            if (relative.magnitude <= spec.radius && relative.magnitude < nearestDistance)
+            {
+                nearest = spec;
+                nearestDistance = relative.magnitude;
+                if(spec.tooltip) spec.tooltip.enabled = true;
+            }
+            else
+            {
+                if (spec.tooltip) spec.tooltip.enabled = false;
+            }
+        }
+
+
         //NPC Dialogue Queueing
         if(npcQueue.Count > 0 && !DialogueReader.reader.showingDialogue)
         {
@@ -69,11 +93,17 @@ public class PlayerCallout : MonoBehaviour {
 
         if (!muted)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && (Time.time - speakTime) > speakCooldown)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                spaceDown = Time.time;
-                down = true;
-                power = 0;
+                if (nearest != null)
+                {
+                    DialogueReader.reader.StartDialogue(nearest.dialogue);
+                }
+                else if ((Time.time - speakTime) > speakCooldown) {
+                    spaceDown = Time.time;
+                    down = true;
+                    power = 0;
+                }
             }
 
             
@@ -91,7 +121,7 @@ public class PlayerCallout : MonoBehaviour {
                 down = false;
             }
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) && down)
             {
                 power = powerCurve.Evaluate(Mathf.Clamp01((Time.time - spaceDown) / timeMax) * throatHealth);
 
