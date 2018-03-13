@@ -6,6 +6,7 @@ using UnityEngine;
 public class DeathUI : MonoBehaviour {
 
     public static DeathUI instance;
+    public AudioClip deathMusic;
 
     Fader fader;
 
@@ -29,6 +30,10 @@ public class DeathUI : MonoBehaviour {
 
                 break;
         }
+
+        Camera.main.GetComponent<AudioSource>().clip = instance.deathMusic;
+        Camera.main.GetComponent<AudioSource>().loop = false;
+        if(!Camera.main.GetComponent<AudioSource>().isPlaying) Camera.main.GetComponent<AudioSource>().Play();
 
         instance.fader.FadeIn();
     }
