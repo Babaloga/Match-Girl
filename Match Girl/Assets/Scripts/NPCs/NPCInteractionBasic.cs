@@ -136,6 +136,8 @@ public class NPCInteractionBasic : MonoBehaviour {
         PlayerStatsManager.money += (int) (matchesWanted * priceForMatch);
         PlayerStatsManager.matches -= matchesWanted;
 
+        wantsMatches = false;
+
         GetComponent<MoveTo>().overriden = false;
         GetComponent<MoveTo>().Pause(2f);
 
