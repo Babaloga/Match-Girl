@@ -264,6 +264,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 15
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!114 &114370514757011052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -355,7 +358,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   chargeBar: {fileID: 0}
-  interactions: []
 --- !u!114 &114677827770916160
 MonoBehaviour:
   m_ObjectHideFlags: 1
