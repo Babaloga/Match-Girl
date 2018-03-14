@@ -15,7 +15,15 @@ public class PlayerStatsUI : MonoBehaviour {
         Matches,
     }
 
+    public enum Scene
+    {
+        Street,
+        End
+    }
+
     public StatType thisElementType;
+
+    public Scene thisScene = Scene.Street;
 
     private void Start()
     {
@@ -28,26 +36,43 @@ public class PlayerStatsUI : MonoBehaviour {
         {
             case StatType.Matches:
 
-                text.text = PlayerStatsManager.matches + " Matches";
-
-                if(previousValue != PlayerStatsManager.matches)
+                if (thisScene == Scene.Street)
                 {
-                    GetComponent<WordSource>().Speak((PlayerStatsManager.matches - previousValue).ToString("+0;-#"));
+                    text.text = PlayerStatsManager.matches + " Matches";
+
+                    if (previousValue != PlayerStatsManager.matches)
+                    {
+                        GetComponent<WordSource>().Speak((PlayerStatsManager.matches - previousValue).ToString("+0;-#"));
+                    }
+
+                    previousValue = PlayerStatsManager.matches;
+                }
+                else
+                {
+                    text.text = EndScreenLoader.matches + " Matches";
                 }
 
-                previousValue = PlayerStatsManager.matches;
                 break;
 
             case StatType.Money:
 
-                text.text = Currency.FormatPounds(PlayerStatsManager.money);
-
-                if (previousValue != PlayerStatsManager.money)
+                if (thisScene == Scene.Street)
                 {
-                    GetComponent<WordSource>().Speak((PlayerStatsManager.money - previousValue).ToString("+0;-#"));
+                    text.text = Currency.FormatPounds(PlayerStatsManager.money);
+
+                    if (previousValue != PlayerStatsManager.money)
+                    {
+                        GetComponent<WordSource>().Speak((PlayerStatsManager.money - previousValue).ToString("+0;-#"));
+                    }
+
+                    previousValue = PlayerStatsManager.money;
+
+                }
+                else
+                {
+                    text.text = Currency.FormatPounds(EndScreenLoader.money);
                 }
 
-                previousValue = PlayerStatsManager.money;
                 break;
         }
     }

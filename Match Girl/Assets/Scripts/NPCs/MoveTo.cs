@@ -137,7 +137,7 @@ public class MoveTo : MonoBehaviour
         while (!validPoint)
         {
             //Break while look if more than 100 iterations occur to prevent freezing.
-            if(i > 100) {
+            if(i > 1000) {
                 Debug.LogWarning("Couldn't find viable ground under " + startPoint.name, transform);
                 break;
             }

@@ -7308,6 +7308,7 @@ MonoBehaviour:
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
   opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  rend: {fileID: 0}
 --- !u!1001 &110345650
 Prefab:
   m_ObjectHideFlags: 0
@@ -11839,6 +11840,7 @@ MonoBehaviour:
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
   opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  rend: {fileID: 0}
 --- !u!1001 &238814252
 Prefab:
   m_ObjectHideFlags: 0
@@ -19538,6 +19540,7 @@ MonoBehaviour:
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
   opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  rend: {fileID: 0}
 --- !u!1 &438763033
 GameObject:
   m_ObjectHideFlags: 0
@@ -33713,6 +33716,7 @@ MonoBehaviour:
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
   opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  rend: {fileID: 0}
 --- !u!1 &1114578610
 GameObject:
   m_ObjectHideFlags: 0
@@ -45174,6 +45178,7 @@ MonoBehaviour:
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
   opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  rend: {fileID: 0}
 --- !u!114 &1330594746 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114591358185943840, guid: 3ebf5b88a81755c47bd4b47b1aede527,
@@ -68979,12 +68984,12 @@ GameObject:
   - component: {fileID: 1729150503}
   - component: {fileID: 1729150502}
   - component: {fileID: 1729150501}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 4
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1729150500
 Transform:
@@ -68993,7 +68998,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1729150499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -12.6, z: 0}
   m_LocalScale: {x: 50, y: 1, z: 50}
   m_Children: []
   m_Father: {fileID: 1240544016}
@@ -69770,6 +69775,7 @@ MonoBehaviour:
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
   opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  rend: {fileID: 0}
 --- !u!4 &1949592987 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4017879431088888, guid: c3b5492fb315eb34f8684256e4cd9cb7,
@@ -70123,6 +70129,7 @@ MonoBehaviour:
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
   opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  rend: {fileID: 0}
 --- !u!4 &2044266678 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4017879431088888, guid: c3b5492fb315eb34f8684256e4cd9cb7,
@@ -70310,6 +70317,7 @@ MonoBehaviour:
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
   opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  rend: {fileID: 0}
 --- !u!1001 &2099447450
 Prefab:
   m_ObjectHideFlags: 0

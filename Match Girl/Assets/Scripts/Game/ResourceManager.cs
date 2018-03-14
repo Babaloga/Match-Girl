@@ -48,7 +48,7 @@ public class ResourceManager : MonoBehaviour {
 
         moneyLeft = PlayerStatsManager.money;
         //moneyLeft = 100;
-        money.text = moneyLeft.ToString();
+        //money.text = moneyLeft.ToString();
 
 	}
 
@@ -64,7 +64,7 @@ public class ResourceManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        money.text = moneyLeft.ToString();
+        //money.text = moneyLeft.ToString();
     }
 
 	public void incrementRow1(){

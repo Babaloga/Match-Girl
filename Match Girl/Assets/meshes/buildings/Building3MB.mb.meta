@@ -88,7 +88,27 @@ ModelImporter:
     3300000: pCube37
     4300000: pCube37
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: export_Test1_Window_window_glass
+    second: {fileID: 2100000, guid: 0479e2bc7fdb7604088f7e02244740eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: export_Test5_Window_window_glass
+    second: {fileID: 2100000, guid: 0479e2bc7fdb7604088f7e02244740eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: export_Test7_export_Test4_Window_window_glass
+    second: {fileID: 2100000, guid: 0479e2bc7fdb7604088f7e02244740eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: export_Test_Window_window_glass
+    second: {fileID: 2100000, guid: 0479e2bc7fdb7604088f7e02244740eb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

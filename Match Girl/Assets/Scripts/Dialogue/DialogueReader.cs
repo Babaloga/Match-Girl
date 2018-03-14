@@ -39,13 +39,13 @@ public class DialogueReader : MonoBehaviour {
         }
     }
 
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.M))
-    //    {
-    //        StartDialogue(dialogue);
-    //    }
-    //}
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            StartDialogue(dialogue);
+        }
+    }
 
     //Dialogue Backend
 

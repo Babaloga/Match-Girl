@@ -20,11 +20,9 @@ public class SpriteDepthRenderer : MonoBehaviour {
 
     private void Update()
     {
-        if ((Time.frameCount) % 20 == 0) {
             if (rend)
                 rend.sortingOrder = (int)(transform.position.z * -100);
             else if (mesh)
                 mesh.sortingOrder = (int)(transform.position.z * -100);
-        }
     }
 }
