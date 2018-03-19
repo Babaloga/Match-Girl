@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: hands_on_hips_idle
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: root_transform/bones/spine_1_JNT
+    localPosition: {x: -0.01183787, y: 2.361079, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.7320604, w: 0.68123984}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT
+    localPosition: {x: 0.29065338, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.06776679, w: 0.9977012}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT
+    localPosition: {x: 0.70338464, y: -0.00000000919681, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.21474881, w: 0.9766694}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/neck_JNT
+    localPosition: {x: 0.33410847, y: 0.00000015925616, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.16927212, w: 0.98556936}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/neck_JNT/head_JNT
+    localPosition: {x: 0.2924559, y: -0.00000006984919, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.7676073, w: 0.6409205}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/neck_JNT/head_JNT/hat_JNT
+    localPosition: {x: 0.39413202, y: -0.320452, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.99992776, w: -0.012019749}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/L_shoulder_pos_JNT
+    localPosition: {x: 0.26577935, y: -0.5568815, z: 0.0006878376}
+    localRotation: {x: -0, y: -0, z: -0.9232057, w: 0.38430637}
+    localScale: {x: 1.0000002, y: 1.0000002, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/L_shoulder_pos_JNT/L_shoulder_rot_JNT
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.067805625, w: 0.99769855}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/L_shoulder_pos_JNT/L_shoulder_rot_JNT/L_elbow_JNT
+    localPosition: {x: 0.63655174, y: 0.00000023841858, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.5909111, w: 0.8067367}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/L_shoulder_pos_JNT/L_shoulder_rot_JNT/L_elbow_JNT/L_wrist_JNT
+    localPosition: {x: 0.532925, y: 0.0000002416782, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.4589623, w: 0.88845575}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/R_shoulder_pos_JNT
+    localPosition: {x: 0.056666322, y: 0.22779255, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.99999887, w: -0.0015172062}
+    localScale: {x: 1.0000008, y: 1.0000008, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/R_shoulder_pos_JNT/R_shoulder_rot_JNT
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.081486285, w: 0.9966745}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/R_shoulder_pos_JNT/R_shoulder_rot_JNT/R_elbow_JNT
+    localPosition: {x: 0.62916535, y: -0.0000002074521, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.4749494, w: 0.88001317}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/spine2_JNT/collar_bone_JNT/R_shoulder_pos_JNT/R_shoulder_rot_JNT/R_elbow_JNT/R_wrist_JNT
+    localPosition: {x: 0.58007526, y: -0.00000021699816, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.26035282, w: 0.9655136}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/L_dress1_JNT
+    localPosition: {x: -0.31960103, y: 0.031291842, z: -0.010032177}
+    localRotation: {x: 0, y: 0, z: 0.9992445, w: 0.038863488}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/L_dress1_JNT/L_dress2_JNT
+    localPosition: {x: 0.7511068, y: 0.000000059604645, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.01963844, w: 0.9998071}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/L_dress1_JNT/L_dress2_JNT/L_dress3_JNT
+    localPosition: {x: 0.52635217, y: -0.00000009028008, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.050019488, w: 0.99874824}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/L_hip_pos_JNT
+    localPosition: {x: -0.30413023, y: -0.2922711, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.99725425, w: 0.074053794}
+    localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+  - path: root_transform/bones/spine_1_JNT/L_hip_pos_JNT/L_hip_JNT
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.043025132, w: 0.99907404}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/L_hip_pos_JNT/L_hip_JNT/L_shin_JNT
+    localPosition: {x: 0.83674586, y: 0.00000010430813, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.027293568, w: 0.9996275}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/L_hip_pos_JNT/L_hip_JNT/L_shin_JNT/L_foot_JNT
+    localPosition: {x: 0.854474, y: -0.00000022776658, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.41046864, w: 0.9118747}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/R_hip_pos_JNT
+    localPosition: {x: -0.15691328, y: 0.23596027, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.9998973, w: 0.014332861}
+    localScale: {x: 1.0000004, y: 1.0000004, z: 1}
+  - path: root_transform/bones/spine_1_JNT/R_hip_pos_JNT/R_hip_rot_JNT
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.07931083, w: 0.99684995}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/R_hip_pos_JNT/R_hip_rot_JNT/R_knee_JNT
+    localPosition: {x: 0.794808, y: -0.00000010058284, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root_transform/bones/spine_1_JNT/R_hip_pos_JNT/R_hip_rot_JNT/R_knee_JNT/R_ankle_JNT
+    localPosition: {x: 0.78899395, y: -0.0000000035324774, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.49483028, w: 0.8689896}
+    localScale: {x: 1, y: 1, z: 1}
