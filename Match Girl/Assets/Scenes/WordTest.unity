@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 233907868}
-  m_IndirectSpecularColor: {r: 0.44709307, g: 0.49699694, b: 0.5751076, a: 1}
+  m_IndirectSpecularColor: {r: 0.4470935, g: 0.49699754, b: 0.5751081, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -7170,6 +7170,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: ed4165d198f39674886dae551ebadd33, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: ed4165d198f39674886dae551ebadd33, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed4165d198f39674886dae551ebadd33, type: 3}
   m_IsPrefabParent: 0
@@ -7222,7 +7230,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!208 &86285010
 NavMeshObstacle:
@@ -7422,7 +7431,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!208 &100780876
 NavMeshObstacle:
@@ -7649,7 +7659,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!1001 &110345650
 Prefab:
@@ -11558,7 +11569,7 @@ Prefab:
     - target: {fileID: 224985112849959480, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224985112849959480, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -11588,7 +11599,7 @@ Prefab:
     - target: {fileID: 224877067824064858, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224877067824064858, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -11618,7 +11629,7 @@ Prefab:
     - target: {fileID: 224925307930609474, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224925307930609474, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -11648,7 +11659,7 @@ Prefab:
     - target: {fileID: 224341343460252372, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224341343460252372, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -11678,7 +11689,7 @@ Prefab:
     - target: {fileID: 224506564783541012, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224506564783541012, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -11708,7 +11719,7 @@ Prefab:
     - target: {fileID: 224615200202855132, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224615200202855132, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -11738,7 +11749,7 @@ Prefab:
     - target: {fileID: 224053737847341954, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224053737847341954, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -11768,7 +11779,7 @@ Prefab:
     - target: {fileID: 224542111365497852, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224542111365497852, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -11798,7 +11809,7 @@ Prefab:
     - target: {fileID: 224452111215419028, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224452111215419028, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -12255,7 +12266,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!1001 &238814252
 Prefab:
@@ -16280,6 +16292,10 @@ Prefab:
     - target: {fileID: 400036, guid: fd1ee38d9aeb5594ab46132d1d19f1a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 100036, guid: fd1ee38d9aeb5594ab46132d1d19f1a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd1ee38d9aeb5594ab46132d1d19f1a1, type: 3}
@@ -34010,7 +34026,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!208 &1066925053
 NavMeshObstacle:
@@ -34318,7 +34335,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!1 &1114578610
 GameObject:
@@ -41826,7 +41844,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!208 &1274579428
 NavMeshObstacle:
@@ -45997,7 +46016,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!114 &1330594746 stripped
 MonoBehaviour:
@@ -54815,7 +54835,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!208 &1415599656
 NavMeshObstacle:
@@ -69113,7 +69134,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4153619241746466, guid: 80c84938b230a3342bbb4ca28173e54d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -100
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4153619241746466, guid: 80c84938b230a3342bbb4ca28173e54d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -69121,7 +69142,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4153619241746466, guid: 80c84938b230a3342bbb4ca28173e54d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 174.00003
+      value: 76.3
       objectReference: {fileID: 0}
     - target: {fileID: 4153619241746466, guid: 80c84938b230a3342bbb4ca28173e54d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -69153,6 +69174,15 @@ Prefab:
       propertyPath: camBubble
       value: 
       objectReference: {fileID: 739697897}
+    - target: {fileID: 1952098115502176, guid: 80c84938b230a3342bbb4ca28173e54d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23028506942857022, guid: 80c84938b230a3342bbb4ca28173e54d,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80c84938b230a3342bbb4ca28173e54d, type: 2}
   m_IsPrefabParent: 0
@@ -69592,7 +69622,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!208 &1664412028
 NavMeshObstacle:
@@ -70666,7 +70697,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!208 &1947707638
 NavMeshObstacle:
@@ -70875,7 +70907,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!4 &1949592987 stripped
 Transform:
@@ -71229,7 +71262,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!4 &2044266678 stripped
 Transform:
@@ -71417,7 +71451,8 @@ MonoBehaviour:
   target: {fileID: 1725239749}
   camBubble: {fileID: 739697897}
   fadeRate: 0.25
-  opaqueMaterial: {fileID: 2100000, guid: e176991c8309a43429bb5050981d7598, type: 2}
+  opaqueMaterials: []
+  instanceMaterials: []
   rend: {fileID: 0}
 --- !u!1001 &2099447450
 Prefab:
