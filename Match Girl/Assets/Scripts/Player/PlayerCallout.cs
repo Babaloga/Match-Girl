@@ -70,7 +70,6 @@ public class PlayerCallout : MonoBehaviour {
             }
         }
 
-
         //NPC Dialogue Queueing
         if(npcQueue.Count > 0 && !DialogueReader.reader.showingDialogue)
         {
@@ -96,6 +95,7 @@ public class PlayerCallout : MonoBehaviour {
             {
                 if (nearest != null)
                 {
+                    print(nearest.dialogue);
                     DialogueReader.reader.StartDialogue(nearest.dialogue);
                 }
                 else if ((Time.time - speakTime) > speakCooldown) {

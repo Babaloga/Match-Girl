@@ -28,7 +28,7 @@ public class DialogueReader : MonoBehaviour {
     private void Start()
     {
         reader = this;
-        displayText = dialogueObject.GetComponent<Text>();
+        displayText = dialogueObject.GetComponentInChildren<Text>();
 
         optionObjects = new GameObject[9];
 

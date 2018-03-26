@@ -83,7 +83,6 @@ public class BuildingCamPass : MonoBehaviour {
         if(behind && bubbleOverlaps)
         {
             time1 = Time.time;
-            print("behind " + opaqueMaterials.Length);
             Material[] tempMaterials = rend.materials;
             for (int i = 0; i < opaqueMaterials.Length; i++)
             {
@@ -96,7 +95,6 @@ public class BuildingCamPass : MonoBehaviour {
         else
         {
             time2 = Time.time;
-            print("not behind " + opaqueMaterials.Length);
             Material[] tempMaterials = rend.materials;
             for (int i = 0; i < opaqueMaterials.Length; i++)
             {
