@@ -531,6 +531,7 @@ GameObject:
   - component: {fileID: 224581369199796526}
   - component: {fileID: 222101841991577198}
   - component: {fileID: 114226709290908274}
+  - component: {fileID: 114235785390579290}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1061,15 +1062,16 @@ MonoBehaviour:
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+  m_Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. '
 --- !u!114 &114227428792001032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1097,6 +1099,25 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114235785390579290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1708430936270350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 140
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: 1000
+  m_LayoutPriority: 1
 --- !u!114 &114246415050123994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3702,7 +3723,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1641957654833488}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
