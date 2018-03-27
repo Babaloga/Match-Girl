@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 9190c29de1c67284a9cc10f4814c8b8c
+timeCreated: 1522193707
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: balcony2:pCube33
+    100002: balcony2:pCube34
+    100004: balcony2:pCube35
+    100006: balcony2:pCylinder1
+    100008: balcony2:pCylinder2
+    100010: balcony2:pCylinder3
+    100012: balcony2:Window:polySurface13
+    100014: balcony2:Window:transform1
+    100016: balcony2:Window:transform10
+    100018: balcony2:Window:transform2
+    100020: balcony2:Window:transform3
+    100022: balcony2:Window:transform4
+    100024: balcony2:Window:transform5
+    100026: balcony2:Window:transform6
+    100028: balcony2:Window:transform7
+    100030: balcony2:Window:transform8
+    100032: balcony2:Window:transform9
+    100034: //RootNode
+    100036: pCube34
+    100038: polySurface13
+    100040: polySurface14
+    100042: polySurface15
+    100044: test_deletW1:Window:pCube30
+    100046: test_deletW1:Window:polySurface13
+    100048: test_deletW2:Window:pCube30
+    100050: test_deletW2:Window:polySurface13
+    100052: test_deletW3:test_deletW1:Window:pCube30
+    100054: test_deletW3:test_deletW2:Window:pCube30
+    100056: test_deletW3:Window:pCube30
+    100058: test_deletW4:test_deletW1:Window:pCube30
+    100060: test_deletW4:test_deletW1:Window:polySurface13
+    100062: test_deletW4:test_deletW2:Window:pCube30
+    100064: test_deletW4:test_deletW2:Window:polySurface13
+    100066: test_deletW4:Window:pCube30
+    100068: test_deletW4:Window:polySurface13
+    100070: test_deletW4:Window:polySurface13 1
+    100072: test_deletW4:Window:transform1
+    100074: test_deletW4:Window:transform2
+    100076: test_deletW4:Window:transform3
+    100078: transform1
+    100080: transform2
+    100082: transform3
+    100084: transform4
+    100086: Window:pCube30
+    100088: Window:polySurface13
+    400000: balcony2:pCube33
+    400002: balcony2:pCube34
+    400004: balcony2:pCube35
+    400006: balcony2:pCylinder1
+    400008: balcony2:pCylinder2
+    400010: balcony2:pCylinder3
+    400012: balcony2:Window:polySurface13
+    400014: balcony2:Window:transform1
+    400016: balcony2:Window:transform10
+    400018: balcony2:Window:transform2
+    400020: balcony2:Window:transform3
+    400022: balcony2:Window:transform4
+    400024: balcony2:Window:transform5
+    400026: balcony2:Window:transform6
+    400028: balcony2:Window:transform7
+    400030: balcony2:Window:transform8
+    400032: balcony2:Window:transform9
+    400034: //RootNode
+    400036: pCube34
+    400038: polySurface13
+    400040: polySurface14
+    400042: polySurface15
+    400044: test_deletW1:Window:pCube30
+    400046: test_deletW1:Window:polySurface13
+    400048: test_deletW2:Window:pCube30
+    400050: test_deletW2:Window:polySurface13
+    400052: test_deletW3:test_deletW1:Window:pCube30
+    400054: test_deletW3:test_deletW2:Window:pCube30
+    400056: test_deletW3:Window:pCube30
+    400058: test_deletW4:test_deletW1:Window:pCube30
+    400060: test_deletW4:test_deletW1:Window:polySurface13
+    400062: test_deletW4:test_deletW2:Window:pCube30
+    400064: test_deletW4:test_deletW2:Window:polySurface13
+    400066: test_deletW4:Window:pCube30
+    400068: test_deletW4:Window:polySurface13
+    400070: test_deletW4:Window:polySurface13 1
+    400072: test_deletW4:Window:transform1
+    400074: test_deletW4:Window:transform2
+    400076: test_deletW4:Window:transform3
+    400078: transform1
+    400080: transform2
+    400082: transform3
+    400084: transform4
+    400086: Window:pCube30
+    400088: Window:polySurface13
+    2100000: test_deletW4_Window_window_glass
+    2100002: test_deletW4_Window_white_pillar
+    2100004: lambert1
+    2100006: test_deletW4_test_deletW1_Window_window_glass
+    2100008: test_deletW4_test_deletW1_Window_white_pillar
+    2100010: test_deletW4_test_deletW2_Window_window_glass
+    2100012: test_deletW4_test_deletW2_Window_white_pillar
+    2100014: Window_window_glass
+    2100016: Window_white_pillar
+    2100018: test_deletW1_Window_window_glass
+    2100020: test_deletW1_Window_white_pillar
+    2100022: balcony2_chimney
+    2100024: balcony2_seg
+    2100026: balcony2_YellowishWall
+    2100028: test_deletW2_Window_window_glass
+    2100030: test_deletW2_Window_white_pillar
+    2100032: balcony2_door
+    2100034: balcony2_Stair
+    2100036: balcony2_hinge
+    2300000: polySurface15
+    3300000: polySurface15
+    4300000: polySurface15
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
