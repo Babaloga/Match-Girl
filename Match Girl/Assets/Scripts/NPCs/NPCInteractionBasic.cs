@@ -87,7 +87,6 @@ public class NPCInteractionBasic : MonoBehaviour {
                     //agent.SetDestination(transform.position);
                     MakeTransaction();
                 }
-
                 break;
         }
     }
@@ -118,6 +117,20 @@ public class NPCInteractionBasic : MonoBehaviour {
 
     private void GoToPlayer()
     {
+        StartCoroutine(GoToPlayerRoutine());
+    }
+
+    IEnumerator GoToPlayerRoutine()
+    {
+        while (!GetComponentInChildren<NPCAnimation>().IsBeckoning())
+        {
+            yield return null;
+        }
+        while (GetComponentInChildren<NPCAnimation>().IsBeckoning())
+        {
+            yield return null;
+        }
+
         GetComponent<MoveTo>().overriden = true;
         agent.isStopped = false;
         playerPosMemory = PlayerMovement.player.transform.position;

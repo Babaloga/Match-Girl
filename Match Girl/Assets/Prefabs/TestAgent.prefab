@@ -1207,7 +1207,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1777649232089598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.26, y: 0.6, z: -185}
+  m_LocalPosition: {x: -25.26, y: 5.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4695198366810998}
@@ -3105,7 +3105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 5
-  yesProbabilityOutOf100: 5
+  yesProbabilityOutOf100: 100
   noReaction: {fileID: 1176669192584378, guid: 047068dcec5a670468c402eb49bec0e2, type: 2}
   yesReaction: {fileID: 1720288130890404, guid: dbd953447aa700e4c810787b1eb1cffe,
     type: 2}

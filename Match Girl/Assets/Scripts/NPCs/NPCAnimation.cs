@@ -28,4 +28,13 @@ public class NPCAnimation : MonoBehaviour {
     {
         animator.SetTrigger("Beckon");
     }
+
+    public bool IsBeckoning()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("match_beckon") || animator.GetCurrentAnimatorStateInfo(0).IsName("match_beckon_back_to_stand"))
+        {
+            return true;
+        }
+        else return false;
+    }
 }
