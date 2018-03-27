@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class ResourceManager : MonoBehaviour {
 
+    public float foodPerMoney = 10;
 
 	public Text row1;
 	public Text row2;
@@ -36,6 +37,7 @@ public class ResourceManager : MonoBehaviour {
 
     private int moneyLeft;
     private float hungerLevel;
+    public static float variableHunger;
 
 
 	// Use this for initialization
@@ -56,14 +58,20 @@ public class ResourceManager : MonoBehaviour {
         price6.text = Currency.FormatPounds(price_6);
 
 
+        if (!PersistentGameManager.instance)
+        {
+            moneyLeft = 100;
+            hungerLevel = 100;
+        }
+        else
+        {
+            moneyLeft = PersistentGameManager.money;
+            hungerLevel = PersistentGameManager.hunger;
+        }
 
-        moneyLeft = PlayerStatsManager.money;
-        hungerLevel = PlayerStatsManager.hunger;
-        checkHunger();
-
-        //moneyLeft = 100;
-        //money.text = moneyLeft.ToString();
-
+        
+        variableHunger = hungerLevel;
+        CheckHunger();
 	}
 
     public void done()
@@ -73,56 +81,56 @@ public class ResourceManager : MonoBehaviour {
         PersistentGameManager.instance.LoadMainScene();
     }
 
-	private void checkHunger()
+	private void CheckHunger()
     {
-        if (hungerLevel > 0 && hungerLevel < 26)
+        print(variableHunger);
+        if (variableHunger < 26)
         {
             hungerText.text = "Satisfied";
         }
-        else if(hungerLevel > 25 && hungerLevel < 51)
+        else if(variableHunger > 25 && variableHunger < 51)
         {
             hungerText.text = "Hungry";
         }
-        else if(hungerLevel > 50 && hungerLevel < 76)
+        else if(variableHunger > 50 && variableHunger < 76)
         {
             hungerText.text = "Famished";
         }
-        else if (hungerLevel > 75 && hungerLevel < 101)
+        else if (variableHunger > 75)
         {
             hungerText.text = "Starving";
         }
     }
-	// Update is called once per frame
-	void Update () {
+
+    public int rowOneMoney;
+
+    void Update () {
         money.text = Currency.FormatPounds(moneyLeft);
+
+        variableHunger = hungerLevel - (foodPerMoney * rowOneMoney);
+        CheckHunger();
+
+        row1.text = rowOneMoney.ToString();
     }
 
 	public void incrementRow1(){
 
-        int intPrice1 = price_1;
-        if (moneyLeft > 0 && moneyLeft > intPrice1-1)
+        if (moneyLeft > 0 && rowOneMoney < price_1)
         {
-            int previous = Convert.ToInt32(row1.text);
-            previous ++;
-            row1.text = previous.ToString();
-            moneyLeft-= intPrice1;
+            rowOneMoney++;
+            moneyLeft--;
         }
 
 	}
 
 	public void decrementRow1(){
-
-        int intPrice1 = price_1;
-        int previous = Convert.ToInt32 (row1.text);
-        if (previous > 0)
+        if (rowOneMoney > 0)
         {
-            previous--;
-            moneyLeft += intPrice1;
+            rowOneMoney--;
+            moneyLeft++;
         }
-		row1.text = previous.ToString ();
 
-
-	}
+    }
     public void incrementRow2()
     {
         int intPrice2 = price_2;

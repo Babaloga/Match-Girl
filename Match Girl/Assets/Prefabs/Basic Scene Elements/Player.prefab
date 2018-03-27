@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 81550846396674704}
   - component: {fileID: 114824447811242682}
   - component: {fileID: 114905014922287818}
+  - component: {fileID: 82317654339857694}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -97,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1641500580327486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -58.8}
+  m_LocalPosition: {x: -16.95, y: 6.22, z: -122.4}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
   - {fileID: 4579749605090428}
@@ -236,7 +237,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17, z: 0.2}
+  m_Size: {x: 0.19, y: 0.17, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!81 &81550846396674704
 AudioListener:
@@ -245,6 +246,86 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1968478483096000}
   m_Enabled: 1
+--- !u!82 &82317654339857694
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1968478483096000}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7c8ba1ff0d721a142b3581f6b9710306, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.604
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!92 &92663716117596222
 Behaviour:
   m_ObjectHideFlags: 1
@@ -263,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb05188e1dfea3f458238a0fef6a9900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 15
+  baseSpeed: 25
   groundMask:
     serializedVersion: 2
     m_Bits: 4096
@@ -318,10 +399,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   l_matches: 25
-  l_money: 450
-  l_hunger: 100
+  l_money: 0
+  l_hunger: 0
   l_warmth: 0
-  min_warmth: 0
+  min_warmth: 10
 --- !u!114 &114472775920551632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -369,8 +450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fb2668a7e2559458715b5257f1a352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temperature: 75
-  conductivity: 1
+  temperature: 50
+  conductivity: 10
   heatflow: 0
   outsideTemp: 0
 --- !u!114 &114743933329625170
@@ -387,6 +468,7 @@ MonoBehaviour:
   speakPrefab: {fileID: 1728903882725724, guid: 3817e729ae5fad042b6607bcc6c7a2b2,
     type: 2}
   parentToSource: 0
+  offset: {x: 0, y: 0, z: 0}
   layerSource: {fileID: 212041649986565098}
 --- !u!114 &114824447811242682
 MonoBehaviour:
@@ -411,7 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd0124be8f11c84f9bfc7c253bd4066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warmthFXLimit: 50
+  warmthFXLimit: 15
 --- !u!124 &124106397907461800
 Behaviour:
   m_ObjectHideFlags: 1

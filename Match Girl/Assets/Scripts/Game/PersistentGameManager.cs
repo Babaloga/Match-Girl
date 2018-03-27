@@ -16,6 +16,8 @@ public class PersistentGameManager : MonoBehaviour {
     public static int matches;
     public static float hunger;
 
+    public float dayHungerPenalty = 34;
+
     public static PersistentGameManager instance;
 
     private void Start()
@@ -32,12 +34,14 @@ public class PersistentGameManager : MonoBehaviour {
         money = PlayerStatsManager.money;
         matches = PlayerStatsManager.matches;
         hunger = PlayerStatsManager.hunger;
+        hunger += dayHungerPenalty;
         SceneManager.LoadScene(endScreenName);
     }
 
     public void LoadMainScene()
     {
         currentDay++;
+        hunger = ResourceManager.variableHunger;
         SceneManager.LoadScene(mainSceneName);
     }
 

@@ -6,12 +6,12 @@ public class PlayerStatsManager : MonoBehaviour {
 
     public static int matches = 0;
     public static int money = 0;
-    public static float hunger = 100;
+    public static float hunger = 0;
     private static float _warmth;
 
     public int l_matches = 0;
     public int l_money = 0;
-    public float l_hunger = 100;
+    public float l_hunger = 0;
     public float l_warmth;
 
     public float min_warmth = 0;
@@ -60,6 +60,11 @@ public class PlayerStatsManager : MonoBehaviour {
 #endif
 
         if(_warmth < min_warmth)
+        {
+            GameStateManager.state = GameState.dead;
+        }
+
+        if (hunger >= 100)
         {
             GameStateManager.state = GameState.dead;
         }

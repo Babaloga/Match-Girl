@@ -38,7 +38,7 @@ public class PlayerStatsUI : MonoBehaviour {
 
                 if (thisScene == Scene.Street)
                 {
-                    text.text = PlayerStatsManager.matches + " Matches";
+                    text.text = PlayerStatsManager.matches.ToString();
 
                     if (previousValue != PlayerStatsManager.matches)
                     {

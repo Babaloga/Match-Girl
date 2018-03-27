@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2722,41 +2722,6 @@ Prefab:
       objectReference: {fileID: 611986831}
     - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
         type: 2}
-      propertyPath: money
-      value: 
-      objectReference: {fileID: 785056134}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: amount1
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: amount2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: amount3
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: amount4
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: amount5
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: amount6
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
       propertyPath: price1
       value: 
       objectReference: {fileID: 1939291061}
@@ -2787,39 +2752,14 @@ Prefab:
       objectReference: {fileID: 104998524}
     - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
         type: 2}
+      propertyPath: money
+      value: 
+      objectReference: {fileID: 785056134}
+    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
+        type: 2}
       propertyPath: hungerText
       value: 
       objectReference: {fileID: 893020633}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: price_1
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: price_2
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: price_3
-      value: 500000
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: price_4
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: price_5
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
-        type: 2}
-      propertyPath: price_6
-      value: 100000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e83e472f7c51468595e6ec1ce422ead, type: 2}
   m_IsPrefabParent: 0

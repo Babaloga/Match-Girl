@@ -1264,6 +1264,8 @@ MonoBehaviour:
   fader: {fileID: 0}
   fadeOnAwake: 0
   fadeDuration: 2
+  interactableWhenIn: 1
+  blockRaysWhenIn: 1
 --- !u!114 &114256318010558582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1288,16 +1290,22 @@ MonoBehaviour:
       outSlope: 0.17327581
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.10025008
-      value: 0.9973928
+      time: 0.14920028
+      value: 1.0009404
       inSlope: 0.05316974
       outSlope: 0.05316974
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.30030784
-      value: 0.00038942415
+      time: 0.40095484
+      value: -0.0021740524
       inSlope: -0.0459325
       outSlope: -0.0459325
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.0013111
+      value: -0.0034112649
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1312,14 +1320,20 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.099915
-      value: 1.0010914
+      time: 0.12861678
+      value: 1.0010761
       inSlope: -0.11987761
-      outSlope: -0.11987761
+      outSlope: -2.4441807
+      tangentMode: 1
+    - serializedVersion: 2
+      time: 0.22123352
+      value: 0.0004119873
+      inSlope: -0.021752892
+      outSlope: -0.021752892
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.20080566
-      value: -0.0012969971
+      time: 0.9996144
+      value: -0.0013102511
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1338,14 +1352,20 @@ MonoBehaviour:
     - serializedVersion: 2
       time: 0.100094475
       value: 0.9984428
-      inSlope: -1.299925
-      outSlope: -1.299925
-      tangentMode: 0
+      inSlope: -0.06825189
+      outSlope: -1.297878
+      tangentMode: 1
     - serializedVersion: 2
-      time: 0.15080348
-      value: -0.0012969971
-      inSlope: -6.2291756
-      outSlope: -6.2291756
+      time: 0.20091334
+      value: -0.00093078613
+      inSlope: -0.7144816
+      outSlope: -0.077012405
+      tangentMode: 1
+    - serializedVersion: 2
+      time: 0.9998185
+      value: 0.0023815588
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1514,6 +1534,8 @@ MonoBehaviour:
   fader: {fileID: 0}
   fadeOnAwake: 0
   fadeDuration: 2
+  interactableWhenIn: 1
+  blockRaysWhenIn: 1
 --- !u!114 &114433602987291036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1635,6 +1657,8 @@ MonoBehaviour:
   fader: {fileID: 0}
   fadeOnAwake: 0
   fadeDuration: 1
+  interactableWhenIn: 1
+  blockRaysWhenIn: 1
 --- !u!114 &114487209585014850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2021,7 +2045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2029,7 +2053,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 1c799d3b25da848479e552693d4f069e, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2048,7 +2072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2056,7 +2080,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 86a8454f6c299fd46a60145fc79e94fe, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2282,7 +2306,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1 Matches
+  m_Text: 1
 --- !u!114 &114674179829095098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2336,7 +2360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2344,7 +2368,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f7f314ff257f50143ab55bedca558463, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2472,8 +2496,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114539668429660838}
-        m_MethodName: LoadLevel
-        m_Mode: 5
+        m_MethodName: ReloadCurrent
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2804,6 +2828,8 @@ MonoBehaviour:
   fader: {fileID: 0}
   fadeOnAwake: 1
   fadeDuration: 3
+  interactableWhenIn: 1
+  blockRaysWhenIn: 1
 --- !u!114 &114878202278515120
 MonoBehaviour:
   m_ObjectHideFlags: 1
