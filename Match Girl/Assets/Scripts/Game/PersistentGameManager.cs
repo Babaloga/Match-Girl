@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PersistentGameManager : MonoBehaviour {
 
-    public int currentDay = 1;
+    public static int currentDay = 1;
     public int totalDays = 7;
 
     public string endScreenName;
