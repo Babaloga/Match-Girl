@@ -34,9 +34,18 @@ public class PlayerStatsManager : MonoBehaviour {
     void Start () {
         temperatureClass = FindObjectOfType<PlayerTemperature>();
 
-        matches = l_matches;
-        money = l_money;
-        hunger = l_hunger;
+        if (PersistentGameManager.instance.currentDay == 1)
+        {
+            matches = l_matches;
+            money = l_money;
+            hunger = l_hunger;
+        }
+        else
+        {
+            matches = PersistentGameManager.matches;
+            money = PersistentGameManager.money;
+            hunger = PersistentGameManager.hunger;
+        }
 	}
 
     private void Update()

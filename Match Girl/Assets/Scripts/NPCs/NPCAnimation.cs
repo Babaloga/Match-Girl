@@ -23,4 +23,9 @@ public class NPCAnimation : MonoBehaviour {
 
         previousPosition = transform.position;
 	}
+
+    public void Beckon()
+    {
+        animator.SetTrigger("Beckon");
+    }
 }

@@ -104,6 +104,7 @@ public class NPCInteractionBasic : MonoBehaviour {
     {
         if(wantsMatches)
         {
+            GetComponentInChildren<NPCAnimation>().Beckon();
             source.speakPrefab = yesReaction;
             source.Speak();
             GoToPlayer();

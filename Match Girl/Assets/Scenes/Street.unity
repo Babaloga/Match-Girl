@@ -96419,6 +96419,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1682510950319472, guid: 61dc0fc1c6882934fbc37bc6b7966861, type: 2}
+      propertyPath: m_Name
+      value: Persistent Game Manager
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 61dc0fc1c6882934fbc37bc6b7966861, type: 2}
   m_IsPrefabParent: 0
@@ -100087,6 +100091,11 @@ Prefab:
         type: 2}
       propertyPath: cycleHighTemperature
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114404255534385572, guid: 1fa0721a84c76b04399a3912fefb8804,
+        type: 2}
+      propertyPath: endDayTime
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fa0721a84c76b04399a3912fefb8804, type: 2}

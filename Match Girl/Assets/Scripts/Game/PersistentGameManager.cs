@@ -3,19 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EndScreenLoader : MonoBehaviour {
+public class PersistentGameManager : MonoBehaviour {
+
+    public int currentDay = 1;
+    public int totalDays = 7;
 
     public string endScreenName;
+    public string mainSceneName;
 
     public static float time;
     public static int money;
     public static int matches;
+    public static float hunger;
 
-    public static EndScreenLoader instance;
+    public static PersistentGameManager instance;
 
     private void Start()
     {
-        instance = this;
+        if (!instance) instance = this;
+        else Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
     }
 
     public void LoadEndScene()
@@ -23,9 +31,13 @@ public class EndScreenLoader : MonoBehaviour {
         time = DayNightCycle.currentTime;
         money = PlayerStatsManager.money;
         matches = PlayerStatsManager.matches;
-
-        DontDestroyOnLoad(gameObject);
-
+        hunger = PlayerStatsManager.hunger;
         SceneManager.LoadScene(endScreenName);
+    }
+
+    public void LoadMainScene()
+    {
+        currentDay++;
+        SceneManager.LoadScene(mainSceneName);
     }
 }
