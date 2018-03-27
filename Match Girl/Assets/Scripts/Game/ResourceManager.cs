@@ -22,9 +22,20 @@ public class ResourceManager : MonoBehaviour {
     public Text price5;
     public Text price6;
 
+    public int price_1;
+    public int price_2;
+    public int price_3;
+    public int price_4;
+    public int price_5;
+    public int price_6;
+
+
     public Text money;
 
+    public Text hungerText;
+
     private int moneyLeft;
+    private float hungerLevel;
 
 
 	// Use this for initialization
@@ -36,17 +47,20 @@ public class ResourceManager : MonoBehaviour {
 		row5.text = "0";
 		row6.text = "0";
 
-        /*
-        price1.text = "2";
-        price2.text = "3";
-        price3.text = "4";
-        price4.text = "5";
-        price5.text = "6";
-        price6.text = "7";
-        */
+        
+        price1.text = Currency.FormatPounds(price_1);
+        price2.text = Currency.FormatPounds(price_2);
+        price3.text = Currency.FormatPounds(price_3);
+        price4.text = Currency.FormatPounds(price_4);
+        price5.text = Currency.FormatPounds(price_5);
+        price6.text = Currency.FormatPounds(price_6);
+
 
 
         moneyLeft = PlayerStatsManager.money;
+        hungerLevel = PlayerStatsManager.hunger;
+        checkHunger();
+
         //moneyLeft = 100;
         //money.text = moneyLeft.ToString();
 
@@ -59,15 +73,33 @@ public class ResourceManager : MonoBehaviour {
         PersistentGameManager.instance.LoadMainScene();
     }
 
-	
+	private void checkHunger()
+    {
+        if (hungerLevel > 0 && hungerLevel < 26)
+        {
+            hungerText.text = "Satisfied";
+        }
+        else if(hungerLevel > 25 && hungerLevel < 51)
+        {
+            hungerText.text = "Hungry";
+        }
+        else if(hungerLevel > 50 && hungerLevel < 76)
+        {
+            hungerText.text = "Famished";
+        }
+        else if (hungerLevel > 75 && hungerLevel < 101)
+        {
+            hungerText.text = "Starving";
+        }
+    }
 	// Update is called once per frame
 	void Update () {
-        //money.text = moneyLeft.ToString();
+        money.text = Currency.FormatPounds(moneyLeft);
     }
 
 	public void incrementRow1(){
 
-        int intPrice1 = Convert.ToInt32(price1.text);
+        int intPrice1 = price_1;
         if (moneyLeft > 0 && moneyLeft > intPrice1-1)
         {
             int previous = Convert.ToInt32(row1.text);
@@ -80,7 +112,7 @@ public class ResourceManager : MonoBehaviour {
 
 	public void decrementRow1(){
 
-        int intPrice1 = Convert.ToInt32(price1.text);
+        int intPrice1 = price_1;
         int previous = Convert.ToInt32 (row1.text);
         if (previous > 0)
         {
@@ -93,7 +125,7 @@ public class ResourceManager : MonoBehaviour {
 	}
     public void incrementRow2()
     {
-        int intPrice2 = Convert.ToInt32(price2.text);
+        int intPrice2 = price_2;
         if (moneyLeft > 0 && moneyLeft > intPrice2 - 1)
         {
             int previous = Convert.ToInt32(row2.text);
@@ -107,7 +139,7 @@ public class ResourceManager : MonoBehaviour {
 
 	public void decrementRow2(){
 
-        int intPrice2 = Convert.ToInt32(price2.text);
+        int intPrice2 = price_2;
         int previous = Convert.ToInt32 (row2.text);
         if (previous > 0)
         {
@@ -118,7 +150,7 @@ public class ResourceManager : MonoBehaviour {
 	}
 	public void incrementRow3(){
 
-        int intPrice3 = Convert.ToInt32(price3.text);
+        int intPrice3 = price_3;
         if (moneyLeft > 0 && moneyLeft > intPrice3 - 1)
         {
             int previous = Convert.ToInt32(row3.text);
@@ -131,7 +163,7 @@ public class ResourceManager : MonoBehaviour {
 
 	public void decrementRow3(){
 
-        int intPrice3 = Convert.ToInt32(price3.text);
+        int intPrice3 = price_3;
         int previous = Convert.ToInt32 (row3.text);
         if (previous > 0)
         {
@@ -143,7 +175,7 @@ public class ResourceManager : MonoBehaviour {
 	}
 	public void incrementRow4(){
 
-        int intPrice4 = Convert.ToInt32(price4.text);
+        int intPrice4 = price_4;
         if (moneyLeft > 0 && moneyLeft > intPrice4 - 1)
         {
             int previous = Convert.ToInt32(row4.text);
@@ -156,7 +188,7 @@ public class ResourceManager : MonoBehaviour {
 
 	public void decrementRow4(){
 
-        int intPrice4 = Convert.ToInt32(price4.text);
+        int intPrice4 = price_4;
         int previous = Convert.ToInt32 (row4.text);
         if (previous > 0)
         {
@@ -168,7 +200,7 @@ public class ResourceManager : MonoBehaviour {
 	}
 	public void incrementRow5(){
 
-        int intPrice5 = Convert.ToInt32(price5.text);
+        int intPrice5 = price_5;
         if (moneyLeft > 0 && moneyLeft > intPrice5 - 1)
         {
             int previous = Convert.ToInt32(row5.text);
@@ -181,7 +213,7 @@ public class ResourceManager : MonoBehaviour {
 
 	public void decrementRow5(){
 
-        int intPrice5 = Convert.ToInt32(price5.text);
+        int intPrice5 = price_5;
         int previous = Convert.ToInt32 (row5.text);
         if (previous > 0)
         {
@@ -194,7 +226,7 @@ public class ResourceManager : MonoBehaviour {
 	}
 	public void incrementRow6(){
 
-        int intPrice6 = Convert.ToInt32(price6.text);
+        int intPrice6 = price_6;
         if (moneyLeft > 0 && moneyLeft > intPrice6 - 1)
         {
             int previous = Convert.ToInt32(row6.text);
@@ -207,7 +239,7 @@ public class ResourceManager : MonoBehaviour {
 
 	public void decrementRow6(){
 
-        int intPrice6 = Convert.ToInt32(price6.text);
+        int intPrice6 = price_6;
         int previous = Convert.ToInt32 (row6.text);
         if (previous > 0)
         {

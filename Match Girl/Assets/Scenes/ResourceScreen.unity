@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -278,6 +278,8 @@ RectTransform:
   - {fileID: 626716662}
   - {fileID: 679696486}
   - {fileID: 1097029218}
+  - {fileID: 1169352372}
+  - {fileID: 893020635}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2359,6 +2361,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 829123422}
+--- !u!1 &893020632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 893020635}
+  - component: {fileID: 893020634}
+  - component: {fileID: 893020633}
+  m_Layer: 5
+  m_Name: HungerValue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &893020633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893020632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Famished
+--- !u!222 &893020634
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893020632}
+--- !u!224 &893020635
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893020632}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.095911}
+  m_LocalScale: {x: 0.53989726, y: 0.53989726, z: 0.53989726}
+  m_Children: []
+  m_Father: {fileID: 14294148}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -320.4, y: 149.9}
+  m_SizeDelta: {x: 178.46, y: 57.9}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &895794079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +2634,41 @@ Prefab:
       propertyPath: price6
       value: 
       objectReference: {fileID: 104998524}
+    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
+        type: 2}
+      propertyPath: hungerText
+      value: 
+      objectReference: {fileID: 893020633}
+    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
+        type: 2}
+      propertyPath: price_1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
+        type: 2}
+      propertyPath: price_2
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
+        type: 2}
+      propertyPath: price_3
+      value: 500000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
+        type: 2}
+      propertyPath: price_4
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
+        type: 2}
+      propertyPath: price_5
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114720791748916732, guid: 3e83e472f7c51468595e6ec1ce422ead,
+        type: 2}
+      propertyPath: price_6
+      value: 100000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e83e472f7c51468595e6ec1ce422ead, type: 2}
   m_IsPrefabParent: 0
@@ -2762,6 +2873,83 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1115833754}
+--- !u!1 &1169352371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1169352372}
+  - component: {fileID: 1169352374}
+  - component: {fileID: 1169352373}
+  m_Layer: 5
+  m_Name: HungerText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1169352372
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169352371}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.095911}
+  m_LocalScale: {x: 0.53989726, y: 0.53989726, z: 0.53989726}
+  m_Children: []
+  m_Father: {fileID: 14294148}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -317.5, y: 182.51}
+  m_SizeDelta: {x: 276.91, y: 57.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1169352373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169352371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Hunger Level
+
+
+'
+--- !u!222 &1169352374
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169352371}
 --- !u!1 &1229019310
 GameObject:
   m_ObjectHideFlags: 0
