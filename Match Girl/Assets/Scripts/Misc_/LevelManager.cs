@@ -21,12 +21,14 @@ public class LevelManager : MonoBehaviour {
 
     public void ReloadCurrent()
     {
+        print("Reload Current");
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
 
     public void nextLevel()
     {
+        print("Next Level");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

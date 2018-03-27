@@ -40,4 +40,9 @@ public class PersistentGameManager : MonoBehaviour {
         currentDay++;
         SceneManager.LoadScene(mainSceneName);
     }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "Start Menu") Destroy(gameObject);
+    }
 }

@@ -14,6 +14,9 @@ public class Fader : MonoBehaviour {
     private bool fadingOut = false;
     private bool fadingIn = false;
 
+    public bool interactableWhenIn = true;
+    public bool blockRaysWhenIn = true;
+
     private void Awake()
     {
         fader = GetComponent<CanvasGroup>();
@@ -41,7 +44,8 @@ public class Fader : MonoBehaviour {
         fadingIn = true;
         fadingOut = false;
 
-        fader.interactable = true;
+        if (interactableWhenIn) fader.interactable = true;
+        if (blockRaysWhenIn) fader.blocksRaycasts = true;
     }
 
     public void FadeOut()
@@ -50,6 +54,7 @@ public class Fader : MonoBehaviour {
         fadingOut = true;
 
         fader.interactable = false;
+        fader.blocksRaycasts = false;
     }
 
 }
