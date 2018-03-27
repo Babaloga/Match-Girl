@@ -104,7 +104,7 @@ public class DayNightCycle : MonoBehaviour {
 
         yield return new WaitForSeconds(screenFader.fadeDuration + 1);
 
-        EndScreenLoader.instance.LoadEndScene();
+        PersistentGameManager.instance.LoadEndScene();
     }
 
 }

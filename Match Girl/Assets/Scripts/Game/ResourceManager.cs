@@ -54,11 +54,9 @@ public class ResourceManager : MonoBehaviour {
 
     public void done()
     {
-        PlayerStatsManager.money = moneyLeft;
+        PersistentGameManager.money = moneyLeft;
 
-
-        SceneManager.LoadScene(6);
-
+        PersistentGameManager.instance.LoadMainScene();
     }
 
 	

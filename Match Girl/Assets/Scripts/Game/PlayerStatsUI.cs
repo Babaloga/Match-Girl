@@ -49,7 +49,7 @@ public class PlayerStatsUI : MonoBehaviour {
                 }
                 else
                 {
-                    text.text = EndScreenLoader.matches + " Matches";
+                    text.text = PersistentGameManager.matches + " Matches";
                 }
 
                 break;
@@ -70,7 +70,7 @@ public class PlayerStatsUI : MonoBehaviour {
                 }
                 else
                 {
-                    text.text = Currency.FormatPounds(EndScreenLoader.money);
+                    text.text = Currency.FormatPounds(PersistentGameManager.money);
                 }
 
                 break;
