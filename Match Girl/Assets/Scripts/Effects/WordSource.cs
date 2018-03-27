@@ -9,6 +9,8 @@ public class WordSource : MonoBehaviour {
     GameObject speakInstance;
     public bool parentToSource = false;
 
+    public Vector3 offset = Vector3.zero;
+
     public Renderer layerSource;
 
     public void Speak()
@@ -17,7 +19,7 @@ public class WordSource : MonoBehaviour {
         {
             speakInstance = Instantiate(speakPrefab, transform);
 
-            speakInstance.transform.localPosition = Vector3.zero;
+            speakInstance.transform.localPosition = offset;
 
             //Vector3 a = speakInstance.transform.localScale;
             //Vector3 b = transform.lossyScale;
@@ -26,7 +28,7 @@ public class WordSource : MonoBehaviour {
         else
         {
             speakInstance = Instantiate(speakPrefab);
-            speakInstance.transform.position = transform.position;
+            speakInstance.transform.position = transform.position + offset;
 
         }
 
@@ -39,7 +41,7 @@ public class WordSource : MonoBehaviour {
         {
             speakInstance = Instantiate(speakPrefab, transform);
 
-            speakInstance.transform.localPosition = Vector3.zero;
+            speakInstance.transform.localPosition = offset;
             speakInstance.GetComponent<Text>().text = _content;
 
             //Vector3 a = speakInstance.transform.localScale;
@@ -49,7 +51,7 @@ public class WordSource : MonoBehaviour {
         else
         {
             speakInstance = Instantiate(speakPrefab);
-            speakInstance.transform.position = transform.position;
+            speakInstance.transform.position = transform.position + offset;
 
         }
         if(layerSource) speakInstance.GetComponent<Canvas>().sortingOrder = layerSource.sortingOrder;
@@ -61,7 +63,7 @@ public class WordSource : MonoBehaviour {
         {
             speakInstance = Instantiate(speakPrefab, transform);
 
-            speakInstance.transform.localPosition = Vector3.zero;
+            speakInstance.transform.localPosition = offset;
 
             //Vector3 a = speakInstance.transform.localScale;
             //Vector3 b = transform.lossyScale;
@@ -70,7 +72,7 @@ public class WordSource : MonoBehaviour {
         else
         {
             speakInstance = Instantiate(speakPrefab);
-            speakInstance.transform.position = transform.position;
+            speakInstance.transform.position = transform.position + offset;
 
         }
 

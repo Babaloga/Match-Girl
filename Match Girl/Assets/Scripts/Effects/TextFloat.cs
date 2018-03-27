@@ -6,6 +6,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class TextFloat : MonoBehaviour {
+    public float noiseAmount = 0;
+
     public float duration = 5;
 
     public float shimmyMultiplier = 1;
@@ -40,6 +42,13 @@ public class TextFloat : MonoBehaviour {
 
         phase = Random.Range(0, Mathf.PI);
         startScale = transform.localScale;
+
+        if(noiseAmount != 0)
+        {
+            duration += Random.Range(-noiseAmount, noiseAmount) * duration;
+            scaleMultiplier += Random.Range(-noiseAmount, noiseAmount) * scaleMultiplier;
+            speedMultiplier += Random.Range(-noiseAmount, noiseAmount) * speedMultiplier;
+        }
     }
 
     private void FixedUpdate()
