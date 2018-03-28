@@ -20,6 +20,8 @@ public class PersistentGameManager : MonoBehaviour {
 
     public static PersistentGameManager instance;
 
+    public bool debugMode = false;
+
     private void Start()
     {
         if (!instance) instance = this;

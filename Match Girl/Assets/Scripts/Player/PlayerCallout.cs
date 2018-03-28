@@ -37,6 +37,8 @@ public class PlayerCallout : MonoBehaviour {
 
     public static List<SpecialInteraction> interactions;
 
+    MeshRenderer meshRenderer;
+
 	void Start () {
         npcQueue = new Queue<NPCInteraction>();
         source = GetComponent<WordSource>();
@@ -47,6 +49,7 @@ public class PlayerCallout : MonoBehaviour {
         gameObject.layer = 13;
         transform.localScale = new Vector3(1 / transform.parent.localScale.x, 1 / transform.parent.localScale.y, 1 / transform.parent.localScale.z);
         interactions = new List<SpecialInteraction>();
+        meshRenderer = GetComponent<MeshRenderer>();
 	}
 
     private void Update()
@@ -224,16 +227,21 @@ public class PlayerCallout : MonoBehaviour {
         float radius = _power * maxRadius;
 
         cast.enabled = true;
+        Color fullColor = meshRenderer.material.GetColor("_RimColor");
 
         float t = Time.time;
         while ((Time.time - t) <= callDuration)
         {
             float p = (Time.time - t) / callDuration;
 
-            cast.radius = Mathf.Lerp(0, radius, p);
+            float q = Mathf.Lerp(0, radius, p);
+
+            transform.localScale = new Vector3(q/transform.parent.lossyScale.x,q / transform.parent.lossyScale.y, q / transform.parent.lossyScale.z);
+            meshRenderer.material.SetColor("_RimColor", Color.Lerp(fullColor, Color.black, p));
             yield return null;
         }
-        cast.radius = 0;
+        transform.localScale = Vector3.zero;
+        meshRenderer.material.SetColor("_RimColor", fullColor);
         cast.enabled = false;
     }
 
