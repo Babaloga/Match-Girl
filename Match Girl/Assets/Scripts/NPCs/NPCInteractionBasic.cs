@@ -31,6 +31,8 @@ public class NPCInteractionBasic : MonoBehaviour {
 
     private Vector3 destination;
 
+    public NPCType npcType;
+
     private enum NPCState
     {
         Wandering,
@@ -158,4 +160,9 @@ public class NPCInteractionBasic : MonoBehaviour {
         agent.SetDestination(destination);
         currentState = NPCState.Wandering;
     }
+}
+
+public enum NPCType
+{
+    Rich, Poor
 }

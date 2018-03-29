@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4441824599701834}
   - component: {fileID: 114437261553406268}
   - component: {fileID: 114024293049964846}
+  - component: {fileID: 114829221263030804}
   m_Layer: 0
   m_Name: End Screen Loader
   m_TagString: Untagged
@@ -52,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ca55fde9be0ac4b97d8d3c174b619a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openingDialogue: {fileID: 11400000, guid: 61458bc78da1f4df4ae260b794998e57, type: 2}
+  openingDialogue: {fileID: 11400000, guid: 25c54cce0f9255a4d981487cbd7422d0, type: 2}
 --- !u!114 &114437261553406268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,3 +70,22 @@ MonoBehaviour:
   mainSceneName: Street
   dayHungerPenalty: 34
   debugMode: 0
+--- !u!114 &114829221263030804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682510950319472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe9d6e0a37c00243b563123738795fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maleDictionary:
+    m_keys: 0000000001000000
+    m_values:
+    - {fileID: 11400000, guid: c3c96866b266ed548a2c97a456f15721, type: 2}
+    - {fileID: 11400000, guid: 3c7d8fa79ea3f014d81a95273eda70ed, type: 2}
+  femaleDictionary:
+    m_keys: 
+    m_values: []

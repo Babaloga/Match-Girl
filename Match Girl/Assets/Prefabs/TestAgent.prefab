@@ -2723,7 +2723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e27331cf15fd7c44a06cfe6f1ad4199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  archetype: {fileID: 11400000, guid: c3c96866b266ed548a2c97a456f15721, type: 2}
+  debugForceMale: 1
   head: {fileID: 114376673399132542}
   torso: {fileID: 114671223416011246}
   hat: {fileID: 114607050160566892}
@@ -3113,6 +3113,7 @@ MonoBehaviour:
   priceForMatch: 2
   maxBuyNumber: 5
   minBuyNumber: 1
+  npcType: 0
 --- !u!114 &114378050538097074
 MonoBehaviour:
   m_ObjectHideFlags: 1
