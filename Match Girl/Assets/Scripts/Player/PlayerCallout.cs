@@ -26,6 +26,7 @@ public class PlayerCallout : MonoBehaviour {
     public static Queue<NPCInteraction> npcQueue;
 
     public AnimationCurve powerCurve;
+    public AnimationCurve damageCurve;
 
     public Image chargeBar;
 
@@ -38,6 +39,9 @@ public class PlayerCallout : MonoBehaviour {
     public static List<SpecialInteraction> interactions;
 
     MeshRenderer meshRenderer;
+
+    public Color startColor = Color.white;
+    public Color damageColor = Color.red;
 
 	void Start () {
         npcQueue = new Queue<NPCInteraction>();
@@ -131,6 +135,7 @@ public class PlayerCallout : MonoBehaviour {
                 {
                     RectTransform rectangle = chargeBar.rectTransform;
                     rectangle.sizeDelta = new Vector2(Mathf.Lerp(0, 300, power), 10);
+                    chargeBar.color = Color.Lerp(startColor, damageColor, damageCurve.Evaluate(power));
                     chargeBar.color = new Color(chargeBar.color.r, chargeBar.color.g, chargeBar.color.b, Mathf.Lerp(0,1,power));
                 }
             }
@@ -209,6 +214,7 @@ public class PlayerCallout : MonoBehaviour {
     public void Callout(float _power)
     {
         _power = Mathf.Clamp(_power, powerMin, 1);
+        Camera.main.GetComponent<CameraEffects>().Shake(0.2f, _power);
         StartCoroutine(CalloutRoutine(_power));
         //throatHealth -= _power / 10;
         print(_power);
