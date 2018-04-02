@@ -16,6 +16,7 @@ public class DialogueReader : MonoBehaviour {
     public Transform optionHolder;
 
     public GameObject dialogueObject;
+    public Text characterNameText;
 
     private Text displayText;
 
@@ -52,6 +53,7 @@ public class DialogueReader : MonoBehaviour {
     public void StartDialogue(Dialogue _dialogue)
     {
         dialogue = _dialogue;
+        characterNameText.text = _dialogue.characterName;
         values = new List<int>(dialogue.entries.Keys);
         currentValue = 1;
         GetOptions();
@@ -61,6 +63,7 @@ public class DialogueReader : MonoBehaviour {
     public void StartDialogue(Dialogue _dialogue, int start)
     {
         dialogue = _dialogue;
+        characterNameText.text = _dialogue.characterName;
         values = new List<int>(dialogue.entries.Keys);
         currentValue = start;
         GetOptions();
