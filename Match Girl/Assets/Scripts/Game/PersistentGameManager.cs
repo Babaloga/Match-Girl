@@ -16,6 +16,9 @@ public class PersistentGameManager : MonoBehaviour {
     public static int matches;
     public static float hunger;
 
+    public static float maxSpeed;
+    public static float maxCallStrength;
+
     public float dayHungerPenalty = 34;
 
     public static PersistentGameManager instance;
@@ -36,6 +39,8 @@ public class PersistentGameManager : MonoBehaviour {
         money = PlayerStatsManager.money;
         matches = PlayerStatsManager.matches;
         hunger = PlayerStatsManager.hunger;
+        maxCallStrength = PlayerStatsManager.maxCallStrength;
+        maxSpeed = PlayerStatsManager.maxSpeed;
         hunger += dayHungerPenalty;
         SceneManager.LoadScene(endScreenName);
     }

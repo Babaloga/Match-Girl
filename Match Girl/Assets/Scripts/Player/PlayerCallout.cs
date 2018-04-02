@@ -96,6 +96,10 @@ public class PlayerCallout : MonoBehaviour {
             n = 0;
         }
 
+        //Callout
+
+        throatHealth = PlayerStatsManager.maxCallStrength;
+
         if (!muted)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -129,14 +133,16 @@ public class PlayerCallout : MonoBehaviour {
 
             if (Input.GetKey(KeyCode.Space) && down)
             {
-                power = powerCurve.Evaluate(Mathf.Clamp01((Time.time - spaceDown) / timeMax) * throatHealth);
+                float rawPercent = Mathf.Clamp01((Time.time - spaceDown) / timeMax);
+
+                power = powerCurve.Evaluate(rawPercent * throatHealth);
 
                 if (power > powerMin)
                 {
                     RectTransform rectangle = chargeBar.rectTransform;
-                    rectangle.sizeDelta = new Vector2(Mathf.Lerp(0, 300, power), 10);
-                    chargeBar.color = Color.Lerp(startColor, damageColor, damageCurve.Evaluate(power));
-                    chargeBar.color = new Color(chargeBar.color.r, chargeBar.color.g, chargeBar.color.b, Mathf.Lerp(0,1,power));
+                    rectangle.sizeDelta = new Vector2(Mathf.Lerp(0, 750, power), Random.Range(10 - (3 * damageCurve.Evaluate(rawPercent)), 10 + (damageCurve.Evaluate(rawPercent))));
+                    chargeBar.color = Color.Lerp(startColor, damageColor, damageCurve.Evaluate(rawPercent));
+                    chargeBar.color = new Color(chargeBar.color.r, chargeBar.color.g, chargeBar.color.b, Mathf.Lerp(0,1,rawPercent));
                 }
             }
             else
@@ -214,7 +220,7 @@ public class PlayerCallout : MonoBehaviour {
     public void Callout(float _power)
     {
         _power = Mathf.Clamp(_power, powerMin, 1);
-        Camera.main.GetComponent<CameraEffects>().Shake(0.2f, _power);
+        Camera.main.GetComponent<CameraEffects>().Shake(0.2f, damageCurve.Evaluate(_power));
         StartCoroutine(CalloutRoutine(_power));
         //throatHealth -= _power / 10;
         print(_power);

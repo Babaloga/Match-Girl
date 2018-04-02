@@ -9,10 +9,16 @@ public class PlayerStatsManager : MonoBehaviour {
     public static float hunger = 0;
     private static float _warmth;
 
+    public static float maxSpeed;
+    public static float maxCallStrength;
+
     public int l_matches = 0;
     public int l_money = 0;
     public float l_hunger = 0;
     public float l_warmth;
+
+    public float l_maxSpeed = 5;
+    public float l_maxCallStrength = 20;
 
     public float min_warmth = 0;
 
@@ -39,6 +45,8 @@ public class PlayerStatsManager : MonoBehaviour {
             matches = l_matches;
             money = l_money;
             hunger = l_hunger;
+            maxCallStrength = l_maxCallStrength;
+            maxSpeed = l_maxSpeed;
         }
         else
         {
