@@ -21,6 +21,7 @@ public class DialogueReader : MonoBehaviour {
     private Text displayText;
 
     public GameObject[] optionObjects;
+    GameObject continueObject;
 
     public static DialogueReader reader;
 
@@ -38,6 +39,8 @@ public class DialogueReader : MonoBehaviour {
             if (optionHolder.GetChild(i))
                 optionObjects[i] = optionHolder.GetChild(i).gameObject;
         }
+
+        continueObject = optionHolder.GetChild(10).gameObject;
     }
 
     private void Update()
@@ -53,7 +56,6 @@ public class DialogueReader : MonoBehaviour {
     public void StartDialogue(Dialogue _dialogue)
     {
         dialogue = _dialogue;
-        characterNameText.text = _dialogue.characterName;
         values = new List<int>(dialogue.entries.Keys);
         currentValue = 1;
         GetOptions();
@@ -63,7 +65,6 @@ public class DialogueReader : MonoBehaviour {
     public void StartDialogue(Dialogue _dialogue, int start)
     {
         dialogue = _dialogue;
-        characterNameText.text = _dialogue.characterName;
         values = new List<int>(dialogue.entries.Keys);
         currentValue = start;
         GetOptions();
@@ -75,7 +76,7 @@ public class DialogueReader : MonoBehaviour {
         print(selection);
         int nextValue = (currentValue * 10) + selection;
 
-        if (!dialogue.entries.ContainsKey(nextValue))
+        if (!dialogue.entries.ContainsKey(nextValue) || selection > 9)
         {
             EndDialogue();
             return;
@@ -116,6 +117,15 @@ public class DialogueReader : MonoBehaviour {
         showingDialogue = true;
         displayText.text = dialogue.entries[currentValue].entryText;
 
+        if(dialogue.entries[currentValue].speakerName != "")
+        {
+            characterNameText.text = dialogue.entries[currentValue].speakerName;
+        }
+        else
+        {
+            characterNameText.text = dialogue.characterName;
+        }
+
         foreach(GameObject o in optionObjects)
         {
             o.SetActive(false);
@@ -155,8 +165,12 @@ public class DialogueReader : MonoBehaviour {
 
         if (!wayOut)
         {
-            optionObjects[valueOptions.Count].GetComponentInChildren<Text>().text = "Continue";
-            optionObjects[valueOptions.Count].SetActive(true);
+            continueObject.SetActive(true);
+            ContinueButton.selectionInt = dialogue.entries[currentValue].responses.Length;
+        }
+        else
+        {
+            continueObject.SetActive(false);
         }
 
         displayHolder.alpha = 1;

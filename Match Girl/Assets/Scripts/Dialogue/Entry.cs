@@ -9,6 +9,8 @@ public class Entry {
 
     public string entryText;
 
+    public string speakerName = "";
+
     public float modifyTemperature = 0;
     public float modifyHunger = 0;
     public float modifyTime = 0;
