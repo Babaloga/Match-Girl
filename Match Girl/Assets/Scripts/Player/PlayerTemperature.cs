@@ -20,7 +20,7 @@ public class PlayerTemperature : MonoBehaviour {
         heatZones = new List<WarmthSource>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         outsideTemp = worldTemperature;
 
@@ -35,7 +35,7 @@ public class PlayerTemperature : MonoBehaviour {
         }
 
         //Flow of heat to or from player
-        heatflow = ((conductivity/100) * (outsideTemp - temperature)) * Time.deltaTime;
+        heatflow = ((conductivity/100) * (outsideTemp - temperature)) * Time.fixedDeltaTime;
 
         //Modifying temperature
         temperature += heatflow;
