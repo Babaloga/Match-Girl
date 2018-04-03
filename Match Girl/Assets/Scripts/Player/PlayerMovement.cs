@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    public float baseSpeed = 5;
-
+    private float baseSpeed;
     private float speed;
 
     Vector3 movement = Vector3.zero;
@@ -22,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         player = gameObject;
-        speed = baseSpeed;
     }
 
     private void FixedUpdate()
@@ -46,16 +43,18 @@ public class PlayerMovement : MonoBehaviour
             frozen = false;
         }
 
+        baseSpeed = PlayerStatsManager.stats.speed;
+
         if (Input.GetKey(KeyCode.Space))
         {
-            speed = (1f / 2f) * baseSpeed;
+            speed = (0.5f) * baseSpeed;
         }
         else
         {
             speed = baseSpeed;
         }
 
-        Collider coll = GetComponent<Collider>();
+        //Collider coll = GetComponent<Collider>();
 
         RaycastHit hit = new RaycastHit();
         if (Physics.Raycast(new Ray(transform.position, Vector3.down), out hit, Mathf.Infinity, groundMask))

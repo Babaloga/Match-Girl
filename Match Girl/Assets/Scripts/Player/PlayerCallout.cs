@@ -26,6 +26,7 @@ public class PlayerCallout : MonoBehaviour {
     public static Queue<NPCInteraction> npcQueue;
 
     public AnimationCurve powerCurve;
+    public AnimationCurve damageCurve;
 
     public Image chargeBar;
 
@@ -37,6 +38,11 @@ public class PlayerCallout : MonoBehaviour {
 
     public static List<SpecialInteraction> interactions;
 
+    MeshRenderer meshRenderer;
+
+    public Color startColor = Color.white;
+    public Color damageColor = Color.red;
+
 	void Start () {
         npcQueue = new Queue<NPCInteraction>();
         source = GetComponent<WordSource>();
@@ -47,6 +53,7 @@ public class PlayerCallout : MonoBehaviour {
         gameObject.layer = 13;
         transform.localScale = new Vector3(1 / transform.parent.localScale.x, 1 / transform.parent.localScale.y, 1 / transform.parent.localScale.z);
         interactions = new List<SpecialInteraction>();
+        meshRenderer = GetComponent<MeshRenderer>();
 	}
 
     private void Update()
@@ -89,6 +96,10 @@ public class PlayerCallout : MonoBehaviour {
             n = 0;
         }
 
+        //Callout
+
+        throatHealth = PlayerStatsManager.stats.callStrength;
+
         if (!muted)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -122,13 +133,16 @@ public class PlayerCallout : MonoBehaviour {
 
             if (Input.GetKey(KeyCode.Space) && down)
             {
-                power = powerCurve.Evaluate(Mathf.Clamp01((Time.time - spaceDown) / timeMax) * throatHealth);
+                float rawPercent = Mathf.Clamp01((Time.time - spaceDown) / timeMax);
+
+                power = powerCurve.Evaluate(rawPercent * throatHealth);
 
                 if (power > powerMin)
                 {
                     RectTransform rectangle = chargeBar.rectTransform;
-                    rectangle.sizeDelta = new Vector2(Mathf.Lerp(0, 300, power), 10);
-                    chargeBar.color = new Color(chargeBar.color.r, chargeBar.color.g, chargeBar.color.b, Mathf.Lerp(0,1,power));
+                    rectangle.sizeDelta = new Vector2(Mathf.Lerp(0, 750, power), Random.Range(10 - (3 * damageCurve.Evaluate(rawPercent)), 10 + (damageCurve.Evaluate(rawPercent))));
+                    chargeBar.color = Color.Lerp(startColor, damageColor, damageCurve.Evaluate(rawPercent));
+                    chargeBar.color = new Color(chargeBar.color.r, chargeBar.color.g, chargeBar.color.b, Mathf.Lerp(0,1,rawPercent));
                 }
             }
             else
@@ -206,6 +220,7 @@ public class PlayerCallout : MonoBehaviour {
     public void Callout(float _power)
     {
         _power = Mathf.Clamp(_power, powerMin, 1);
+        Camera.main.GetComponent<CameraEffects>().Shake(0.2f, damageCurve.Evaluate(_power));
         StartCoroutine(CalloutRoutine(_power));
         //throatHealth -= _power / 10;
         print(_power);
@@ -224,16 +239,21 @@ public class PlayerCallout : MonoBehaviour {
         float radius = _power * maxRadius;
 
         cast.enabled = true;
+        Color fullColor = meshRenderer.material.GetColor("_RimColor");
 
         float t = Time.time;
         while ((Time.time - t) <= callDuration)
         {
             float p = (Time.time - t) / callDuration;
 
-            cast.radius = Mathf.Lerp(0, radius, p);
+            float q = Mathf.Lerp(0, radius, p);
+
+            transform.localScale = new Vector3(q/transform.parent.lossyScale.x,q / transform.parent.lossyScale.y, q / transform.parent.lossyScale.z);
+            meshRenderer.material.SetColor("_RimColor", Color.Lerp(fullColor, Color.black, p));
             yield return null;
         }
-        cast.radius = 0;
+        transform.localScale = Vector3.zero;
+        meshRenderer.material.SetColor("_RimColor", fullColor);
         cast.enabled = false;
     }
 

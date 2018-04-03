@@ -16,7 +16,8 @@ public class Currency {
 
         if (pounds > 0) returnString += "£" + pounds + " ";
         if (shillings > 0) returnString += shillings + "s ";
-        if (_pence > 0) returnString += _pence + "p ";
+
+        returnString += _pence + "p ";
 
         return returnString;
     }

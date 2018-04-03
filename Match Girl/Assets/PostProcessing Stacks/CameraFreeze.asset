@@ -138,9 +138,9 @@ MonoBehaviour:
           power: {r: 1, g: 1, b: 1, a: 0}
           offset: {r: 1, g: 1, b: 1, a: 0}
         linear:
-          lift: {r: 0, g: 0, b: 0, a: 0}
-          gamma: {r: 0, g: 0, b: 0, a: 0}
-          gain: {r: 0, g: 0, b: 0, a: 0}
+          lift: {r: 1, g: 1, b: 1, a: 0}
+          gamma: {r: 1, g: 1, b: 1, a: 0}
+          gain: {r: 1, g: 1, b: 1, a: 0}
       curves:
         master:
           curve:
@@ -297,7 +297,7 @@ MonoBehaviour:
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
-      center: {x: 0.5, y: 0.2603491}
+      center: {x: 0.50009626, y: 0.48423934}
       intensity: 0
       smoothness: 1
       roundness: 1

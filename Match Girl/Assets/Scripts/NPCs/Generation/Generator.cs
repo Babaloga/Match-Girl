@@ -5,7 +5,9 @@ using Anima2D;
 
 public class Generator : MonoBehaviour {
 
-    public Archetype archetype;
+    Archetype archetype;
+    bool male;
+    public bool debugForceMale = false;
 
     public SpriteMeshInstance head;
     public SpriteMeshInstance torso;
@@ -25,6 +27,16 @@ public class Generator : MonoBehaviour {
 
     private void Start()
     {
+        if (debugForceMale) male = true;
+        else male = (Random.Range(0, 2) == 1);
+
+        NPCInteractionBasic npc = transform.parent.GetComponent<NPCInteractionBasic>();
+
+        if(male)
+            archetype = TypeDictionary.instance.maleDictionary[npc.npcType];
+        else
+            archetype = TypeDictionary.instance.femaleDictionary[npc.npcType];
+
         GenerateNPC();
     }
 

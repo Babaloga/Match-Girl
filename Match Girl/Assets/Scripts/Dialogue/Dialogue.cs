@@ -8,6 +8,7 @@ public class EntryDictionary : SerializableDictionary<int, Entry> { }
 [CreateAssetMenu]
 public class Dialogue : ScriptableObject {
 
+    public string characterName;
     public EntryDictionary entries;
 
 }

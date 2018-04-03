@@ -16,10 +16,12 @@ public class DialogueReader : MonoBehaviour {
     public Transform optionHolder;
 
     public GameObject dialogueObject;
+    public Text characterNameText;
 
     private Text displayText;
 
     public GameObject[] optionObjects;
+    GameObject continueObject;
 
     public static DialogueReader reader;
 
@@ -30,13 +32,15 @@ public class DialogueReader : MonoBehaviour {
         reader = this;
         displayText = dialogueObject.GetComponentInChildren<Text>();
 
-        optionObjects = new GameObject[9];
+        optionObjects = new GameObject[10];
 
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 10; i++)
         {
             if (optionHolder.GetChild(i))
                 optionObjects[i] = optionHolder.GetChild(i).gameObject;
         }
+
+        continueObject = optionHolder.GetChild(10).gameObject;
     }
 
     private void Update()
@@ -53,7 +57,7 @@ public class DialogueReader : MonoBehaviour {
     {
         dialogue = _dialogue;
         values = new List<int>(dialogue.entries.Keys);
-        currentValue = 0;
+        currentValue = 1;
         GetOptions();
         ShowDialogue();
     }
@@ -69,34 +73,31 @@ public class DialogueReader : MonoBehaviour {
 
     public void Select(int selection)
     {
-        if (!dialogue.entries.ContainsKey(currentValue + selection))
+        print(selection);
+        int nextValue = (currentValue * 10) + selection;
+
+        if (!dialogue.entries.ContainsKey(nextValue) || selection > 9)
         {
             EndDialogue();
             return;
         }
 
-        Entry selectedEntry = dialogue.entries[currentValue + selection];
+        Entry selectedEntry = dialogue.entries[nextValue];
 
         ApplyModifiers(selectedEntry);
 
-        if (selectedEntry.end)
-            EndDialogue();
-        else
-        {
-            currentValue = (currentValue + selection) * 10;
-            GetOptions();
-            if (valueOptions.Count == 0) EndDialogue();
-            else ShowDialogue();
-        }
+        currentValue = nextValue;
+        GetOptions();
+        ShowDialogue();
     }
 
     public void GetOptions()
     {
         List<int> options = new List<int>();
 
-        foreach (int value in values)
+        for (int i = 0; i < dialogue.entries[currentValue].responses.Length; i++)
         {
-            if (value > currentValue && value < currentValue + 10) options.Add(value);
+            options.Add(i);
         }
 
         valueOptions = options;
@@ -116,6 +117,15 @@ public class DialogueReader : MonoBehaviour {
         showingDialogue = true;
         displayText.text = dialogue.entries[currentValue].entryText;
 
+        if(dialogue.entries[currentValue].speakerName != "")
+        {
+            characterNameText.text = dialogue.entries[currentValue].speakerName;
+        }
+        else
+        {
+            characterNameText.text = dialogue.characterName;
+        }
+
         foreach(GameObject o in optionObjects)
         {
             o.SetActive(false);
@@ -123,30 +133,44 @@ public class DialogueReader : MonoBehaviour {
 
         bool wayOut = false;
 
+        Entry currentEntry = dialogue.entries[currentValue];
+
         for (int i = 0; i < valueOptions.Count; i++)
         {
-            Entry entry = dialogue.entries[valueOptions[i]];
+            string optionText = currentEntry.responses[i];
 
-            string displayString = TextWithModifiers(entry);
-
-            if(PlayerStatsManager.matches + entry.modifyMatches < 0 || PlayerStatsManager.money + entry.modifyMoney < 0)
+            if (dialogue.entries.ContainsKey((currentValue * 10) + valueOptions[i]))
             {
-                optionObjects[i].GetComponent<Button>().interactable = false;
+                Entry nextEntry = dialogue.entries[(currentValue * 10) + valueOptions[i]];
+                optionText += GetModifiers(nextEntry);
+
+                if (PlayerStatsManager.stats.matches + nextEntry.modifyMatches < 0 || PlayerStatsManager.stats.money + nextEntry.modifyMoney < 0)
+                {
+                    optionObjects[i].GetComponent<Button>().interactable = false;
+                }
+                else
+                {
+                    optionObjects[i].GetComponent<Button>().interactable = true;
+                    wayOut = true;
+                }
             }
             else
             {
-                optionObjects[i].GetComponent<Button>().interactable = true;
                 wayOut = true;
             }
 
-            optionObjects[i].GetComponentInChildren<Text>().text = displayString;
+            optionObjects[i].GetComponentInChildren<Text>().text = optionText;
             optionObjects[i].SetActive(true);
         }
 
         if (!wayOut)
         {
-            optionObjects[valueOptions.Count].GetComponentInChildren<Text>().text = "Walk Away";
-            optionObjects[valueOptions.Count].SetActive(true);
+            continueObject.SetActive(true);
+            ContinueButton.selectionInt = dialogue.entries[currentValue].responses.Length;
+        }
+        else
+        {
+            continueObject.SetActive(false);
         }
 
         displayHolder.alpha = 1;
@@ -155,9 +179,9 @@ public class DialogueReader : MonoBehaviour {
 
     //Showing stat modifiers in the dialogue
 
-    private string TextWithModifiers(Entry _entry)
+    private string GetModifiers(Entry _entry)
     {
-        string text = _entry.entryText + " ";
+        string text = " ";
 
         if (_entry.modifyTemperature != 0)
         {
@@ -176,7 +200,7 @@ public class DialogueReader : MonoBehaviour {
 
         if (_entry.modifyMatches != 0)
         {
-            if(PlayerStatsManager.matches + _entry.modifyMatches < 0)
+            if(PlayerStatsManager.stats.matches + _entry.modifyMatches < 0)
             {
                 text = text + "<color=#dd0000ff>[Matches " + _entry.modifyMatches.ToString("+0;-#") + "]</color>";
             }
@@ -188,7 +212,7 @@ public class DialogueReader : MonoBehaviour {
 
         if (_entry.modifyMoney != 0)
         {
-            if (PlayerStatsManager.money + _entry.modifyMoney < 0)
+            if (PlayerStatsManager.stats.money + _entry.modifyMoney < 0)
             {
                 text = text + "<color=#dd0000ff>[Money " + _entry.modifyMoney.ToString("+0;-#") + "]</color>";
             }
@@ -205,27 +229,32 @@ public class DialogueReader : MonoBehaviour {
     {
         if (_entry.modifyTemperature != 0)
         {
+            print("Modify Temperature: " + _entry.modifyTemperature);
             PlayerStatsManager.SetTemperature(PlayerStatsManager.Warmth + _entry.modifyTemperature);
         }
 
         if (_entry.modifyHunger != 0)
         {
-            PlayerStatsManager.hunger += _entry.modifyHunger;
+            print("Modify Hunger: " + _entry.modifyHunger);
+            PlayerStatsManager.stats.food += _entry.modifyHunger;
         }
 
         if (_entry.modifyTime != 0)
         {
+            print("Modify Time: " + _entry.modifyTime);
             DayNightCycle.SetTime(DayNightCycle.currentTime + _entry.modifyTime);
         }
 
         if (_entry.modifyMatches != 0)
         {
-            PlayerStatsManager.matches += _entry.modifyMatches;
+            print("Modify TMatches: " + _entry.modifyMatches);
+            PlayerStatsManager.stats.matches += _entry.modifyMatches;
         }
 
         if (_entry.modifyMoney != 0)
         {
-            PlayerStatsManager.money += _entry.modifyMoney;
+            print("Modify Money: " + _entry.modifyMoney);
+            PlayerStatsManager.stats.money += _entry.modifyMoney;
         }
     }
 }

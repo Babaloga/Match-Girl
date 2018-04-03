@@ -51,9 +51,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e1802c7776d4b5d8b39580acc118d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodPerMoney: 11
   row1: {fileID: 0}
   row2: {fileID: 0}
   row3: {fileID: 0}
   row4: {fileID: 0}
   row5: {fileID: 0}
   row6: {fileID: 0}
+  price1: {fileID: 0}
+  price2: {fileID: 0}
+  price3: {fileID: 0}
+  price4: {fileID: 0}
+  price5: {fileID: 0}
+  price6: {fileID: 0}
+  price_1: 3
+  price_2: 10
+  price_3: 500000
+  price_4: 14
+  price_5: 7
+  price_6: 100000
+  money: {fileID: 0}
+  hungerText: {fileID: 0}

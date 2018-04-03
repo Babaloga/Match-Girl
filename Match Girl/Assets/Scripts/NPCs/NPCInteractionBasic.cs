@@ -31,6 +31,8 @@ public class NPCInteractionBasic : MonoBehaviour {
 
     private Vector3 destination;
 
+    public NPCType npcType;
+
     private enum NPCState
     {
         Wandering,
@@ -142,13 +144,13 @@ public class NPCInteractionBasic : MonoBehaviour {
     {
         int matchesWanted = Random.Range(minBuyNumber, maxBuyNumber);
 
-        if(PlayerStatsManager.matches < matchesWanted)
+        if(PlayerStatsManager.stats.matches < matchesWanted)
         {
-            matchesWanted = PlayerStatsManager.matches;
+            matchesWanted = PlayerStatsManager.stats.matches;
         }
 
-        PlayerStatsManager.money += (int) (matchesWanted * priceForMatch);
-        PlayerStatsManager.matches -= matchesWanted;
+        PlayerStatsManager.stats.money += (int) (matchesWanted * priceForMatch);
+        PlayerStatsManager.stats.matches -= matchesWanted;
 
         wantsMatches = false;
 
@@ -158,4 +160,9 @@ public class NPCInteractionBasic : MonoBehaviour {
         agent.SetDestination(destination);
         currentState = NPCState.Wandering;
     }
+}
+
+public enum NPCType
+{
+    Rich, Poor
 }

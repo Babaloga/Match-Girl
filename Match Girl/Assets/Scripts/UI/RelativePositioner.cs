@@ -17,6 +17,12 @@ public class RelativePositioner : MonoBehaviour {
 
     private void Update()
     {
-        thisRect.position = target.position + (Vector3)(target.rect.center - new Vector2(0, (target.rect.height / 2) * target.lossyScale.y)) + (Vector3) distance;
+        float heightRatio = Screen.height / 450f;
+
+        Debug.DrawLine(target.position, target.position - new Vector3(0, (target.rect.height) * heightRatio, 0), Color.red);
+        Debug.DrawLine(target.position - new Vector3(0, (target.rect.height) * heightRatio, 0), target.position - new Vector3(0, (target.rect.height) * heightRatio, 0) - (Vector3)distance * heightRatio, Color.green);
+
+        thisRect.position = target.position - new Vector3(0, (target.rect.height) * heightRatio,0) 
+            + /*new Vector3(distance.x * (Screen.width/800), distance.y * (Screen.height/450), 0)*/ (Vector3)distance * heightRatio;
     }
 }

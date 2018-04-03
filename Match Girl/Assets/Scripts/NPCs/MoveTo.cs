@@ -2,13 +2,14 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MoveTo : MonoBehaviour
 {
     Transform goal;
     NavMeshAgent agent;
 
-    CrowdPoint[] points;
+    List<CrowdPoint> points;
 
     public float maxRadius = 100;
 
@@ -35,18 +36,52 @@ public class MoveTo : MonoBehaviour
 
     public bool overriden = false;
 
+    NPCType npcType;
+
     [ShowOnly]
     public bool agentStopped = false;
 
     void Start()
     {
+        npcType = GetComponent<NPCInteractionBasic>().npcType;
+
         agent = GetComponent<NavMeshAgent>();
         
         goal = new GameObject(gameObject.name + " goal").transform;
 
         StartCoroutine(StartDelay());
 
-        points = FindObjectsOfType<CrowdPoint>();
+        points = new List<CrowdPoint>();
+
+        switch (npcType)
+        {
+            case (NPCType.Rich):
+
+                foreach(CrowdPoint p in FindObjectsOfType<CrowdPoint>())
+                {
+                    if (p.allowRich)
+                    {
+                        points.Add(p);
+                    }
+                }
+
+                break;
+
+            case (NPCType.Poor):
+
+                foreach (CrowdPoint p in FindObjectsOfType<CrowdPoint>())
+                {
+                    if (p.allowPoor)
+                    {
+                        points.Add(p);
+                    }
+                }
+
+                break;
+        }
+
+
+        if (points.Count == 0) gameObject.SetActive(false);
 
         NavMesh.avoidancePredictionTime = 0.2f;
         NavMesh.pathfindingIterationsPerFrame = 500;
@@ -114,13 +149,13 @@ public class MoveTo : MonoBehaviour
 
         //Randomly picks a point to raycast from. For the first cast all points are equally weighted. For all subsequent casts the NPC is more likely to stay under the same point.
         if (lastGoal == -1) {
-            int rand = Random.Range(0, points.Length);
+            int rand = Random.Range(0, points.Count);
             startPoint = points[rand].transform;
             lastGoal = rand;
         }
         else
         {
-            int rand = Random.Range(-points.Length, points.Length);
+            int rand = Random.Range(-points.Count, points.Count);
 
             if (rand < 0)
             {

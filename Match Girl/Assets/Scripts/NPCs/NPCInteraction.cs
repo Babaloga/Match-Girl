@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class NPCInteraction : MonoBehaviour {
 
-    Collider coll;
+    //Collider coll;
     WordSource source;
     public float cooldown = 5f;
     float triggerTime =-5f;
@@ -54,7 +54,7 @@ public class NPCInteraction : MonoBehaviour {
 
     void Start () {
         agent = GetComponent<NavMeshAgent>();
-        coll = GetComponent<Collider>();
+        //coll = GetComponent<Collider>();
         source = GetComponent<WordSource>();
         float random = Random.Range(0f, 100f);
 
