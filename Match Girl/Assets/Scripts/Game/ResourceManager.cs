@@ -36,8 +36,8 @@ public class ResourceManager : MonoBehaviour {
     public Text hungerText;
 
     private int moneyLeft;
-    private float hungerLevel;
-    public static float variableHunger;
+    private float foodLevel;
+    public static float variableFood;
 
 
 	// Use this for initialization
@@ -61,42 +61,42 @@ public class ResourceManager : MonoBehaviour {
         if (!PersistentGameManager.instance)
         {
             moneyLeft = 100;
-            hungerLevel = 100;
+            foodLevel = 100;
         }
         else
         {
-            moneyLeft = PersistentGameManager.money;
-            hungerLevel = PersistentGameManager.hunger;
+            moneyLeft = PersistentGameManager.persistentStats.money;
+            foodLevel = PersistentGameManager.persistentStats.food;
         }
 
         
-        variableHunger = hungerLevel;
+        variableFood = foodLevel;
         CheckHunger();
 	}
 
     public void done()
     {
-        PersistentGameManager.money = moneyLeft;
+        PersistentGameManager.persistentStats.money = moneyLeft;
 
         PersistentGameManager.instance.LoadMainScene();
     }
 
 	private void CheckHunger()
     {
-        print(variableHunger);
-        if (variableHunger < 26)
+        print(variableFood);
+        if (variableFood > 75)
         {
             hungerText.text = "Satisfied";
         }
-        else if(variableHunger > 25 && variableHunger < 51)
+        else if(variableFood > 50 && variableFood < 76)
         {
             hungerText.text = "Hungry";
         }
-        else if(variableHunger > 50 && variableHunger < 76)
+        else if(variableFood > 25 && variableFood < 51)
         {
             hungerText.text = "Famished";
         }
-        else if (variableHunger > 75)
+        else if (variableFood < 26)
         {
             hungerText.text = "Starving";
         }
@@ -107,7 +107,7 @@ public class ResourceManager : MonoBehaviour {
     void Update () {
         money.text = Currency.FormatPounds(moneyLeft);
 
-        variableHunger = hungerLevel - (foodPerMoney * rowOneMoney);
+        variableFood = foodLevel + (foodPerMoney * rowOneMoney);
         CheckHunger();
 
         row1.text = rowOneMoney.ToString();

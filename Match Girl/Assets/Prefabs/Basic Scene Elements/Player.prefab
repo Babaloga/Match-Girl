@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 65977577811921620}
   - component: {fileID: 114705987035184168}
   - component: {fileID: 114895463205731520}
+  - component: {fileID: 114539531243816374}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -428,14 +429,20 @@ MonoBehaviour:
     - serializedVersion: 2
       time: 0
       value: 0
-      inSlope: 2.9324036
-      outSlope: 2.9324036
+      inSlope: 1.8903103
+      outSlope: 1.8903103
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.6025276
+      value: 0.901989
+      inSlope: 0.3753026
+      outSlope: 0.3753026
       tangentMode: 0
     - serializedVersion: 2
       time: 1
       value: 1
-      inSlope: 0.000004178948
-      outSlope: 0.000004178948
+      inSlope: 0.26102328
+      outSlope: 0.26102328
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -446,20 +453,20 @@ MonoBehaviour:
     - serializedVersion: 2
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: 0.0313626
+      outSlope: 0.0313626
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.600319
-      value: 0.09995025
-      inSlope: 0.28441408
-      outSlope: 0.28441408
+      time: 0.6011125
+      value: 0.10025542
+      inSlope: 0.33927628
+      outSlope: 0.33927628
       tangentMode: 0
     - serializedVersion: 2
       time: 1
       value: 1
-      inSlope: 3.0070527
-      outSlope: 3.0070527
+      inSlope: 1.3450319
+      outSlope: 1.3450319
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -518,6 +525,27 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114539531243816374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823337857803370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397ccaca5a2484d47b75832b21566bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseStats:
+    matches: 0
+    money: 0
+    food: 0
+    speed: 0
+    callStrength: 0
+    conductivity: 0
+  callStrengthLossPerLevel: 0.2
+  conductivityBoostPerLevel: 0.2
+  speedLossPerLevel: 1
 --- !u!114 &114705987035184168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -572,12 +600,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15d38f54fbba1e4f99bf6614e24e791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  l_matches: 25
-  l_money: 0
-  l_hunger: 0
-  l_warmth: 0
-  l_maxSpeed: 5
-  l_maxCallStrength: 1
+  l_stats:
+    matches: 25
+    money: 0
+    food: 50
+    speed: 10
+    callStrength: 1
+    conductivity: 10
+  startingWarmth: 50
   min_warmth: 10
 --- !u!114 &114977954927289016
 MonoBehaviour:

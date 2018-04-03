@@ -144,7 +144,7 @@ public class DialogueReader : MonoBehaviour {
                 Entry nextEntry = dialogue.entries[(currentValue * 10) + valueOptions[i]];
                 optionText += GetModifiers(nextEntry);
 
-                if (PlayerStatsManager.matches + nextEntry.modifyMatches < 0 || PlayerStatsManager.money + nextEntry.modifyMoney < 0)
+                if (PlayerStatsManager.stats.matches + nextEntry.modifyMatches < 0 || PlayerStatsManager.stats.money + nextEntry.modifyMoney < 0)
                 {
                     optionObjects[i].GetComponent<Button>().interactable = false;
                 }
@@ -200,7 +200,7 @@ public class DialogueReader : MonoBehaviour {
 
         if (_entry.modifyMatches != 0)
         {
-            if(PlayerStatsManager.matches + _entry.modifyMatches < 0)
+            if(PlayerStatsManager.stats.matches + _entry.modifyMatches < 0)
             {
                 text = text + "<color=#dd0000ff>[Matches " + _entry.modifyMatches.ToString("+0;-#") + "]</color>";
             }
@@ -212,7 +212,7 @@ public class DialogueReader : MonoBehaviour {
 
         if (_entry.modifyMoney != 0)
         {
-            if (PlayerStatsManager.money + _entry.modifyMoney < 0)
+            if (PlayerStatsManager.stats.money + _entry.modifyMoney < 0)
             {
                 text = text + "<color=#dd0000ff>[Money " + _entry.modifyMoney.ToString("+0;-#") + "]</color>";
             }
@@ -236,7 +236,7 @@ public class DialogueReader : MonoBehaviour {
         if (_entry.modifyHunger != 0)
         {
             print("Modify Hunger: " + _entry.modifyHunger);
-            PlayerStatsManager.hunger += _entry.modifyHunger;
+            PlayerStatsManager.stats.food += _entry.modifyHunger;
         }
 
         if (_entry.modifyTime != 0)
@@ -248,13 +248,13 @@ public class DialogueReader : MonoBehaviour {
         if (_entry.modifyMatches != 0)
         {
             print("Modify TMatches: " + _entry.modifyMatches);
-            PlayerStatsManager.matches += _entry.modifyMatches;
+            PlayerStatsManager.stats.matches += _entry.modifyMatches;
         }
 
         if (_entry.modifyMoney != 0)
         {
             print("Modify Money: " + _entry.modifyMoney);
-            PlayerStatsManager.money += _entry.modifyMoney;
+            PlayerStatsManager.stats.money += _entry.modifyMoney;
         }
     }
 }

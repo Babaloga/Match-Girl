@@ -43,18 +43,18 @@ public class PlayerMovement : MonoBehaviour
             frozen = false;
         }
 
-        baseSpeed = PlayerStatsManager.maxSpeed;
+        baseSpeed = PlayerStatsManager.stats.speed;
 
         if (Input.GetKey(KeyCode.Space))
         {
-            speed = (1f / 2f) * baseSpeed;
+            speed = (0.5f) * baseSpeed;
         }
         else
         {
             speed = baseSpeed;
         }
 
-        Collider coll = GetComponent<Collider>();
+        //Collider coll = GetComponent<Collider>();
 
         RaycastHit hit = new RaycastHit();
         if (Physics.Raycast(new Ray(transform.position, Vector3.down), out hit, Mathf.Infinity, groundMask))

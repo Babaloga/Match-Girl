@@ -38,18 +38,18 @@ public class PlayerStatsUI : MonoBehaviour {
 
                 if (thisScene == Scene.Street)
                 {
-                    text.text = PlayerStatsManager.matches.ToString();
+                    text.text = PlayerStatsManager.stats.matches.ToString();
 
-                    if (previousValue != PlayerStatsManager.matches)
+                    if (previousValue != PlayerStatsManager.stats.matches)
                     {
-                        GetComponent<WordSource>().Speak((PlayerStatsManager.matches - previousValue).ToString("+0;-#"));
+                        GetComponent<WordSource>().Speak((PlayerStatsManager.stats.matches - previousValue).ToString("+0;-#"));
                     }
 
-                    previousValue = PlayerStatsManager.matches;
+                    previousValue = PlayerStatsManager.stats.matches;
                 }
                 else
                 {
-                    text.text = PersistentGameManager.matches + " Matches";
+                    text.text = PersistentGameManager.persistentStats.matches + " Matches";
                 }
 
                 break;
@@ -58,19 +58,19 @@ public class PlayerStatsUI : MonoBehaviour {
 
                 if (thisScene == Scene.Street)
                 {
-                    text.text = Currency.FormatPounds(PlayerStatsManager.money);
+                    text.text = Currency.FormatPounds(PlayerStatsManager.stats.money);
 
-                    if (previousValue != PlayerStatsManager.money)
+                    if (previousValue != PlayerStatsManager.stats.money)
                     {
-                        GetComponent<WordSource>().Speak((PlayerStatsManager.money - previousValue).ToString("+0;-#"));
+                        GetComponent<WordSource>().Speak((PlayerStatsManager.stats.money - previousValue).ToString("+0;-#"));
                     }
 
-                    previousValue = PlayerStatsManager.money;
+                    previousValue = PlayerStatsManager.stats.money;
 
                 }
                 else
                 {
-                    text.text = Currency.FormatPounds(PersistentGameManager.money);
+                    text.text = Currency.FormatPounds(PersistentGameManager.persistentStats.money);
                 }
 
                 break;

@@ -144,13 +144,13 @@ public class NPCInteractionBasic : MonoBehaviour {
     {
         int matchesWanted = Random.Range(minBuyNumber, maxBuyNumber);
 
-        if(PlayerStatsManager.matches < matchesWanted)
+        if(PlayerStatsManager.stats.matches < matchesWanted)
         {
-            matchesWanted = PlayerStatsManager.matches;
+            matchesWanted = PlayerStatsManager.stats.matches;
         }
 
-        PlayerStatsManager.money += (int) (matchesWanted * priceForMatch);
-        PlayerStatsManager.matches -= matchesWanted;
+        PlayerStatsManager.stats.money += (int) (matchesWanted * priceForMatch);
+        PlayerStatsManager.stats.matches -= matchesWanted;
 
         wantsMatches = false;
 

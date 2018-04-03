@@ -12,12 +12,8 @@ public class PersistentGameManager : MonoBehaviour {
     public string mainSceneName;
 
     public static float time;
-    public static int money;
-    public static int matches;
-    public static float hunger;
 
-    public static float maxSpeed;
-    public static float maxCallStrength;
+    public static PlayerStats persistentStats;
 
     public float dayHungerPenalty = 34;
 
@@ -25,30 +21,29 @@ public class PersistentGameManager : MonoBehaviour {
 
     public bool debugMode = false;
 
-    private void Start()
+    public static EffectLevel persistentSicknessLevel;
+
+    private void Awake()
     {
         if (!instance) instance = this;
         else Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
+        persistentSicknessLevel = EffectLevel.None;
     }
 
     public void LoadEndScene()
     {
         time = DayNightCycle.currentTime;
-        money = PlayerStatsManager.money;
-        matches = PlayerStatsManager.matches;
-        hunger = PlayerStatsManager.hunger;
-        maxCallStrength = PlayerStatsManager.maxCallStrength;
-        maxSpeed = PlayerStatsManager.maxSpeed;
-        hunger += dayHungerPenalty;
+        persistentStats = PlayerStatsManager.stats;
+        persistentStats.food -= dayHungerPenalty;
         SceneManager.LoadScene(endScreenName);
     }
 
     public void LoadMainScene()
     {
         currentDay++;
-        hunger = ResourceManager.variableHunger;
+        persistentStats.food = ResourceManager.variableFood;
         SceneManager.LoadScene(mainSceneName);
     }
 

@@ -4,21 +4,13 @@ using UnityEngine;
 
 public class PlayerStatsManager : MonoBehaviour {
 
-    public static int matches = 0;
-    public static int money = 0;
-    public static float hunger = 0;
+    public static PlayerStats stats;
+
+    public PlayerStats l_stats;
+
+    public float startingWarmth = 50;
+
     private static float _warmth;
-
-    public static float maxSpeed;
-    public static float maxCallStrength;
-
-    public int l_matches = 0;
-    public int l_money = 0;
-    public float l_hunger = 0;
-    public float l_warmth;
-
-    public float l_maxSpeed = 5;
-    public float l_maxCallStrength = 20;
 
     public float min_warmth = 0;
 
@@ -37,22 +29,16 @@ public class PlayerStatsManager : MonoBehaviour {
         temperatureClass.temperature = _temperature;
     }
 
-    void Start () {
+    void Awake () {
         temperatureClass = FindObjectOfType<PlayerTemperature>();
 
         if (PersistentGameManager.currentDay == 1)
         {
-            matches = l_matches;
-            money = l_money;
-            hunger = l_hunger;
-            maxCallStrength = l_maxCallStrength;
-            maxSpeed = l_maxSpeed;
+            stats = l_stats;
         }
         else
         {
-            matches = PersistentGameManager.matches;
-            money = PersistentGameManager.money;
-            hunger = PersistentGameManager.hunger;
+            stats = PersistentGameManager.persistentStats;
         }
 	}
 
@@ -61,18 +47,20 @@ public class PlayerStatsManager : MonoBehaviour {
         _warmth = temperatureClass.temperature;
 
 #if UNITY_EDITOR
-        l_matches = matches;
-        l_money = money;
-        l_hunger = hunger;
-        l_warmth = _warmth;
+        l_stats = stats;
 #endif
 
-        if(_warmth < min_warmth)
+        if (_warmth <= min_warmth + 10) StatusEffects.coldLevel = EffectLevel.High;
+        else if (_warmth <= min_warmth + 20) StatusEffects.coldLevel = EffectLevel.Moderate;
+        else if (_warmth <= min_warmth + 30) StatusEffects.coldLevel = EffectLevel.Low;
+        else StatusEffects.coldLevel = EffectLevel.None;
+
+        if (_warmth < min_warmth)
         {
             GameStateManager.state = GameState.dead;
         }
 
-        if (hunger >= 100)
+        if (stats.food <= 0)
         {
             GameStateManager.state = GameState.dead;
         }

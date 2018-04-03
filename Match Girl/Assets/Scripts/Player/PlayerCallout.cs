@@ -98,7 +98,7 @@ public class PlayerCallout : MonoBehaviour {
 
         //Callout
 
-        throatHealth = PlayerStatsManager.maxCallStrength;
+        throatHealth = PlayerStatsManager.stats.callStrength;
 
         if (!muted)
         {
