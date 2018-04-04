@@ -5,16 +5,23 @@ using UnityEngine.UI;
 
 public class SpecialInteraction : MonoBehaviour {
 
+    public string interactionName;
+
     public float radius = 5f;
 
     public Dialogue dialogue;
 
     public Canvas tooltip;
 
+    Text tooltipText;
+
     public bool oneTimeInteraction = false;
 
 	void Start () {
         if(!tooltip) tooltip = GetComponentInChildren<Canvas>();
+
+        tooltipText = GetComponentInChildren<Text>();
+        tooltipText.text = interactionName;
 	}
 
     private void Update()
@@ -30,6 +37,7 @@ public class SpecialInteraction : MonoBehaviour {
         else if (relative.magnitude > radius && near)
         {
             PlayerCallout.OutofRange(this);
+            tooltip.gameObject.SetActive(false);
         }
     }
 }
