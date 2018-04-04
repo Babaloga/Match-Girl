@@ -26,6 +26,11 @@ public class LevelManager : MonoBehaviour {
         SceneManager.LoadScene(scene.name);
     }
 
+    public void RestartDay()
+    {
+        PersistentGameManager.instance.ReloadCurrentDay();
+    }
+
     public void nextLevel()
     {
         print("Next Level");

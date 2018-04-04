@@ -50,6 +50,16 @@ public class PersistentGameManager : MonoBehaviour {
         StartCoroutine(FadeAndSwitchScenes(mainSceneName));
     }
 
+    public void LoadFirstDay()
+    {
+        SceneManager.LoadScene("Persistent");
+    }
+
+    public void ReloadCurrentDay()
+    {
+        StartCoroutine(FadeAndSwitchScenes(mainSceneName));
+    }
+
     private IEnumerator FadeAndSwitchScenes(string sceneName)
     {
         sceneFader.FadeIn();
