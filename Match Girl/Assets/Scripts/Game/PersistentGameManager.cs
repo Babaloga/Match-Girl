@@ -20,7 +20,7 @@ public class PersistentGameManager : MonoBehaviour {
     public static PersistentGameManager instance;
     public Fader sceneFader;
 
-    public bool debugMode = false;
+    public static bool debugMode = false;
 
     public static EffectLevel persistentSicknessLevel;
 
@@ -29,7 +29,10 @@ public class PersistentGameManager : MonoBehaviour {
         instance = this;
         persistentSicknessLevel = EffectLevel.None;
 		persistentStats.boots = false;
-        StartCoroutine(LoadSceneSetActive(mainSceneName));
+        if (!debugMode)
+            StartCoroutine(LoadSceneSetActive(mainSceneName));
+        else
+            sceneFader.FadeOut();
     }
 
     public void LoadEndScene()
