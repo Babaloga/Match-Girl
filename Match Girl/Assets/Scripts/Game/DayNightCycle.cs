@@ -27,6 +27,8 @@ public class DayNightCycle : MonoBehaviour {
 
     private static DayNightCycle instance;
 
+    bool ending = false;
+
     private void Start()
     {
         cycleStartMarker = Time.time - cycleStart;
@@ -74,8 +76,9 @@ public class DayNightCycle : MonoBehaviour {
             PlayerTemperature.worldTemperature = cycleLowTemperature + (nightTemperatureCurve.Evaluate(nightPercentage) * temperatureDifference);
         }
 
-        if(endDayAutomatically && currentTime >= endDayTime)
+        if(endDayAutomatically && currentTime >= endDayTime && !ending)
         {
+            ending = true;
             StartCoroutine(FadeOutProcess());
         }
 
@@ -88,7 +91,6 @@ public class DayNightCycle : MonoBehaviour {
 
     public Fader gettingLate;
     public Fader goHome;
-    public Fader screenFader;
 
     IEnumerator FadeOutProcess()
     {
@@ -99,10 +101,6 @@ public class DayNightCycle : MonoBehaviour {
         goHome.FadeIn();
 
         yield return new WaitForSeconds(3);
-
-        screenFader.FadeIn();
-
-        yield return new WaitForSeconds(screenFader.fadeDuration + 1);
 
         PersistentGameManager.instance.LoadEndScene();
     }

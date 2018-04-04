@@ -27,15 +27,15 @@ public class Fader : MonoBehaviour {
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (fadingOut && fader.alpha > 0)
         {
-            fader.alpha -= (1f / fadeDuration) * Time.unscaledDeltaTime;
+            fader.alpha -= (1f / fadeDuration) * Time.fixedDeltaTime;
         }
         else if (fadingIn && fader.alpha < 1)
         {
-            fader.alpha += (1f / fadeDuration) * Time.unscaledDeltaTime;
+            fader.alpha += (1f / fadeDuration) * Time.fixedDeltaTime;
         }
     }
 

@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4441824599701834}
-  - component: {fileID: 114437261553406268}
   - component: {fileID: 114024293049964846}
   - component: {fileID: 114829221263030804}
   m_Layer: 0
@@ -54,22 +53,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDialogue: {fileID: 11400000, guid: 25c54cce0f9255a4d981487cbd7422d0, type: 2}
---- !u!114 &114437261553406268
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1682510950319472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c17bc3b561907e4419aaad739706466c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalDays: 7
-  endScreenName: ResourceScreen
-  mainSceneName: Street
-  dayHungerPenalty: 34
-  debugMode: 0
 --- !u!114 &114829221263030804
 MonoBehaviour:
   m_ObjectHideFlags: 1

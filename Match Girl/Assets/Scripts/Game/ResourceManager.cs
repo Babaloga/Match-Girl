@@ -83,7 +83,7 @@ public class ResourceManager : MonoBehaviour {
 
 	private void CheckHunger()
     {
-        print(variableFood);
+        //print(variableFood);
         if (variableFood > 75)
         {
             hungerText.text = "Satisfied";
