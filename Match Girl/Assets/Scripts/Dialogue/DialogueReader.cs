@@ -57,7 +57,7 @@ public class DialogueReader : MonoBehaviour {
     {
         dialogue = _dialogue;
         values = new List<int>(dialogue.entries.Keys);
-        currentValue = 0;
+        currentValue = 1;
         GetOptions();
         ShowDialogue();
     }

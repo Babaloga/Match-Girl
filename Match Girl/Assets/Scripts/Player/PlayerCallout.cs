@@ -69,11 +69,11 @@ public class PlayerCallout : MonoBehaviour {
             {
                 nearest = spec;
                 nearestDistance = relative.magnitude;
-                if(spec.tooltip) spec.tooltip.enabled = true;
+                if(spec.tooltip) spec.tooltip.gameObject.SetActive(true);
             }
             else
             {
-                if (spec.tooltip) spec.tooltip.enabled = false;
+                if (spec.tooltip) spec.tooltip.gameObject.SetActive(false);
             }
         }
 
