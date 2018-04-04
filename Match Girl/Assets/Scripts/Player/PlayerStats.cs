@@ -8,6 +8,7 @@ public struct PlayerStats {
     public int matches;
     public int money;
     public float food;
+	public bool boots;
 
     public float speed;
     public float callStrength;

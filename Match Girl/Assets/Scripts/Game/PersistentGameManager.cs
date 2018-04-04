@@ -30,6 +30,7 @@ public class PersistentGameManager : MonoBehaviour {
 
         DontDestroyOnLoad(gameObject);
         persistentSicknessLevel = EffectLevel.None;
+		persistentStats.boots = false;
     }
 
     public void LoadEndScene()
