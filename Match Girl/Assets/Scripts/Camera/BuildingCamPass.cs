@@ -47,17 +47,23 @@ public class BuildingCamPass : MonoBehaviour {
 
     private void Update()
     {
-        Collider[] overlapping = Physics.OverlapBox(building.bounds.center, building.bounds.extents);
+        //Collider[] overlapping = Physics.OverlapBox(building.bounds.center, building.bounds.extents);
 
-        bubbleOverlaps = false;
+        //bubbleOverlaps = false;
 
-        foreach(Collider o in overlapping)
+        //foreach(Collider o in overlapping)
+        //{
+        //    if(o == camBubble)
+        //    {
+        //        bubbleOverlaps = true;
+        //    }
+        //}
+
+        if (camBubble.bounds.min.x < building.bounds.max.x && camBubble.bounds.max.x > building.bounds.min.x)
         {
-            if(o == camBubble)
-            {
-                bubbleOverlaps = true;
-            }
+            bubbleOverlaps = true;
         }
+        else bubbleOverlaps = false;
 
         if(target.position.z > building.transform.position.z + building.bounds.extents.z)
         {

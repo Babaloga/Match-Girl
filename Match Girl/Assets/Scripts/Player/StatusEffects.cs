@@ -8,6 +8,7 @@ public class StatusEffects : MonoBehaviour {
 
     public static EffectLevel sicknessLevel = EffectLevel.None;
     public static EffectLevel coldLevel = EffectLevel.None;
+    public static EffectLevel hungerLevel = EffectLevel.None;
 
     public float callStrengthLossPerLevel = 0.2f;
     public float conductivityBoostPerLevel = 0.2f;

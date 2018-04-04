@@ -12,6 +12,8 @@ public class CameraFollow : MonoBehaviour {
 
     public AnimationCurve speedCurve;
 
+    public float distance = 10f;
+
     float holderSpeedActual;
 
     Vector3 holderRelative;
@@ -30,7 +32,7 @@ public class CameraFollow : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-        destination = target.position + relativePos;
+        destination = target.position + (relativePos.normalized * distance);
 
         Vector3 toDest = destination - transform.position;
 
