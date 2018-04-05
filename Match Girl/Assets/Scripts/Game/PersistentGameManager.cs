@@ -12,6 +12,9 @@ public class PersistentGameManager : MonoBehaviour {
     public string mainSceneName;
 
     public static float time;
+    private static float averageTemperature;
+    private float temperatureSum;
+    private float temperatureMeasurements;
 
     public static PlayerStats persistentStats;
 
@@ -21,6 +24,7 @@ public class PersistentGameManager : MonoBehaviour {
     public Fader sceneFader;
 
     public static bool debugMode = false;
+    private bool recordTemperature = true;
 
     public static EffectLevel persistentSicknessLevel;
 
@@ -35,8 +39,22 @@ public class PersistentGameManager : MonoBehaviour {
             sceneFader.FadeOut();
     }
 
+    private void FixedUpdate()
+    {
+        if (recordTemperature)
+        {
+            if (Time.frameCount % 30 == 0)
+            {
+                temperatureSum += PlayerStatsManager.Warmth;
+                temperatureMeasurements++;
+            }
+        }
+    }
+
     public void LoadEndScene()
     {
+        recordTemperature = false;
+        averageTemperature = temperatureSum / temperatureMeasurements;
         time = DayNightCycle.currentTime;
         persistentStats = PlayerStatsManager.stats;
         persistentStats.food -= dayHungerPenalty;
@@ -47,17 +65,45 @@ public class PersistentGameManager : MonoBehaviour {
     {
         currentDay++;
         persistentStats.food = ResourceManager.variableFood;
+        DetermineSickness();
         StartCoroutine(FadeAndSwitchScenes(mainSceneName));
+        temperatureSum = 0;
+        temperatureMeasurements = 0;
+        recordTemperature = true;
     }
 
     public void LoadFirstDay()
     {
-        SceneManager.LoadScene("Persistent");
+        SceneManager.LoadScene("Persistent", LoadSceneMode.Single);
     }
 
     public void ReloadCurrentDay()
     {
         StartCoroutine(FadeAndSwitchScenes(mainSceneName));
+    }
+
+    private void DetermineSickness()
+    {
+        float food = persistentStats.food;
+        float voice = persistentStats.callStrength;
+
+        float sicknessValue = ((100f - averageTemperature) + (100f * (1f - voice))) / (50f + (food / 2f));
+
+        int sicknessInt = Mathf.RoundToInt(sicknessValue) - 1;
+
+        if ((int)persistentSicknessLevel + sicknessInt > 3)
+        {
+            //Consequence for exceeding sickness level
+            persistentSicknessLevel = EffectLevel.High;
+        }
+        else if((int)persistentSicknessLevel + sicknessInt < 0)
+        {
+            persistentSicknessLevel = EffectLevel.None;
+        }
+        else
+        {
+            persistentSicknessLevel += sicknessInt;
+        }      
     }
 
     private IEnumerator FadeAndSwitchScenes(string sceneName)
