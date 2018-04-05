@@ -105,8 +105,7 @@ public class PlayerCallout : MonoBehaviour {
             {
                 if (nearest != null)
                 {
-                    print(nearest.dialogue);
-                    DialogueReader.reader.StartDialogue(nearest.dialogue);
+                    nearest.Interact();
                 }
                 else if ((Time.time - speakTime) > speakCooldown) {
                     spaceDown = Time.time;

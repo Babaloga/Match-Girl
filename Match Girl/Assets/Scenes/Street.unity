@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44709307, g: 0.49699694, b: 0.5751076, a: 1}
+  m_IndirectSpecularColor: {r: 0.4470935, g: 0.49699754, b: 0.5751081, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -30982,7 +30982,7 @@ Prefab:
     - target: {fileID: 224252684388857522, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 465.72446
+      value: 465.9655
       objectReference: {fileID: 0}
     - target: {fileID: 224252684388857522, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -30992,7 +30992,7 @@ Prefab:
     - target: {fileID: 224252684388857522, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 891.4489
+      value: 891.931
       objectReference: {fileID: 0}
     - target: {fileID: 224252684388857522, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -31002,7 +31002,7 @@ Prefab:
     - target: {fileID: 224464643329194092, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 931.4489
+      value: 931.931
       objectReference: {fileID: 0}
     - target: {fileID: 224464643329194092, guid: e3fa0cda7d2d80a46bfd928cbcc49253,
         type: 2}
@@ -62269,6 +62269,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114187157122581148, guid: 66a3a893391914540895c41879b22bee,
+        type: 2}
+      propertyPath: dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4628646145402200, guid: 66a3a893391914540895c41879b22bee, type: 2}
       propertyPath: m_LocalPosition.x
       value: 135.5
@@ -62429,6 +62434,24 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: 308
       objectReference: {fileID: 0}
+    - target: {fileID: 114187157122581148, guid: 66a3a893391914540895c41879b22bee,
+        type: 2}
+      propertyPath: dialogues.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 25c54cce0f9255a4d981487cbd7422d0,
+        type: 2}
+    - target: {fileID: 114187157122581148, guid: 66a3a893391914540895c41879b22bee,
+        type: 2}
+      propertyPath: dialogues.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: e291de1a6246ddb4984ecc1f5c34eb76,
+        type: 2}
+    - target: {fileID: 114187157122581148, guid: 66a3a893391914540895c41879b22bee,
+        type: 2}
+      propertyPath: dialogues.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 28c7c6fa1513a3c4bb7ca9390a59a04e,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66a3a893391914540895c41879b22bee, type: 2}
   m_IsPrefabParent: 0
@@ -102470,6 +102493,11 @@ Prefab:
     - target: {fileID: 1682510950319472, guid: 61dc0fc1c6882934fbc37bc6b7966861, type: 2}
       propertyPath: m_Name
       value: Opening Dialogue and Type Dictionary
+      objectReference: {fileID: 0}
+    - target: {fileID: 114024293049964846, guid: 61dc0fc1c6882934fbc37bc6b7966861,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 61dc0fc1c6882934fbc37bc6b7966861, type: 2}

@@ -9,7 +9,9 @@ public class SpecialInteraction : MonoBehaviour {
 
     public float radius = 5f;
 
-    public Dialogue dialogue;
+    public Dialogue[] dialogues;
+
+    private int i = 0;
 
     public Canvas tooltip;
 
@@ -39,5 +41,12 @@ public class SpecialInteraction : MonoBehaviour {
             PlayerCallout.OutofRange(this);
             tooltip.gameObject.SetActive(false);
         }
+    }
+
+    public void Interact()
+    {
+        DialogueReader.reader.StartDialogue(dialogues[i]);
+
+        if (dialogues[i + 1]) i++;
     }
 }
