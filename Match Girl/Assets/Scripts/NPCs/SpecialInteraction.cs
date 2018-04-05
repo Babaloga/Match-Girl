@@ -24,7 +24,8 @@ public class SpecialInteraction : MonoBehaviour {
 
         tooltipText = GetComponentInChildren<Text>();
         tooltipText.text = interactionName;
-	}
+        tooltip.gameObject.SetActive(false);
+    }
 
     private void Update()
     {
@@ -43,7 +44,7 @@ public class SpecialInteraction : MonoBehaviour {
         }
     }
 
-    public void Interact()
+    public virtual void Interact()
     {
         DialogueReader.reader.StartDialogue(dialogues[i]);
 

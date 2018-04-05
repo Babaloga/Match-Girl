@@ -1,17 +1,12 @@
 ﻿using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class Interactable : SpecialInteraction
 {
-    public string interactableName = "Interactable";
-    public Transform GUILocation;
     public ConditionCollection[] conditionCollections = new ConditionCollection[0];
     public ReactionCollection defaultReactionCollection;
 
-    private void Start()
+    private void Awake()
     {
-        if (!GUILocation)
-            GUILocation = transform;
-
         if (!defaultReactionCollection)
         {
             foreach(ReactionCollection r in GetComponentsInChildren<ReactionCollection>())
@@ -26,7 +21,7 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    public void Interact ()
+    public override void Interact ()
     {
         for (int i = 0; i < conditionCollections.Length; i++)
         {

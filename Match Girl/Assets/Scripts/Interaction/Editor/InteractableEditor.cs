@@ -8,15 +8,15 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
     private Interactable interactable;
     private SerializedProperty nameProperty;
     //private SerializedProperty interactionLocationProperty;
-    private SerializedProperty GUILocationProperty;
+    private SerializedProperty RadiusProperty;
     private SerializedProperty collectionsProperty;
     private SerializedProperty defaultReactionCollectionProperty;
 
 
     private const float collectionButtonWidth = 125f;
-    private const string interactablePropNameName = "interactableName";
+    private const string interactablePropNameName = "interactionName";
     //private const string interactablePropInteractionLocationName = "interactionLocation";
-    private const string interactablePropGUILocationName = "GUILocation";
+    private const string interactableRadiusName = "radius";
     private const string interactablePropConditionCollectionsName = "conditionCollections";
     private const string interactablePropDefaultReactionCollectionName = "defaultReactionCollection";
 
@@ -28,7 +28,7 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
         nameProperty = serializedObject.FindProperty(interactablePropNameName);
         collectionsProperty = serializedObject.FindProperty(interactablePropConditionCollectionsName);
         //interactionLocationProperty = serializedObject.FindProperty(interactablePropInteractionLocationName);
-        GUILocationProperty = serializedObject.FindProperty(interactablePropGUILocationName);
+        RadiusProperty = serializedObject.FindProperty(interactableRadiusName);
         defaultReactionCollectionProperty = serializedObject.FindProperty(interactablePropDefaultReactionCollectionName);
         
         CheckAndCreateSubEditors(interactable.conditionCollections);
@@ -55,7 +55,7 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
 
         EditorGUILayout.PropertyField(nameProperty);
         //EditorGUILayout.PropertyField (interactionLocationProperty);
-        EditorGUILayout.PropertyField(GUILocationProperty);
+        EditorGUILayout.PropertyField(RadiusProperty);
 
         for (int i = 0; i < subEditors.Length; i++)
         {
