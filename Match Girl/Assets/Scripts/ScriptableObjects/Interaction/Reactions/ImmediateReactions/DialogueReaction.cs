@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DialogueReaction : Reaction {
 
+    public Dialogue dialogue;
 
     private DialogueReader reader;
 
