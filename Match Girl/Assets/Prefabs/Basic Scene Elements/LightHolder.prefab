@@ -187,7 +187,7 @@ MonoBehaviour:
   daylightDuration: 90
   cycleStart: 0
   cycleHighTemperature: 40
-  cycleLowTemperature: 5
+  cycleLowTemperature: -10
   sunObject: {fileID: 4427818834990626}
   sun: {fileID: 108010827738418868}
   dayTemperatureCurve:
@@ -248,4 +248,3 @@ MonoBehaviour:
   endDayTime: 90
   gettingLate: {fileID: 0}
   goHome: {fileID: 0}
-  screenFader: {fileID: 0}

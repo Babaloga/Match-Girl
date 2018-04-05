@@ -47,11 +47,10 @@ public class PlayerCallout : MonoBehaviour {
         npcQueue = new Queue<NPCInteraction>();
         source = GetComponent<WordSource>();
         cast = GetComponent<SphereCollider>();
-        cast.radius = 0;
         cast.isTrigger = true;
         cast.enabled = false;
         gameObject.layer = 13;
-        transform.localScale = new Vector3(1 / transform.parent.localScale.x, 1 / transform.parent.localScale.y, 1 / transform.parent.localScale.z);
+        transform.localScale = Vector3.zero;
         interactions = new List<SpecialInteraction>();
         meshRenderer = GetComponent<MeshRenderer>();
 	}
@@ -163,10 +162,10 @@ public class PlayerCallout : MonoBehaviour {
 
         //DEBUG ONLY
 
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            StartCoroutine(CalloutTest());
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha0))
+        //{
+        //    StartCoroutine(CalloutTest());
+        //}
     }
 
     public IEnumerator CalloutTest()
@@ -222,8 +221,8 @@ public class PlayerCallout : MonoBehaviour {
         _power = Mathf.Clamp(_power, powerMin, 1);
         Camera.main.GetComponent<CameraEffects>().Shake(0.2f, damageCurve.Evaluate(_power));
         StartCoroutine(CalloutRoutine(_power));
-        //throatHealth -= _power / 10;
-        print(_power);
+        throatHealth -= _power / 10;
+        //print(_power);
         source.Speak(
             (Mathf.Pow(_power, 2) * 3) + 1,
             (-throatHealth + 1) * 10,

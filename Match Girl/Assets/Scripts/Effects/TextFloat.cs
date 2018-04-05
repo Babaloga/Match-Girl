@@ -34,7 +34,7 @@ public class TextFloat : MonoBehaviour {
 
     Vector3 startScale;
 
-    private void Start()
+    private void Awake()
     {
         text = GetComponent<Text>();
         rb = GetComponent<Rigidbody2D>();
@@ -48,7 +48,16 @@ public class TextFloat : MonoBehaviour {
             duration += Random.Range(-noiseAmount, noiseAmount) * duration;
             scaleMultiplier += Random.Range(-noiseAmount, noiseAmount) * scaleMultiplier;
             speedMultiplier += Random.Range(-noiseAmount, noiseAmount) * speedMultiplier;
+            print(duration + " " + scaleMultiplier + " " + speedMultiplier);
         }
+
+        float timeElapsed = Time.time - startTime;
+
+        Color currentColor = text.color;
+
+        text.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaCurve.Evaluate(timeElapsed / duration) * alphaMultiplier);
+        rb.velocity = new Vector2(Mathf.Sin((timeElapsed * (shimmyFreqCurve.Evaluate(timeElapsed / duration) * shimmyFreqMultiplier)) + phase) * shimmyCurve.Evaluate(timeElapsed / duration) * shimmyMultiplier, velocityCurve.Evaluate(timeElapsed / duration) * speedMultiplier);
+        transform.localScale = startScale * scaleCurve.Evaluate(timeElapsed / duration) * scaleMultiplier;
     }
 
     private void FixedUpdate()

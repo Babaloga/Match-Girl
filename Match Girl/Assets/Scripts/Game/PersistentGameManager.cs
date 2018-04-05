@@ -89,6 +89,8 @@ public class PersistentGameManager : MonoBehaviour {
 
         float sicknessValue = ((100f - averageTemperature) + (100f * (1f - voice))) / (50f + (food / 2f));
 
+        sicknessValue += Random.Range(-0.5f, 0.5f);
+
         int sicknessInt = Mathf.RoundToInt(sicknessValue) - 1;
 
         if ((int)persistentSicknessLevel + sicknessInt > 3)

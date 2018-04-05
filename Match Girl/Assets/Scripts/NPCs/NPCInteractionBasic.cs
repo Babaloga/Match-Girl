@@ -15,6 +15,12 @@ public class NPCInteractionBasic : MonoBehaviour {
     bool listening = true;
 
     public float yesProbabilityOutOf100 = 1;
+    public float negativeResponseRate = 0.1f;
+
+    public float maxWaitTime = 40f;
+    public float minWaitTime = 15f;
+    private float waitTime;
+    private float timeMarker;
 
     public GameObject noReaction;
     public GameObject yesReaction;
@@ -36,7 +42,8 @@ public class NPCInteractionBasic : MonoBehaviour {
     private enum NPCState
     {
         Wandering,
-        GoingToPlayer
+        GoingToPlayer,
+        WaitingForPlayer
     }
 
     private NPCState currentState = NPCState.Wandering;
@@ -90,6 +97,20 @@ public class NPCInteractionBasic : MonoBehaviour {
                     MakeTransaction();
                 }
                 break;
+
+            case NPCState.WaitingForPlayer:
+
+                if(Time.time - timeMarker > waitTime)
+                {
+                    ReturnToWander();
+                }
+
+                if ((transform.position - PlayerMovement.player.transform.position).magnitude <= 2f)
+                {
+                    MakeTransaction();
+                }
+
+                break;
         }
     }
 
@@ -97,24 +118,41 @@ public class NPCInteractionBasic : MonoBehaviour {
     {
         if (listening && other.gameObject.layer == 13 && Time.time - cooldown >= triggerTime)
         {
-            CalloutResponse();
+            print("Callout Recieved");
+            StartCoroutine(CalloutResponse());
         }
     }
 
-    private void CalloutResponse()
+    private IEnumerator CalloutResponse()
     {
         if(wantsMatches)
         {
-            GetComponentInChildren<NPCAnimation>().Beckon();
+            if(GetComponentInChildren<NPCAnimation>()) GetComponentInChildren<NPCAnimation>().Beckon();
+            WaitForPlayer();
             source.speakPrefab = yesReaction;
+            yield return new WaitForSeconds(Random.Range(0.1f, 0.5f));
+
             source.Speak();
-            GoToPlayer();
         }
-        else
+        else if (Random.Range(0f,1f) < negativeResponseRate)
         {
             source.speakPrefab = noReaction;
+            yield return new WaitForSeconds(Random.Range(0.1f, 0.5f));
+
             source.Speak();
         }
+    }
+
+    private void WaitForPlayer()
+    {
+        listening = true;
+        GetComponent<MoveTo>().overriden = true;
+        agent.SetDestination(transform.position);
+
+        waitTime = Random.Range(minWaitTime, maxWaitTime);
+        timeMarker = Time.time;
+
+        currentState = NPCState.WaitingForPlayer;
     }
 
     private void GoToPlayer()
@@ -154,6 +192,11 @@ public class NPCInteractionBasic : MonoBehaviour {
 
         wantsMatches = false;
 
+        ReturnToWander();
+    }
+
+    private void ReturnToWander()
+    {
         GetComponent<MoveTo>().overriden = false;
         GetComponent<MoveTo>().Pause(2f);
 

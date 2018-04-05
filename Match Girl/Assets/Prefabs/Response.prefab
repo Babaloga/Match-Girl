@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114900681282405396}
   - component: {fileID: 223866442697948164}
   - component: {fileID: 114466386907972190}
-  - component: {fileID: 114390728304320648}
+  - component: {fileID: 114606805610945128}
   m_Layer: 0
   m_Name: Response
   m_TagString: Untagged
@@ -53,17 +53,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &114390728304320648
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1176669192584378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83d6523c1a4a58d4698bf3a6beae495b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114466386907972190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,6 +62,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71e27c8915722e948bab409ef33fc440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114606805610945128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1176669192584378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab42c43915f77e4b866112763dc7108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114879392829812416
@@ -119,9 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4223a636eeefa904993d4616bac0e437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseAmount: 0.2
-  duration: 1.6
-  shimmyMultiplier: 0
+  noiseAmount: 0.1
+  duration: 5
+  shimmyMultiplier: 6
   shimmyCurve:
     serializedVersion: 2
     m_Curve:
@@ -140,7 +140,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  shimmyFreqMultiplier: 0
+  shimmyFreqMultiplier: 3
   shimmyFreqCurve:
     serializedVersion: 2
     m_Curve:
@@ -152,7 +152,7 @@ MonoBehaviour:
       tangentMode: 0
     - serializedVersion: 2
       time: 1
-      value: 0.0012664795
+      value: 0.48875427
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 0.13609314
       inSlope: 4.8877053
       outSlope: 4.8877053
       tangentMode: 0
@@ -203,21 +203,15 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  speedMultiplier: 0.8
+  speedMultiplier: 0.3
   velocityCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0.000589701
-      value: 12.015186
-      inSlope: -49.139076
-      outSlope: -49.139076
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 0.2933122
-      value: 3.0684686
-      inSlope: -9.069443
-      outSlope: -9.069443
+      time: -0.0008739268
+      value: 10.030164
+      inSlope: -21.527544
+      outSlope: -21.527544
       tangentMode: 0
     - serializedVersion: 2
       time: 1.0002475
