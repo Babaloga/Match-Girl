@@ -16,7 +16,7 @@ MonoBehaviour:
     m_keys: 010000000a0000000c0000000d000000
     m_values:
     - entryText: Hello, I am testificate
-      speakerName: 
+      speakerName: JILLIUM
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
       - Give me matches!
       - Take my money, please!
     - entryText: I assure you I am, young miss.
-      speakerName: Probably Not Testificate
+      speakerName: JILLIUM
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
       responses:
       - hmph
     - entryText: Very well, if you insist.
-      speakerName: ???
+      speakerName: JILLIUM
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
@@ -45,10 +45,11 @@ MonoBehaviour:
       modifyMoney: 0
       responses: []
     - entryText: Very well, if you insist.
-      speakerName: 
+      speakerName: JILLIUM
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: -10
-      responses: []
+      responses:
+      - UH HUH, I DO insist, THANK YOU VERY MUCH
