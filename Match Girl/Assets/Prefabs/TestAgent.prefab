@@ -181,7 +181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1135847304683772
 GameObject:
   m_ObjectHideFlags: 1
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 136280698738115894}
   - component: {fileID: 114376948381713856}
   m_Layer: 14
-  m_Name: TestAgent
+  m_Name: Agent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2582,9 +2582,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  rayMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
   paused: 0
   overriden: 0
   agentStopped: 0
