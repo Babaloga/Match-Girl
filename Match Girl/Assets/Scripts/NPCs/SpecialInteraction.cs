@@ -19,6 +19,8 @@ public class SpecialInteraction : MonoBehaviour {
 
     public bool oneTimeInteraction = false;
 
+    public Archetype characterArchetype;
+
 	void Start () {
         if(!tooltip) tooltip = GetComponentInChildren<Canvas>();
 
