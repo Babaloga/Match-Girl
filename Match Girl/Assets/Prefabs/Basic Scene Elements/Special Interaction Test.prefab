@@ -2975,7 +2975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionName: 
   radius: 5
-  dialogues: []
+  dialogue: {fileID: 0}
   tooltip: {fileID: 223308043909502700}
   oneTimeInteraction: 0
 --- !u!114 &114240356515227126

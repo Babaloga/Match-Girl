@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PersistentGameManager : MonoBehaviour {
 
-    public static int currentDay = 1;
+    public static int currentDay = 0;
     public int totalDays = 7;
 
     public string endScreenName;
@@ -64,6 +64,7 @@ public class PersistentGameManager : MonoBehaviour {
     public void LoadMainScene()
     {
         currentDay++;
+        print(currentDay);
         persistentStats.food = ResourceManager.variableFood;
         DetermineSickness();
         StartCoroutine(FadeAndSwitchScenes(mainSceneName));
