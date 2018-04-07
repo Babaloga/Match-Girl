@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class ExitPoint : CrowdPoint {
 
+    public Transform[] outPoints;
+
+    private void Start()
+    {
+        outPoints = new Transform[transform.childCount];
+
+        for (int i = 0; i < outPoints.Length; i++)
+        {
+            outPoints[i] = transform.GetChild(i);
+        }
+    }
+
     public override Vector3 GetPosition()
     {
-        return transform.position;
+        return outPoints[Random.Range(0, outPoints.Length)].position;
     }
 }

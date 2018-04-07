@@ -1322,8 +1322,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
+  m_Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. '
 --- !u!114 &114227428792001032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2794,7 +2794,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114539668429660838}
-        m_MethodName: ReloadCurrent
+        m_MethodName: RestartDay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

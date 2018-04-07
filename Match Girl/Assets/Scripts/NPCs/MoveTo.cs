@@ -169,9 +169,12 @@ public class MoveTo : MonoBehaviour
     {
         ExitPoint exit = goalPoint as ExitPoint;
         if (exit) Destroy(gameObject);
-        Pause();
-        PickNewGoal();
-        agent.destination = goal.position;
+        else
+        {
+            Pause();
+            PickNewGoal();
+            agent.destination = goal.position;
+        }
     }
 
     public void Pause()
