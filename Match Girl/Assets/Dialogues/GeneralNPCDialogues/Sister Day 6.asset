@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Sister Day 6
+  m_EditorClassIdentifier: 
+  characterName: Sister
+  entries:
+    m_keys: 00000000
+    m_values:
+    - entryText: "Phoebe, it\u2019s happened! The whole factory has stopped, every
+        single match girl is out on the street protesting. I\u2013I don\u2019t know
+        if this will work but they can definitely hear us now! I\u2026 I\u2019m sorry.
+        With the factory closed, I\u2019m without work. But maybe...if you can keep
+        bringing money in, I think we might stand a chance of actually changing something
+        for the better! I have to go now but please, Phoebe, you must be strong enough
+        for the whole family."
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []
