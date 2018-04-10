@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Text))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class TextFloat : MonoBehaviour {
+    public bool useText = true;
+
     public float noiseAmount = 0;
 
     public float duration = 5;
@@ -27,7 +28,7 @@ public class TextFloat : MonoBehaviour {
 
     float startTime;
 
-    Text text; //replace with whatever type of renderer we end up using
+    MaskableGraphic graphic;
     Rigidbody2D rb;
 
     float phase;
@@ -36,7 +37,12 @@ public class TextFloat : MonoBehaviour {
 
     private void Awake()
     {
-        text = GetComponent<Text>();
+        Color currentColor;
+
+        graphic = GetComponent<MaskableGraphic>();
+        currentColor = graphic.color;
+        
+
         rb = GetComponent<Rigidbody2D>();
         startTime = Time.time;
 
@@ -52,9 +58,7 @@ public class TextFloat : MonoBehaviour {
 
         float timeElapsed = Time.time - startTime;
 
-        Color currentColor = text.color;
-
-        text.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaCurve.Evaluate(timeElapsed / duration) * alphaMultiplier);
+        graphic.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaCurve.Evaluate(timeElapsed / duration) * alphaMultiplier);
         rb.velocity = new Vector2(Mathf.Sin((timeElapsed * (shimmyFreqCurve.Evaluate(timeElapsed / duration) * shimmyFreqMultiplier)) + phase) * shimmyCurve.Evaluate(timeElapsed / duration) * shimmyMultiplier, velocityCurve.Evaluate(timeElapsed / duration) * speedMultiplier);
         transform.localScale = startScale * scaleCurve.Evaluate(timeElapsed / duration) * scaleMultiplier;
     }
@@ -63,13 +67,14 @@ public class TextFloat : MonoBehaviour {
     {
         float timeElapsed = Time.time - startTime;
 
-        Color currentColor = text.color;
+        Color currentColor = graphic.color;
 
-        text.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaCurve.Evaluate(timeElapsed / duration) * alphaMultiplier);
+        graphic.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaCurve.Evaluate(timeElapsed / duration) * alphaMultiplier);
         rb.velocity = new Vector2(Mathf.Sin((timeElapsed * (shimmyFreqCurve.Evaluate(timeElapsed / duration) * shimmyFreqMultiplier)) + phase) * shimmyCurve.Evaluate(timeElapsed / duration) * shimmyMultiplier, velocityCurve.Evaluate(timeElapsed / duration) * speedMultiplier);
         transform.localScale = startScale * scaleCurve.Evaluate(timeElapsed / duration) * scaleMultiplier;
 
-        if (text.color.a <= 0 || timeElapsed / duration >= 1) Destroy(gameObject);
+        if (graphic.color.a <= 0 || timeElapsed / duration >= 1) Destroy(gameObject);
+
     }
 
 }
