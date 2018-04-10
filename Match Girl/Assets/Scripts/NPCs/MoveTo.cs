@@ -31,6 +31,7 @@ public class MoveTo : MonoBehaviour
     int lastGoal = -1;
 
     public bool paused;
+    bool leaving = false;
 
     public bool overriden = false;
 
@@ -132,6 +133,13 @@ public class MoveTo : MonoBehaviour
             {
                 DestinationReached();
             }
+
+            if (DayNightCycle.isNight && !leaving)
+            {
+                leaving = true;
+                goal.position = FindObjectOfType<ExitPoint>().GetPosition();
+                Pause();
+            }
         }
     }
 
@@ -139,8 +147,13 @@ public class MoveTo : MonoBehaviour
     {
         if (goal)
         {
+            Gizmos.color = Color.grey;
             Gizmos.DrawSphere(goal.position, 1);
         }
+
+        Gizmos.color = Color.green;
+
+        Gizmos.DrawSphere(transform.position, 1);
     }
 
     private void PickNewGoal()

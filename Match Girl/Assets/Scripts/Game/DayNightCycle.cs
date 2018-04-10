@@ -28,6 +28,7 @@ public class DayNightCycle : MonoBehaviour {
     private static DayNightCycle instance;
 
     bool ending = false;
+    public static bool isNight = false;
 
     private void Start()
     {
@@ -53,6 +54,8 @@ public class DayNightCycle : MonoBehaviour {
             sunObject.localRotation = Quaternion.Euler(new Vector3(180f * dayPercentage, sunObject.localRotation.y, sunObject.localRotation.z));
 
             PlayerTemperature.worldTemperature = cycleLowTemperature + (dayTemperatureCurve.Evaluate(dayPercentage) * temperatureDifference);
+
+            isNight = false;
         }
         else
         {
@@ -74,6 +77,8 @@ public class DayNightCycle : MonoBehaviour {
             sunObject.localRotation = Quaternion.Euler(new Vector3(180f + (180f * nightPercentage), sunObject.localRotation.y, sunObject.localRotation.z));
 
             PlayerTemperature.worldTemperature = cycleLowTemperature + (nightTemperatureCurve.Evaluate(nightPercentage) * temperatureDifference);
+
+            isNight = true;
         }
 
         if(endDayAutomatically && currentTime >= endDayTime && !ending)
