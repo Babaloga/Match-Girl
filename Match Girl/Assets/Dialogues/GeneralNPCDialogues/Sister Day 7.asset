@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Sister Day 7
+  m_EditorClassIdentifier: 
+  characterName: Sister
+  entries:
+    m_keys: 000000000a0000000b000000
+    m_values:
+    - entryText: "Phoebe! Oh, Phoebe! It\u2019s finally happening! The Bryant & May
+        management is meeting with Ms. Besant and some of the girls! I think it will
+        finally happen! I\u2019ll go back to work and we can find you somewhere better,
+        off the streets, and Father\u2026"
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses:
+      - Father is getting better. He can find a job, and we can go back to the way
+        things were.
+      - We can take care of Father. He needs us.
+    - entryText: "Phoebe\u2026 We will be here for Father, no matter what. We just
+        have to keep pushing forward, and we will pull through this. Maybe, one day\u2026
+        But right now you need to be to work. I\u2019ll see you tonight."
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []
+    - entryText: "You\u2019re right. We will take it one day at a time, and one day
+        maybe the Father we knew will come back. Until then, we\u2019ve each got a
+        job to do. I\u2019ll see you tonight."
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []

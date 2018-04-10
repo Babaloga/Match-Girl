@@ -6,12 +6,23 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class WordFloat : MonoBehaviour {
 
-    public float duration = 5;
-    public float shimmy = 1;
-    public float shimmyFreq = 5;
-    public float fullAlpha = 1;
-    public float scaleMultiplier = 2;
+    public float noiseAmount = 0;
 
+    public float duration = 5;
+
+    public float shimmyMultiplier = 1;
+    public AnimationCurve shimmyCurve;
+
+    public float shimmyFreqMultiplier = 5;
+    public AnimationCurve shimmyFreqCurve;
+
+    public float alphaMultiplier = 1;
+    public AnimationCurve alphaCurve;
+
+    public float scaleMultiplier = 2;
+    public AnimationCurve scaleCurve;
+
+    public float speedMultiplier = 1;
     public AnimationCurve velocityCurve;
 
     float startTime;
@@ -19,31 +30,45 @@ public class WordFloat : MonoBehaviour {
     SpriteRenderer rend; //replace with whatever type of renderer we end up using
     Rigidbody2D rb;
 
-    float random;
+    float phase;
 
     Vector3 startScale;
 
-    private void Start()
+    private void Awake()
     {
         rend = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         startTime = Time.time;
 
-        random = Random.Range(-10, 10);
+        phase = Random.Range(0, Mathf.PI);
         startScale = transform.localScale;
+
+        if (noiseAmount != 0)
+        {
+            duration += Random.Range(-noiseAmount, noiseAmount) * duration;
+            scaleMultiplier += Random.Range(-noiseAmount, noiseAmount) * scaleMultiplier;
+            speedMultiplier += Random.Range(-noiseAmount, noiseAmount) * speedMultiplier;
+        }
+
+        float timeElapsed = Time.time - startTime;
+
+        Color currentColor = rend.color;
+
+        rend.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaCurve.Evaluate(timeElapsed / duration) * alphaMultiplier);
+        rb.velocity = new Vector2(Mathf.Sin((timeElapsed * (shimmyFreqCurve.Evaluate(timeElapsed / duration) * shimmyFreqMultiplier)) + phase) * shimmyCurve.Evaluate(timeElapsed / duration) * shimmyMultiplier, velocityCurve.Evaluate(timeElapsed / duration) * speedMultiplier);
+        transform.localScale = startScale * scaleCurve.Evaluate(timeElapsed / duration) * scaleMultiplier;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         float timeElapsed = Time.time - startTime;
 
         Color currentColor = rend.color;
 
-        rend.color = new Color(currentColor.r, currentColor.g, currentColor.b, Mathf.Lerp(fullAlpha, 0, timeElapsed / duration));
-        rb.velocity = new Vector2(Mathf.Sin((timeElapsed * 3) + random), velocityCurve.Evaluate(timeElapsed / duration));
-        transform.localScale = startScale * Mathf.Lerp(1, scaleMultiplier, timeElapsed / duration);
+        rend.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaCurve.Evaluate(timeElapsed / duration) * alphaMultiplier);
+        rb.velocity = new Vector2(Mathf.Sin((timeElapsed * (shimmyFreqCurve.Evaluate(timeElapsed / duration) * shimmyFreqMultiplier)) + phase) * shimmyCurve.Evaluate(timeElapsed / duration) * shimmyMultiplier, velocityCurve.Evaluate(timeElapsed / duration) * speedMultiplier);
+        transform.localScale = startScale * scaleCurve.Evaluate(timeElapsed / duration) * scaleMultiplier;
 
-        if (rend.color.a <= 0) Destroy(gameObject);
+        if (rend.color.a <= 0 || timeElapsed / duration >= 1) Destroy(gameObject);
     }
-
 }
