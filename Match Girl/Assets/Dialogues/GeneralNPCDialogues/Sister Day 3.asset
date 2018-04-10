@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Sister Day 3
+  m_EditorClassIdentifier: 
+  characterName: Sister
+  entries:
+    m_keys: 000000000a0000000b000000
+    m_values:
+    - entryText: "You\u2019re doing very well out here, Phoebe. I saw you the other
+        day out of a window and you looked like a real costermonger! Stay warm and
+        stay safe darling. Father looks much better, doesn\u2019t he? I think one
+        day things might even get back to the way they used to be."
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses:
+      - I miss Father.
+      - "It\u2019s so cold out here."
+    - entryText: I miss him too. But one day soon we might come home to find him walking
+        about and cooking up a hot meal. We just need to be patient with him and pray
+        for the best. Good luck today, darling.
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []
+    - entryText: "I know, darling. Stay strong, and with any luck we will be out of
+        this soon. Maybe I\u2019ll buy some beef bones today and we make some broth
+        for dinner tomorrow? Just stay strong."
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []

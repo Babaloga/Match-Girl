@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Sister Day 5
+  m_EditorClassIdentifier: 
+  characterName: Sister
+  entries:
+    m_keys: 000000000a000000
+    m_values:
+    - entryText: "They will continue the strike, Phoebe. You are going to need to
+        be careful. Some girls have already taken to heckling passerbys and shopkeepers.
+        I think you should probably stay well away from the factory when you\u2019re
+        selling matches."
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses:
+      - Will you be okay?
+    - entryText: "Don\u2019t worry about me. I\u2019m still doing what I can, but
+        there won\u2019t be as much money coming in. It\u2019s going to fall on you
+        to keep working hard. You have to stay strong. For the family. For Father."
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []

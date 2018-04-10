@@ -39,14 +39,14 @@ public class NPCInteractionBasic : MonoBehaviour {
 
     public NPCType npcType;
 
-    private enum NPCState
+    public enum NPCState
     {
         Wandering,
         GoingToPlayer,
         WaitingForPlayer
     }
 
-    private NPCState currentState = NPCState.Wandering;
+    public NPCState currentState = NPCState.Wandering;
 
     void Start () {
         agent = GetComponent<NavMeshAgent>();
@@ -65,6 +65,7 @@ public class NPCInteractionBasic : MonoBehaviour {
     private void Update()
     {
         SpriteRenderer rend = GetComponent<SpriteRenderer>();
+
         switch(currentState)
         {
             case NPCState.Wandering:
@@ -100,14 +101,16 @@ public class NPCInteractionBasic : MonoBehaviour {
 
             case NPCState.WaitingForPlayer:
 
-                if(Time.time - timeMarker > waitTime)
-                {
-                    ReturnToWander();
-                }
+                rend.color = Color.green;
 
                 if ((transform.position - PlayerMovement.player.transform.position).magnitude <= 2f)
                 {
                     MakeTransaction();
+                }
+
+                if (Time.time - timeMarker > waitTime)
+                {
+                    ReturnToWander();
                 }
 
                 break;
@@ -118,7 +121,6 @@ public class NPCInteractionBasic : MonoBehaviour {
     {
         if (listening && other.gameObject.layer == 13 && Time.time - cooldown >= triggerTime)
         {
-            print("Callout Recieved");
             StartCoroutine(CalloutResponse());
         }
     }
@@ -127,7 +129,6 @@ public class NPCInteractionBasic : MonoBehaviour {
     {
         if(wantsMatches)
         {
-            if(GetComponentInChildren<NPCAnimation>()) GetComponentInChildren<NPCAnimation>().Beckon();
             WaitForPlayer();
             source.speakPrefab = yesReaction;
             yield return new WaitForSeconds(Random.Range(0.1f, 0.5f));
@@ -162,15 +163,7 @@ public class NPCInteractionBasic : MonoBehaviour {
 
     IEnumerator GoToPlayerRoutine()
     {
-        while (!GetComponentInChildren<NPCAnimation>().IsBeckoning())
-        {
-            yield return null;
-        }
-        while (GetComponentInChildren<NPCAnimation>().IsBeckoning())
-        {
-            yield return null;
-        }
-
+        yield return null;
         GetComponent<MoveTo>().overriden = true;
         agent.isStopped = false;
         playerPosMemory = PlayerMovement.player.transform.position;

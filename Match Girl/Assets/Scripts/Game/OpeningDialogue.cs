@@ -7,7 +7,7 @@ public class OpeningDialogue : MonoBehaviour {
     public Dialogue openingDialogue;
 
     void Update () {
-        if (PersistentGameManager.currentDay == 1)
+        if (PersistentGameManager.currentDay == 0)
         {
             DialogueReader.reader.StartDialogue(openingDialogue);
         }

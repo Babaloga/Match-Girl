@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Sister Day 2
+  m_EditorClassIdentifier: 
+  characterName: Sister
+  entries:
+    m_keys: 000000000a0000000b000000640000006e000000650000006f000000
+    m_values:
+    - entryText: "Good morning, Phoebe. I hope you\u2019re ready for another day of
+        work. How did Father look when you left him?"
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses:
+      - "I know he\u2019ll get better."
+      - "I don\u2019t know, he looks really bad."
+    - entryText: "I'm sure, but... Phoebe, I need you to go find Doctor Ralph today
+        and buy some clean bandages. I\u2019ve saved up a little bit of extra money.
+        You take it. I hope it\u2019s enough, but if not maybe you can find something
+        else. Maybe he has medicine, just find something that will help Father. Can
+        you do that for me?"
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 14
+      responses:
+      - I can do it.
+      - "I don\u2019t know, the Overseer doesn\u2019t like it when I waste time."
+    - entryText: "I know. Doctor Ralph seemed worried. I\u2019m worried, too. Phoebe,
+        I need you to go find Doctor Ralph today and buy some clean bandages. I\u2019ve
+        saved up a little bit of extra money. You take it. I hope it\u2019s enough,
+        but if not maybe you can find something else. Maybe he has medicine, just
+        find something that will help Father. Can you do that for me?"
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 14
+      responses:
+      - I can do it.
+      - "I don\u2019t know, the Overseer doesn\u2019t like it when I waste time."
+    - entryText: "Thank you so much. You\u2019ll be helping our whole family. I have
+        to run to work now. Don\u2019t forget to find the Doctor!"
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []
+    - entryText: "Thank you so much. You\u2019ll be helping our whole family. I have
+        to run to work now. Don\u2019t forget to find the Doctor!"
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []
+    - entryText: I understand, I do. But Father needs you. We all need you. Please,
+        if you have a chance, find the Doctor. I need to go now. Good luck.
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []
+    - entryText: I understand, I do. But Father needs you. We all need you. Please,
+        if you have a chance, find the Doctor. I need to go now. Good luck.
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []

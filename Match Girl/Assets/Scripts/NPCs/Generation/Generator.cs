@@ -30,12 +30,19 @@ public class Generator : MonoBehaviour {
         if (debugForceMale) male = true;
         else male = (Random.Range(0, 2) == 1);
 
-        NPCInteractionBasic npc = transform.parent.GetComponent<NPCInteractionBasic>();
-
-        if(male)
-            archetype = TypeDictionary.instance.maleDictionary[npc.npcType];
+        if (transform.parent.GetComponent<SpecialInteraction>())
+        {
+            archetype = transform.parent.GetComponent<SpecialInteraction>().characterArchetype;
+        }
         else
-            archetype = TypeDictionary.instance.femaleDictionary[npc.npcType];
+        {
+            NPCInteractionBasic npc = transform.parent.GetComponent<NPCInteractionBasic>();
+
+            if (male)
+                archetype = TypeDictionary.instance.maleDictionary[npc.npcType];
+            else
+                archetype = TypeDictionary.instance.femaleDictionary[npc.npcType];
+        }
 
         GenerateNPC();
     }

@@ -32,7 +32,7 @@ public class PlayerStatsManager : MonoBehaviour {
     void Awake () {
         temperatureClass = FindObjectOfType<PlayerTemperature>();
 
-        if (PersistentGameManager.currentDay == 1)
+        if (PersistentGameManager.currentDay == 0)
         {
             stats = l_stats;
         }

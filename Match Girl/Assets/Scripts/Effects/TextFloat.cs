@@ -48,7 +48,6 @@ public class TextFloat : MonoBehaviour {
             duration += Random.Range(-noiseAmount, noiseAmount) * duration;
             scaleMultiplier += Random.Range(-noiseAmount, noiseAmount) * scaleMultiplier;
             speedMultiplier += Random.Range(-noiseAmount, noiseAmount) * speedMultiplier;
-            print(duration + " " + scaleMultiplier + " " + speedMultiplier);
         }
 
         float timeElapsed = Time.time - startTime;

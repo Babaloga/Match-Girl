@@ -24,8 +24,6 @@ public class MoveTo : MonoBehaviour
     public AnimationCurve xAxis;
     public AnimationCurve zAxis;
 
-    public LayerMask rayMask;
-
     float pauseTime;
     float timeUntilNextPause;
     float timeMarker;
@@ -37,6 +35,8 @@ public class MoveTo : MonoBehaviour
     public bool overriden = false;
 
     NPCType npcType;
+
+    CrowdPoint goalPoint;
 
     [ShowOnly]
     public bool agentStopped = false;
@@ -145,12 +145,10 @@ public class MoveTo : MonoBehaviour
 
     private void PickNewGoal()
     {
-        Transform startPoint;
-
         //Randomly picks a point to raycast from. For the first cast all points are equally weighted. For all subsequent casts the NPC is more likely to stay under the same point.
         if (lastGoal == -1) {
             int rand = Random.Range(0, points.Count);
-            startPoint = points[rand].transform;
+            goalPoint = points[rand];
             lastGoal = rand;
         }
         else
@@ -161,49 +159,22 @@ public class MoveTo : MonoBehaviour
             {
                 rand = lastGoal;
             }
-            startPoint = points[rand].transform;
+            goalPoint = points[rand];
         }
 
-        bool validPoint = false;
-        Vector3 goalPos = Vector3.zero;
-
-        int i = 0;
-
-        while (!validPoint)
-        {
-            //Break while look if more than 100 iterations occur to prevent freezing.
-            if(i > 1000) {
-                Debug.LogWarning("Couldn't find viable ground under " + startPoint.name, transform);
-                break;
-            }
-
-            //Generate random Vector3
-            Vector3 randomDirection = Random.insideUnitSphere;
-            //Set random Vector3 y axis to a new random value between -0.5 and -1
-            randomDirection.y = Random.Range(-1, -0.5f);
-
-            RaycastHit hit;
-
-            //Raycast and check for a walkable surface
-            if(Physics.Raycast(startPoint.position, randomDirection, out hit, Mathf.Infinity, rayMask, QueryTriggerInteraction.Ignore) && hit.collider.gameObject.layer == 12)
-            {
-                validPoint = true;
-                goalPos = hit.point;
-            }
-
-            i++;
-        }
-
-        Debug.DrawLine(startPoint.position, goalPos, Color.red, 2f);
-
-        goal.position = goalPos;
+        goal.position = goalPoint.GetPosition();
     }
 
     public void DestinationReached()
     {
-        Pause();
-        PickNewGoal();
-        agent.destination = goal.position;
+        ExitPoint exit = goalPoint as ExitPoint;
+        if (exit) Destroy(gameObject);
+        else
+        {
+            Pause();
+            PickNewGoal();
+            agent.destination = goal.position;
+        }
     }
 
     public void Pause()
