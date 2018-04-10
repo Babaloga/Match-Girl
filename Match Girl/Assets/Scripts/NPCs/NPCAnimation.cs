@@ -6,35 +6,39 @@ public class NPCAnimation : MonoBehaviour {
 
     private Animator animator;
 
+    private NPCInteractionBasic interaction;
+
     Vector3 previousPosition = Vector3.zero;
 
 	void Start () {
         animator = GetComponent<Animator>();
+        interaction = transform.parent.GetComponent<NPCInteractionBasic>();
         animator.SetFloat("X Facing", 1);
     }
 	
 	void Update () {
         Vector3 velocity = (transform.position - previousPosition) / Time.deltaTime;
 
-        if(velocity.magnitude > 0.01f)
-            animator.SetFloat("X Facing", velocity.normalized.x);
-
         animator.SetFloat("Speed", velocity.magnitude);
 
         previousPosition = transform.position;
-	}
 
-    public void Beckon()
-    {
-        animator.SetTrigger("Beckon");
-    }
-
-    public bool IsBeckoning()
-    {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("match_beckon") || animator.GetCurrentAnimatorStateInfo(0).IsName("match_beckon_back_to_stand"))
+        if(interaction.currentState == NPCInteractionBasic.NPCState.WaitingForPlayer)
         {
-            return true;
+            animator.SetBool("Beckoning", true);
+
+            Vector3 relative = PlayerMovement.player.transform.position - transform.position;
+
+            animator.SetFloat("X Facing", relative.x / Mathf.Abs(relative.x));
         }
-        else return false;
+        else
+        { 
+            animator.SetBool("Beckoning", false);
+
+            if (velocity.magnitude > 0.01f)
+            {
+                animator.SetFloat("X Facing", velocity.x / Mathf.Abs(velocity.x));
+            }
+        }
     }
 }
