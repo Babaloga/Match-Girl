@@ -12,6 +12,8 @@ public class MoveAndTile : MonoBehaviour {
 
     bool spawnedNext = false;
 
+    public bool destroy = false;
+
     public GameObject partner;
 
     void Awake () {
@@ -23,6 +25,12 @@ public class MoveAndTile : MonoBehaviour {
 
         if((transform.position - startPos).magnitude >= distance && !partner)
         {
+            if (destroy)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
             partner = Instantiate(gameObject, startPos, Quaternion.Euler(Vector3.zero));
             partner.GetComponent<MoveAndTile>().partner = gameObject;
         }
