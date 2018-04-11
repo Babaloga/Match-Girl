@@ -7,6 +7,8 @@ public class Generator : MonoBehaviour {
 
     Archetype archetype;
 
+    public bool male = true;
+
     public SpriteMeshInstance head;
     public SpriteMeshInstance torso;
     public SpriteMeshInstance hat;
@@ -33,7 +35,8 @@ public class Generator : MonoBehaviour {
         {
             NPCInteractionBasic npc = transform.parent.GetComponent<NPCInteractionBasic>();
 
-            archetype = TypeDictionary.instance.maleDictionary[npc.npcType];
+            if(male) archetype = TypeDictionary.instance.maleDictionary[npc.npcType];
+            else archetype = TypeDictionary.instance.femaleDictionary[npc.npcType];
         }
 
         GenerateNPC();
