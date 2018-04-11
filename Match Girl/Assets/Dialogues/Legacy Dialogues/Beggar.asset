@@ -16,147 +16,187 @@ MonoBehaviour:
     m_keys: 010000000a00000064000000650000000c00000078000000790000006e0000006f00000070000000710000006a0400006b0400006c040000382c0000392c00003a2c00003aba01003bba01003cba0100
     m_values:
     - entryText: Hey you, Young Lass!
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses:
       - Yes, Ma'am?
     - entryText: Have you got any coin to spare?
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses:
       - No, you look a bit cold, would you like to purchase some Bryant & May matches?
       - (give one shilling)
     - entryText: 
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: 
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: 
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: -1
+      continueToEntry: 0
       responses: []
     - entryText: Bless you, little miss!
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: Stay warm, ma'am!
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: 'Ooh YES! I''d love some matches! I can light all the lamps in my
         house! and cook a nice goose with the stove that I own!  Matches sound great!  Fool
         girl.  '
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: (silently back away)
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: Sorry ma'am...
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: Oh! How many can I get you?
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: (The beggar woman stares at you, dumbstruck)
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: Oh... I see... sorry...
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: Oh, a shilling for a box!
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: (she continues to stare at you, annoyed)
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: (stare back, unaware of what to say)
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: (You've caused this poor woman enough trouble, just leave)
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: Please leave me be, girl
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: (leave)
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []
     - entryText: (place a shilling into the beggar's hat, and leave)
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: -1
+      continueToEntry: 0
       responses: []

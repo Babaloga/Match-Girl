@@ -11,148 +11,185 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
   m_Name: Overseer
   m_EditorClassIdentifier: 
+  characterName: 
   entries:
     m_keys: 0000000001000000020000001400000015000000d200000016000000dc000000d3000000d4000000dd0000000a0000000b0000006e0000006f0000000c0000007800000079000000
     m_values:
     - entryText: 'Ah you''re here, good, good. Welcome to your new office: all these
         streets up to the docks and out to that little market region. Don''t go past
         the Bryant factory there or down from the plaza.'
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Yessir
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: When do I get paid?
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Ha! I like you. You'll get to keep half of what you earn selling
         matchboxes. At six on the dot, you're done working and I'll collect my cut
         and any extra matches leftover.
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Half?!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Watch your tone, girl. Your father left you in my care, and I do
         not tolerate insubordinance. Take a walk and come talk to me when you're ready
         to shut your mouth and get to work. Stay near the lamps if you don't want
         to freeze to death before you start.
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Yessir
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Good, good. It's cold this time of year, so make sure to warm yourself
         up by these lamps when you can. When you're ready to get to work, talk to
         me and I'll get you some matches.
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: I'm sorry sir
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Fine
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Yessir
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Obedient, that's a good start. I'll give you your matches at the
         start of each day, and at six on the dot you're done for the day. You'll take
         home half of what you've earned throughout the day.
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Yessir
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Good, good. It'll be cold out there, so be sure to warm up by these
         lamps whenever you can. Come talk to me again when you're ready to go, and
         I'll get you all set-up.
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Yessir
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Only half?
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Half. And mind that I will not tolerate insubordinance going forward.
         You answer to me. On that note, I won't have you freezing to death in my care
         either, so be sure to warm up near these lamps whenever you can. Come talk
         to me when you're ready to begin.
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Yessir
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []

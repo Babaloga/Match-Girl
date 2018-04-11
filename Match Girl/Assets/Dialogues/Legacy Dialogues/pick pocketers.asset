@@ -11,158 +11,201 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
   m_Name: pick pocketers
   m_EditorClassIdentifier: 
+  characterName: 
   entries:
     m_keys: 00000000010000000a0000000b000000020000001400000015000000d2000000d300000016000000dc000000dd000000de000000a2080000a3080000a4080000a50800005e5600005f5600007256000073560000
     m_values:
     - entryText: (A young man bumps into you)  Oh sorry girl! I weren't looking where
         I was going!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: That's alright (walk away)
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: As you leave, your pocket feels a little lighter
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: -1
+      continueToEntry: 0
+      responses: []
     - entryText: 'shoot. '
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: hold on, would you care to buy some matches?
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: I don't think so girly, haven't got the coin for em'(he appears a
         little too eager to leave)
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: (let him go, he's probably got somewhere to be)
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: As you let him go, you notice an empty feeling in your pocket
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: -1
+      continueToEntry: 0
+      responses: []
     - entryText: The pickpocket has made off with some of your hard-earned money
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: (look him over)
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: 'A quick glance reveals that he''s holding a shilling behind his
         back.  YOUR shilling  '
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Hey! That's mine!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: (better to leave him alone, he looks like trouble...)
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: -1
+      continueToEntry: 0
+      responses: []
     - entryText: Yeah? what are you gonna do about it?
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: (hit him. show that thief what he deserves)
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: (leave, there really would be trouble for you if this kid got angry)
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: -1
+      continueToEntry: 0
+      responses: []
     - entryText: (Call the constable, He'll sort this out)
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: (he takes the hit and grimaces, then he shoves you into a pile of
         slush and runs away)
-      end: 0
+      speakerName: 
       modifyTemperature: -20
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: -1
+      continueToEntry: 0
+      responses: []
     - entryText: (your pocket feels lighter, and you're drenched in cold water)
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: (as soon as you call out, "Oh, Constable!" the pickpocket shoves
         your money back into you and darts off)
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Sure showed him!
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
