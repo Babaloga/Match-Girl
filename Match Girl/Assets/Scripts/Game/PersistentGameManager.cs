@@ -10,6 +10,7 @@ public class PersistentGameManager : MonoBehaviour {
 
     public string endScreenName;
     public string mainSceneName;
+    public string intermediateSceneName;
 
     public static float time;
     private static float averageTemperature;
@@ -67,7 +68,7 @@ public class PersistentGameManager : MonoBehaviour {
         print(currentDay);
         persistentStats.food = ResourceManager.variableFood;
         DetermineSickness();
-        StartCoroutine(FadeAndSwitchScenes(mainSceneName));
+        StartCoroutine(FadeAndSwitchScenes(intermediateSceneName));
         temperatureSum = 0;
         temperatureMeasurements = 0;
         recordTemperature = true;

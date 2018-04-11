@@ -18,6 +18,8 @@ public class Entry {
     public int modifyMatches = 0;
     public int modifyMoney = 0;
 
+    public int continueToEntry = 0;
+
     public string[] responses;
 
 }

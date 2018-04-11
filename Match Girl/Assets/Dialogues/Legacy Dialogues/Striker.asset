@@ -11,174 +11,221 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
   m_Name: Striker
   m_EditorClassIdentifier: 
+  characterName: 
   entries:
     m_keys: 0000000001000000020000000a0000000b0000000c00000078000000790000006e0000006f0000005604000057040000580400001400000015000000d2000000d30000003e0800003f0800004008000016000000dc000000dd000000
     m_values:
     - entryText: Those are Bryant & May, I suppose?
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Yes'm! A box for a shilling!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Manufactured just around the corner ma'am!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: No thank you! I've had enough of the devils running that place! That's
         why me and the other girls are on strike at this very moment!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: A strike?
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Good for you ma'am!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Why thank you, child! You stay warm now!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: And the same to you, ma'am!
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Yes, all fourteen hundred of us! Sitting about all day and leaving
         the factory dead in the water!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: But what of your wages!?
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: We'll manage! Anything will be better than the indignities we've
         suffered! You be sure to stand up for yourself as well, when the time comes!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Will do, ma'am!
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: I'm sorry ma'am, I should be going
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: I know the place. As a matter of fact, I'd be there at this very
         moment, were I not on strike right now!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: A strike?
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: 'Yes, all fourteen hundred of us! Sitting about all day and leaving
         the factory dead in the water! '
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: But what of your wages!?
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: We'll manage! Anything will be better than the indignities we've
         suffered! You be sure to stand up for yourself as well, when the time comes!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Will do, ma'am!
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: I'm sorry ma'am, I should be going
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: I'm sorry to hear that ma'am!
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: Oh no! I'm fighting for what I deserve! And you ought to as well!
         Stay warm out there, girl.
-      end: 0
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []
     - entryText: You too, ma'am
-      end: 1
+      speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
+      responses: []

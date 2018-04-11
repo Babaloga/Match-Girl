@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 normal = Vector3.up;
 
-    void Start()
+    void Awake()
     {
         player = gameObject;
     }

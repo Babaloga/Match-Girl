@@ -39,6 +39,10 @@ public class NPCInteractionBasic : MonoBehaviour {
 
     public NPCType npcType;
 
+    public GameObject[] passiveCallouts;
+    public GameObject[] negativeCallouts;
+    public GameObject[] positiveCallouts;
+
     public enum NPCState
     {
         Wandering,
@@ -76,6 +80,15 @@ public class NPCInteractionBasic : MonoBehaviour {
 
                 destination = agent.destination;
 
+                if (wantsMatches && Time.frameCount % 20 == 0)
+                {
+                    if (Random.Range(0, 100) > 97)
+                    {
+                        source.speakPrefab = passiveCallouts[Random.Range(0, passiveCallouts.Length)];
+                        source.Speak();
+                    }
+                }
+                
                 break;
 
             case NPCState.GoingToPlayer:

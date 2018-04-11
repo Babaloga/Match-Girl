@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Overseer Intro
+  m_EditorClassIdentifier: 
+  characterName: Overseer
+  entries:
+    m_keys: 010000000a0000000b000000650000006f000000
+    m_values:
+    - entryText: "Ah Phoebe, right? I\u2019ve spoken with your sister, and you\u2019ll
+        be working for me out here from now on. You\u2019ll be here a minute before
+        eight each morning to collect your wares and start your day, and I\u2019ll
+        see you back here at six to collect half of your earnings and whatever you
+        haven\u2019t sold. Understood?"
+      speakerName: Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses:
+      - Yessir!
+      - I only get half?!
+    - entryText: "Good, good. Your sister told me you know how to listen. Now, out
+        here your voice will be your weapon and these crowds of incompetent halfwits
+        are your foes. As such, you will need to keep your blade honed, understood?
+        That is to say, don\u2019t overly strain your throat as you cry your wares.
+        I won\u2019t have you coming down with a cold on your first day out here."
+      speakerName: Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses:
+      - Yessir
+    - entryText: "Half. And let this be your warning that I will not tolerate insubordination.
+        You are my charge while we are in these streets. As such, I expect you to
+        follow my instructions readily. And take care not to overexert your voice
+        as you cry your wares. I won\u2019t have you coming down with a cold on your
+        first day."
+      speakerName: Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses:
+      - Yessir
+    - entryText: Here, I will start you with thirty matches. If you manage to sell
+        out, return to me for more. Oh, and... I'm sorry to hear what happened to
+        your father. He was a good man... Now get to it.
+      speakerName: Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 30
+      modifyMoney: 0
+      responses: []
+    - entryText: Here, I will start you with thirty matches. If you manage to sell
+        out, return to me for more. Oh, and... I'm sorry to hear what happened to
+        your father. He was a good man... Now get to it.
+      speakerName: Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 30
+      modifyMoney: 0
+      responses: []

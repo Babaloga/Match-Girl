@@ -74,9 +74,25 @@ public class DialogueReader : MonoBehaviour {
     public void Select(int selection)
     {
         print(selection);
-        int nextValue = (currentValue * 10) + selection;
 
-        if (!dialogue.entries.ContainsKey(nextValue) || selection > 9)
+        int nextValue;
+
+        if (selection == -1)
+        {
+            if (dialogue.entries[currentValue].continueToEntry != 0)
+            {
+                nextValue = dialogue.entries[currentValue].continueToEntry;
+            }
+            else
+            {
+                nextValue = (currentValue * 10);
+            }
+        }
+        else {
+            nextValue = (currentValue * 10) + selection;
+        }
+
+        if (!dialogue.entries.ContainsKey(nextValue))
         {
             EndDialogue();
             return;
@@ -166,7 +182,7 @@ public class DialogueReader : MonoBehaviour {
         if (!wayOut)
         {
             continueObject.SetActive(true);
-            ContinueButton.selectionInt = dialogue.entries[currentValue].responses.Length;
+            ContinueButton.selectionInt = -1;
         }
         else
         {

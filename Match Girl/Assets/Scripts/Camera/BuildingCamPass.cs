@@ -29,6 +29,8 @@ public class BuildingCamPass : MonoBehaviour {
     {
         if(!building) building = GetComponent<Collider>();
         if(!rend) rend = GetComponent<MeshRenderer>();
+        camBubble = FindObjectOfType<CameraFollow>().GetComponent<Collider>();
+        target = PlayerMovement.player.transform;
         opaqueMaterials = rend.materials;
         List<Material> startMaterialsTemp = new List<Material>();
         for (int i = 0; i < opaqueMaterials.Length; i++)

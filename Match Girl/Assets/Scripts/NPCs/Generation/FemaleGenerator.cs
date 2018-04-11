@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Anima2D;
 
-public class Generator : MonoBehaviour {
+public class FemaleGenerator : MonoBehaviour {
 
     Archetype archetype;
 
@@ -33,7 +33,7 @@ public class Generator : MonoBehaviour {
         {
             NPCInteractionBasic npc = transform.parent.GetComponent<NPCInteractionBasic>();
 
-            archetype = TypeDictionary.instance.maleDictionary[npc.npcType];
+            archetype = TypeDictionary.instance.femaleDictionary[npc.npcType];
         }
 
         GenerateNPC();
