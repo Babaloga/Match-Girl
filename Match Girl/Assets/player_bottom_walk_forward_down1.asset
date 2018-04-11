@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: player_bottom_walk_forward_down1
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Dress_root_bone
+    localPosition: {x: 0, y: 1.602, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.7071069, w: -0.70710677}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/R_dress_bone1
+    localPosition: {x: 0.013833266, y: -0.2729645, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.19756836, w: 0.98028916}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/R_dress_bone1/R_dress_bone2
+    localPosition: {x: 0.49634624, y: 0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.20413002, w: 0.9789438}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/R_dress_bone1/R_dress_bone2/R_dress_bone3
+    localPosition: {x: 0.64484125, y: -0.00000033900142, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.45504403, w: 0.89046896}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/R_dress_bone1/R_dress_bone2/R_dress_bone3/R_dress_bone3_DSPL
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: 0, y: -0, z: -0.000000029802315, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/R_dress_bone1/R_dress_bone2/R_dress_bone2_DSPL
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: -0, y: -0, z: -0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/R_dress_bone1/R_dress_JNT1_DSPL
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: -0, y: -0, z: -0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/L_dress_bone1 (1)
+    localPosition: {x: 0.013833206, y: 0.2729645, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.21489535, w: -0.9766371}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/L_dress_bone1 (1)/L_dress_bone2
+    localPosition: {x: 0.49634624, y: 0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.16043915, w: 0.98704576}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/L_dress_bone1 (1)/L_dress_bone2/L_dress_bone3
+    localPosition: {x: 0.64484125, y: -0.00000033900142, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.21937802, w: 0.97563994}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/L_dress_bone1 (1)/L_dress_bone2/L_dress_bone3/L_dress_bone3_DSPL
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/L_dress_bone1 (1)/L_dress_bone2/L_dress_bone2_DSPL
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.000000022351735, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/L_dress_bone1 (1)/L_dress_JNT1_DSPL
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: -0, y: -0, z: -0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/R_foot_JNT
+    localPosition: {x: 1.1443425, y: -0.13347399, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.17385775, w: 0.98477083}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/R_foot_JNT/R_foot_JNT_DSPL
+    localPosition: {x: 0, y: 0, z: 0.02}
+    localRotation: {x: -0, y: -0, z: -0.000000029802319, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 'Dress_root_bone/L_foot_JNT '
+    localPosition: {x: 1.515188, y: 0.28300834, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.3611985, w: 0.932489}
+    localScale: {x: 1.0000005, y: 1.0000005, z: 1}
+  - path: Dress_root_bone/L_foot_JNT /L_foot_JNT_DSPL
+    localPosition: {x: 0, y: 0, z: 0.02}
+    localRotation: {x: -0, y: -0, z: 0.000000029802315, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Dress_root_bone/Dress_root_bone_DSPL
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: -0, y: -0, z: -0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
