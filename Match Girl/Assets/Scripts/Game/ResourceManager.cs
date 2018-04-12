@@ -78,7 +78,7 @@ public class ResourceManager : MonoBehaviour {
     {
         PersistentGameManager.persistentStats.money = moneyLeft;
 
-        PersistentGameManager.instance.LoadMainScene();
+        PersistentGameManager.instance.LoadIntermediateScene();
     }
 
 	private void CheckHunger()

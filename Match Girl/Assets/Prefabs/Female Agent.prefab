@@ -1318,6 +1318,7 @@ GameObject:
   - component: {fileID: 114531222752122174}
   - component: {fileID: 95703753054691150}
   - component: {fileID: 114764437450686858}
+  - component: {fileID: 114284162396416334}
   m_Layer: 0
   m_Name: female_animation_model
   m_TagString: Untagged
@@ -2987,9 +2988,12 @@ MonoBehaviour:
   maxBuyNumber: 5
   minBuyNumber: 1
   npcType: 0
-  passiveCallouts: []
-  negativeCallouts: []
-  positiveCallouts: []
+  passiveCallouts:
+  - {fileID: 1720288130890404, guid: 11aed84e889fda846b5933602c154419, type: 2}
+  negativeCallouts:
+  - {fileID: 1176669192584378, guid: 047068dcec5a670468c402eb49bec0e2, type: 2}
+  positiveCallouts:
+  - {fileID: 1720288130890404, guid: dbd953447aa700e4c810787b1eb1cffe, type: 2}
   currentState: 0
 --- !u!114 &114137432926585054
 MonoBehaviour:
@@ -3326,6 +3330,17 @@ MonoBehaviour:
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4145066102869870}
   m_AttachedIK: {fileID: 0}
+--- !u!114 &114284162396416334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1938298366125922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d6523c1a4a58d4698bf3a6beae495b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114371739632549638
 MonoBehaviour:
   m_ObjectHideFlags: 1

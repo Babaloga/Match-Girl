@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Sister
   entries:
-    m_keys: 000000000a000000
+    m_keys: 010000000a000000
     m_values:
     - entryText: "Good morning little sister! I have to be quick or my manager will
         fine me. This is your overseer, Mister Williams. He\u2019s agreed to watch
@@ -26,6 +26,7 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses:
       - "It\u2019s so cold this early\u2026 "
     - entryText: "Oh don\u2019t worry, you just need to get used to it, Phoebe! Perhaps
@@ -39,4 +40,5 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      continueToEntry: 0
       responses: []

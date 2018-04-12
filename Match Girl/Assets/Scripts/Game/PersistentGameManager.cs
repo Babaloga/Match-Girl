@@ -35,7 +35,7 @@ public class PersistentGameManager : MonoBehaviour {
         persistentSicknessLevel = EffectLevel.None;
 		persistentStats.boots = false;
         if (!debugMode)
-            StartCoroutine(LoadSceneSetActive(mainSceneName));
+            StartCoroutine(LoadSceneSetActive(intermediateSceneName));
         else
             sceneFader.FadeOut();
     }
@@ -62,13 +62,18 @@ public class PersistentGameManager : MonoBehaviour {
         StartCoroutine(FadeAndSwitchScenes(endScreenName));
     }
 
-    public void LoadMainScene()
+    public void LoadIntermediateScene()
     {
         currentDay++;
         print(currentDay);
         persistentStats.food = ResourceManager.variableFood;
         DetermineSickness();
         StartCoroutine(FadeAndSwitchScenes(intermediateSceneName));
+    }
+
+    public void LoadMainScene()
+    {
+        StartCoroutine(FadeAndSwitchScenes(mainSceneName));
         temperatureSum = 0;
         temperatureMeasurements = 0;
         recordTemperature = true;
