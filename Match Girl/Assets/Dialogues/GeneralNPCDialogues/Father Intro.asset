@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Father Intro
+  m_EditorClassIdentifier: 
+  characterName: Father
+  entries:
+    m_keys: 010000000a000000640000006500000066000000
+    m_values:
+    - entryText: "...and here we are on Tredegar Road. Up ahead, you can see the the
+        tops of the Bryant and May Factory. That\u2019s where your older sister has
+        been working for these past few weeks. And up ahead, you can\u2019t quite
+        see it from here, but a little ways around the corner you would find my new
+        workplace."
+      speakerName: Father
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses:
+      - The railroad factory?
+    - entryText: "Right my dear. Railroad ties. I\u2019ll be there most days from
+        now on. And you, my child, we are going to find a nice little shop somewhere
+        for you to start helping out and earning some money yourself. Maybe Mr. Woodgate
+        is looking for a helper at the bakery."
+      speakerName: Father
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses:
+      - "Oh, he\u2019s always nice. And I love the rolls he has in the mornings!"
+      - If I have money, can I buy some chocolate for everyone?
+      - Will you be okay at the factory? Edward said his dad got hit so hard in the
+        head that he came home one night covered in blood!
+    - entryText: "I\u2019ll talk to him tonight on my way home. Maybe I can pick up
+        a little flour too with my first wages and we can make some bread to celebrate.
+        Now get yourself back home and watch after your little brother."
+      speakerName: Father
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []
+    - entryText: "I\u2019ll tell you what, the first shilling you earn will be yours
+        to spend however you want. I\u2019ve got to be going now. Watch after your
+        younger brother today."
+      speakerName: Father
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []
+    - entryText: "Mrs. Stevens assured me that it was just a small accident on the
+        job, and he was back to work the very next day. Don\u2019t you worry about
+        me dear, I\u2019ll be especially careful. Hurry home now, and take care of
+        your brother today."
+      speakerName: Father
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      responses: []
