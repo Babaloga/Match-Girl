@@ -30,7 +30,7 @@ public class PlayerAnimation : MonoBehaviour {
 
         previousPosition = transform.position;
 
-        if(velocity.magnitude > 0.01f)
+        if (velocity.magnitude > 0.01f)
         {
             if (Mathf.Abs(velocity.x) > 0.01f)
             {
@@ -55,5 +55,10 @@ public class PlayerAnimation : MonoBehaviour {
             }
         }
 
+    }
+
+    public void Callout()
+    {
+        topAnimator.SetTrigger("Matches");
     }
 }

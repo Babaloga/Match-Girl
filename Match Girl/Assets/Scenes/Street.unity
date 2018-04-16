@@ -29977,6 +29977,26 @@ Prefab:
       propertyPath: bottomAnimator
       value: 
       objectReference: {fileID: 317500301}
+    - target: {fileID: 4917592587056174, guid: 8f7eb8ea72cb80b4c907a258d91dde8f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917592587056174, guid: 8f7eb8ea72cb80b4c907a258d91dde8f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917592587056174, guid: 8f7eb8ea72cb80b4c907a258d91dde8f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.06192017
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917592587056174, guid: 8f7eb8ea72cb80b4c907a258d91dde8f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.7903273
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917592587056174, guid: 8f7eb8ea72cb80b4c907a258d91dde8f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.0026245117
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f7eb8ea72cb80b4c907a258d91dde8f, type: 2}
   m_IsPrefabParent: 0
