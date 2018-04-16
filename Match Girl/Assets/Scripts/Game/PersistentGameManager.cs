@@ -18,6 +18,7 @@ public class PersistentGameManager : MonoBehaviour {
     private float temperatureMeasurements;
 
     public static PlayerStats persistentStats;
+    public PlayerStats debugStats;
 
     public float dayHungerPenalty = 34;
 
@@ -25,19 +26,24 @@ public class PersistentGameManager : MonoBehaviour {
     public Fader sceneFader;
 
     public static bool debugMode = false;
+    public bool localDebug = false;
     private bool recordTemperature = true;
 
     public static EffectLevel persistentSicknessLevel;
 
     private void Start()
     {
+        debugMode = localDebug;
         instance = this;
         persistentSicknessLevel = EffectLevel.None;
 		persistentStats.boots = false;
         if (!debugMode)
             StartCoroutine(LoadSceneSetActive(intermediateSceneName));
         else
-            sceneFader.FadeOut();
+        {
+            if(sceneFader) sceneFader.FadeOut();
+            persistentStats = debugStats;
+        }
     }
 
     private void FixedUpdate()
