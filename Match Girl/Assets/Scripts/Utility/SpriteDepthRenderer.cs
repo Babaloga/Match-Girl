@@ -5,6 +5,8 @@ using Anima2D;
 
 public class SpriteDepthRenderer : MonoBehaviour {
 
+    public bool advanced = false;
+
     SpriteRenderer rend;
     SpriteMeshInstance mesh;
     Canvas canvas;
@@ -42,6 +44,28 @@ public class SpriteDepthRenderer : MonoBehaviour {
 
     private void Update()
     {
+        if (advanced)
+        {
+            Vector3 relative = transform.position - Camera.main.transform.position;
+
+            switch (renderType)
+            {
+                case RenderType.SpriteRenderer:
+                    rend.sortingOrder = (int)(relative.magnitude * -100);
+                    break;
+
+                case RenderType.SpriteMesh:
+                    mesh.sortingOrder = (int)(relative.magnitude * -100);
+                    break;
+
+                case RenderType.Canvas:
+                    canvas.sortingOrder = (int)(relative.magnitude * -100);
+                    break;
+            }
+
+            return;
+        }
+
         switch (renderType)
         {
             case RenderType.SpriteRenderer:

@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private float baseSpeed;
     private float speed;
 
-    Vector3 movement = Vector3.zero;
+    public Vector3 movement = Vector3.zero;
 
     public static GameObject player;
 

@@ -1319,6 +1319,7 @@ GameObject:
   - component: {fileID: 95703753054691150}
   - component: {fileID: 114764437450686858}
   - component: {fileID: 114284162396416334}
+  - component: {fileID: 114576136672362432}
   m_Layer: 0
   m_Name: female_animation_model
   m_TagString: Untagged
@@ -3645,6 +3646,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BoneTransform: {fileID: 4392133821306986}
+--- !u!114 &114576136672362432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1938298366125922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf0dab73cfe90746b10378b3f703c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptedMovement: {x: 0, y: 0, z: 0}
+  scriptedBeckoning: 0
+  thisType: 0
 --- !u!114 &114583758476024380
 MonoBehaviour:
   m_ObjectHideFlags: 1

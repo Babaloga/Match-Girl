@@ -221,7 +221,9 @@ public class PlayerCallout : MonoBehaviour {
         Camera.main.GetComponent<CameraEffects>().Shake(0.2f, damageCurve.Evaluate(_power));
         StartCoroutine(CalloutRoutine(_power));
         throatHealth -= _power / 10;
-        //print(_power);
+
+        FindObjectOfType<PlayerAnimation>().Callout();
+
         source.Speak(
             (Mathf.Pow(_power, 2) * 3) + 1,
             (-throatHealth + 1) * 10,

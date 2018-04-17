@@ -18,6 +18,12 @@ public class Entry {
     public int modifyMatches = 0;
     public int modifyMoney = 0;
 
+    public bool giveBoots = false;
+    public bool giveWarmClothes = false;
+
+    public int modifyBandages = 0;
+    public int modifyTonics = 0;
+
     public int continueToEntry = 0;
 
     public string[] responses;

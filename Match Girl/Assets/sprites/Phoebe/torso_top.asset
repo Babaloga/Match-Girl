@@ -446,18 +446,18 @@ Mesh:
     boneIndex[1]: 4
     boneIndex[2]: 0
     boneIndex[3]: 0
-  - weight[0]: 0.86
-    weight[1]: 0.14
+  - weight[0]: 0.68
+    weight[1]: 0.32
     weight[2]: 0
     weight[3]: 0
-    boneIndex[0]: 4
-    boneIndex[1]: 5
+    boneIndex[0]: 5
+    boneIndex[1]: 4
     boneIndex[2]: 0
     boneIndex[3]: 0
-  - weight[0]: 0.49
-    weight[1]: 0.2736569
-    weight[2]: 0.2363431
-    weight[3]: 0
+  - weight[0]: 0.43
+    weight[1]: 0.30987066
+    weight[2]: 0.20916383
+    weight[3]: 0.05096556
     boneIndex[0]: 2
     boneIndex[1]: 3
     boneIndex[2]: 4
@@ -935,18 +935,18 @@ MonoBehaviour:
     boneIndex1: 5
     boneIndex2: -1
     boneIndex3: -1
-  - weight0: 0.86
-    weight1: 0.14
+  - weight0: 0.32
+    weight1: 0.68
     weight2: 0
     weight3: 0
     boneIndex0: 4
     boneIndex1: 5
     boneIndex2: -1
     boneIndex3: -1
-  - weight0: 0.49
-    weight1: 0.2363431
-    weight2: 0.2736569
-    weight3: 0
+  - weight0: 0.43
+    weight1: 0.20916383
+    weight2: 0.30987066
+    weight3: 0.05096556
     boneIndex0: 2
     boneIndex1: 4
     boneIndex2: 3

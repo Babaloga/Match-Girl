@@ -25,7 +25,7 @@ public class GlobalNPCManager : MonoBehaviour {
     {
         currentNPCCount = FindObjectsOfType<MoveTo>().Length;
 
-        print(currentNPCCount);
+        //print(currentNPCCount);
 
         if(currentNPCCount < minimumNPCCount)
         {

@@ -23,19 +23,25 @@ public class StatusEffects : MonoBehaviour {
 
     private void Update()
     {
-        if(sicknessLevel != EffectLevel.None)
-        {
-            int n = (int)sicknessLevel;
+        int sick = (int)sicknessLevel;
 
-            PlayerStatsManager.stats.callStrength = baseStats.callStrength - (callStrengthLossPerLevel * n);
-            PlayerStatsManager.stats.conductivity = baseStats.conductivity + (conductivityBoostPerLevel * n);
+        PlayerStatsManager.stats.callStrength = baseStats.callStrength - (callStrengthLossPerLevel * sick);
+        PlayerStatsManager.stats.conductivity = baseStats.conductivity + (conductivityBoostPerLevel * sick);
+
+
+        int cold = (int)coldLevel;
+
+        PlayerStatsManager.stats.speed = baseStats.speed - (speedLossPerLevel * cold);
+
+
+        if (PlayerStatsManager.stats.boots)
+        {
+            PlayerStatsManager.stats.conductivity = PlayerStatsManager.stats.conductivity * 0.75f;
         }
 
-        if(coldLevel != EffectLevel.None)
+        if (PlayerStatsManager.stats.warmClothes)
         {
-            int n = (int)coldLevel;
-
-            PlayerStatsManager.stats.speed = baseStats.speed - (speedLossPerLevel * n);
+            PlayerStatsManager.stats.conductivity = PlayerStatsManager.stats.conductivity * 0.5f;
         }
     }
 }
