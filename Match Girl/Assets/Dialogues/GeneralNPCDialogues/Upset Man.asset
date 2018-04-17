@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   entries:
-    m_keys: 000000000100000002000000140000000a0000000b00000015000000
+    m_keys: 010000000b0000000a000000
     m_values:
     - entryText: Blast this Cold! Did you say you had matches, girl?
       speakerName: 
@@ -22,26 +22,14 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
-      responses: []
-    - entryText: Yessir, a box for a shilling!
-      speakerName: 
-      modifyTemperature: 0
-      modifyHunger: 0
-      modifyTime: 0
-      modifyMatches: 0
-      modifyMoney: 0
-      continueToEntry: 0
-      responses: []
-    - entryText: Authentic Bryant & May matches, strike anywhere for warmth!
-      speakerName: 
-      modifyTemperature: 0
-      modifyHunger: 0
-      modifyTime: 0
-      modifyMatches: 0
-      modifyMoney: 0
-      continueToEntry: 0
-      responses: []
+      responses:
+      - Yessir, a box for a shilling!
+      - Authentic Bryant & May matches, strike anywhere for warmth!
     - entryText: That factory around the corner? I've heard good things! One box,
         if you please.
       speakerName: 
@@ -49,33 +37,25 @@ MonoBehaviour:
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: -1
-      modifyMoney: 1
+      modifyMoney: 3
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
-      responses: []
+      responses:
+      - Thank you, sir!
     - entryText: Shilling's a bit expensive, but I do need a box right now.
       speakerName: 
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: -1
-      modifyMoney: 1
+      modifyMoney: 3
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
-      responses: []
-    - entryText: Thank you, sir!
-      speakerName: 
-      modifyTemperature: 0
-      modifyHunger: 0
-      modifyTime: 0
-      modifyMatches: -1
-      modifyMoney: 1
-      continueToEntry: 0
-      responses: []
-    - entryText: Your patronage is appreciated
-      speakerName: 
-      modifyTemperature: 0
-      modifyHunger: 0
-      modifyTime: 0
-      modifyMatches: -1
-      modifyMoney: 1
-      continueToEntry: 0
-      responses: []
+      responses:
+      - Your patronage is appreciated.

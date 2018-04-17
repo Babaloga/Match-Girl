@@ -13,42 +13,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: 
   entries:
-    m_keys: 00000000010000000a0000000b000000
+    m_keys: 010000000a000000
     m_values:
     - entryText: A match, just what I was searching for! Right here, girl!
-      speakerName: 
+      speakerName: Smoker
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
-      responses: []
-    - entryText: Good day! A box for a shilling!
-      speakerName: 
-      modifyTemperature: 0
-      modifyHunger: 0
-      modifyTime: 0
-      modifyMatches: 0
-      modifyMoney: 0
-      continueToEntry: 0
-      responses: []
+      responses:
+      - Good day! A box for a shilling!
     - entryText: Of course, of cour- ah! Damn! Damn it all! What a waste of good tobacco!
         Ah, away with you! What's the good of a match now!?
-      speakerName: 
+      speakerName: Smoker
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
-      responses: []
-    - entryText: Sorry, sir...
-      speakerName: 
-      modifyTemperature: 0
-      modifyHunger: 0
-      modifyTime: 0
-      modifyMatches: 0
-      modifyMoney: 0
-      continueToEntry: 0
-      responses: []
+      responses:
+      - Er, sorry sir...
