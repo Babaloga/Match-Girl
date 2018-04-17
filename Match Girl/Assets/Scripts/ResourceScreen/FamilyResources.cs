@@ -95,6 +95,8 @@ public class FamilyResources : MonoBehaviour {
         {
             GetComponent<Image>().color = Color.red;
         }
+
+        keepConsistent();
     }
 
     public void FoodToggle(bool set)
@@ -122,6 +124,34 @@ public class FamilyResources : MonoBehaviour {
         {
             PersistentGameManager.persistentStats.tonics += 1;
             medicated = false;
+        }
+    }
+
+    private void keepConsistent()
+    {
+        if(gameObject.tag == "Player")
+        {
+            PersistentGameManager.instance.player_alive = alive;
+            PersistentGameManager.instance.player_fed = fed;
+            PersistentGameManager.instance.player_medicated = medicated;
+        }
+        if (gameObject.tag == "Brother")
+        {
+            PersistentGameManager.instance.bro_alive = alive;
+            PersistentGameManager.instance.bro_fed = fed;
+            PersistentGameManager.instance.bro_medicated = medicated;
+        }
+        if (gameObject.tag == "Sister")
+        {
+            PersistentGameManager.instance.sis_alive = alive;
+            PersistentGameManager.instance.sis_fed = fed;
+            PersistentGameManager.instance.sis_medicated = medicated;
+        }
+        if (gameObject.tag == "Father")
+        {
+            PersistentGameManager.instance.father_alive = alive;
+            PersistentGameManager.instance.father_fed = fed;
+            PersistentGameManager.instance.father_medicated = medicated;
         }
     }
 }

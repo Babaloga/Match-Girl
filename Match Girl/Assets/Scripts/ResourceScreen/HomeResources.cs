@@ -62,6 +62,8 @@ public class HomeResources : MonoBehaviour {
         {
             lightFurnace.interactable = true;
         }
+
+        PersistentGameManager.instance.logs = logs;
     }
 
     public void ToggleFurnace(bool set)

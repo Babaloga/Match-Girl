@@ -40,6 +40,8 @@ public class FatherResources : FamilyResources {
         {
             bandages.interactable = true;
         }
+
+        PersistentGameManager.instance.father_bandaged = bandaged;
     }
 
     public void BandageToggle(bool set)

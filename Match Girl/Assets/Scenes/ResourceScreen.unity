@@ -864,7 +864,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 155597087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 156b0c9c76f79184685fe7bf3026c422, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c441db150e9b5d42b145011b5309110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   alive: 1
@@ -1443,7 +1443,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 214313263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 156b0c9c76f79184685fe7bf3026c422, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c441db150e9b5d42b145011b5309110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   alive: 1
@@ -1668,7 +1668,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 254079979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c4084a72a60c194087b1432b73852b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bfdf888efd2ad24bb5b7c0905090cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   temperaturePerLog: 5
@@ -2399,7 +2399,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 393049936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 156b0c9c76f79184685fe7bf3026c422, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c441db150e9b5d42b145011b5309110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   alive: 1
@@ -7184,7 +7184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1623895565}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd42c870b3d15084eb5bd18524733423, type: 3}
+  m_Script: {fileID: 11500000, guid: 227a2a8daded3e447849cac0409a9cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   alive: 1
@@ -8209,6 +8209,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17bc3b561907e4419aaad739706466c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bro_alive: 1
+  bro_fed: 0
+  bro_medicated: 0
+  sis_alive: 1
+  sis_fed: 0
+  sis_medicated: 0
+  player_alive: 1
+  player_fed: 0
+  player_medicated: 0
+  father_alive: 1
+  father_fed: 0
+  father_medicated: 0
+  father_bandaged: 1
+  logs: 0
   totalDays: 7
   endScreenName: 
   mainSceneName: 

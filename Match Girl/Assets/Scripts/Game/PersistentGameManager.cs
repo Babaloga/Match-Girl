@@ -5,6 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class PersistentGameManager : MonoBehaviour {
 
+    public bool bro_alive = true;
+    public bool bro_fed = false;
+    public bool bro_medicated = false;
+
+    public bool sis_alive = true;
+    public bool sis_fed = false;
+    public bool sis_medicated = false;
+
+    public bool player_alive = true;
+    public bool player_fed = false;
+    public bool player_medicated = false;
+
+    public bool father_alive = true;
+    public bool father_fed = false;
+    public bool father_medicated = false;
+    public bool father_bandaged = true;
+
+    public int logs = 0;
+
     public static int currentDay = 0;
     public int totalDays = 7;
 
@@ -34,13 +53,7 @@ public class PersistentGameManager : MonoBehaviour {
     private void Start()
     {
         debugMode = localDebug;
-        if (!instance)
-            instance = this;
-        else
-        {
-            enabled = false;
-            return;
-        }
+        instance = this;
         persistentSicknessLevel = EffectLevel.None;
 		persistentStats.boots = false;
         if (!debugMode)
@@ -66,16 +79,20 @@ public class PersistentGameManager : MonoBehaviour {
 
     public void LoadEndScene()
     {
+
+
         recordTemperature = false;
         averageTemperature = temperatureSum / temperatureMeasurements;
         time = DayNightCycle.currentTime;
         persistentStats = PlayerStatsManager.stats;
         persistentStats.food -= dayHungerPenalty;
         StartCoroutine(FadeAndSwitchScenes(endScreenName));
+
     }
 
     public void LoadIntermediateScene()
     {
+
         currentDay++;
         print(currentDay);
         persistentStats.food = ResourceManager.variableFood;
@@ -149,4 +166,5 @@ public class PersistentGameManager : MonoBehaviour {
 
         sceneFader.FadeOut();
     }
+
 }
