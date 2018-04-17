@@ -28,6 +28,8 @@ public class PlayerAnimation : MonoBehaviour {
         topAnimator.SetFloat("Speed", velocity.magnitude);
         bottomAnimator.SetFloat("Speed", velocity.magnitude);
 
+        topAnimator.SetFloat("Temperature", PlayerStatsManager.Warmth);
+
         previousPosition = transform.position;
 
         if (velocity.magnitude > 0.01f)
