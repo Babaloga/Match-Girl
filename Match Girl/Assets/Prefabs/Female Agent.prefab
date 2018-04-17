@@ -2977,7 +2977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 5
   yesProbabilityOutOf100: 20
-  negativeResponseRate: 0.2
+  negativeResponseRate: 0.1
   maxWaitTime: 40
   minWaitTime: 15
   noReaction: {fileID: 1176669192584378, guid: 047068dcec5a670468c402eb49bec0e2, type: 2}
@@ -2988,12 +2988,9 @@ MonoBehaviour:
   maxBuyNumber: 5
   minBuyNumber: 1
   npcType: 0
-  passiveCallouts:
-  - {fileID: 1720288130890404, guid: 11aed84e889fda846b5933602c154419, type: 2}
-  negativeCallouts:
-  - {fileID: 1176669192584378, guid: 047068dcec5a670468c402eb49bec0e2, type: 2}
-  positiveCallouts:
-  - {fileID: 1720288130890404, guid: dbd953447aa700e4c810787b1eb1cffe, type: 2}
+  passiveCallouts: []
+  negativeCallouts: []
+  positiveCallouts: []
   currentState: 0
 --- !u!114 &114137432926585054
 MonoBehaviour:
