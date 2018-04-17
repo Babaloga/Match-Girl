@@ -68,7 +68,14 @@ public class FamilyResources : MonoBehaviour {
         }
         else
         {
-            medicine.interactable = true;
+            if (PersistentGameManager.persistentStats.tonics < 1 && medicine.isOn == false)
+            {
+                medicine.interactable = false;
+            }
+            else
+            {
+                medicine.interactable = true;
+            }
         }
 
         if(costToFeed > PersistentGameManager.persistentStats.money && food.isOn == false)
@@ -78,15 +85,6 @@ public class FamilyResources : MonoBehaviour {
         else
         {
             food.interactable = true;
-        }
-
-        if (PersistentGameManager.persistentStats.tonics < 1 && medicine.isOn == false)
-        {
-            medicine.interactable = false;
-        }
-        else
-        {
-            medicine.interactable = true;
         }
 
         if (fed)
