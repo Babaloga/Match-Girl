@@ -21,6 +21,22 @@ TextureImporter:
     21300028: bandage
     21300030: log
     21300032: FATHER_FRAME
+    21300034: portraits_0
+    21300036: portraits_1
+    21300038: portraits_2
+    21300040: portraits_3
+    21300042: portraits_4
+    21300044: portraits_5
+    21300046: portraits_6
+    21300048: portraits_8
+    21300050: portraits_9
+    21300052: portraits_10
+    21300054: portraits_11
+    21300056: portraits_12
+    21300058: portraits_13
+    21300060: portraits_14
+    21300062: portraits_15
+    21300064: portraits_16
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -97,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sister_frame
+      name: portraits_0
       rect:
         serializedVersion: 2
-        x: 954
+        x: 29
         y: 2765
-        width: 934
+        width: 1859
         height: 1178
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -111,13 +127,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: father
+      name: portraits_1
       rect:
         serializedVersion: 2
         x: 1920
         y: 2927
         width: 729
-        height: 974
+        height: 1045
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,26 +141,26 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: brother_frame
+      name: portraits_2
       rect:
         serializedVersion: 2
-        x: 163
+        x: 59
         y: 1890
-        width: 716
+        width: 821
         height: 855
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: main_char_frame
+      name: portraits_3
       rect:
         serializedVersion: 2
-        x: 967
-        y: 1879
-        width: 772
+        x: 921
+        y: 1875
+        width: 869
         height: 892
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,7 +169,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: father_sick
+      name: portraits_4
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 2016
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: portraits_5
       rect:
         serializedVersion: 2
         x: 1897
@@ -167,7 +197,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sister
+      name: portraits_6
       rect:
         serializedVersion: 2
         x: 32
@@ -181,7 +211,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sister_sick
+      name: portraits_7
       rect:
         serializedVersion: 2
         x: 771
@@ -195,7 +225,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: portraits_7
+      name: portraits_8
       rect:
         serializedVersion: 2
         x: 1502
@@ -209,7 +239,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: main_char_sick
+      name: portraits_9
       rect:
         serializedVersion: 2
         x: 1510
@@ -223,7 +253,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: main_char
+      name: portraits_10
       rect:
         serializedVersion: 2
         x: 2133
@@ -237,7 +267,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: death_wreath
+      name: portraits_11
       rect:
         serializedVersion: 2
         x: 241
@@ -251,7 +281,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: brother_sick
+      name: portraits_12
       rect:
         serializedVersion: 2
         x: 1507
@@ -265,7 +295,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: brother
+      name: portraits_13
       rect:
         serializedVersion: 2
         x: 2138
@@ -279,7 +309,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: medicine
+      name: portraits_14
       rect:
         serializedVersion: 2
         x: 1526
@@ -293,7 +323,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: bandage
+      name: portraits_15
       rect:
         serializedVersion: 2
         x: 1863
@@ -307,7 +337,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: log
+      name: portraits_16
       rect:
         serializedVersion: 2
         x: 2234
@@ -316,20 +346,6 @@ TextureImporter:
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: FATHER_FRAME
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 2785
-        width: 889
-        height: 1167
-      alignment: 9
-      pivot: {x: 0.5, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
