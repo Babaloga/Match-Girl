@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour {
 
     public void RestartDay()
     {
-        PersistentGameManager.instance.ReloadCurrentDay();
+        PersistentGameManager.instance.LoadFirstDay();
     }
 
     public void nextLevel()
