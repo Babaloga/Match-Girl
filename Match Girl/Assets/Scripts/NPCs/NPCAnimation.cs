@@ -38,6 +38,7 @@ public class NPCAnimation : MonoBehaviour {
 
                 special = transform.parent.GetComponent<SpecialInteraction>();
                 animator.SetBool("Beckoning", scriptedBeckoning);
+                animator.SetFloat("X Facing", scriptedMovement.x / Mathf.Abs(scriptedMovement.x));
 
                 break;
 

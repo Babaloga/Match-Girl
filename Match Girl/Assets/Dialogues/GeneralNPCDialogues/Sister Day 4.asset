@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Sister
   entries:
-    m_keys: 000000000a0000000b000000
+    m_keys: 010000000a0000000b000000
     m_values:
     - entryText: "Listen, Phoebe, something is happening at the factory. Girls are
         upset at the men in charge, at the fines, at...just, at all of it. They are
@@ -26,6 +26,11 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses:
       - I can do it.
       - Will you be okay?
@@ -38,6 +43,11 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses: []
     - entryText: "I\u2019m doing everything I can. We will get past this, with your
         help. And maybe, if the girls are right, this will even improve our situation
@@ -48,4 +58,9 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses: []

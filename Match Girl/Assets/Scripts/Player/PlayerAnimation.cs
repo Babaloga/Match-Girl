@@ -19,6 +19,9 @@ public class PlayerAnimation : MonoBehaviour {
 
         bottomAnimator.SetFloat("X", 1);
         bottomAnimator.SetFloat("Z", -1);
+
+        topAnimator.enabled = false;
+        topAnimator.enabled = true;
     }
 
     void Update()

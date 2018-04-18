@@ -2989,9 +2989,12 @@ MonoBehaviour:
   maxBuyNumber: 5
   minBuyNumber: 1
   npcType: 0
-  passiveCallouts: []
-  negativeCallouts: []
-  positiveCallouts: []
+  passiveCallouts:
+  - {fileID: 1720288130890404, guid: 11aed84e889fda846b5933602c154419, type: 2}
+  negativeCallouts:
+  - {fileID: 1176669192584378, guid: 047068dcec5a670468c402eb49bec0e2, type: 2}
+  positiveCallouts:
+  - {fileID: 1720288130890404, guid: 4df88528544a9d544a4cb650ee567c80, type: 2}
   currentState: 0
 --- !u!114 &114137432926585054
 MonoBehaviour:

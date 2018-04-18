@@ -53,7 +53,13 @@ public class PersistentGameManager : MonoBehaviour {
     private void Start()
     {
         debugMode = localDebug;
-        instance = this;
+        if(!instance)
+            instance = this;
+        else
+        {
+            enabled = false;
+            return;
+        }
         persistentSicknessLevel = EffectLevel.None;
 		persistentStats.boots = false;
         if (!debugMode)

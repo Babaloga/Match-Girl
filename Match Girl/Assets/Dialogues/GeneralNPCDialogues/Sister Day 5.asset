@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Sister
   entries:
-    m_keys: 000000000a000000
+    m_keys: 010000000a000000
     m_values:
     - entryText: "They will continue the strike, Phoebe. You are going to need to
         be careful. Some girls have already taken to heckling passerbys and shopkeepers.
@@ -25,6 +25,11 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses:
       - Will you be okay?
     - entryText: "Don\u2019t worry about me. I\u2019m still doing what I can, but
@@ -36,4 +41,9 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses: []
