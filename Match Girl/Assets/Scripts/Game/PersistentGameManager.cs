@@ -5,24 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class PersistentGameManager : MonoBehaviour {
 
-    public bool bro_alive = true;
-    public bool bro_fed = false;
-    public bool bro_medicated = false;
+    public static bool bro_alive = true;
+    public static bool bro_fed = false;
+    public static bool bro_medicated = false;
+    public static SicknessLevel broSickness;
+    public static HungerLevel broHunger;
 
-    public bool sis_alive = true;
-    public bool sis_fed = false;
-    public bool sis_medicated = false;
+    public static bool sis_alive = true;
+    public static bool sis_fed = false;
+    public static bool sis_medicated = false;
+    public static SicknessLevel sisSickness;
+    public static HungerLevel sisHunger;
 
-    public bool player_alive = true;
-    public bool player_fed = false;
-    public bool player_medicated = false;
-
-    public bool father_alive = true;
-    public bool father_fed = false;
-    public bool father_medicated = false;
-    public bool father_bandaged = true;
-
-    public int logs = 0;
+    public static bool father_alive = true;
+    public static bool father_fed = false;
+    public static bool father_medicated = false;
+    public static bool father_bandaged = true;
+    public static bool father_bandaged_previous = false;
+    public static SicknessLevel dadSickness;
+    public static HungerLevel dadHunger;
 
     public static int currentDay = 0;
     public int totalDays = 7;
@@ -103,6 +104,16 @@ public class PersistentGameManager : MonoBehaviour {
         print(currentDay);
         persistentStats.food = ResourceManager.variableFood;
         DetermineSickness();
+
+        foreach(FamilyResources f in FindObjectsOfType<FamilyResources>())
+        {
+            if (!f.isPlayer)
+            {
+                f.DetermineHunger();
+                f.DetermineSickness();
+            }
+        }
+
         StartCoroutine(FadeAndSwitchScenes(intermediateSceneName));
     }
 
@@ -134,6 +145,8 @@ public class PersistentGameManager : MonoBehaviour {
         sicknessValue += Random.Range(-0.5f, 0.5f);
 
         int sicknessInt = Mathf.RoundToInt(sicknessValue) - 1;
+
+        if (FamilyResources.playerMedicated) sicknessInt -= 2;
 
         if ((int)persistentSicknessLevel + sicknessInt > 3)
         {

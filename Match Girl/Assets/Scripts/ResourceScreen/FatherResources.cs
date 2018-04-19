@@ -6,15 +6,24 @@ using UnityEngine.UI;
 public class FatherResources : FamilyResources {
 
     public bool bandaged = true;
-    private bool bandagedPrevious = false;
+    public bool bandagedPrevious = false;
 
-    private void Awake()
+    protected override void Awake()
     {
+        alive = PersistentGameManager.father_alive;
+        fed = PersistentGameManager.father_fed;
+        medicated = PersistentGameManager.father_medicated;
+
+        bandaged = PersistentGameManager.father_bandaged;
+
+        hunger = PersistentGameManager.dadHunger;
+        sickness = PersistentGameManager.dadSickness;
+
         bandagedPrevious = bandaged;
         bandaged = false;
     }
 
-    public override float DetermineSicknessRisk()
+    protected override float DetermineSicknessRisk()
     {
         float baseValue = base.DetermineSicknessRisk();
 
@@ -41,7 +50,11 @@ public class FatherResources : FamilyResources {
             bandages.interactable = true;
         }
 
-        PersistentGameManager.instance.father_bandaged = bandaged;
+        if (alive && bandagedPrevious)
+        {
+            statusText.text += "\n Needs fresh bandages";
+
+        }
     }
 
     public void BandageToggle(bool set)
@@ -56,5 +69,14 @@ public class FatherResources : FamilyResources {
             PersistentGameManager.persistentStats.bandages += 1;
             bandaged = false;
         }
+    }
+
+    protected override void KeepConsistent()
+    {
+        PersistentGameManager.father_alive = alive;
+        PersistentGameManager.father_fed = fed;
+        PersistentGameManager.father_medicated = medicated;
+        PersistentGameManager.father_bandaged = bandaged;
+        PersistentGameManager.father_bandaged_previous = bandagedPrevious;
     }
 }

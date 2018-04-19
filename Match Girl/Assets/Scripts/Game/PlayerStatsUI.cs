@@ -13,6 +13,9 @@ public class PlayerStatsUI : MonoBehaviour {
     {
         Money,
         Matches,
+        Logs,
+        Tonics,
+        Bandages
     }
 
     public enum Scene
@@ -70,8 +73,24 @@ public class PlayerStatsUI : MonoBehaviour {
                 }
                 else
                 {
-                    text.text = Currency.FormatPounds(PersistentGameManager.persistentStats.money);
+                    text.text = "Money: " + Currency.FormatPounds(PersistentGameManager.persistentStats.money);
                 }
+
+                break;
+
+            case StatType.Logs:
+
+                break;
+
+            case StatType.Tonics:
+
+                text.text = PersistentGameManager.persistentStats.tonics.ToString();
+
+                break;
+
+            case StatType.Bandages:
+
+                text.text = PersistentGameManager.persistentStats.bandages.ToString();
 
                 break;
         }

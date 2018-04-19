@@ -14,9 +14,13 @@ public class HomeResources : MonoBehaviour {
     public int logCost = 2;
 
     public Toggle lightFurnace;
+    public GameObject furnaceGlow;
 
     public Button logUp;
     public Button logDown;
+
+    public Text logCount;
+    public Text houseWarmth;
 
 	void Start () {
         temperature = Random.Range(15, 25);
@@ -24,8 +28,24 @@ public class HomeResources : MonoBehaviour {
 
     private void Update()
     {
+        logCount.text = "Logs: " + logs;
+
+        if(temperature < 30)
+        {
+            houseWarmth.text = "Temperature: Very Cold";
+        }
+        else if (temperature < 60)
+        {
+            houseWarmth.text = "Temperature: Cold";
+        }
+        else
+        {
+            houseWarmth.text = "Temperature: Warm";
+        }
+
         if (lightFurnace.isOn)
         {
+            furnaceGlow.SetActive(true);
             if (logs < maxLogs && PersistentGameManager.persistentStats.money >= logCost)
             {
                 logUp.interactable = true;
@@ -46,6 +66,7 @@ public class HomeResources : MonoBehaviour {
         }
         else
         {
+            furnaceGlow.SetActive(false);
             logUp.interactable = false;
             logDown.interactable = false;
             while(logs > 0)
@@ -62,8 +83,6 @@ public class HomeResources : MonoBehaviour {
         {
             lightFurnace.interactable = true;
         }
-
-        PersistentGameManager.instance.logs = logs;
     }
 
     public void ToggleFurnace(bool set)
