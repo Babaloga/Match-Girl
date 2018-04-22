@@ -1,0 +1,317 @@
+fileFormatVersion: 2
+guid: e4e90475e16d1cb42b561ee0457280ee
+timeCreated: 1521312923
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TO
+    21300002: RU
+    21300004: LU
+    21300006: HE
+    21300008: LA
+    21300010: TO_fem_base
+    21300012: RU_fem_base
+    21300014: LU_fem_base
+    21300016: HE_fem_base
+    21300018: LA_fem_base
+    21300020: RA_fem_base
+    21300022: RF_fem_base
+    21300024: RT_fem_base
+    21300026: LT_fem_base
+    21300028: LF_fem_base
+    21300030: LH_fem_base
+    21300032: RH_fem_base
+    21300034: LS_fem_base
+    21300036: RS_fem_base
+    21300038: HA_fem_base
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TO_fem_base
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109.8012
+        width: 177.92294
+        height: 393.23105
+      alignment: 9
+      pivot: {x: 0.4749247, y: 0.50148326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RU_fem_base
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 381
+        width: 57
+        height: 122
+      alignment: 9
+      pivot: {x: 0.49966216, y: 0.7563601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LU_fem_base
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 381
+        width: 63
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5098286, y: 0.7461235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HE_fem_base
+      rect:
+        serializedVersion: 2
+        x: 320.76498
+        y: 379.9481
+        width: 107.33658
+        height: 133.05191
+      alignment: 9
+      pivot: {x: 0.54770535, y: 0.33378732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LA_fem_base
+      rect:
+        serializedVersion: 2
+        x: 239.99998
+        y: 262
+        width: 52.000015
+        height: 102
+      alignment: 9
+      pivot: {x: 0.49266598, y: 0.7357597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RA_fem_base
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 259
+        width: 53
+        height: 106
+      alignment: 9
+      pivot: {x: 0.51176596, y: 0.7577915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RF_fem_base
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 312
+        width: 92
+        height: 66
+      alignment: 9
+      pivot: {x: 0.72952837, y: 0.6970571}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RT_fem_base
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 168
+        width: 68
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5025352, y: 0.75589144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LT_fem_base
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 13
+        width: 71
+        height: 145
+      alignment: 9
+      pivot: {x: 0.49108326, y: 0.76876855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LF_fem_base
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 9
+        width: 88
+        height: 74
+      alignment: 9
+      pivot: {x: 0.7163256, y: 0.70499784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LH_fem_base
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 56
+        height: 98
+      alignment: 9
+      pivot: {x: 0.56512374, y: 0.7804897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RH_fem_base
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 4.999996
+        width: 48
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5619272, y: 0.73314196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LS_fem_base
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 53
+        width: 136
+        height: 55
+      alignment: 9
+      pivot: {x: 0.796708, y: 0.49322036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RS_fem_base
+      rect:
+        serializedVersion: 2
+        x: 10.000001
+        y: 0
+        width: 126
+        height: 54
+      alignment: 9
+      pivot: {x: 0.80137104, y: 0.48963127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HA_fem_base
+      rect:
+        serializedVersion: 2
+        x: 169.29967
+        y: 116.259895
+        width: 176.72191
+        height: 147.46085
+      alignment: 9
+      pivot: {x: 0.4150243, y: 0.44042882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 99849393548916
+  assetBundleName: 
+  assetBundleVariant: 
