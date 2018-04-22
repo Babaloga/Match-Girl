@@ -23,7 +23,7 @@ public class DayNightCycle : MonoBehaviour {
     private float cycleStartMarker;
 
     public bool endDayAutomatically = false;
-    public float endDayTime = 150f;
+    public float endDayTime = 140f;
 
     private static DayNightCycle instance;
 
@@ -45,52 +45,56 @@ public class DayNightCycle : MonoBehaviour {
 
     private void Update()
     {
-        currentTime = Time.time - cycleStartMarker;
-
-        if (currentTime <= daylightDuration) {
-            sun.intensity = 1;
-            float dayPercentage = currentTime / daylightDuration;
-
-            sunObject.localRotation = Quaternion.Euler(new Vector3(180f * dayPercentage, sunObject.localRotation.y, sunObject.localRotation.z));
-
-            PlayerTemperature.worldTemperature = cycleLowTemperature + (dayTemperatureCurve.Evaluate(dayPercentage) * temperatureDifference);
-
-            isNight = false;
-        }
-        else
+        if (PauseMenu.isPaused == false)
         {
-            float nightPercentage = (currentTime - daylightDuration) / (cycleDuration - daylightDuration);
+            currentTime = Time.time - cycleStartMarker;
 
-            if(nightPercentage <= 0.2f)
+            if (currentTime <= daylightDuration)
             {
-                sun.intensity = Mathf.Lerp(1, 0, nightPercentage / 0.2f);
-            }
-            else if (nightPercentage >= 0.8f)
-            {
-                sun.intensity = Mathf.Lerp(0, 1, (nightPercentage - 0.8f) / 0.2f);
+                sun.intensity = 1;
+                float dayPercentage = currentTime / daylightDuration;
+
+                sunObject.localRotation = Quaternion.Euler(new Vector3(180f * dayPercentage, sunObject.localRotation.y, sunObject.localRotation.z));
+
+                PlayerTemperature.worldTemperature = cycleLowTemperature + (dayTemperatureCurve.Evaluate(dayPercentage) * temperatureDifference);
+
+                isNight = false;
             }
             else
             {
-                sun.intensity = 0;
+                float nightPercentage = (currentTime - daylightDuration) / (cycleDuration - daylightDuration);
+
+                if (nightPercentage <= 0.2f)
+                {
+                    sun.intensity = Mathf.Lerp(1, 0, nightPercentage / 0.2f);
+                }
+                else if (nightPercentage >= 0.8f)
+                {
+                    sun.intensity = Mathf.Lerp(0, 1, (nightPercentage - 0.8f) / 0.2f);
+                }
+                else
+                {
+                    sun.intensity = 0;
+                }
+
+                sunObject.localRotation = Quaternion.Euler(new Vector3(180f + (180f * nightPercentage), sunObject.localRotation.y, sunObject.localRotation.z));
+
+                PlayerTemperature.worldTemperature = cycleLowTemperature + (nightTemperatureCurve.Evaluate(nightPercentage) * temperatureDifference);
+
+                isNight = true;
             }
 
-            sunObject.localRotation = Quaternion.Euler(new Vector3(180f + (180f * nightPercentage), sunObject.localRotation.y, sunObject.localRotation.z));
+            if (endDayAutomatically && currentTime >= endDayTime && !ending)
+            {
+                ending = true;
+                StartCoroutine(FadeOutProcess());
+            }
 
-            PlayerTemperature.worldTemperature = cycleLowTemperature + (nightTemperatureCurve.Evaluate(nightPercentage) * temperatureDifference);
-
-            isNight = true;
-        }
-
-        if(endDayAutomatically && currentTime >= endDayTime && !ending)
-        {
-            ending = true;
-            StartCoroutine(FadeOutProcess());
-        }
-
-        if(currentTime >= cycleDuration)
-        {
-            currentTime = 0;
-            cycleStartMarker = Time.time;
+            if (currentTime >= cycleDuration)
+            {
+                currentTime = 0;
+                cycleStartMarker = Time.time;
+            }
         }
     }
 
@@ -99,6 +103,7 @@ public class DayNightCycle : MonoBehaviour {
 
     IEnumerator FadeOutProcess()
     {
+       
         gettingLate.FadeIn();
 
         yield return new WaitForSeconds(1);

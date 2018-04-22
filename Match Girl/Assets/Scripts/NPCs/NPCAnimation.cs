@@ -56,48 +56,56 @@ public class NPCAnimation : MonoBehaviour {
 	
 	void Update () {
 
-        switch (thisType)
+        if (PauseMenu.isPaused == false)
         {
-            case NPCType.Generic:
+            animator.speed = 1;
+            switch (thisType)
+            {
+                case NPCType.Generic:
 
-                Vector3 velocity = (transform.position - previousPosition) / Time.deltaTime;
+                    Vector3 velocity = (transform.position - previousPosition) / Time.deltaTime;
 
-                animator.SetFloat("Speed", velocity.magnitude);
+                    animator.SetFloat("Speed", velocity.magnitude);
 
-                previousPosition = transform.position;
+                    previousPosition = transform.position;
 
-                if (interaction.currentState == NPCInteractionBasic.NPCState.WaitingForPlayer)
-                {
-                    animator.SetBool("Beckoning", true);
-
-                    Vector3 relative = PlayerMovement.player.transform.position - transform.position;
-
-                    animator.SetFloat("X Facing", relative.x / Mathf.Abs(relative.x));
-                }
-                else
-                {
-                    animator.SetBool("Beckoning", false);
-
-                    if (velocity.magnitude > 0.01f)
+                    if (interaction.currentState == NPCInteractionBasic.NPCState.WaitingForPlayer)
                     {
-                        animator.SetFloat("X Facing", velocity.x / Mathf.Abs(velocity.x));
+                        animator.SetBool("Beckoning", true);
+
+                        Vector3 relative = PlayerMovement.player.transform.position - transform.position;
+
+                        animator.SetFloat("X Facing", relative.x / Mathf.Abs(relative.x));
                     }
-                }
-                break;
+                    else
+                    {
+                        animator.SetBool("Beckoning", false);
 
-            case NPCType.Special:
+                        if (velocity.magnitude > 0.01f)
+                        {
+                            animator.SetFloat("X Facing", velocity.x / Mathf.Abs(velocity.x));
+                        }
+                    }
+                    break;
 
-                animator.SetBool("Beckoning", scriptedBeckoning);
+                case NPCType.Special:
 
-                break;
+                    animator.SetBool("Beckoning", scriptedBeckoning);
 
-            case NPCType.Scripted:
+                    break;
 
-                animator.SetBool("Beckoning", scriptedBeckoning);
-                animator.SetFloat("Speed", scriptedMovement.magnitude);
-                animator.SetFloat("X Facing", scriptedMovement.x / Mathf.Abs(scriptedMovement.x));
+                case NPCType.Scripted:
 
-                break;
+                    animator.SetBool("Beckoning", scriptedBeckoning);
+                    animator.SetFloat("Speed", scriptedMovement.magnitude);
+                    animator.SetFloat("X Facing", scriptedMovement.x / Mathf.Abs(scriptedMovement.x));
+
+                    break;
+            }
+        }
+        else
+        {
+            animator.speed = 0;
         }
 
     }

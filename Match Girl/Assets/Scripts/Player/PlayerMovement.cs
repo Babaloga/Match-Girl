@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!frozen)
+        if (!frozen && PauseMenu.isPaused == false)
         {
             movement = Quaternion.FromToRotation(Vector3.up, normal) * Vector3.Normalize(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")));
 

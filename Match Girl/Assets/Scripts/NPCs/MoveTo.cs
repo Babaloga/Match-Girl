@@ -32,6 +32,7 @@ public class MoveTo : MonoBehaviour
 
     public bool paused;
     bool leaving = false;
+    bool firstRun = true;
 
     public bool overriden = false;
 
@@ -44,6 +45,7 @@ public class MoveTo : MonoBehaviour
 
     void Start()
     {
+
         npcType = GetComponent<NPCInteractionBasic>().npcType;
 
         agent = GetComponent<NavMeshAgent>();
@@ -105,9 +107,10 @@ public class MoveTo : MonoBehaviour
 
         if (!overriden)
         {
+
             if (paused)
             {
-                if(agent.isOnNavMesh)
+                if (agent.isOnNavMesh)
                     agent.isStopped = true;
 
                 if (Time.time - timeMarker > pauseTime)
@@ -125,22 +128,39 @@ public class MoveTo : MonoBehaviour
                 }
             }
 
-            Vector3 offset = transform.position - goal.position;
-
-            offset.y = 0;
-
-            if (offset.magnitude <= goalBuffer)
+            if (PauseMenu.isPaused == false)
             {
-                DestinationReached();
+
+                DoResume();
+                Vector3 offset = transform.position - goal.position;
+
+                offset.y = 0;
+
+                if (offset.magnitude <= goalBuffer)
+                {
+                    DestinationReached();
+                }
+
+                if (DayNightCycle.isNight && !leaving)
+                {
+                    leaving = true;
+                    goal.position = FindObjectOfType<ExitPoint>().GetPosition();
+                    Pause();
+                }
+
             }
-
-            if (DayNightCycle.isNight && !leaving)
+            else
             {
-                leaving = true;
-                goal.position = FindObjectOfType<ExitPoint>().GetPosition();
                 Pause();
             }
         }
+
+    }
+    void DoResume()
+    {
+        float rand = Random.Range(0, 100);
+        if (rand <20)
+            Resume();
     }
 
     private void OnDrawGizmos()

@@ -26,38 +26,48 @@ public class PlayerAnimation : MonoBehaviour {
 
     void Update()
     {
-        Vector3 velocity = move.movement;
-
-        topAnimator.SetFloat("Speed", velocity.magnitude);
-        bottomAnimator.SetFloat("Speed", velocity.magnitude);
-
-        topAnimator.SetFloat("Temperature", PlayerStatsManager.Warmth);
-
-        previousPosition = transform.position;
-
-        if (velocity.magnitude > 0.01f)
+        if (PauseMenu.isPaused == false)
         {
-            if (Mathf.Abs(velocity.x) > 0.01f)
-            {
-                topAnimator.SetFloat("X", velocity.x / Mathf.Abs(velocity.x));
-                bottomAnimator.SetFloat("X", velocity.x / Mathf.Abs(velocity.x));
-            }
-            else
-            {
-                topAnimator.SetFloat("X", 0);
-                bottomAnimator.SetFloat("X", 0);
-            }
+            Vector3 velocity = move.movement;
+            topAnimator.speed = 1;
+            bottomAnimator.speed = 1;
 
-            if (Mathf.Abs(velocity.z) > 0.01f)
+            topAnimator.SetFloat("Speed", velocity.magnitude);
+            bottomAnimator.SetFloat("Speed", velocity.magnitude);
+
+            topAnimator.SetFloat("Temperature", PlayerStatsManager.Warmth);
+
+            previousPosition = transform.position;
+
+            if (velocity.magnitude > 0.01f)
             {
-                topAnimator.SetFloat("Z", velocity.z / Mathf.Abs(velocity.z));
-                bottomAnimator.SetFloat("Z", velocity.z / Mathf.Abs(velocity.z));
+                if (Mathf.Abs(velocity.x) > 0.01f)
+                {
+                    topAnimator.SetFloat("X", velocity.x / Mathf.Abs(velocity.x));
+                    bottomAnimator.SetFloat("X", velocity.x / Mathf.Abs(velocity.x));
+                }
+                else
+                {
+                    topAnimator.SetFloat("X", 0);
+                    bottomAnimator.SetFloat("X", 0);
+                }
+
+                if (Mathf.Abs(velocity.z) > 0.01f)
+                {
+                    topAnimator.SetFloat("Z", velocity.z / Mathf.Abs(velocity.z));
+                    bottomAnimator.SetFloat("Z", velocity.z / Mathf.Abs(velocity.z));
+                }
+                else
+                {
+                    topAnimator.SetFloat("Z", 0);
+                    bottomAnimator.SetFloat("Z", 0);
+                }
             }
-            else
-            {
-                topAnimator.SetFloat("Z", 0);
-                bottomAnimator.SetFloat("Z", 0);
-            }
+        }
+        else
+        {
+            topAnimator.speed = 0;
+            bottomAnimator.speed = 0;
         }
 
     }

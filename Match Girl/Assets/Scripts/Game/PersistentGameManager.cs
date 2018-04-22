@@ -53,6 +53,7 @@ public class PersistentGameManager : MonoBehaviour {
 
     private void Start()
     {
+        
         debugMode = localDebug;
         if(!instance)
             instance = this;
