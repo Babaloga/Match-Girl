@@ -8,7 +8,7 @@ public class DayNightCycle : MonoBehaviour {
     public float daylightDuration = 150;
     public float cycleStart = 0;
 
-    public float cycleHighTemperature = 100;
+    public float cycleHighTemperature = 10;
     public float cycleLowTemperature = 0;
     private float temperatureDifference;
 

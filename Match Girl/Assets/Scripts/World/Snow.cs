@@ -4,53 +4,88 @@ using UnityEngine;
 
 public class Snow : MonoBehaviour {
 
-    //                       0           100      1000      10000
+    //                       0           100      1000      5000
     public enum SnowState { noSnow, lightSnow, mediumSnow, snowStorm};
-    public SnowState snowState;
-    public ParticleSystem snow;
-    private bool changed;
+    public static SnowState snowState;
+    //public ParticleSystem snow;
+    private bool changed = false;
+    private ParticleSystem.EmissionModule snowE;
 
 
+    ParticleSystem snow;
 
 
-    // Use this for initialization
+// Use this for initialization
     void Start () {
 
-        changed = false;
+
         //InvokeRepeating("", 30F, 30F);
         snowState = SnowState.snowStorm;
-        
+        changed = true;
         snow = GetComponent<ParticleSystem>();
-        var emission = snow.emission;
-        emission.rateOverTime = 10000;
+        snowE = snow.emission;
     }
 
     private void Update()
     {
+        chooseWeather();
         if (changed)
         {
             // add environmental changes (snow) here
             if (snowState == SnowState.noSnow) 
             {
-                var emission = snow.emission;
-                emission.rateOverTime = 0;
+                snowE.rateOverTime = 0;
+                PlayerTemperature.worldTemperature = 40;
+                PlayerTemperature.conductivity = 1;
             }
 
             else if (snowState == SnowState.lightSnow)
             {
-                var emission = snow.emission;
-                emission.rateOverTime = 100;
+                snowE.rateOverTime = 50;
+                PlayerTemperature.worldTemperature = 20;
+                PlayerTemperature.conductivity = 3;
             }
             else if (snowState == SnowState.mediumSnow)
             {
-                var emission = snow.emission;
-                emission.rateOverTime = 1000;
+                snowE.rateOverTime = 100;
+                PlayerTemperature.worldTemperature = -50;
+                PlayerTemperature.conductivity = 5;
             }
             else
             {
-                var emission = snow.emission;
-                emission.rateOverTime = 10000;
+                snowE.rateOverTime = 200;
+                PlayerTemperature.worldTemperature = -100;
+                PlayerTemperature.conductivity = 8;
             }
+
+            changed = false;
+        }
+    }
+    void chooseWeather()
+    {
+        float change = Random.Range(0, 100);
+
+        if (change < 5)
+        {
+            float weather = Random.Range(0, 4);
+            if (weather < 1)
+            {
+                snowState = SnowState.noSnow;
+            }
+            else if (weather < 2 && weather >= 1)
+            {
+                snowState = SnowState.lightSnow;
+            }
+            else if (weather < 3 && weather >= 2)
+            {
+                snowState = SnowState.mediumSnow;
+            }
+            else
+            {
+                snowState = SnowState.snowStorm;
+            }
+
+            changed = true;
         }
     }
 

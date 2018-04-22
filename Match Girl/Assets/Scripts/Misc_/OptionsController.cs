@@ -12,7 +12,7 @@ public class OptionsController : MonoBehaviour {
 
     public LevelManager levelManager;
     public MusicManager musicManager;
-
+    
 	// Use this for initialization
 	void Start () {
 

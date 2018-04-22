@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerTemperature : MonoBehaviour {
 
     [Range(0, 100)]
-    public float temperature = 75;
-    public float conductivity = 1;
+    public float temperature = 50;
+    public static float conductivity = 1;
     [ShowOnly] public float heatflow;
 
     [ShowOnly] public float outsideTemp;
@@ -22,6 +22,8 @@ public class PlayerTemperature : MonoBehaviour {
 
     private void FixedUpdate()
     {
+
+
         if (PauseMenu.isPaused == false)
         {
             outsideTemp = worldTemperature;
@@ -46,6 +48,7 @@ public class PlayerTemperature : MonoBehaviour {
             GetComponent<SpriteRenderer>().color = new Color(temperature / 100, 0, 1 - (temperature / 100));
         }
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
