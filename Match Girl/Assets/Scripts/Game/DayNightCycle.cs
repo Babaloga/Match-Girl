@@ -19,6 +19,7 @@ public class DayNightCycle : MonoBehaviour {
     public AnimationCurve nightTemperatureCurve;
 
     public static float currentTime;
+    private float tempTime = 0;
 
     private float cycleStartMarker;
 
@@ -29,6 +30,7 @@ public class DayNightCycle : MonoBehaviour {
 
     bool ending = false;
     public static bool isNight = false;
+    
 
     private void Start()
     {
@@ -47,7 +49,7 @@ public class DayNightCycle : MonoBehaviour {
     {
         if (PauseMenu.isPaused == false)
         {
-            currentTime = Time.time - cycleStartMarker;
+            currentTime = Time.time - cycleStartMarker - tempTime;
 
             if (currentTime <= daylightDuration)
             {
@@ -95,6 +97,10 @@ public class DayNightCycle : MonoBehaviour {
                 currentTime = 0;
                 cycleStartMarker = Time.time;
             }
+        }
+        else
+        {
+            tempTime += Time.deltaTime;
         }
     }
 
