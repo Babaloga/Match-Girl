@@ -28,7 +28,6 @@ public class WindSound : MonoBehaviour {
     private void AudioUpdate(AudioSource source)
     {
         float p = source.time / source.clip.length;
-        print(p);
 
         if(p < 0.2f)
         {

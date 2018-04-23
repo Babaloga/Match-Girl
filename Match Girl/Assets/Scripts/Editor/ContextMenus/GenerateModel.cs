@@ -15,7 +15,8 @@ public class SpriteMeshMenu {
         string targetPath = AssetDatabase.GetAssetPath(command.context);
         string folderPath = targetPath.Replace("/" + targetMesh.name + ".asset", "");
 
-        string modelName = targetMesh.name.Substring(3);
+        string[] pathBroken = folderPath.Split(new char[] { '/' });
+        string modelName = pathBroken[pathBroken.Length-1];
 
         Debug.Log(folderPath);
 

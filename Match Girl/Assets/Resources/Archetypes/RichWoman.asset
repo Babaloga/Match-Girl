@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259e5e3b232c2054bbfae6dee991f3d6, type: 3}
+  m_Name: RichWoman
+  m_EditorClassIdentifier: 
+  hats:
+  - {fileID: 11400000, guid: bd90d0e20ab170b40b8224b228a6ec18, type: 2}
+  - {fileID: 11400000, guid: 280a7d8aa8419874cbe6ba74c120299c, type: 2}
+  heads:
+  - {fileID: 11400000, guid: b2f2ee4431ce82a4d9c245f9056b94f9, type: 2}
+  - {fileID: 11400000, guid: 445632ecb8f5b70419409c707bdea6b5, type: 2}
+  bodies:
+  - {fileID: 11400000, guid: 65a9f1d72ea312d458c8c48843e26ab3, type: 2}
+  - {fileID: 11400000, guid: 96602aed6f0c65d41ae155ac25012924, type: 2}
+  legs:
+  - {fileID: 11400000, guid: cca6a20154cb8dd4f99b5889beda24cc, type: 2}
+  - {fileID: 11400000, guid: c23b349fa2febe644884f6ebfde252f1, type: 2}
+  feet:
+  - {fileID: 11400000, guid: 604226b150bf630448caf0b06492e697, type: 2}
+  - {fileID: 11400000, guid: f75b654f0aad5204f87f1204265c9a08, type: 2}

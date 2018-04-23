@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ParticleSystem))]
 public class Snow : MonoBehaviour {
 
     //                       0           100      1000      5000
@@ -12,17 +13,16 @@ public class Snow : MonoBehaviour {
     private ParticleSystem.EmissionModule snowE;
 
 
-    ParticleSystem[] snow;
+    ParticleSystem snow;
 
 
 // Use this for initialization
     void Start () {
-
-
         //InvokeRepeating("", 30F, 30F);
         snowState = SnowState.snowStorm;
         changed = true;
-        snow = GetComponentsInChildren<ParticleSystem>();
+        snow = GetComponent<ParticleSystem>();
+        print(snow);
     }
 
     private void Update()
@@ -34,40 +34,31 @@ public class Snow : MonoBehaviour {
             // add environmental changes (snow) here
             if (snowState == SnowState.noSnow) 
             {
-                foreach(ParticleSystem p in snow)
-                {
-                    snowE = p.emission;
-                    snowE.rateOverTime = 0;
-                }
+                snowE = snow.emission;
+                snowE.rateOverTime = 0;
                 
                 DayNightCycle.instance.cycleHighTemperature = 40;
             }
 
             else if (snowState == SnowState.lightSnow)
             {
-                foreach (ParticleSystem p in snow)
-                {
-                    snowE = p.emission;
-                    snowE.rateOverTime = 50;
-                }
+                snowE = snow.emission;
+                snowE.rateOverTime = 50;
+
                 DayNightCycle.instance.cycleHighTemperature = 30;
             }
             else if (snowState == SnowState.mediumSnow)
             {
-                foreach (ParticleSystem p in snow)
-                {
-                    snowE = p.emission;
-                    snowE.rateOverTime = 100;
-                }
+                snowE = snow.emission;
+                snowE.rateOverTime = 100;
+
                 DayNightCycle.instance.cycleHighTemperature = 15;
             }
             else
             {
-                foreach (ParticleSystem p in snow)
-                {
-                    snowE = p.emission;
-                    snowE.rateOverTime = 200;
-                }
+                snowE = snow.emission;
+                snowE.rateOverTime = 200;
+
                 DayNightCycle.instance.cycleHighTemperature = 0;
             }
 

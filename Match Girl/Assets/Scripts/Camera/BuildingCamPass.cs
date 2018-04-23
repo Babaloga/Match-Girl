@@ -61,7 +61,7 @@ public class BuildingCamPass : MonoBehaviour {
         //    }
         //}
 
-        if (camBubble.bounds.min.x < building.bounds.max.x && camBubble.bounds.max.x > building.bounds.min.x)
+        if (camBubble.bounds.min.x < building.bounds.max.x + 2f && camBubble.bounds.max.x > building.bounds.min.x - 2f)
         {
             bubbleOverlaps = true;
         }
