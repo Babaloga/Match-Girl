@@ -9,6 +9,8 @@ public class PlayerStatsUI : MonoBehaviour {
     Text text;
     int previousValue;
 
+    public AudioClip[] clips;
+
     public enum StatType
     {
         Money,
@@ -66,6 +68,9 @@ public class PlayerStatsUI : MonoBehaviour {
                     if (previousValue != PlayerStatsManager.stats.money)
                     {
                         GetComponent<WordSource>().Speak((PlayerStatsManager.stats.money - previousValue).ToString("+0;-#"));
+
+                        GetComponent<AudioSource>().clip = clips[Random.Range(0, clips.Length)];
+                        GetComponent<AudioSource>().Play();
                     }
 
                     previousValue = PlayerStatsManager.stats.money;
