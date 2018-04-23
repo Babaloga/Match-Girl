@@ -12,7 +12,7 @@ public class Snow : MonoBehaviour {
     private ParticleSystem.EmissionModule snowE;
 
 
-    ParticleSystem snow;
+    ParticleSystem[] snow;
 
 
 // Use this for initialization
@@ -22,40 +22,53 @@ public class Snow : MonoBehaviour {
         //InvokeRepeating("", 30F, 30F);
         snowState = SnowState.snowStorm;
         changed = true;
-        snow = GetComponent<ParticleSystem>();
-        snowE = snow.emission;
+        snow = GetComponentsInChildren<ParticleSystem>();
     }
 
     private void Update()
     {
+        
         chooseWeather();
         if (changed)
         {
             // add environmental changes (snow) here
             if (snowState == SnowState.noSnow) 
             {
-                snowE.rateOverTime = 0;
-                PlayerTemperature.worldTemperature = 40;
-                PlayerTemperature.conductivity = 1;
+                foreach(ParticleSystem p in snow)
+                {
+                    snowE = p.emission;
+                    snowE.rateOverTime = 0;
+                }
+                
+                DayNightCycle.instance.cycleHighTemperature = 40;
             }
 
             else if (snowState == SnowState.lightSnow)
             {
-                snowE.rateOverTime = 50;
-                PlayerTemperature.worldTemperature = 20;
-                PlayerTemperature.conductivity = 3;
+                foreach (ParticleSystem p in snow)
+                {
+                    snowE = p.emission;
+                    snowE.rateOverTime = 50;
+                }
+                DayNightCycle.instance.cycleHighTemperature = 30;
             }
             else if (snowState == SnowState.mediumSnow)
             {
-                snowE.rateOverTime = 100;
-                PlayerTemperature.worldTemperature = -50;
-                PlayerTemperature.conductivity = 5;
+                foreach (ParticleSystem p in snow)
+                {
+                    snowE = p.emission;
+                    snowE.rateOverTime = 100;
+                }
+                DayNightCycle.instance.cycleHighTemperature = 15;
             }
             else
             {
-                snowE.rateOverTime = 200;
-                PlayerTemperature.worldTemperature = -100;
-                PlayerTemperature.conductivity = 8;
+                foreach (ParticleSystem p in snow)
+                {
+                    snowE = p.emission;
+                    snowE.rateOverTime = 200;
+                }
+                DayNightCycle.instance.cycleHighTemperature = 0;
             }
 
             changed = false;

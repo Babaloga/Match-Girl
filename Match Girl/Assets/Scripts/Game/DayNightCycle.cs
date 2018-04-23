@@ -26,7 +26,7 @@ public class DayNightCycle : MonoBehaviour {
     public bool endDayAutomatically = false;
     public float endDayTime = 140f;
 
-    private static DayNightCycle instance;
+    public static DayNightCycle instance;
 
     bool ending = false;
     public static bool isNight = false;
