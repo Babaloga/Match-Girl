@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ParticleSystem))]
 public class Snow : MonoBehaviour {
 
     //                       0           100      1000      5000
@@ -17,45 +18,48 @@ public class Snow : MonoBehaviour {
 
 // Use this for initialization
     void Start () {
-
-
         //InvokeRepeating("", 30F, 30F);
         snowState = SnowState.snowStorm;
         changed = true;
         snow = GetComponent<ParticleSystem>();
-        snowE = snow.emission;
+        print(snow);
     }
 
     private void Update()
     {
+        
         chooseWeather();
         if (changed)
         {
             // add environmental changes (snow) here
             if (snowState == SnowState.noSnow) 
             {
+                snowE = snow.emission;
                 snowE.rateOverTime = 0;
-                PlayerTemperature.worldTemperature = 40;
-                PlayerTemperature.conductivity = 1;
+                
+                DayNightCycle.instance.cycleHighTemperature = 40;
             }
 
             else if (snowState == SnowState.lightSnow)
             {
+                snowE = snow.emission;
                 snowE.rateOverTime = 50;
-                PlayerTemperature.worldTemperature = 20;
-                PlayerTemperature.conductivity = 3;
+
+                DayNightCycle.instance.cycleHighTemperature = 30;
             }
             else if (snowState == SnowState.mediumSnow)
             {
+                snowE = snow.emission;
                 snowE.rateOverTime = 100;
-                PlayerTemperature.worldTemperature = -50;
-                PlayerTemperature.conductivity = 5;
+
+                DayNightCycle.instance.cycleHighTemperature = 15;
             }
             else
             {
+                snowE = snow.emission;
                 snowE.rateOverTime = 200;
-                PlayerTemperature.worldTemperature = -100;
-                PlayerTemperature.conductivity = 8;
+
+                DayNightCycle.instance.cycleHighTemperature = 0;
             }
 
             changed = false;

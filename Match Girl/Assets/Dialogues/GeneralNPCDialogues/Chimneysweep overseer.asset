@@ -27,6 +27,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - What do you need, sir?
       - I've got matches!
@@ -43,6 +46,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - One matchbox?
       - That's horrible! He could get hurt!
@@ -58,6 +64,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
     - entryText: Don't you worry, this happens all the time. Haven't so much as singed
         one of these brats yet.
@@ -72,6 +81,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - No! He can get out on his own!
       - Well, I guess if he's done this before...
@@ -88,6 +100,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
     - entryText: You're doing him a favor.
       speakerName: Chimneysweep Overseer
@@ -101,6 +116,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
     - entryText: I've got a boy up this pipe that refuses to climb down. It's getting
         late, so I figure it's about time to smoke him out.
@@ -115,6 +133,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - Sure, just one matchbox?
       - Wait, "smoke him out"? You mean light a fire under him? No!
@@ -130,6 +151,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
     - entryText: Then what are you good for?! Get out of here!
       speakerName: Chimneysweep Overseer
@@ -143,4 +167,7 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []

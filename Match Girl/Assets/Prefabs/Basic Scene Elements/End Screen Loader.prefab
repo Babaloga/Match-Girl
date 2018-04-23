@@ -47,12 +47,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1682510950319472}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2ca55fde9be0ac4b97d8d3c174b619a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openingDialogue: {fileID: 11400000, guid: 25c54cce0f9255a4d981487cbd7422d0, type: 2}
+  openingDialogue: {fileID: 11400000, guid: 8313ab723af074cfc9f4b306158bb1fb, type: 2}
 --- !u!114 &114829221263030804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,5 +70,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c3c96866b266ed548a2c97a456f15721, type: 2}
     - {fileID: 11400000, guid: 3c7d8fa79ea3f014d81a95273eda70ed, type: 2}
   femaleDictionary:
-    m_keys: 
-    m_values: []
+    m_keys: 0000000001000000
+    m_values:
+    - {fileID: 11400000, guid: f4f0c925ee04ed64f9b1878d6d911661, type: 2}
+    - {fileID: 11400000, guid: 5a47497448fede14a8cf578c68b42690, type: 2}

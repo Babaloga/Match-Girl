@@ -26,6 +26,8 @@ public class Entry {
 
     public int continueToEntry = 0;
 
+    public StringBoolDictionary setConditions;
+
     public string[] responses;
 
 }

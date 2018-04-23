@@ -8,3 +8,6 @@ public class AnyDoubleLineSerializableDictionaryPropertyDrawer : SerializableDic
 
 [CustomPropertyDrawer(typeof(ArchetypeDictionary))]
 public class ArchetypeSerializableDictionaryPropertyDrawer : SerializableDictionaryPropertyDrawer { }
+
+[CustomPropertyDrawer(typeof(StringBoolDictionary))]
+public class StringBoolSerializableDictionaryPropertyDrawer : SerializableDictionaryPropertyDrawer { }

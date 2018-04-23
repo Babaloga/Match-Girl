@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class NPCAnimation : MonoBehaviour {
 
     private Animator animator;
+    private AudioSource source;
 
     private NPCInteractionBasic interaction;
     private SpecialInteraction special;
@@ -13,6 +15,8 @@ public class NPCAnimation : MonoBehaviour {
 
     public Vector3 scriptedMovement = Vector3.zero;
     public bool scriptedBeckoning = false;
+
+    public AudioClip[] footsteps;
 
     public enum NPCType
     {
@@ -24,6 +28,7 @@ public class NPCAnimation : MonoBehaviour {
 	void Start () {
 
         animator = GetComponent<Animator>();
+        source = GetComponent<AudioSource>();
 
         switch (thisType)
         {
@@ -108,5 +113,12 @@ public class NPCAnimation : MonoBehaviour {
             animator.speed = 0;
         }
 
+    }
+
+    public void Footstep()
+    {
+        source.clip = footsteps[Random.Range(0, footsteps.Length)];
+        source.volume = (1f - ((transform.position - PlayerMovement.player.transform.position).magnitude / 15f)) / 10f;
+        source.Play();
     }
 }
