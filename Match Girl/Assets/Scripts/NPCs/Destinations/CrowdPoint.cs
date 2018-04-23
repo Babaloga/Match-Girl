@@ -47,11 +47,15 @@ public class CrowdPoint : MonoBehaviour {
                 validPoint = true;
                 goalPos = hit.point;
             }
+            else
+            {
+                Debug.DrawLine(transform.position, hit.point, Color.red, 1f);
+            }
 
             i++;
         }
 
-        Debug.DrawLine(transform.position, goalPos, Color.red, 2f);
+        Debug.DrawLine(transform.position, goalPos, Color.green, 2f);
 
         return goalPos;
     }
