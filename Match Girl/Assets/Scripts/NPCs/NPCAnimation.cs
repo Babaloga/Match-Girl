@@ -117,9 +117,8 @@ public class NPCAnimation : MonoBehaviour {
 
     public void Footstep()
     {
-        print("step");
         source.clip = footsteps[Random.Range(0, footsteps.Length)];
-        source.volume = (1f - ((transform.position - PlayerMovement.player.transform.position).magnitude / 30f)) / 2f;
+        source.volume = (1f - ((transform.position - PlayerMovement.player.transform.position).magnitude / 15f)) / 10f;
         source.Play();
     }
 }

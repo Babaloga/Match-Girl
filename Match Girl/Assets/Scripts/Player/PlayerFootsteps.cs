@@ -15,7 +15,6 @@ public class PlayerFootsteps : MonoBehaviour {
 
     public void Footstep()
     {
-        print("step");
         source.clip = footstepSounds[Random.Range(0, footstepSounds.Length)];
         source.Play();
     }
