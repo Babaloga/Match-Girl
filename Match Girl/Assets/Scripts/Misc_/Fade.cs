@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Fade : MonoBehaviour {
 
     public float fadeInTime;
-    private Image fadePanel;
+    public Image fadePanel;
     private Color currentColor = Color.black;
-    
+	private bool check = false;
 
-	void Start ()
-    {
-        fadePanel = GetComponent<Image>();
-	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -23,9 +20,13 @@ public class Fade : MonoBehaviour {
             currentColor.a -= alphaChange;
             fadePanel.color = currentColor;
         }
-        else
-        {
-            gameObject.SetActive(false);
-        }
+
+		if (check == true) {
+			SceneManager.LoadScene ("Start Menu");
+		}
+		else if (Time.timeSinceLevelLoad > 24)
+			check = true;
+	
+
 	}
 }
