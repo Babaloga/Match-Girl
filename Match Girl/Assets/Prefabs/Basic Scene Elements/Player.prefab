@@ -7069,12 +7069,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 69a1f4f79cee4fb438b144d172699c0e, type: 3}
+  - {fileID: 8300000, guid: 0474f5c6367894b46b52209ff9e90324, type: 3}
+  - {fileID: 8300000, guid: 4bf703e1c2f4840488d8a32428635222, type: 3}
+  - {fileID: 8300000, guid: f4235ce636431bb4f8216aed13bae31d, type: 3}
+  - {fileID: 8300000, guid: c92020de34fd1864ebf8591fb5298118, type: 3}
+  - {fileID: 8300000, guid: 40dba51c864e9534dbdb109b4e113685, type: 3}
   source: {fileID: 0}
 --- !u!114 &114539531243816374
 MonoBehaviour:

@@ -1,25 +1,29 @@
 fileFormatVersion: 2
-guid: 14a52227095f4674c9039b741b3011fb
-timeCreated: 1520451082
+guid: 7d8aee03299c4c34f9b63d0637a50e64
+timeCreated: 1521312923
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: right_upperarm
-    21300002: right_forearm
-    21300004: right_thigh
-    21300006: right_hand
-    21300008: left_hand
-    21300010: right_shin
-    21300012: right_foot
-    21300014: left_foot
-    21300016: left_shin
-    21300018: left_thigh
-    21300020: left_forearm
-    21300022: left_upper_arm
-    21300024: hat
-    21300026: head
-    21300028: coat_decoration
-    21300030: torso
+    21300000: TO
+    21300002: RU
+    21300004: LU
+    21300006: HE
+    21300008: LA
+    21300010: TO_fem_base
+    21300012: RU_fem_base
+    21300014: LU_fem_base
+    21300016: HE_fem_base
+    21300018: LA_fem_base
+    21300020: RA_fem_base
+    21300022: RF_fem_base
+    21300024: RT_fem_base
+    21300026: LT_fem_base
+    21300028: LF_fem_base
+    21300030: LH_fem_base
+    21300032: RH_fem_base
+    21300034: LS_fem_base
+    21300036: RS_fem_base
+    21300038: HA_fem_base
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -92,256 +96,222 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: right_upperarm
-      rect:
-        serializedVersion: 2
-        x: 6.675042
-        y: 370.92184
-        width: 68.40307
-        height: 140.5719
-      alignment: 9
-      pivot: {x: 0.5006929, y: 0.76881546}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: right_forearm
-      rect:
-        serializedVersion: 2
-        x: 46.883694
-        y: 254.65112
-        width: 60.674465
-        height: 117.34888
-      alignment: 9
-      pivot: {x: 0.514449, y: 0.76588804}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: right_thigh
-      rect:
-        serializedVersion: 2
-        x: 119.85926
-        y: 232.20294
-        width: 91.79705
-        height: 152.07855
-      alignment: 9
-      pivot: {x: 0.5163389, y: 0.7031533}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: right_hand
+      name: TO_fem_base
       rect:
         serializedVersion: 2
         x: 0
-        y: 166.72603
-        width: 74.51611
-        height: 92.14491
+        y: 109.8012
+        width: 177.92294
+        height: 393.23105
       alignment: 9
-      pivot: {x: 0.53008676, y: 0.6865513}
+      pivot: {x: 0.4749247, y: 0.50148326}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: left_hand
+      name: RU_fem_base
       rect:
         serializedVersion: 2
-        x: 0
-        y: 72.2666
-        width: 86.20292
-        height: 109.77985
+        x: 176
+        y: 383
+        width: 72
+        height: 120
       alignment: 9
-      pivot: {x: 0.6137768, y: 0.6721413}
+      pivot: {x: 0.51646465, y: 0.75302}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: right_shin
+      name: LU_fem_base
       rect:
         serializedVersion: 2
-        x: 87
-        y: 113.7058
-        width: 60.794113
-        height: 110.2942
+        x: 250
+        y: 383
+        width: 67
+        height: 119
       alignment: 9
-      pivot: {x: 0.48524463, y: 0.7458648}
+      pivot: {x: 0.5489675, y: 0.7501054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: right_foot
+      name: HE_fem_base
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4.98534
-        width: 95.702484
-        height: 68.33423
+        x: 318
+        y: 383
+        width: 111
+        height: 129
       alignment: 9
-      pivot: {x: 0.71837014, y: 0.6601426}
+      pivot: {x: 0.546365, y: 0.3256623}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: left_foot
+      name: LA_fem_base
       rect:
         serializedVersion: 2
-        x: 84.398056
-        y: 1.8218288
-        width: 81.29399
-        height: 85.87192
+        x: 235
+        y: 263
+        width: 59
+        height: 96
       alignment: 9
-      pivot: {x: 0.60042405, y: 0.65997046}
+      pivot: {x: 0.5189597, y: 0.771328}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: left_shin
+      name: RA_fem_base
       rect:
         serializedVersion: 2
-        x: 161.38292
-        y: 1.0633769
-        width: 126.55373
-        height: 73.72451
+        x: 170
+        y: 263
+        width: 62
+        height: 98
       alignment: 9
-      pivot: {x: 0.24648747, y: 0.48898003}
+      pivot: {x: 0.4536064, y: 0.7788357}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: left_thigh
+      name: RF_fem_base
       rect:
         serializedVersion: 2
-        x: 216
-        y: 228
-        width: 91
-        height: 151
+        x: 331
+        y: 312
+        width: 85
+        height: 61
       alignment: 9
-      pivot: {x: 0.50133306, y: 0.7047594}
+      pivot: {x: 0.74254835, y: 0.7541934}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: left_forearm
+      name: RT_fem_base
       rect:
         serializedVersion: 2
-        x: 141.51593
-        y: 92.11008
-        width: 73.0464
-        height: 136.45227
+        x: 337
+        y: 172
+        width: 78
+        height: 135
       alignment: 9
-      pivot: {x: 0.5164723, y: 0.7532674}
+      pivot: {x: 0.5150307, y: 0.75425774}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: left_upper_arm
+      name: LT_fem_base
       rect:
         serializedVersion: 2
-        x: 211.06335
-        y: 79.531685
-        width: 81.534454
-        height: 147.70248
+        x: 354
+        y: 13
+        width: 67
+        height: 140
       alignment: 9
-      pivot: {x: 0.52574146, y: 0.7435489}
+      pivot: {x: 0.47122604, y: 0.79622453}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hat
+      name: LF_fem_base
       rect:
         serializedVersion: 2
-        x: 66.111626
-        y: 381.25964
-        width: 149.56476
-        height: 124.43674
+        x: 259
+        y: 13
+        width: 92
+        height: 69
       alignment: 9
-      pivot: {x: 0.48545498, y: 0.36774892}
+      pivot: {x: 0.7364714, y: 0.7095088}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: head
+      name: LH_fem_base
       rect:
         serializedVersion: 2
-        x: 189.31274
-        y: 381.2531
-        width: 145.30762
-        height: 130.74689
+        x: 207
+        y: 3
+        width: 55
+        height: 90
       alignment: 9
-      pivot: {x: 0.62070006, y: 0.28591368}
+      pivot: {x: 0.5572168, y: 0.8165332}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: coat_decoration
+      name: RH_fem_base
       rect:
         serializedVersion: 2
-        x: 338.69537
-        y: 343.04852
-        width: 123.00305
-        height: 156.29819
+        x: 151
+        y: 5
+        width: 50
+        height: 85
       alignment: 9
-      pivot: {x: 0.5502198, y: 0.7472717}
+      pivot: {x: 0.5594501, y: 0.7762679}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: torso
+      name: LS_fem_base
       rect:
         serializedVersion: 2
-        x: 292.87854
-        y: 9.155536
-        width: 187.12146
-        height: 296.0111
+        x: 4
+        y: 53
+        width: 137
+        height: 50
       alignment: 9
-      pivot: {x: 0.38832843, y: 0.36349213}
+      pivot: {x: 0.80549115, y: 0.5425424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RS_fem_base
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2
+        width: 123
+        height: 48
+      alignment: 9
+      pivot: {x: 0.8127865, y: 0.5091685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HA_fem_base
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 100
+        width: 165
+        height: 127
+      alignment: 9
+      pivot: {x: 0.44242182, y: 0.53166425}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     outline: []
     physicsShape: []
-  spritePackingTag: NPC
-  userData: 99661624201519
+  spritePackingTag: 
+  userData: 99748987605643
   assetBundleName: 
   assetBundleVariant: 

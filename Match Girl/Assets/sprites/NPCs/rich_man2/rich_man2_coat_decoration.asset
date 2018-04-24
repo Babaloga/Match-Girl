@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: rich_man2_coat_decoration
   m_EditorClassIdentifier: 
   m_ApiVersion: 4
-  m_Sprite: {fileID: 21300028, guid: 62618e03628ce1641a1c3d589ed53b8a, type: 3}
+  m_Sprite: {fileID: 21300028, guid: 14a52227095f4674c9039b741b3011fb, type: 3}
   m_SharedMesh: {fileID: 43135826229476298}
   pivotPoint: {x: 0, y: 0}
   texVertices: []
@@ -26,7 +26,7 @@ Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: rich_man2_coat_decoration
+  m_Name: coat_decoration
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
