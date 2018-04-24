@@ -6798,13 +6798,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 0, y: 0, z: 1.501}
+        value: {x: 0, y: 0, z: 0.02}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1.5
-        value: {x: 0, y: 0, z: 1.501}
+        value: {x: 0, y: 0, z: 0.02}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -6818,13 +6818,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 0, y: 0, z: 22.358002}
+        value: {x: 0, y: 0, z: -0.06}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1.5
-        value: {x: 0, y: 0, z: 22.358002}
+        value: {x: 0, y: 0, z: -0.06}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -30146,13 +30146,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1.501
+        value: 0.02
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 1.5
-        value: 1.501
+        value: 0.02
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -30215,13 +30215,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 22.358002
+        value: -0.06
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 1.5
-        value: 22.358002
+        value: -0.06
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -37021,9 +37021,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: bones/spine1_JNT/spine2_JNT/right_shoulder_POS_JNT/right_shoulder_ROT_JNT_DSPL
-      (FRONTSCARF)
+    attribute: m_LocalEulerAngles.x
+    path: bones/spine1_JNT/spine2_JNT/spine3_JNT/head_JNT/hair_front_baseJNT
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -37033,8 +37032,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: bones/spine1_JNT/spine2_JNT/right_shoulder_POS_JNT/right_shoulder_ROT_JNT_DSPL
-      (FRONTSCARF)
+    path: bones/spine1_JNT/spine2_JNT/spine3_JNT/head_JNT/hair_front_baseJNT
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -37043,9 +37041,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: bones/spine1_JNT/spine2_JNT/right_shoulder_POS_JNT/right_shoulder_ROT_JNT_DSPL
-      (FRONTSCARF)
+    attribute: m_LocalEulerAngles.z
+    path: bones/spine1_JNT/spine2_JNT/spine3_JNT/head_JNT/hair_front_baseJNT
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -37147,8 +37144,9 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: bones/spine1_JNT/spine2_JNT/spine3_JNT/head_JNT/hair_front_baseJNT
+    attribute: m_LocalEulerAngles.x
+    path: bones/spine1_JNT/spine2_JNT/right_shoulder_POS_JNT/right_shoulder_ROT_JNT_DSPL
+      (FRONTSCARF)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -37158,7 +37156,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: bones/spine1_JNT/spine2_JNT/spine3_JNT/head_JNT/hair_front_baseJNT
+    path: bones/spine1_JNT/spine2_JNT/right_shoulder_POS_JNT/right_shoulder_ROT_JNT_DSPL
+      (FRONTSCARF)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -37167,8 +37166,9 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: bones/spine1_JNT/spine2_JNT/spine3_JNT/head_JNT/hair_front_baseJNT
+    attribute: m_LocalEulerAngles.z
+    path: bones/spine1_JNT/spine2_JNT/right_shoulder_POS_JNT/right_shoulder_ROT_JNT_DSPL
+      (FRONTSCARF)
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
