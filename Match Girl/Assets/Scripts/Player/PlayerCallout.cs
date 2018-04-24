@@ -42,6 +42,7 @@ public class PlayerCallout : MonoBehaviour {
 
     public Color startColor = Color.white;
     public Color damageColor = Color.red;
+    public Color releaseColor = Color.yellow;
 
 	void Start () {
         npcQueue = new Queue<NPCInteraction>();
@@ -120,6 +121,11 @@ public class PlayerCallout : MonoBehaviour {
             {
                 if (down)
                 {
+                    float rawPercent = Mathf.Clamp01((Time.time - spaceDown) / timeMax);
+                    power = powerCurve.Evaluate(rawPercent * throatHealth);
+                    RectTransform rectangle = chargeBar.rectTransform;
+                    rectangle.sizeDelta = new Vector2(Mathf.Lerp(0, 750, power), Random.Range(10 - (3 * damageCurve.Evaluate(rawPercent)), 10 + (damageCurve.Evaluate(rawPercent))));
+
                     speakTime = Time.time;
 
                     print(power);
@@ -145,8 +151,14 @@ public class PlayerCallout : MonoBehaviour {
             }
             else
             {
-                RectTransform rectangle = chargeBar.rectTransform;
-                rectangle.sizeDelta = new Vector2(0, 10);
+                //RectTransform rectangle = chargeBar.rectTransform;
+                //rectangle.sizeDelta = new Vector2(0, 10);
+                chargeBar.color = Color.Lerp(releaseColor, Color.clear, (Time.time - speakTime) / 2f);
+                if (chargeBar.color.a > 0)
+                {
+                    RectTransform rectangle = chargeBar.rectTransform;
+                    rectangle.sizeDelta = new Vector2(Mathf.Lerp(0, 750, power) + ((Time.time - speakTime) * 50f), 10);
+                }
             }
         }
 
