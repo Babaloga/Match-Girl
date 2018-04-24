@@ -9,18 +9,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
-  m_Name: OverseerBasic
+  m_Name: Constable
   m_EditorClassIdentifier: 
-  characterName: Overseer
+  characterName: Constable
   entries:
     m_keys: 01000000
     m_values:
-    - entryText: Ah, there you are. Thirty matches. Now get on out there.
-      speakerName: 
+    - entryText: I don't have time to talk right now. Move along.
+      speakerName: Constable
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
-      modifyMatches: 30
+      modifyMatches: 0
       modifyMoney: 0
       giveBoots: 0
       giveWarmClothes: 0

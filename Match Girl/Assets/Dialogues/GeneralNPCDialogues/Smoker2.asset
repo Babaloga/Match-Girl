@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
   m_Name: Smoker2
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: A Smoking Woman
   entries:
     m_keys: 010000000a000000
     m_values:
@@ -27,6 +27,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - Good day! A box for a shilling!
     - entryText: Of course, of cour- ah! Damn! Damn it all! What a waste of good tobacco!
@@ -42,5 +45,8 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
-      - Er, sorry sir...
+      - Er, sorry ma'am...

@@ -15,6 +15,8 @@ MonoBehaviour:
   - {fileID: 114254487479614638}
   - {fileID: 114211386962687162}
   - {fileID: 114481309176608110}
+  - {fileID: 114304917419523900}
+  - {fileID: 114765651973639024}
 --- !u!114 &114211386962687162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,6 +45,20 @@ MonoBehaviour:
   description: SisterDead
   satisfied: 0
   hash: -857140023
+--- !u!114 &114304917419523900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a247bd42cf18e3c4eb0927ebe4f7c2b4, type: 3}
+  m_Name: CrazyMatched
+  m_EditorClassIdentifier: 
+  description: CrazyMatched
+  satisfied: 0
+  hash: -1510632836
 --- !u!114 &114481309176608110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,3 +73,17 @@ MonoBehaviour:
   description: FatherDead
   satisfied: 0
   hash: 470615006
+--- !u!114 &114765651973639024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a247bd42cf18e3c4eb0927ebe4f7c2b4, type: 3}
+  m_Name: CrazyUnmatched
+  m_EditorClassIdentifier: 
+  description: CrazyUnmatched
+  satisfied: 0
+  hash: 1993351123

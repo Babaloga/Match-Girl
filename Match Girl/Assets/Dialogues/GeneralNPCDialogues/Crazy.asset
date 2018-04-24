@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Crazy
+  m_EditorClassIdentifier: 
+  characterName: Disheveled Man
+  entries:
+    m_keys: 010000000a0000000b0000000c000000640000006500000078000000
+    m_values:
+    - entryText: Excuse me, have you seen the Prime Minister about? Mr. Gladstone
+        and I have important matters to discuss, and yet he seems to have up and vanished!
+      speakerName: Disheveled Man
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses:
+      - I'm sure I haven't sir. I'm just here to sell matchboxes! Bryant and May's,
+        would you be interested?
+      - Sorry sir, I've never met a Gladstone! Perhaps Constable Woodson over there
+        knows where he went!
+      - I thought the Marquess of Salisbury was Prime Minister. I've never heard of
+        Mr. Gladstone!
+    - entryText: Bah, he probably forgot all about it again. That man can't hardly
+        tell a stage-coach from a workhouse! But matches, you say? Oh he understands
+        those just well enough! Give me a box of the finest Lucifers!
+      speakerName: Disheveled Man
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses:
+      - Of course! Here you are, sir!
+      - Er, actually sir I don't think any of these matches are fit for a Prime Minister.
+        You'll have to look somewhere else!
+    - entryText: An excellent idea, Gertrude! The Constable and I are men of the same
+        amiable manner! Perhaps he also knows the way down to Old Nichol.
+      speakerName: Disheveled Man
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys:
+        - Unmatched
+        m_values: 01
+      responses: []
+    - entryText: Ha, that pretender!? They all claim he's some son of God come to
+        raze the world, but I've seen that foozler for what he is! Gladstone, now,
+        there's a real gentleman! Knows how to turn and cut like no man I've ever
+        met! Don't you try and tell me anything you imp!
+      speakerName: Disheveled Man
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses:
+      - '[The man turns upon you aggressively and pushes you into a snow drift]'
+    - entryText: 'Just the trick! I hope this is quite enough. I''ll just need the
+        Christmas goose and a sip of sherry. Mother will be delighted. And don''t
+        you forget to scrub behind the ears! '
+      speakerName: Disheveled Man
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: -1
+      modifyMoney: 15
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys:
+        - Matched
+        m_values: 01
+      responses: []
+    - entryText: A shame! A shame! They will be so disappointed. No merriment tonight,
+        I daresay! They'll go into the Thames for sure over this, let me tell you!
+      speakerName: Disheveled Man
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses: []
+    - entryText: What fickle creatures, children. Hardly a one with any sense of reason
+        in those egg-ish skulls...
+      speakerName: Disheveled Man
+      modifyTemperature: -10
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses: []
