@@ -65,7 +65,7 @@ public class GameStateManager : MonoBehaviour {
                 //Game over UI
 
                 playerMovement.enabled = false;
-                Time.timeScale = 0.001f;
+                Time.timeScale = 1f;
 
                 DeathUI.ShowDeathUI();
 

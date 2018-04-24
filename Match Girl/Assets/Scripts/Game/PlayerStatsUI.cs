@@ -9,10 +9,15 @@ public class PlayerStatsUI : MonoBehaviour {
     Text text;
     int previousValue;
 
+    public AudioClip[] clips;
+
     public enum StatType
     {
         Money,
         Matches,
+        Logs,
+        Tonics,
+        Bandages
     }
 
     public enum Scene
@@ -63,6 +68,9 @@ public class PlayerStatsUI : MonoBehaviour {
                     if (previousValue != PlayerStatsManager.stats.money)
                     {
                         GetComponent<WordSource>().Speak((PlayerStatsManager.stats.money - previousValue).ToString("+0;-#"));
+
+                        GetComponent<AudioSource>().clip = clips[Random.Range(0, clips.Length)];
+                        GetComponent<AudioSource>().Play();
                     }
 
                     previousValue = PlayerStatsManager.stats.money;
@@ -70,8 +78,24 @@ public class PlayerStatsUI : MonoBehaviour {
                 }
                 else
                 {
-                    text.text = Currency.FormatPounds(PersistentGameManager.persistentStats.money);
+                    text.text = "Money: " + Currency.FormatPounds(PersistentGameManager.persistentStats.money);
                 }
+
+                break;
+
+            case StatType.Logs:
+
+                break;
+
+            case StatType.Tonics:
+
+                text.text = PersistentGameManager.persistentStats.tonics.ToString();
+
+                break;
+
+            case StatType.Bandages:
+
+                text.text = PersistentGameManager.persistentStats.bandages.ToString();
 
                 break;
         }

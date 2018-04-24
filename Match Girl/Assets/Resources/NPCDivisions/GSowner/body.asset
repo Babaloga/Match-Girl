@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbd89fd88b07ba40ab2603d4870bf48, type: 3}
+  m_Name: body
+  m_EditorClassIdentifier: 
+  modelType: 0
+  divisionType: 2
+  parts:
+  - spriteMesh: {fileID: 11400000, guid: 9d4c6a71d5323b249a9210a5e336cb01, type: 2}
+  - spriteMesh: {fileID: 11400000, guid: d26903a3f5bb75f4395632d72e03307b, type: 2}
+  - spriteMesh: {fileID: 11400000, guid: 615e96297a40cb44d9efbfca95546939, type: 2}
+  - spriteMesh: {fileID: 11400000, guid: f0e73c8acd45e3341bfdea4c30ec33c4, type: 2}
+  - spriteMesh: {fileID: 11400000, guid: 8547849023a42844ea605ee0aa83b1e6, type: 2}

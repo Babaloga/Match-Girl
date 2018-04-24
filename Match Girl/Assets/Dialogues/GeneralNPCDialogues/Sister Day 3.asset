@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Sister
   entries:
-    m_keys: 000000000a0000000b000000
+    m_keys: 010000000a0000000b000000
     m_values:
     - entryText: "You\u2019re doing very well out here, Phoebe. I saw you the other
         day out of a window and you looked like a real costermonger! Stay warm and
@@ -25,6 +25,11 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses:
       - I miss Father.
       - "It\u2019s so cold out here."
@@ -37,6 +42,11 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses: []
     - entryText: "I know, darling. Stay strong, and with any luck we will be out of
         this soon. Maybe I\u2019ll buy some beef bones today and we make some broth
@@ -47,4 +57,9 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses: []

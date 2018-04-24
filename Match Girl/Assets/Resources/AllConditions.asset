@@ -11,4 +11,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd18f5d08824b2c4c98695403ad22da9, type: 3}
   m_Name: AllConditions
   m_EditorClassIdentifier: 
-  conditions: []
+  conditions:
+  - {fileID: 114254487479614638}
+  - {fileID: 114211386962687162}
+  - {fileID: 114481309176608110}
+--- !u!114 &114211386962687162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a247bd42cf18e3c4eb0927ebe4f7c2b4, type: 3}
+  m_Name: BrotherDead
+  m_EditorClassIdentifier: 
+  description: BrotherDead
+  satisfied: 0
+  hash: -1275165766
+--- !u!114 &114254487479614638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a247bd42cf18e3c4eb0927ebe4f7c2b4, type: 3}
+  m_Name: SisterDead
+  m_EditorClassIdentifier: 
+  description: SisterDead
+  satisfied: 0
+  hash: -857140023
+--- !u!114 &114481309176608110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a247bd42cf18e3c4eb0927ebe4f7c2b4, type: 3}
+  m_Name: FatherDead
+  m_EditorClassIdentifier: 
+  description: FatherDead
+  satisfied: 0
+  hash: 470615006

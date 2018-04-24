@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Sister
   entries:
-    m_keys: 00000000
+    m_keys: 01000000
     m_values:
     - entryText: "Phoebe, it\u2019s happened! The whole factory has stopped, every
         single match girl is out on the street protesting. I\u2013I don\u2019t know
@@ -28,4 +28,9 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses: []

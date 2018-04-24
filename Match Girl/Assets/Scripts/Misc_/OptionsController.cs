@@ -1,16 +1,18 @@
 ﻿
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OptionsController : MonoBehaviour {
 
 
     public Slider volumeSlider;
-    public Slider difficultySlider;
+    //public Slider difficultySlider;
+    public GameObject panel;
 
     public LevelManager levelManager;
-    private MusicManager musicManager;
-
+    public MusicManager musicManager;
+    
 	// Use this for initialization
 	void Start () {
 
@@ -21,9 +23,9 @@ public class OptionsController : MonoBehaviour {
     public void saveAndExit()
     {
         PlayerPrefsManager.setMasterVolume(volumeSlider.value);
-        PlayerPrefsManager.setDifficulty(difficultySlider.value);
+        //PlayerPrefsManager.setDifficulty(difficultySlider.value);
 
-        levelManager.LoadLevel("Start Menu");
+        SceneManager.LoadScene("Start Menu");
     }
 
     void Update()
@@ -34,9 +36,15 @@ public class OptionsController : MonoBehaviour {
         }
     }
 
+    public void OpenOptions()
+    {
+        panel.SetActive(true);
+    }
+ 
+
     public void setDefault()
     {
         volumeSlider.value = 0.5f;
-        difficultySlider.value = 1f;
+        //difficultySlider.value = 1f;
     }
 }

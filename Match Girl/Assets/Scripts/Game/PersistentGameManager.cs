@@ -5,12 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class PersistentGameManager : MonoBehaviour {
 
+    public static bool bro_alive = true;
+    public static bool bro_fed = false;
+    public static bool bro_medicated = false;
+    public static SicknessLevel broSickness;
+    public static HungerLevel broHunger;
+
+    public static bool sis_alive = true;
+    public static bool sis_fed = false;
+    public static bool sis_medicated = false;
+    public static SicknessLevel sisSickness;
+    public static HungerLevel sisHunger;
+
+    public static bool father_alive = true;
+    public static bool father_fed = false;
+    public static bool father_medicated = false;
+    public static bool father_bandaged = true;
+    public static bool father_bandaged_previous = false;
+    public static SicknessLevel dadSickness;
+    public static HungerLevel dadHunger;
+
     public static int currentDay = 0;
     public int totalDays = 7;
 
     public string endScreenName;
     public string mainSceneName;
     public string intermediateSceneName;
+    public string finalSceneName;
 
     public static float time;
     private static float averageTemperature;
@@ -18,6 +39,7 @@ public class PersistentGameManager : MonoBehaviour {
     private float temperatureMeasurements;
 
     public static PlayerStats persistentStats;
+    public PlayerStats debugStats;
 
     public float dayHungerPenalty = 34;
 
@@ -25,19 +47,31 @@ public class PersistentGameManager : MonoBehaviour {
     public Fader sceneFader;
 
     public static bool debugMode = false;
+    public bool localDebug = false;
     private bool recordTemperature = true;
 
     public static EffectLevel persistentSicknessLevel;
 
     private void Start()
     {
-        instance = this;
+        
+        debugMode = localDebug;
+        if(!instance)
+            instance = this;
+        else
+        {
+            enabled = false;
+            return;
+        }
         persistentSicknessLevel = EffectLevel.None;
 		persistentStats.boots = false;
         if (!debugMode)
             StartCoroutine(LoadSceneSetActive(intermediateSceneName));
         else
-            sceneFader.FadeOut();
+        {
+            if(sceneFader) sceneFader.FadeOut();
+            persistentStats = debugStats;
+        }
     }
 
     private void FixedUpdate()
@@ -60,14 +94,49 @@ public class PersistentGameManager : MonoBehaviour {
         persistentStats = PlayerStatsManager.stats;
         persistentStats.food -= dayHungerPenalty;
         StartCoroutine(FadeAndSwitchScenes(endScreenName));
+
+    }
+
+    public void LoadGameEnd() {
+
+        foreach (FamilyResources f in FindObjectsOfType<FamilyResources>())
+        {
+            if (!f.isPlayer)
+            {
+                f.DetermineHunger();
+                f.DetermineSickness();
+            }
+        }
+
+        StartCoroutine(FadeAndSwitchScenes(finalSceneName));
+
     }
 
     public void LoadIntermediateScene()
     {
+        AllConditions.FindCondition("SisterDead").satisfied = !sis_alive;
+        AllConditions.FindCondition("BrotherDead").satisfied = !bro_alive;
+        AllConditions.FindCondition("FatherDead").satisfied = !father_alive;
+
+        if (currentDay == 7)
+        {
+            LoadGameEnd();
+            return;
+        }
         currentDay++;
         print(currentDay);
         persistentStats.food = ResourceManager.variableFood;
         DetermineSickness();
+
+        foreach(FamilyResources f in FindObjectsOfType<FamilyResources>())
+        {
+            if (!f.isPlayer)
+            {
+                f.DetermineHunger();
+                f.DetermineSickness();
+            }
+        }
+
         StartCoroutine(FadeAndSwitchScenes(intermediateSceneName));
     }
 
@@ -99,6 +168,8 @@ public class PersistentGameManager : MonoBehaviour {
         sicknessValue += Random.Range(-0.5f, 0.5f);
 
         int sicknessInt = Mathf.RoundToInt(sicknessValue) - 1;
+
+        if (FamilyResources.playerMedicated) sicknessInt -= 2;
 
         if ((int)persistentSicknessLevel + sicknessInt > 3)
         {
@@ -137,4 +208,5 @@ public class PersistentGameManager : MonoBehaviour {
 
         sceneFader.FadeOut();
     }
+
 }

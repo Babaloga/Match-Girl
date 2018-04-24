@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c8e9431dd57c46bade8c3c3b71194, type: 3}
+  m_Name: Chimneysweep overseer
+  m_EditorClassIdentifier: 
+  characterName: Chimneysweep Overseer
+  entries:
+    m_keys: 010000000b0000006e0000006f00000056040000570400000a0000006400000065000000
+    m_values:
+    - entryText: You there! Girl! Some help over here!
+      speakerName: Chimneysweep Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses:
+      - What do you need, sir?
+      - I've got matches!
+    - entryText: Evidently.  I've got one of my boys snivelling up this here chimney.
+        I need to smoke him out.
+      speakerName: Chimneysweep Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses:
+      - One matchbox?
+      - That's horrible! He could get hurt!
+    - entryText: Excellent, here, an extra few pence for the trouble.
+      speakerName: Chimneysweep Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: -1
+      modifyMoney: 5
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses: []
+    - entryText: Don't you worry, this happens all the time. Haven't so much as singed
+        one of these brats yet.
+      speakerName: Chimneysweep Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses:
+      - No! He can get out on his own!
+      - Well, I guess if he's done this before...
+    - entryText: Ha, you'd rather leave him up there all night? Have your overseer
+        send some other match brat my way.
+      speakerName: Chimneysweep Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses: []
+    - entryText: You're doing him a favor.
+      speakerName: Chimneysweep Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: -1
+      modifyMoney: 3
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses: []
+    - entryText: I've got a boy up this pipe that refuses to climb down. It's getting
+        late, so I figure it's about time to smoke him out.
+      speakerName: Chimneysweep Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses:
+      - Sure, just one matchbox?
+      - Wait, "smoke him out"? You mean light a fire under him? No!
+    - entryText: Wonderful, here, take a few extra pence for your trouble.
+      speakerName: Chimneysweep Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: -1
+      modifyMoney: 5
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses: []
+    - entryText: Then what are you good for?! Get out of here!
+      speakerName: Chimneysweep Overseer
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses: []

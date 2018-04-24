@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Sister
   entries:
-    m_keys: 000000000a0000000b000000
+    m_keys: 010000000a0000000b000000
     m_values:
     - entryText: "Phoebe! Oh, Phoebe! It\u2019s finally happening! The Bryant & May
         management is meeting with Ms. Besant and some of the girls! I think it will
@@ -25,6 +25,11 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses:
       - Father is getting better. He can find a job, and we can go back to the way
         things were.
@@ -38,6 +43,11 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses: []
     - entryText: "You\u2019re right. We will take it one day at a time, and one day
         maybe the Father we knew will come back. Until then, we\u2019ve each got a
@@ -48,4 +58,9 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
       responses: []

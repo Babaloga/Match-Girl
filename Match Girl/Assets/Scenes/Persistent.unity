@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -241,8 +241,21 @@ MonoBehaviour:
   endScreenName: ResourceScreen
   mainSceneName: Street
   intermediateSceneName: morning_walk
+  finalSceneName: 
+  debugStats:
+    matches: 0
+    money: 0
+    food: 0
+    speed: 0
+    callStrength: 0
+    conductivity: 0
+    boots: 0
+    warmClothes: 0
+    bandages: 0
+    tonics: 0
   dayHungerPenalty: 34
   sceneFader: {fileID: 535608352}
+  localDebug: 0
 --- !u!4 &647462182
 Transform:
   m_ObjectHideFlags: 0

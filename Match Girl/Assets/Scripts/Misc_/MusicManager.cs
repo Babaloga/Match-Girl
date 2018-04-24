@@ -8,30 +8,48 @@ public class MusicManager : MonoBehaviour {
     public AudioClip[] acArray;
     // Use this for initialization
 
-    private AudioSource audioSource;
+    //public static MusicManager intance;
+    public static bool check = false;
+    public AudioSource audioSource;
+    //private object instance;
+
+    public static MusicManager Instance
+    {
+
+        get
+        {
+            if (Instance == null)
+            {
+                Instance = new MusicManager();
+            }
+            return Instance;
+        }
+        set { }
+    }
+
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (check == false)
+        {
+            DontDestroyOnLoad(gameObject);
+            check = true;
+        }
+        
     }
     void Start () {
-        audioSource = GetComponent<AudioSource>();
+
 	}
 
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
 
-    void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        AudioClip levelMusic = acArray[scene.buildIndex];
+        
 
-        if (levelMusic)  // if there is music for this level
+        AudioClip levelMusic = acArray[scene.buildIndex];
+        
+
+        if (levelMusic && check == false)  // if there is music for this level
         {
             audioSource.clip = levelMusic;
             audioSource.volume = PlayerPrefsManager.getMasterVolume();

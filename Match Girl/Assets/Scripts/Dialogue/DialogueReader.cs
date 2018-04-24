@@ -164,6 +164,10 @@ public class DialogueReader : MonoBehaviour {
                 {
                     optionObjects[i].GetComponent<Button>().interactable = false;
                 }
+                else if ((nextEntry.giveBoots && PlayerStatsManager.stats.boots) || (nextEntry.giveWarmClothes && PlayerStatsManager.stats.warmClothes))
+                {
+                    optionObjects[i].GetComponent<Button>().interactable = false;
+                }
                 else
                 {
                     optionObjects[i].GetComponent<Button>().interactable = true;
@@ -271,6 +275,18 @@ public class DialogueReader : MonoBehaviour {
         {
             print("Modify Money: " + _entry.modifyMoney);
             PlayerStatsManager.stats.money += _entry.modifyMoney;
+        }
+
+        if (_entry.giveBoots) PlayerStatsManager.stats.boots = true;
+
+        if (_entry.giveWarmClothes) PlayerStatsManager.stats.warmClothes = true;
+
+        foreach(string s in _entry.setConditions.Keys)
+        {
+            if (AllConditions.FindCondition(s) != null)
+            {
+                AllConditions.FindCondition(s).satisfied = _entry.setConditions[s];
+            }
         }
     }
 }
