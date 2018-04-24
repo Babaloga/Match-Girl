@@ -11,6 +11,7 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
     private SerializedProperty RadiusProperty;
     private SerializedProperty collectionsProperty;
     private SerializedProperty defaultReactionCollectionProperty;
+    private SerializedProperty characterArchetypeProperty;
 
 
     private const float collectionButtonWidth = 125f;
@@ -19,6 +20,7 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
     private const string interactableRadiusName = "radius";
     private const string interactablePropConditionCollectionsName = "conditionCollections";
     private const string interactablePropDefaultReactionCollectionName = "defaultReactionCollection";
+    private const string interactablePropCharacterArchetypeName = "characterArchetype";
 
 
     private void OnEnable ()
@@ -30,7 +32,8 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
         //interactionLocationProperty = serializedObject.FindProperty(interactablePropInteractionLocationName);
         RadiusProperty = serializedObject.FindProperty(interactableRadiusName);
         defaultReactionCollectionProperty = serializedObject.FindProperty(interactablePropDefaultReactionCollectionName);
-        
+        characterArchetypeProperty = serializedObject.FindProperty(interactablePropCharacterArchetypeName);
+
         CheckAndCreateSubEditors(interactable.conditionCollections);
     }
 
@@ -56,6 +59,8 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
         EditorGUILayout.PropertyField(nameProperty);
         //EditorGUILayout.PropertyField (interactionLocationProperty);
         EditorGUILayout.PropertyField(RadiusProperty);
+
+        EditorGUILayout.PropertyField(characterArchetypeProperty);
 
         for (int i = 0; i < subEditors.Length; i++)
         {
