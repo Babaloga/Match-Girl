@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ef61d462d2f0440b7747e9e6c935d1, type: 3}
+  m_Name: RichWoman1
+  m_EditorClassIdentifier: 
+  modelType: 0
+  head:
+    spriteMesh: {fileID: 11400000, guid: 3fa7570248358e943bc894293e844b47, type: 2}
+  torso:
+    spriteMesh: {fileID: 11400000, guid: 6b3d3d5b57019cc41a49af5ff45529ec, type: 2}
+  hat:
+    spriteMesh: {fileID: 11400000, guid: 0368c0330ded4554f9675ce0b063915b, type: 2}
+  rightThigh:
+    spriteMesh: {fileID: 11400000, guid: 79b5ff05424e0e543a503815eb9ca99a, type: 2}
+  leftThigh:
+    spriteMesh: {fileID: 11400000, guid: 8665f5e30d16faf4592b848ca7dd54df, type: 2}
+  rightShin:
+    spriteMesh: {fileID: 11400000, guid: 012f76afc87e4bf41a9e1c0346ae4589, type: 2}
+  leftShin:
+    spriteMesh: {fileID: 11400000, guid: 7ad80e9fe82761543893fd4f3df17704, type: 2}
+  rightFoot:
+    spriteMesh: {fileID: 11400000, guid: 18d35565d6420124e923ff638392d33a, type: 2}
+  leftFoot:
+    spriteMesh: {fileID: 11400000, guid: f2072048ca4c85d49bec68d30d73f677, type: 2}
+  rightUpperArm:
+    spriteMesh: {fileID: 11400000, guid: c9dc0c15a4702c9448b7f1464f54e2df, type: 2}
+  leftUpperArm:
+    spriteMesh: {fileID: 11400000, guid: 1b7a50147b32b014cbc848a92d756606, type: 2}
+  rightForearm:
+    spriteMesh: {fileID: 11400000, guid: f95c9aabcd0504b42af2bd40946fab3a, type: 2}
+  leftForearm:
+    spriteMesh: {fileID: 11400000, guid: e730a7d04a876d94e9eb3fb231244a3b, type: 2}
+  rightHand:
+    spriteMesh: {fileID: 11400000, guid: 1254992f00ee0074fb4558485e78ae46, type: 2}
+  leftHand:
+    spriteMesh: {fileID: 11400000, guid: 60eeb4cb6ad8cac4c95bc6cdbc75be65, type: 2}

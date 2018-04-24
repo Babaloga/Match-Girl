@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ef61d462d2f0440b7747e9e6c935d1, type: 3}
+  m_Name: DrRalph
+  m_EditorClassIdentifier: 
+  modelType: 0
+  head:
+    spriteMesh: {fileID: 11400000, guid: bcd2ab0294eb22c4fbe54adfc914d9cd, type: 2}
+  torso:
+    spriteMesh: {fileID: 11400000, guid: 2b067a2e69bd131438ba2edc64cf5af6, type: 2}
+  hat:
+    spriteMesh: {fileID: 11400000, guid: bdc3d910950104649a76a362998a9f4f, type: 2}
+  rightThigh:
+    spriteMesh: {fileID: 11400000, guid: fc195b9cc579e6f43adcecd99e65e014, type: 2}
+  leftThigh:
+    spriteMesh: {fileID: 11400000, guid: 5a887e55856a0b948949809e16ec1258, type: 2}
+  rightShin:
+    spriteMesh: {fileID: 11400000, guid: ec6b21b4433042f40ac567e23f1a7985, type: 2}
+  leftShin:
+    spriteMesh: {fileID: 11400000, guid: 7a2f03edb43a2504f9d518e8912c5051, type: 2}
+  rightFoot:
+    spriteMesh: {fileID: 11400000, guid: 11e1b3cd575859e42bad332fd86134d6, type: 2}
+  leftFoot:
+    spriteMesh: {fileID: 11400000, guid: d347446be5195f14ca80d1f8d128794d, type: 2}
+  rightUpperArm:
+    spriteMesh: {fileID: 11400000, guid: 105ee9da9127c484c9f15eedf20b195b, type: 2}
+  leftUpperArm:
+    spriteMesh: {fileID: 11400000, guid: 72be707dd8704b74c975793a900cb4c0, type: 2}
+  rightForearm:
+    spriteMesh: {fileID: 11400000, guid: fc21d08fb50609544ad994bb1cfb8e08, type: 2}
+  leftForearm:
+    spriteMesh: {fileID: 11400000, guid: ccacf8ff677f95b4b86796681601e610, type: 2}
+  rightHand:
+    spriteMesh: {fileID: 11400000, guid: 365bb84b5ef3cf341b172fcc57109eaa, type: 2}
+  leftHand:
+    spriteMesh: {fileID: 11400000, guid: ccc5085e830942c4aa8c82c75788bd30, type: 2}
