@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Sister
   entries:
-    m_keys: 000000000a0000000b000000640000006e000000650000006f00000001000000
+    m_keys: 010000001e0000001f0000002c010000360100002d0100003701000003000000
     m_values:
     - entryText: How did Father get hurt?
       speakerName: Phoebe
@@ -26,7 +26,7 @@ MonoBehaviour:
       giveWarmClothes: 0
       modifyBandages: 0
       modifyTonics: 0
-      continueToEntry: 1
+      continueToEntry: 3
       setConditions:
         m_keys: []
         m_values: 

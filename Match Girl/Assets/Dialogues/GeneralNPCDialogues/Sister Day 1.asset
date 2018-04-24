@@ -15,30 +15,44 @@ MonoBehaviour:
   entries:
     m_keys: 010000000a000000
     m_values:
-    - entryText: "Good morning little sister! I have to be quick or my manager will
-        fine me. This is your overseer, Mister Williams. He\u2019s agreed to watch
-        after you out here. You\u2019ll be selling the same matches that I\u2019m
-        making just inside this factory. We\u2019ll be like partners! And at the end
-        of the day, we can meet here and walk home together."
+    - entryText: "Good morning little sister! We have to be quick or my manager may
+        fine me. When we get to the Old Ford Road find your overseer, Mister Williams.
+        He\u2019s agreed to watch after you out here. You\u2019ll be selling the same
+        matches that I\u2019m making just inside the Bryant & May Factory. We\u2019ll
+        be like partners! And at the end of the day, we can walk home together."
       speakerName: Sister
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - "It\u2019s so cold this early\u2026 "
     - entryText: "Oh don\u2019t worry, you just need to get used to it, Phoebe! Perhaps
         we can buy you some thicker shoes once you bring home a little money. Still,
-        you\u2019ll want to keep near these lamps to stay warm out here. Now I really
-        must get back. Speak with Mister Williams and he will prepare you for your
-        day. Good luck!"
+        you\u2019ll want to keep near these lamps to stay warm out here. We're almost
+        there now. Remember to appraoch Mister Williams and press SPACE to get his
+        attention. He will prepare you for your day. Good luck!"
       speakerName: Sister
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
