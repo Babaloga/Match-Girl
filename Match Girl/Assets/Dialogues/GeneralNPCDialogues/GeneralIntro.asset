@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: General Store Owner
   entries:
-    m_keys: 010000000a00000064000000e803000010270000
+    m_keys: 010000000a00000064000000e80300001027000011270000
     m_values:
     - entryText: "Woah, hold it there. If you aren\u2019t here to buy, keep out. I
         won\u2019t have you dragging soot and slush into my shop and soiling the place. "
@@ -23,7 +23,14 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - Wait, I have money!
     - entryText: "Is that right? Regardless, you keep out here. If you need something,
@@ -34,7 +41,14 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - Fine.
     - entryText: "The name\u2019s John Mister, by the way. I don\u2019t mean to come
@@ -46,7 +60,14 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - "I\u2019m Phoebe! Phoebe Evans, sir."
     - entryText: Well met, Phoebe Evans. Now is there anything specific I can get
@@ -57,16 +78,47 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - I need some thick boots.
+      - Do you have some warm winter clothing?
       - "I\u2019ll come back if I need anything."
-    - entryText: 
-      speakerName: 
+    - entryText: These should do you nicely. You certainly needed them.
+      speakerName: Mr. Mister
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
       modifyMatches: 0
-      modifyMoney: -132
+      modifyMoney: -240
+      giveBoots: 1
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses: []
+    - entryText: My, those rags were just about falling off of you.
+      speakerName: Mr. Mister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: -120
+      giveBoots: 0
+      giveWarmClothes: 1
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []

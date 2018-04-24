@@ -13,11 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Sister
   entries:
-    m_keys: 010000000a0000000b000000640000006e000000650000006f000000
+    m_keys: 000000000a0000000b000000640000006e000000650000006f00000001000000
     m_values:
-    - entryText: "Good morning, Phoebe. I hope you\u2019re ready for another day of
-        work. How did Father look when you left him?"
-      speakerName: Sister
+    - entryText: How did Father get hurt?
+      speakerName: Phoebe
       modifyTemperature: 0
       modifyHunger: 0
       modifyTime: 0
@@ -27,10 +26,11 @@ MonoBehaviour:
       giveWarmClothes: 0
       modifyBandages: 0
       modifyTonics: 0
-      continueToEntry: 0
-      responses:
-      - "I know he\u2019ll get better."
-      - "I don\u2019t know, he looks really bad."
+      continueToEntry: 1
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses: []
     - entryText: "I'm sure, but... Phoebe, I need you to go find Doctor Ralph today
         and buy some clean bandages. I\u2019ve saved up a little bit of extra money.
         You take it. I hope it\u2019s enough, but if not maybe you can find something
@@ -47,6 +47,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - I can do it.
       - "I don\u2019t know, the Overseer doesn\u2019t like it when I waste time."
@@ -66,6 +69,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - I can do it.
       - "I don\u2019t know, the Overseer doesn\u2019t like it when I waste time."
@@ -82,6 +88,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
     - entryText: "Thank you so much. You\u2019ll be helping our whole family. I have
         to run to work now. Don\u2019t forget to find the Doctor!"
@@ -96,6 +105,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
     - entryText: I understand, I do. But Father needs you. We all need you. Please,
         if you have a chance, find the Doctor. I need to go now. Good luck.
@@ -110,6 +122,9 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
     - entryText: I understand, I do. But Father needs you. We all need you. Please,
         if you have a chance, find the Doctor. I need to go now. Good luck.
@@ -124,4 +139,27 @@ MonoBehaviour:
       modifyBandages: 0
       modifyTonics: 0
       continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
+    - entryText: Oh, I guess we never have actually talked about it. There was an
+        accident at his factory. One of the machines they have closed on Father's
+        hands, and... well you've seen the stumps.
+      speakerName: Sister
+      modifyTemperature: 0
+      modifyHunger: 0
+      modifyTime: 0
+      modifyMatches: 0
+      modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
+      responses:
+      - But he'll get better, right?
+      - He seems really sick.

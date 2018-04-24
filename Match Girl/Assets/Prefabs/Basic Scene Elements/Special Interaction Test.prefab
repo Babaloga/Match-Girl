@@ -3579,6 +3579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptedMovement: {x: -1, y: 0, z: 0}
   scriptedBeckoning: 0
+  footsteps: []
   thisType: 1
 --- !u!114 &114466304597223492
 MonoBehaviour:
