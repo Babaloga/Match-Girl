@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Overseer
   entries:
-    m_keys: 010000000a0000000b000000650000006f000000
+    m_keys: 010000000a0000000b000000640000006e000000
     m_values:
     - entryText: "Ah Phoebe, right? I\u2019ve spoken with your sister, and you\u2019ll
         be working for me out here from now on. You\u2019ll be here a minute before
@@ -26,6 +26,14 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - Yessir!
       - I only get half?!
@@ -40,6 +48,14 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - Yessir
     - entryText: "Half. And let this be your warning that I will not tolerate insubordination.
@@ -53,6 +69,14 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 0
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses:
       - Yessir
     - entryText: Here, I will start you with thirty matches. If you manage to sell
@@ -64,6 +88,14 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 30
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
     - entryText: Here, I will start you with thirty matches. If you manage to sell
         out, return to me for more. Oh, and... I'm sorry to hear what happened to
@@ -74,4 +106,12 @@ MonoBehaviour:
       modifyTime: 0
       modifyMatches: 30
       modifyMoney: 0
+      giveBoots: 0
+      giveWarmClothes: 0
+      modifyBandages: 0
+      modifyTonics: 0
+      continueToEntry: 0
+      setConditions:
+        m_keys: []
+        m_values: 
       responses: []
