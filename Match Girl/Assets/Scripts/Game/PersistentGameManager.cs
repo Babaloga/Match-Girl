@@ -31,6 +31,7 @@ public class PersistentGameManager : MonoBehaviour {
     public string endScreenName;
     public string mainSceneName;
     public string intermediateSceneName;
+    public string finalSceneName;
 
     public static float time;
     private static float averageTemperature;
@@ -87,8 +88,6 @@ public class PersistentGameManager : MonoBehaviour {
 
     public void LoadEndScene()
     {
-
-
         recordTemperature = false;
         averageTemperature = temperatureSum / temperatureMeasurements;
         time = DayNightCycle.currentTime;
@@ -98,9 +97,32 @@ public class PersistentGameManager : MonoBehaviour {
 
     }
 
+    public void LoadGameEnd() {
+
+        foreach (FamilyResources f in FindObjectsOfType<FamilyResources>())
+        {
+            if (!f.isPlayer)
+            {
+                f.DetermineHunger();
+                f.DetermineSickness();
+            }
+        }
+
+        StartCoroutine(FadeAndSwitchScenes(finalSceneName));
+
+    }
+
     public void LoadIntermediateScene()
     {
+        AllConditions.FindCondition("SisterDead").satisfied = !sis_alive;
+        AllConditions.FindCondition("BrotherDead").satisfied = !bro_alive;
+        AllConditions.FindCondition("FatherDead").satisfied = !father_alive;
 
+        if (currentDay == 7)
+        {
+            LoadGameEnd();
+            return;
+        }
         currentDay++;
         print(currentDay);
         persistentStats.food = ResourceManager.variableFood;

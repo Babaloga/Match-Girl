@@ -3744,11 +3744,11 @@ MonoBehaviour:
   scriptedMovement: {x: 0, y: 0, z: 0}
   scriptedBeckoning: 0
   footsteps:
-  - {fileID: 8300000, guid: a3154a146159139438f854af122419e9, type: 3}
-  - {fileID: 8300000, guid: ae29065a22f02b44d95e7bfb433ce8fb, type: 3}
-  - {fileID: 8300000, guid: 16792d60a072d8d45b42abcc9a8d4a98, type: 3}
-  - {fileID: 8300000, guid: ca0e202fc4bfaad438b646a8e46f4805, type: 3}
-  - {fileID: 8300000, guid: 5bf658af39b8a8747ab37359f6cf4e53, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   thisType: 0
 --- !u!114 &114583758476024380
 MonoBehaviour:

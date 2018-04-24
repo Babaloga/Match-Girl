@@ -98,9 +98,12 @@ public class FamilyResources : MonoBehaviour {
         {
             sickness -= 1;
         }
-        else if(rand < sicknessRiskFactor && sickness != SicknessLevel.VerySick)
+        else if(rand < sicknessRiskFactor)
         {
-            sickness += 1;
+            if (sickness != SicknessLevel.VerySick)
+                sickness += 1;
+            else
+                alive = false;
         }
 
         if (gameObject.tag == "Brother")

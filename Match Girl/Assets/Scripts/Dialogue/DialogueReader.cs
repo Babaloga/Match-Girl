@@ -280,5 +280,13 @@ public class DialogueReader : MonoBehaviour {
         if (_entry.giveBoots) PlayerStatsManager.stats.boots = true;
 
         if (_entry.giveWarmClothes) PlayerStatsManager.stats.warmClothes = true;
+
+        foreach(string s in _entry.setConditions.Keys)
+        {
+            if (AllConditions.FindCondition(s) != null)
+            {
+                AllConditions.FindCondition(s).satisfied = _entry.setConditions[s];
+            }
+        }
     }
 }
