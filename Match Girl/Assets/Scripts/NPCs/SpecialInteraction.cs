@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SpecialInteraction : MonoBehaviour {
 
@@ -21,34 +22,49 @@ public class SpecialInteraction : MonoBehaviour {
 
     public Archetype characterArchetype;
 
-	void Start () {
-        if(!tooltip) tooltip = GetComponentInChildren<Canvas>();
+    bool streetScene;
 
-        tooltipText = GetComponentInChildren<Text>();
-        tooltipText.text = interactionName;
-        tooltip.gameObject.SetActive(false);
+	void Start () {
+        streetScene = SceneManager.GetActiveScene().name == "Street";
+
+        if (streetScene)
+        {
+            if (!tooltip) tooltip = GetComponentInChildren<Canvas>();
+
+            tooltipText = GetComponentInChildren<Text>();
+            tooltipText.text = interactionName;
+            tooltip.gameObject.SetActive(false);
+        }
     }
 
     private void Update()
     {
-        Vector3 relative = PlayerMovement.player.transform.position - transform.position;
-
-        bool near = PlayerCallout.interactions.Contains(this);
-
-        if(relative.magnitude <= radius && !near)
+        if (streetScene)
         {
-            PlayerCallout.WithinRange(this);
-        }
-        else if (relative.magnitude > radius && near)
-        {
-            PlayerCallout.OutofRange(this);
-            tooltip.gameObject.SetActive(false);
+            Vector3 relative = PlayerMovement.player.transform.position - transform.position;
+
+            bool near = PlayerCallout.interactions.Contains(this);
+
+            if (relative.magnitude <= radius && !near)
+            {
+                PlayerCallout.WithinRange(this);
+            }
+            else if (relative.magnitude > radius && near)
+            {
+                PlayerCallout.OutofRange(this);
+                tooltip.gameObject.SetActive(false);
+            }
         }
     }
 
     public virtual void Interact()
     {
         DialogueReader.reader.StartDialogue(dialogues[i]);
+
+        if (oneTimeInteraction)
+        {
+            enabled = false;
+        }
 
         if (dialogues[i + 1]) i++;
     }

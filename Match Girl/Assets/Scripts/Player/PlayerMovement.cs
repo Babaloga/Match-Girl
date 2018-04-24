@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 normal = Vector3.up;
 
+    public bool scriptedMovement = false;
+
     void Awake()
     {
         player = gameObject;
@@ -24,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!frozen && PauseMenu.isPaused == false)
+        if (!scriptedMovement && !frozen && PauseMenu.isPaused == false)
         {
             movement = Quaternion.FromToRotation(Vector3.up, normal) * Vector3.Normalize(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")));
 
@@ -34,34 +36,37 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (DialogueReader.reader.showingDialogue)
+        if (!scriptedMovement)
         {
-            frozen = true;
-        }
-        else
-        {
-            frozen = false;
-        }
+            if (DialogueReader.reader.showingDialogue)
+            {
+                frozen = true;
+            }
+            else
+            {
+                frozen = false;
+            }
 
-        baseSpeed = PlayerStatsManager.stats.speed;
+            baseSpeed = PlayerStatsManager.stats.speed;
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            speed = (0.5f) * baseSpeed;
-        }
-        else
-        {
-            speed = baseSpeed;
-        }
+            if (Input.GetKey(KeyCode.Space))
+            {
+                speed = (0.5f) * baseSpeed;
+            }
+            else
+            {
+                speed = baseSpeed;
+            }
 
-        //Collider coll = GetComponent<Collider>();
+            //Collider coll = GetComponent<Collider>();
 
-        RaycastHit hit = new RaycastHit();
-        if (Physics.Raycast(new Ray(transform.position, Vector3.down), out hit, Mathf.Infinity, groundMask))
-        {
-            normal = hit.normal;
+            RaycastHit hit = new RaycastHit();
+            if (Physics.Raycast(new Ray(transform.position, Vector3.down), out hit, Mathf.Infinity, groundMask))
+            {
+                normal = hit.normal;
 
-            Debug.DrawLine(transform.position, hit.point);
+                Debug.DrawLine(transform.position, hit.point);
+            }
         }
     }
 }

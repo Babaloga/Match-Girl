@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAnimation : MonoBehaviour {
 
@@ -10,8 +11,12 @@ public class PlayerAnimation : MonoBehaviour {
     Vector3 previousPosition = Vector3.zero;
     PlayerMovement move;
 
+    bool streetScene;
+
     void Start()
     {
+        streetScene = SceneManager.GetActiveScene().name == "Street";
+
         move = transform.parent.GetComponent<PlayerMovement>();
 
         topAnimator.SetFloat("X", 1);
@@ -35,7 +40,8 @@ public class PlayerAnimation : MonoBehaviour {
             topAnimator.SetFloat("Speed", velocity.magnitude);
             bottomAnimator.SetFloat("Speed", velocity.magnitude);
 
-            topAnimator.SetFloat("Temperature", PlayerStatsManager.Warmth);
+            if(streetScene) topAnimator.SetFloat("Temperature", PlayerStatsManager.Warmth);
+            else topAnimator.SetFloat("Temperature", 100f);
 
             previousPosition = transform.position;
 

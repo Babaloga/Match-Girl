@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(AudioSource))]
 public class NPCAnimation : MonoBehaviour {
@@ -18,6 +19,8 @@ public class NPCAnimation : MonoBehaviour {
 
     public AudioClip[] footsteps;
 
+    bool streetScene;
+
     public enum NPCType
     {
         Generic, Special, Scripted
@@ -29,6 +32,8 @@ public class NPCAnimation : MonoBehaviour {
 
         animator = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
+
+        streetScene = SceneManager.GetActiveScene().name == "Street";
 
         switch (thisType)
         {
@@ -118,7 +123,8 @@ public class NPCAnimation : MonoBehaviour {
     public void Footstep()
     {
         source.clip = footsteps[Random.Range(0, footsteps.Length)];
-        source.volume = (1f - ((transform.position - PlayerMovement.player.transform.position).magnitude / 15f)) / 10f;
+        if (streetScene) source.volume = (1f - ((transform.position - PlayerMovement.player.transform.position).magnitude / 15f)) / 10f;
+        else source.volume = 0.5f;
         source.Play();
     }
 }
