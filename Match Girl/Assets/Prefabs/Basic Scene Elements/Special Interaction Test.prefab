@@ -868,6 +868,7 @@ GameObject:
   - component: {fileID: 114547551113260258}
   - component: {fileID: 114025405911872630}
   - component: {fileID: 114464196216671426}
+  - component: {fileID: 114026222740028364}
   m_Layer: 0
   m_Name: Male_Animation_model_displace_skeleton simplified (1)
   m_TagString: Untagged
@@ -1717,7 +1718,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1149889813462648}
   m_LocalRotation: {x: -0, y: 0, z: 0.008386908, w: -0.99996483}
-  m_LocalPosition: {x: 0.24203491, y: 4.2773232, z: 0}
+  m_LocalPosition: {x: 0.24204254, y: 4.2773232, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4724704549291004}
@@ -2262,7 +2263,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1321400635498474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 135.5, y: 5.15, z: -87}
+  m_LocalPosition: {x: 126, y: 5.15, z: -89.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4839158234288438}
@@ -2644,13 +2645,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1408129429266264}
-  m_LocalRotation: {x: 0, y: 0, z: -0.967153, w: 0.25419524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4517868633840626}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 929.452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4989002876296596
 Transform:
   m_ObjectHideFlags: 1
@@ -2752,6 +2753,21 @@ MonoBehaviour:
   rightFoot: {fileID: 114276997115736620}
   rightHand: {fileID: 114758815810121588}
   rightForearm: {fileID: 114914476423596380}
+--- !u!114 &114026222740028364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1575447212966474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf0dab73cfe90746b10378b3f703c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptedMovement: {x: 1, y: 0, z: 0}
+  scriptedBeckoning: 0
+  footsteps: []
+  thisType: 1
 --- !u!114 &114052323658406356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2853,7 +2869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.7652504
+  m_Length: 0.7652464
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4070106472464298}
   m_AttachedIK: {fileID: 0}
@@ -2956,7 +2972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.43298617
+  m_Length: 0.43298873
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4873305482350684}
   m_AttachedIK: {fileID: 0}
@@ -3003,15 +3019,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed98486c6cfb264d935870b9f6393b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionName: Overseer
+  interactionName: Dr. Ralph
   radius: 5
   dialogues:
-  - {fileID: 0}
-  - {fileID: 11400000, guid: e291de1a6246ddb4984ecc1f5c34eb76, type: 2}
-  - {fileID: 11400000, guid: 28c7c6fa1513a3c4bb7ca9390a59a04e, type: 2}
+  - {fileID: 11400000, guid: f3a38f7591d8549e5b6b0fa7cc2708d7, type: 2}
+  - {fileID: 11400000, guid: 49c6e228154a94673a152f5c411993c2, type: 2}
   tooltip: {fileID: 223308043909502700}
   oneTimeInteraction: 0
-  characterArchetype: {fileID: 11400000, guid: 3c7d8fa79ea3f014d81a95273eda70ed, type: 2}
+  characterArchetype: {fileID: 11400000, guid: c3b436d916520824185516e5e51495dc, type: 2}
 --- !u!114 &114240356515227126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3382,7 +3397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.6695034
+  m_Length: 0.66950566
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4509573082128916}
   m_AttachedIK: {fileID: 0}
@@ -3430,7 +3445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.28033343
+  m_Length: 0.28033495
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4748192623545330}
   m_AttachedIK: {fileID: 0}
@@ -3617,7 +3632,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ee763409b458a5145b554e6c944b81b5, type: 3}
     m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
@@ -3642,9 +3657,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 40
-    m_Right: 40
-    m_Top: 40
+    m_Left: 90
+    m_Right: 90
+    m_Top: 30
     m_Bottom: 40
   m_ChildAlignment: 4
   m_Spacing: 0
@@ -3834,7 +3849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.7250491
+  m_Length: 0.72505105
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4482049930045490}
   m_AttachedIK: {fileID: 0}
@@ -3850,7 +3865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.591698
+  m_Length: 0.5916966
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4485118968764108}
   m_AttachedIK: {fileID: 0}
@@ -4146,15 +4161,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.653}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 5a3986e255d054743bb830c89ef6b70b, type: 3}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4441,7 +4456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.24060163
+  m_Length: 0.24059968
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4165727858127054}
   m_AttachedIK: {fileID: 0}
