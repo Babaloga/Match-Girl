@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: ea8307b42bc38da48940d41c04037e57
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Options.unity
     guid: 2d44e6715a069c24a8cad4f8ba34c76a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Win.unity
     guid: dd919ad15968aa44fa20f2a0a5b46f6f
   - enabled: 0
@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/morning_walk.unity
     guid: 41c1743fd95907742aefead7fe997d1d
+  - enabled: 1
+    path: Assets/Scenes/End_Scene.unity
+    guid: 20276579cfbfa45ecbff8a7d16fc9971
